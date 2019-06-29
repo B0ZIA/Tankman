@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 90a0d4042a8b2a34fac2f80f7e31507a
+timeCreated: 1528827279
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Elegantlight
+  fontNames:
+  - Elegantlight
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

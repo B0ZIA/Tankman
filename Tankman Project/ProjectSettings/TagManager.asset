@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - 1vs1
+  - FFA
+  - Manager
+  - 0
+  - Blitzkrieg
+  - 2
+  - 1
+  - 2 Teams
+  - Kursor
+  - RemotePlayer
+  - Head
+  - RemoteBody
+  - ShopButton
+  - LocalName
+  - TriggerWskaznik
+  - target
+  - Col2Tar
+  - PlayerFoodCollision
+  - Col1Tar
+  - TrzymaczStan
+  - NieCol1
+  - Col
+  - NieCol2
+  - FoodSpawner
+  - Zasoby
+  - Naprawiarka
+  - Food
+  - Dynamit
+  - NaprawioneZebySmoka
+  - StaticElement
+  - AMXRespawn
+  - PlayerRespawn
+  - O-IRespawn
+  - LocalPlayer
+  - LocalBody
+  - ZniszczoneZebySmoka
+  - Coin
+  - GlebokaWoda
+  - Woda
+  - BOTID
+  - BOT
+  - BOTTarget
+  - RoadPoint
+  - ItemDetector
+  - SpawnBot1
+  - SpawnBot2
+  - SpawnBot3
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Ground
+  - StaticElements
+  - LocalPlayer
+  - RemotePlayer
+  - BOT
+  - RoadPoint
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0

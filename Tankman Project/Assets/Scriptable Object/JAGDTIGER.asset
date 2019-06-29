@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f9a9bc96ca85e14592ce4feb0dca442, type: 3}
+  m_Name: JAGDTIGER
+  m_EditorClassIdentifier: 
+  hullTexture: {fileID: 21300000, guid: 41c121377c4ea3b4cb499495795bf4f1, type: 3}
+  turretTexture: {fileID: 21300000, guid: 34c2e711fd052bb42a51e59b14d7be72, type: 3}
+  turretCapTexture: {fileID: 21300000, guid: 567e9ac70b384de4ebc35f23daa12b18, type: 3}
+  tank: 5
+  level: 3
+  maxAmmo: 1
+  maxHp: 840
+  damage: 300
+  damageLotery: 15
+  headTurnSpeed: 20
+  turnSpeed: 17
+  speed: 0.7
+  reload: 6
+  reloadBetweenMagazine: 1
+  cameraSize: 4.5
+  offset: {x: -0.1, y: 0.02}
+  size: {x: 5.54, y: 2.62}
+  turretPos: {x: -1.217, y: 0}
+  turretCapPos: {x: 0, y: 0}
+  barrlelEndPos: {x: -3.45, y: 0.05}
+  iHaveTurretCap: 1
+  turretCan360: 0
+  description: <color=red>JAGDTIGER- </color>
+  otherTurrets: 
+  curretTab: 0
+  curretTabTier: 2
+  tempDescription: <color=red>JAGDTIGER- </color>
+  tempDescription2: 
+  czyPosiadamLufe: 1
+  czyPosiadamPrzykrycieLufy: 1

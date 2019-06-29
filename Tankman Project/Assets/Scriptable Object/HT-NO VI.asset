@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f9a9bc96ca85e14592ce4feb0dca442, type: 3}
+  m_Name: HT-NO VI
+  m_EditorClassIdentifier: 
+  hullTexture: {fileID: 21300000, guid: f590ce36c4071394f8f16bb458f63458, type: 3}
+  turretTexture: {fileID: 21300000, guid: aa7f16b5e41d40a40941be975c8570e6, type: 3}
+  turretCapTexture: {fileID: 0}
+  tank: 18
+  level: 3
+  maxAmmo: 1
+  maxHp: 860
+  damage: 215
+  damageLotery: 15
+  headTurnSpeed: 20
+  turnSpeed: 20
+  speed: 0.85
+  reload: 6
+  reloadBetweenMagazine: 1
+  cameraSize: 3.5
+  offset: {x: -0.15, y: 0.05}
+  size: {x: 3.64, y: 2.59}
+  turretPos: {x: -0.3, y: 0}
+  turretCapPos: {x: 0, y: 0}
+  barrlelEndPos: {x: -4, y: 0}
+  iHaveTurretCap: 0
+  turretCan360: 1
+  description: <color=red>HT-NO VI- </color>
+  otherTurrets: 
+  curretTab: 1
+  curretTabTier: 2
+  tempDescription: <color=red>HT-NO VI- </color>
+  tempDescription2: 
+  czyPosiadamLufe: 1
+  czyPosiadamPrzykrycieLufy: 0

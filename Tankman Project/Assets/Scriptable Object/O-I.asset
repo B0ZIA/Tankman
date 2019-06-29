@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f9a9bc96ca85e14592ce4feb0dca442, type: 3}
+  m_Name: O-I
+  m_EditorClassIdentifier: 
+  hullTexture: {fileID: 21300000, guid: 28b6d128f1d8dd94590aadbd6efd21f8, type: 3}
+  turretTexture: {fileID: 21300000, guid: 73720bc95fe867f459788fb69c20eee8, type: 3}
+  turretCapTexture: {fileID: 0}
+  tank: 19
+  level: 4
+  maxAmmo: 1
+  maxHp: 1200
+  damage: 300
+  damageLotery: 15
+  headTurnSpeed: 10
+  turnSpeed: 15
+  speed: 0.5
+  reload: 7
+  reloadBetweenMagazine: 1
+  cameraSize: 3.5
+  offset: {x: -0.12, y: 0.1}
+  size: {x: 6.23, y: 3.37}
+  turretPos: {x: -0.4, y: 0.1}
+  turretCapPos: {x: 0, y: 0}
+  barrlelEndPos: {x: -4.54, y: 0}
+  iHaveTurretCap: 0
+  turretCan360: 1
+  description: <color=red>O-I- </color>
+  otherTurrets: 020000000000000001000000
+  curretTab: 1
+  curretTabTier: 3
+  tempDescription: <color=red>O-I- </color>
+  tempDescription2: 
+  czyPosiadamLufe: 1
+  czyPosiadamPrzykrycieLufy: 0

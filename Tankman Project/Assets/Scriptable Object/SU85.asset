@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f9a9bc96ca85e14592ce4feb0dca442, type: 3}
+  m_Name: SU85
+  m_EditorClassIdentifier: 
+  hullTexture: {fileID: 21300000, guid: 25211971eeb56c54faf01bbe8a0b7fdc, type: 3}
+  turretTexture: {fileID: 21300000, guid: 6c1915a6ea859364fbe1f0ef2dcf3318, type: 3}
+  turretCapTexture: {fileID: 21300000, guid: 461da2a70bacaf3409041397cc5e8f2f, type: 3}
+  tank: 11
+  level: 3
+  maxAmmo: 1
+  maxHp: 840
+  damage: 300
+  damageLotery: 5
+  headTurnSpeed: 20
+  turnSpeed: 17
+  speed: 0.7
+  reload: 6.5
+  reloadBetweenMagazine: 1
+  cameraSize: 4.4
+  offset: {x: -0.25, y: 0}
+  size: {x: 4.04, y: 2.29}
+  turretPos: {x: -1.5, y: 0.37}
+  turretCapPos: {x: -1, y: 0}
+  barrlelEndPos: {x: -2.15, y: 0}
+  iHaveTurretCap: 1
+  turretCan360: 0
+  description: <color=red>SU85- </color>
+  otherTurrets: 
+  curretTab: 0
+  curretTabTier: 2
+  tempDescription: <color=red>SU85- </color>
+  tempDescription2: 
+  czyPosiadamLufe: 1
+  czyPosiadamPrzykrycieLufy: 1

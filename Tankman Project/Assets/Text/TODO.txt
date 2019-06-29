@@ -1,0 +1,9 @@
+Rzeczy do zrobienia/naprawy/dodania:
+	-naprawiæ problem z camera shake 
+    
+	
+	
+	
+Zrobione:
+	-naprawiæ Editor TankData
+	-dodaæ synchronizacjê pozycji itemów po ich zebraniu (usun¹æ kolejkê RPC bo ona czasami zawodzi)

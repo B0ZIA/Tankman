@@ -1,0 +1,36 @@
+Opisy Nacji:
+-ZSRR (ciê¿kie, niszczyciele, Srednie)
+	*Ciê¿kie + Niszczyciele:
+		-trole(krutkie, grube dzia³o z ogromnym wachaniem damage), szybsze od niemieckich, mniej hp ni¿ niemcy, mniejsze ni¿ niemieckie maszyny
+		du¿e dzia³a, ale niska szybkostrzelnoœæ oraz celnoœæ, niedu¿e gabaryty i przyzwoita mobilnoœæ, d³ugie prze³adowanie
+	*œrednie
+		-szybkie, w miarê hp, 
+
+-NIENCY (ciê¿kie, niszczyciele, lekkie)
+	*Ciê¿kie + Niszczyciele
+		-dobry damage, szybsze od japoñskich ale strasznie wolne, najwiêcej hp
+		celne dzia³a z wysok¹ penetracj¹, same maszyny bardzo du¿e.
+	*lekkie
+		-ma³e, karabin przeciwpancerny, wiêcej hp ni¿ francuskie
+
+-USA (œrednie, niszczyciele)
+	*Niszczyciele
+		-nie za wielkie maszyny, ma³o hp, bardzo szybkie, obracana wie¿a
+		-(drugi rodzaj) wielkie jak rosyjskie ciê¿kie, nie obracana we¿a, wolne jak Japoñskie(czyli bardzo),
+
+		Uniwersalne maszyny o doœæ du¿ych gabarytach, niezawodnoœæ, wysoki poziom prze¿ywalnoœci za³óg i celnoœæ dzia³, nieustêpuj¹ca niemieckim
+
+-FRANCJA(lekkie)
+		-malutkie, najszybsze(ko³owe), magazynek 5-7 naboi lub karabin przeciwpancerny,
+
+-JAPONIA(Ciê¿kie w chuj)
+		-trol jak ruscy i hp jak niemcy, strasznie wolne, (kilka dzia³?)
+		najwiêksze czo³gi w grze
+
+-SZWECJA(*ciê¿kie)
+		-magazynek!, w miarê szybkie, w miarê hp, ma³e czo³gi, bardzo specyficzne
+		bardzo du¿a depresja dzia³a(na chuj mi to)
+
+-POLSKA (ciê¿kie)
+		-grube dzia³a ale nie trol, w miarê szybkie, du¿o hp, du¿y damage
+		(dodatkowy karabinek co sam namie¿a wrogów?)

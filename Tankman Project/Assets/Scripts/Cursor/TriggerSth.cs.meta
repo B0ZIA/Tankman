@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: 70860d8203364f64990644e375cd22a7
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - cursorTextureDynamit: {fileID: 2800000, guid: 89cef5795a90c024c9daf45d91e988be,
+      type: 3}
+  - cursorTextureNaprawka: {fileID: 2800000, guid: 97cd67f8aa2416143be00bd02dd4caa5,
+      type: 3}
+  - wstawiaczZebowSmoka: {fileID: 1392073114557476, guid: c70cc4c464bb0464a98fb7a42c90ee87,
+      type: 2}
+  - zasiek: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
+  - zebySmoka: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
+  - stalowyX: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
