@@ -1,6 +1,6 @@
 # Tankman
 
-'Tankman' is a browser game created by Shaiba Game Studio
+'Tankman' is a browser game created by Shaiba Game Studio 
 
 | [:fire:Play](#Play) | [:camera:Screenshots](#screenshots) | [:wrench:Credits](#credits) | [:star:Resources](#resources) |
 | ----- | ----------- | ----------- | ----------- |
