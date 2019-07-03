@@ -1,8 +1,8 @@
 # Tankman
 
-'Tankman' is a browser game created by Shaiba Game Studio 
+'Tankman' is a browser game created by Jakub Główczyk and Dawid Tomaszewski  
 
-| [:fire:Play](#Play) | [:camera:Screenshots](#screenshots) | [:wrench:Credits](#credits) | [:star:Resources](#resources) |
+| [:fire:Play](#play) | [:camera:Screenshots](#screenshots) | [:wrench:Credits](#credits) | [:star:Resources](#resources) |
 | ----- | ----------- | ----------- | ----------- |
 
 <p align="center">
