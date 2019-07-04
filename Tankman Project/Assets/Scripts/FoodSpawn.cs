@@ -1,53 +1,43 @@
 ﻿using UnityEngine;
 using System;
-using System.Collections;
 
 /*
  * ###################################
  * #        by Jakub Główczyk        #
- * #            [#][ ][ ]            #
+ * #            [#][#][ ]            #
  * ###################################
  */
 
-
-//TODO: ustawić aby każdy gracz przechwywał liczbe zespawnionych itemów żeby 
-// w sytuacji kiedy został on serverem kontynuował spawn
 public class FoodSpawn : Photon.MonoBehaviour
 {
-    //Declare variables
-    public GameObject Food;
-    public GameObject Dynamite;
-    public GameObject Zasoby;
-    public GameObject Naprawka;
-    public GameObject Coin;
-    public float Speed;
-    public int FoodMax;
-    public const float minX= -30.00f;
-    public const float maxX = 30.00f;
-    public const float minY =-30.00f;
-    public const float maxY = 30.00f;
+    [SerializeField]
+    public GameObject prefFood;
+    [SerializeField]
+    public GameObject prefDynamite;
+    [SerializeField]
+    public GameObject prefZasoby;
+    [SerializeField]
+    public GameObject prefNaprawka;
+    [SerializeField]
+    public GameObject prefCoin;
 
-    public int licznik=0;
-	bool spawn=true;
-    public const float layer = -1f;
-
-    public int licznkiDynamit;
+    [SerializeField]
+    public float spawnSpeed;
+    [SerializeField]
+    public int maxScore;
+    [SerializeField]
     public int maxDynamit;
-    bool spawnDynamite = true;
-
-    public int licznkiNaprawiarka;
+    [SerializeField]
     public int maxNaprawiarka;
-    bool spawnNaprawiarka = true;
-
-    public int licznkiZasoby;
+    [SerializeField]
     public int maxZasoby;
-    bool spawnZasoby = true;
-
-    public int licznkiCoin;
+    [SerializeField]
     public int maxCoin;
-    bool spawnCoin = true;
 
-    public delegate void JakisTamDel();
+    private const float SPAWN_POS_MIN_X= -30.00f;
+    private const float SPAWN_POS_MAX_X = 30.00f;
+    private const float SPAWN_POS_MIN_Y =-30.00f;
+    private const float SPAWN_POS_MAX_Y = 30.00f;
 
 
 
@@ -59,165 +49,112 @@ public class FoodSpawn : Photon.MonoBehaviour
             return;
         }
 
-        JakisTamDel jakisTam = SetupSpawn;
-        jakisTam.Invoke();
-
-        //SetupSpawn();
+        SetupSpawn();
     }
 
     public void SetupSpawn()
     {
         if (!PhotonNetwork.isMasterClient)
             return;
-        RozpocznijSpawnienieObiektow();
-        //StartCoroutine(Sync());
+        SpawnAllItem();
     }
 
-    public void RozpocznijSpawnienieObiektow()
+    public void SpawnAllItem()
     {
-        InvokeRepeating("GenerateFood", 0, Speed);
-        InvokeRepeating("GenerateDynamite", 0, Speed);
-        InvokeRepeating("GenerateZasoby", 0, Speed);
-        InvokeRepeating("GenerateNaprawka", 0, Speed);
-        InvokeRepeating("GenerateCoin", 0, Speed);
+        InvokeRepeating("GenerateFood", 0, spawnSpeed);
+        InvokeRepeating("GenerateDynamite", 0, spawnSpeed);
+        InvokeRepeating("GenerateZasoby", 0, spawnSpeed);
+        InvokeRepeating("GenerateNaprawka", 0, spawnSpeed);
+        InvokeRepeating("GenerateCoin", 0, spawnSpeed);
     }
 
-    public static Vector3 SetVector()
+    public static Vector3 RandomPos()
     {
-        float x = UnityEngine.Random.Range(minX, maxX);
+        float x = UnityEngine.Random.Range(SPAWN_POS_MIN_X, SPAWN_POS_MAX_X);
         Math.Round(x, 2);
-        float y = UnityEngine.Random.Range(minY, maxY);
+        float y = UnityEngine.Random.Range(SPAWN_POS_MIN_Y, SPAWN_POS_MAX_Y);
         Math.Round(y, 2);
+        float layer = -1f;
         return new Vector3(x, y, layer);
     }
 
-    //This function creates a new food bit
+    int scoreCounter = 0;
     void GenerateFood()
     {
-        if (licznik >= FoodMax)
-            spawn = false;
-        else
-            spawn = true;
-        if (spawn == true)
+        if (scoreCounter < maxScore)
         {
-			licznik++;
-            //Create food object from prefab
-            Spawning(CoSpawnic.Score, SetVector());
-            //photonView.RPC("Spawning", PhotonTargets.MasterClient, CoSpawnic.Score, SetVector());
+            SpawnItem(Items.Score, RandomPos());
+            scoreCounter++;
         }
     }
 
+    int dynamiteCounter;
     void GenerateDynamite()
     {
-        if (licznkiDynamit >= maxDynamit)
-            spawnDynamite = false;
-        else
-            spawnDynamite = true;
-        if (spawnDynamite == true)
+        if (dynamiteCounter < maxDynamit)
         {
-            licznkiDynamit++;
-            //Create food object from prefab
-            Spawning(CoSpawnic.Dynamit, SetVector());
-            //photonView.RPC("Spawning", PhotonTargets.MasterClient, CoSpawnic.Dynamit, SetVector());
-        }
-    }
-    
-    void GenerateZasoby()
-    {
-        if (licznkiZasoby >= maxZasoby)
-            spawnZasoby = false;
-        else
-            spawnZasoby = true;
-        if (spawnZasoby == true)
-        {
-            licznkiZasoby++;
-            //Create food object from prefab
-            Spawning(CoSpawnic.Zasoby, SetVector());
-            //photonView.RPC("Spawning", PhotonTargets.MasterClient, CoSpawnic.Zasoby, SetVector());
+            SpawnItem(Items.Dynamit, RandomPos());
+            dynamiteCounter++;
         }
     }
 
-    void GenerateNaprawka()
+    int stockCounter;
+    void GenerateStock()
     {
-        if (licznkiNaprawiarka >= maxNaprawiarka)
-            spawnNaprawiarka = false;
-        else
-            spawnNaprawiarka = true;
-        if (spawnNaprawiarka == true)
+        if (stockCounter >= maxZasoby)
         {
-            licznkiNaprawiarka++;
-            //Create food object from prefab
-            Spawning(CoSpawnic.Naprawiarka, SetVector());
-            //photonView.RPC("Spawning", PhotonTargets.MasterClient, CoSpawnic.Naprawiarka, SetVector());
+            SpawnItem(Items.Zasoby, RandomPos());
+            stockCounter++;
         }
     }
 
+    int repairCounter;
+    void GenerateRepair()
+    {
+        if (repairCounter >= maxNaprawiarka)
+        {
+            SpawnItem(Items.Naprawiarka, RandomPos());
+            repairCounter++;
+        }
+    }
+
+    int coinCounter;
     void GenerateCoin()
     {
-        if (licznkiCoin >= maxCoin)
-            spawnCoin = false;
-        else
-            spawnCoin = true;
-        if (spawnCoin == true)
+        if (coinCounter >= maxCoin)
         {
-            licznkiCoin++;
-            //Create food object from prefab
-            Spawning(CoSpawnic.Coin, SetVector());
-            //photonView.RPC("Spawning", PhotonTargets.MasterClient, CoSpawnic.Coin, SetVector());
+            SpawnItem(Items.Coin, RandomPos());
+            coinCounter++;
         }
     }
 
-    //IEnumerator Sync ()
-    //{
-    //    while (true)
-    //    {
-    //        yield return new WaitForSecondsRealtime(0.1f);
-    //        photonView.RPC("SyncFoodSpawnerRPC",PhotonTargets.Others,licznik,licznkiDynamit,licznkiNaprawiarka,licznkiZasoby,licznkiCoin);
-    //    }
-    //}
-
-    //[PunRPC]
-    //void SyncFoodSpawnerRPC (int LICZNIK,int LICZNIKDYNAMIT, int LICZNIKNAPRAWIARKA, int LICZNIKZASOBY, int LICZNIKCOIN)
-    //{
-    //    licznik = LICZNIK;
-    //    licznkiDynamit = LICZNIKDYNAMIT;
-    //    licznkiNaprawiarka = LICZNIKNAPRAWIARKA;
-    //    licznkiZasoby = LICZNIKZASOBY;
-    //    licznkiCoin = LICZNIKCOIN;
-    //}
-
-    void Spawning (CoSpawnic coSpawnic, Vector3 pos)
+    void SpawnItem (Items whatSpawn, Vector3 pos)
     {
         Quaternion rot = Quaternion.Euler(0, 0, UnityEngine.Random.Range(1.0f, 360.0f));
 
-        switch (coSpawnic)
+        switch (whatSpawn)
         {
-            case CoSpawnic.Score:
+            case Items.Score:
                 PhotonNetwork.InstantiateSceneObject("Item_Exp", pos, rot, 0, null);
-                //Instantiate(Food, pos, rot);
                 break;
-            case CoSpawnic.Coin:
+            case Items.Coin:
                 PhotonNetwork.InstantiateSceneObject("Item_Coin", pos, rot, 0, null);
-                //Instantiate(Coin, pos, rot);
                 break;
-            case CoSpawnic.Dynamit:
+            case Items.Dynamit:
                 PhotonNetwork.InstantiateSceneObject("Item_Dynamite", pos, rot, 0, null);
-                //Instantiate(Dynamite, pos, rot);
                 break;
-            case CoSpawnic.Naprawiarka:
+            case Items.Naprawiarka:
                 PhotonNetwork.InstantiateSceneObject("Item_Naprawka", pos, rot, 0, null);
-                //Instantiate(Naprawka, pos, rot);
                 break;
-            case CoSpawnic.Zasoby:
+            case Items.Zasoby:
                 PhotonNetwork.InstantiateSceneObject("Item_Zasoby", pos, rot, 0, null);
-                //Instantiate(Zasoby, pos, rot);
                 break;
             default:
                 break;
         }
     }
 
-    public enum CoSpawnic
+    public enum Items
     {
         Score,
         Coin,
@@ -225,6 +162,4 @@ public class FoodSpawn : Photon.MonoBehaviour
         Naprawiarka,
         Zasoby
     }
-
-
 }

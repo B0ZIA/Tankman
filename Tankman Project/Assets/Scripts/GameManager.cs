@@ -151,6 +151,11 @@ public class GameManager : Photon.MonoBehaviour
         }
     }
 
+    private void SpawnTigerBot()
+    {
+
+    }
+
     /// <summary>
     /// Metoda którą wykonuje server. spawnuje podany obiekt(nazwaObiektu) w podanej pozycji i rotacji.
     /// Każdy gracz może poprosić server aby zespawnił obiekt, serwer sprawdza czy tak może być 
