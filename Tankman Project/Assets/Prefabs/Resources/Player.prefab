@@ -8028,7 +8028,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1166972336701026}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.8135371, y: -19.313744, z: 317.71857}
+  m_LocalPosition: {x: 265.61053, y: 486.94473, z: 317.71857}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4550386421071972}
@@ -9774,20 +9774,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da577887ccc3dd440a0a5394bb80e7dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stanPrzycisku: 0
-  doUkrycia:
+  buttonState: 0
+  toHide:
   - {fileID: 114701378846182728}
-  doZaproponowania:
+  toPropose:
   - {fileID: 114720306450379120}
-  doZablokowania:
+  toBlock:
   - {fileID: 114899578119627822}
   - {fileID: 114100560185964838}
-  doZapisania:
+  toSave:
   - {fileID: 114219602633763696}
   - {fileID: 114017217563486516}
-  ukryj: {fileID: 1545250818137646}
-  zaproponuj: {fileID: 1317567505116364}
-  zablokuj: {fileID: 1783331566867302}
+  hidePanel: {fileID: 1545250818137646}
+  proposePanel: {fileID: 1317567505116364}
+  blockPanel: {fileID: 1783331566867302}
   myButton: {fileID: 114816582672560422}
 --- !u!114 &114017672515787034
 MonoBehaviour:
@@ -11641,20 +11641,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da577887ccc3dd440a0a5394bb80e7dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stanPrzycisku: 0
-  doUkrycia: []
-  doZaproponowania:
+  buttonState: 0
+  toHide: []
+  toPropose:
   - {fileID: 114701378846182728}
-  doZablokowania:
+  toBlock:
   - {fileID: 114017217563486516}
   - {fileID: 114720306450379120}
-  doZapisania:
+  toSave:
   - {fileID: 114219602633763696}
   - {fileID: 114899578119627822}
   - {fileID: 114100560185964838}
-  ukryj: {fileID: 1173042706763656}
-  zaproponuj: {fileID: 1637723238962750}
-  zablokuj: {fileID: 1566102782903172}
+  hidePanel: {fileID: 1173042706763656}
+  proposePanel: {fileID: 1637723238962750}
+  blockPanel: {fileID: 1566102782903172}
   myButton: {fileID: 114772475066260612}
 --- !u!114 &114102699001879702
 MonoBehaviour:
@@ -11858,20 +11858,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da577887ccc3dd440a0a5394bb80e7dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stanPrzycisku: 0
-  doUkrycia:
-  - {fileID: 114386301380722808}
-  doZaproponowania:
-  - {fileID: 114365503186249944}
-  doZablokowania:
-  - {fileID: 114524730328483556}
-  - {fileID: 114642067859549874}
-  doZapisania:
-  - {fileID: 114790309813884192}
-  - {fileID: 114117982178307896}
-  ukryj: {fileID: 1838565738801628}
-  zaproponuj: {fileID: 1437318975233586}
-  zablokuj: {fileID: 1786698875368778}
+  buttonState: 0
+  toHide: []
+  toPropose: []
+  toBlock: []
+  toSave: []
+  hidePanel: {fileID: 0}
+  proposePanel: {fileID: 0}
+  blockPanel: {fileID: 0}
   myButton: {fileID: 114608987298067724}
 --- !u!114 &114118141937992774
 MonoBehaviour:
@@ -12967,7 +12961,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc9ac35d34c374e4aa33cd8aad89560d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajWiezy: 1
+  turret: {fileID: 0}
   curretTarget: {fileID: 0}
   staticTarget: {fileID: 1096686373124928}
   turnSpeed: 20
@@ -13371,20 +13365,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da577887ccc3dd440a0a5394bb80e7dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stanPrzycisku: 0
-  doUkrycia:
+  buttonState: 0
+  toHide:
   - {fileID: 114720306450379120}
   - {fileID: 114100560185964838}
   - {fileID: 114701378846182728}
-  doZaproponowania:
+  toPropose:
   - {fileID: 114017217563486516}
   - {fileID: 114899578119627822}
-  doZablokowania: []
-  doZapisania:
+  toBlock: []
+  toSave:
   - {fileID: 114219602633763696}
-  ukryj: {fileID: 1477173932105396}
-  zaproponuj: {fileID: 1677833004882110}
-  zablokuj: {fileID: 1550277865544548}
+  hidePanel: {fileID: 1477173932105396}
+  proposePanel: {fileID: 1677833004882110}
+  blockPanel: {fileID: 1550277865544548}
   myButton: {fileID: 114817957310508348}
 --- !u!114 &114222472998468326
 MonoBehaviour:
@@ -14741,24 +14735,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da577887ccc3dd440a0a5394bb80e7dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stanPrzycisku: 0
-  doUkrycia:
-  - {fileID: 114916865752466116}
-  - {fileID: 114464363777116894}
-  doZaproponowania:
-  - {fileID: 114698288177125064}
-  doZablokowania:
-  - {fileID: 114497464403647352}
-  - {fileID: 114566124504754232}
-  - {fileID: 114641690548044466}
-  - {fileID: 114440569500610820}
-  - {fileID: 114752398217072756}
-  doZapisania:
-  - {fileID: 114816139374130852}
-  - {fileID: 114328909383751576}
-  ukryj: {fileID: 1609162060601582}
-  zaproponuj: {fileID: 1253337305339318}
-  zablokuj: {fileID: 1490597715723352}
+  buttonState: 0
+  toHide: []
+  toPropose: []
+  toBlock: []
+  toSave: []
+  hidePanel: {fileID: 0}
+  proposePanel: {fileID: 0}
+  blockPanel: {fileID: 0}
   myButton: {fileID: 114468109507516604}
 --- !u!114 &114329564165971556
 MonoBehaviour:
@@ -15341,7 +15325,7 @@ MonoBehaviour:
   whatToHit:
     serializedVersion: 2
     m_Bits: 6656
-  rodzajWiezy: 1
+  turret: {fileID: 0}
   muzzleFlash: {fileID: 0}
   tankStore: {fileID: 114154491682395056}
 --- !u!114 &114363595526411266
@@ -15430,20 +15414,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da577887ccc3dd440a0a5394bb80e7dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stanPrzycisku: 0
-  doUkrycia: []
-  doZaproponowania:
-  - {fileID: 114386301380722808}
-  doZablokowania:
-  - {fileID: 114524730328483556}
-  - {fileID: 114642067859549874}
-  doZapisania:
-  - {fileID: 114790309813884192}
-  - {fileID: 114117982178307896}
-  - {fileID: 114365503186249944}
-  ukryj: {fileID: 1808368622187814}
-  zaproponuj: {fileID: 1017980125580784}
-  zablokuj: {fileID: 1478144064243500}
+  buttonState: 0
+  toHide: []
+  toPropose: []
+  toBlock: []
+  toSave: []
+  hidePanel: {fileID: 0}
+  proposePanel: {fileID: 0}
+  blockPanel: {fileID: 0}
   myButton: {fileID: 114492760585418380}
 --- !u!114 &114365602197860344
 MonoBehaviour:
@@ -15911,20 +15889,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da577887ccc3dd440a0a5394bb80e7dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stanPrzycisku: 0
-  doUkrycia: []
-  doZaproponowania: []
-  doZablokowania: []
-  doZapisania:
-  - {fileID: 114790309813884192}
-  - {fileID: 114524730328483556}
-  - {fileID: 114117982178307896}
-  - {fileID: 114642067859549874}
-  - {fileID: 114365503186249944}
-  - {fileID: 114386301380722808}
-  ukryj: {fileID: 1229392652715168}
-  zaproponuj: {fileID: 1632953680315060}
-  zablokuj: {fileID: 1439126431680118}
+  buttonState: 0
+  toHide: []
+  toPropose: []
+  toBlock: []
+  toSave: []
+  hidePanel: {fileID: 0}
+  proposePanel: {fileID: 0}
+  blockPanel: {fileID: 0}
   myButton: {fileID: 114429150295686128}
 --- !u!114 &114388674199083582
 MonoBehaviour:
@@ -16810,24 +16782,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da577887ccc3dd440a0a5394bb80e7dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stanPrzycisku: 0
-  doUkrycia: []
-  doZaproponowania:
-  - {fileID: 114752398217072756}
-  doZablokowania:
-  - {fileID: 114328909383751576}
-  - {fileID: 114698288177125064}
-  - {fileID: 114916865752466116}
-  - {fileID: 114464363777116894}
-  - {fileID: 114497464403647352}
-  - {fileID: 114641690548044466}
-  doZapisania:
-  - {fileID: 114816139374130852}
-  - {fileID: 114566124504754232}
-  - {fileID: 114440569500610820}
-  ukryj: {fileID: 1666060577680520}
-  zaproponuj: {fileID: 1138227145074712}
-  zablokuj: {fileID: 1310340987270042}
+  buttonState: 0
+  toHide: []
+  toPropose: []
+  toBlock: []
+  toSave: []
+  hidePanel: {fileID: 0}
+  proposePanel: {fileID: 0}
+  blockPanel: {fileID: 0}
   myButton: {fileID: 114614028250404728}
 --- !u!114 &114445207950069594
 MonoBehaviour:
@@ -17061,23 +17023,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da577887ccc3dd440a0a5394bb80e7dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stanPrzycisku: 0
-  doUkrycia: []
-  doZaproponowania: []
-  doZablokowania:
-  - {fileID: 114916865752466116}
-  - {fileID: 114497464403647352}
-  - {fileID: 114566124504754232}
-  - {fileID: 114641690548044466}
-  - {fileID: 114440569500610820}
-  - {fileID: 114752398217072756}
-  doZapisania:
-  - {fileID: 114816139374130852}
-  - {fileID: 114328909383751576}
-  - {fileID: 114698288177125064}
-  ukryj: {fileID: 1647359193534930}
-  zaproponuj: {fileID: 1426368743344030}
-  zablokuj: {fileID: 1485157062517600}
+  buttonState: 0
+  toHide: []
+  toPropose: []
+  toBlock: []
+  toSave: []
+  hidePanel: {fileID: 0}
+  proposePanel: {fileID: 0}
+  blockPanel: {fileID: 0}
   myButton: {fileID: 114365602197860344}
 --- !u!114 &114468109507516604
 MonoBehaviour:
@@ -17306,7 +17259,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc9ac35d34c374e4aa33cd8aad89560d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajWiezy: 3
+  turret: {fileID: 11400000, guid: a47a4e654d9349547ae5a84c524c537b, type: 2}
   curretTarget: {fileID: 0}
   staticTarget: {fileID: 1307161742363390}
   turnSpeed: 20
@@ -17606,24 +17559,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da577887ccc3dd440a0a5394bb80e7dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stanPrzycisku: 0
-  doUkrycia:
-  - {fileID: 114752398217072756}
-  doZaproponowania:
-  - {fileID: 114641690548044466}
-  doZablokowania:
-  - {fileID: 114328909383751576}
-  - {fileID: 114698288177125064}
-  - {fileID: 114916865752466116}
-  - {fileID: 114566124504754232}
-  - {fileID: 114440569500610820}
-  - {fileID: 114464363777116894}
-  doZapisania:
-  - {fileID: 114816139374130852}
-  - {fileID: 114497464403647352}
-  ukryj: {fileID: 1375737142119038}
-  zaproponuj: {fileID: 1615061913881340}
-  zablokuj: {fileID: 1095006128253164}
+  buttonState: 0
+  toHide: []
+  toPropose: []
+  toBlock: []
+  toSave: []
+  hidePanel: {fileID: 0}
+  proposePanel: {fileID: 0}
+  blockPanel: {fileID: 0}
   myButton: {fileID: 114267295569173456}
 --- !u!114 &114498095121264618
 MonoBehaviour:
@@ -18208,20 +18151,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da577887ccc3dd440a0a5394bb80e7dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stanPrzycisku: 0
-  doUkrycia:
-  - {fileID: 114386301380722808}
-  doZaproponowania:
-  - {fileID: 114642067859549874}
-  doZablokowania:
-  - {fileID: 114117982178307896}
-  - {fileID: 114365503186249944}
-  doZapisania:
-  - {fileID: 114790309813884192}
-  - {fileID: 114524730328483556}
-  ukryj: {fileID: 1963854598195368}
-  zaproponuj: {fileID: 1812214733505424}
-  zablokuj: {fileID: 1998952210501040}
+  buttonState: 0
+  toHide: []
+  toPropose: []
+  toBlock: []
+  toSave: []
+  hidePanel: {fileID: 0}
+  proposePanel: {fileID: 0}
+  blockPanel: {fileID: 0}
   myButton: {fileID: 114445207950069594}
 --- !u!114 &114527557218651216
 MonoBehaviour:
@@ -18649,24 +18586,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da577887ccc3dd440a0a5394bb80e7dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stanPrzycisku: 0
-  doUkrycia:
-  - {fileID: 114752398217072756}
-  doZaproponowania:
-  - {fileID: 114440569500610820}
-  doZablokowania:
-  - {fileID: 114328909383751576}
-  - {fileID: 114698288177125064}
-  - {fileID: 114916865752466116}
-  - {fileID: 114464363777116894}
-  - {fileID: 114497464403647352}
-  - {fileID: 114641690548044466}
-  doZapisania:
-  - {fileID: 114816139374130852}
-  - {fileID: 114566124504754232}
-  ukryj: {fileID: 1397995415893708}
-  zaproponuj: {fileID: 1059548819450004}
-  zablokuj: {fileID: 1065597374833748}
+  buttonState: 0
+  toHide: []
+  toPropose: []
+  toBlock: []
+  toSave: []
+  hidePanel: {fileID: 0}
+  proposePanel: {fileID: 0}
+  blockPanel: {fileID: 0}
   myButton: {fileID: 114147464121676872}
 --- !u!114 &114567465716439638
 MonoBehaviour:
@@ -19108,7 +19035,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d3f4636dac7e8b46be6407515ad1915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tankStore: {fileID: 114154491682395056}
+  gameOver: {fileID: 0}
   cameraShake: {fileID: 114877452639450838}
 --- !u!114 &114591757205738898
 MonoBehaviour:
@@ -20031,24 +19958,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da577887ccc3dd440a0a5394bb80e7dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stanPrzycisku: 0
-  doUkrycia: []
-  doZaproponowania:
-  - {fileID: 114752398217072756}
-  doZablokowania:
-  - {fileID: 114328909383751576}
-  - {fileID: 114698288177125064}
-  - {fileID: 114916865752466116}
-  - {fileID: 114464363777116894}
-  - {fileID: 114566124504754232}
-  - {fileID: 114440569500610820}
-  doZapisania:
-  - {fileID: 114816139374130852}
-  - {fileID: 114497464403647352}
-  - {fileID: 114641690548044466}
-  ukryj: {fileID: 1595503359938936}
-  zaproponuj: {fileID: 1176720003030838}
-  zablokuj: {fileID: 1653278053908348}
+  buttonState: 0
+  toHide: []
+  toPropose: []
+  toBlock: []
+  toSave: []
+  hidePanel: {fileID: 0}
+  proposePanel: {fileID: 0}
+  blockPanel: {fileID: 0}
   myButton: {fileID: 114943489271112164}
 --- !u!114 &114641952135123476
 MonoBehaviour:
@@ -20088,20 +20005,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da577887ccc3dd440a0a5394bb80e7dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stanPrzycisku: 0
-  doUkrycia: []
-  doZaproponowania:
-  - {fileID: 114386301380722808}
-  doZablokowania:
-  - {fileID: 114117982178307896}
-  - {fileID: 114365503186249944}
-  doZapisania:
-  - {fileID: 114790309813884192}
-  - {fileID: 114524730328483556}
-  - {fileID: 114642067859549874}
-  ukryj: {fileID: 1712437451930232}
-  zaproponuj: {fileID: 1460290711027174}
-  zablokuj: {fileID: 1192390416902876}
+  buttonState: 0
+  toHide: []
+  toPropose: []
+  toBlock: []
+  toSave: []
+  hidePanel: {fileID: 0}
+  proposePanel: {fileID: 0}
+  blockPanel: {fileID: 0}
   myButton: {fileID: 114809544632978782}
 --- !u!114 &114642185466813740
 MonoBehaviour:
@@ -21114,24 +21025,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da577887ccc3dd440a0a5394bb80e7dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stanPrzycisku: 0
-  doUkrycia: []
-  doZaproponowania:
-  - {fileID: 114916865752466116}
-  - {fileID: 114464363777116894}
-  doZablokowania:
-  - {fileID: 114497464403647352}
-  - {fileID: 114566124504754232}
-  - {fileID: 114641690548044466}
-  - {fileID: 114440569500610820}
-  - {fileID: 114752398217072756}
-  doZapisania:
-  - {fileID: 114816139374130852}
-  - {fileID: 114328909383751576}
-  - {fileID: 114698288177125064}
-  ukryj: {fileID: 1606425450336122}
-  zaproponuj: {fileID: 1134871213750578}
-  zablokuj: {fileID: 1461818151268850}
+  buttonState: 0
+  toHide: []
+  toPropose: []
+  toBlock: []
+  toSave: []
+  hidePanel: {fileID: 0}
+  proposePanel: {fileID: 0}
+  blockPanel: {fileID: 0}
   myButton: {fileID: 114107689646128278}
 --- !u!114 &114700307035525364
 MonoBehaviour:
@@ -21171,20 +21072,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da577887ccc3dd440a0a5394bb80e7dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stanPrzycisku: 0
-  doUkrycia: []
-  doZaproponowania: []
-  doZablokowania: []
-  doZapisania:
-  - {fileID: 114219602633763696}
-  - {fileID: 114017217563486516}
-  - {fileID: 114899578119627822}
-  - {fileID: 114720306450379120}
-  - {fileID: 114100560185964838}
+  buttonState: 0
+  toHide: []
+  toPropose: []
+  toBlock: []
+  toSave:
   - {fileID: 114701378846182728}
-  ukryj: {fileID: 1256454157177654}
-  zaproponuj: {fileID: 1020213339948266}
-  zablokuj: {fileID: 1061049824371788}
+  hidePanel: {fileID: 1256454157177654}
+  proposePanel: {fileID: 1020213339948266}
+  blockPanel: {fileID: 1061049824371788}
   myButton: {fileID: 114618486848255648}
 --- !u!114 &114705643409304564
 MonoBehaviour:
@@ -21380,20 +21276,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da577887ccc3dd440a0a5394bb80e7dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stanPrzycisku: 0
-  doUkrycia: []
-  doZaproponowania:
+  buttonState: 0
+  toHide: []
+  toPropose:
   - {fileID: 114701378846182728}
-  doZablokowania:
+  toBlock:
   - {fileID: 114899578119627822}
   - {fileID: 114100560185964838}
-  doZapisania:
+  toSave:
   - {fileID: 114219602633763696}
   - {fileID: 114017217563486516}
   - {fileID: 114720306450379120}
-  ukryj: {fileID: 1106175481950626}
-  zaproponuj: {fileID: 1631489325957062}
-  zablokuj: {fileID: 1998563593175030}
+  hidePanel: {fileID: 1106175481950626}
+  proposePanel: {fileID: 1631489325957062}
+  blockPanel: {fileID: 1998563593175030}
   myButton: {fileID: 114658090972482326}
 --- !u!114 &114732822518041630
 MonoBehaviour:
@@ -21831,23 +21727,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da577887ccc3dd440a0a5394bb80e7dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stanPrzycisku: 0
-  doUkrycia: []
-  doZaproponowania: []
-  doZablokowania:
-  - {fileID: 114328909383751576}
-  - {fileID: 114698288177125064}
-  - {fileID: 114916865752466116}
-  - {fileID: 114464363777116894}
-  - {fileID: 114566124504754232}
-  - {fileID: 114440569500610820}
-  doZapisania:
-  - {fileID: 114816139374130852}
-  - {fileID: 114497464403647352}
-  - {fileID: 114641690548044466}
-  ukryj: {fileID: 1676152580852754}
-  zaproponuj: {fileID: 1242546335086024}
-  zablokuj: {fileID: 1961861627555556}
+  buttonState: 0
+  toHide: []
+  toPropose: []
+  toBlock: []
+  toSave: []
+  hidePanel: {fileID: 0}
+  proposePanel: {fileID: 0}
+  blockPanel: {fileID: 0}
   myButton: {fileID: 114343334879191640}
 --- !u!114 &114756572218251816
 MonoBehaviour:
@@ -22184,7 +22071,7 @@ MonoBehaviour:
   whatToHit:
     serializedVersion: 2
     m_Bits: 6656
-  rodzajWiezy: 0
+  turret: {fileID: 0}
   muzzleFlash: {fileID: 0}
   tankStore: {fileID: 114154491682395056}
 --- !u!114 &114780045113808908
@@ -22461,20 +22348,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da577887ccc3dd440a0a5394bb80e7dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stanPrzycisku: 0
-  doUkrycia:
-  - {fileID: 114642067859549874}
-  - {fileID: 114365503186249944}
-  - {fileID: 114386301380722808}
-  doZaproponowania:
-  - {fileID: 114524730328483556}
-  - {fileID: 114117982178307896}
-  doZablokowania: []
-  doZapisania:
-  - {fileID: 114790309813884192}
-  ukryj: {fileID: 1414443684965532}
-  zaproponuj: {fileID: 1966384414490192}
-  zablokuj: {fileID: 1806694828734382}
+  buttonState: 0
+  toHide: []
+  toPropose: []
+  toBlock: []
+  toSave: []
+  hidePanel: {fileID: 0}
+  proposePanel: {fileID: 0}
+  blockPanel: {fileID: 0}
   myButton: {fileID: 114623361774852988}
 --- !u!114 &114790422966377794
 MonoBehaviour:
@@ -22647,7 +22528,7 @@ MonoBehaviour:
   whatToHit:
     serializedVersion: 2
     m_Bits: 6656
-  rodzajWiezy: 3
+  turret: {fileID: 11400000, guid: a47a4e654d9349547ae5a84c524c537b, type: 2}
   muzzleFlash: {fileID: 0}
   tankStore: {fileID: 114154491682395056}
 --- !u!114 &114808605583174194
@@ -22895,24 +22776,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da577887ccc3dd440a0a5394bb80e7dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stanPrzycisku: 0
-  doUkrycia:
-  - {fileID: 114698288177125064}
-  - {fileID: 114916865752466116}
-  - {fileID: 114641690548044466}
-  - {fileID: 114440569500610820}
-  - {fileID: 114752398217072756}
-  - {fileID: 114464363777116894}
-  doZaproponowania:
-  - {fileID: 114328909383751576}
-  - {fileID: 114497464403647352}
-  - {fileID: 114566124504754232}
-  doZablokowania: []
-  doZapisania:
-  - {fileID: 114816139374130852}
-  ukryj: {fileID: 1977069637150240}
-  zaproponuj: {fileID: 1695223655166004}
-  zablokuj: {fileID: 1858510410849718}
+  buttonState: 0
+  toHide: []
+  toPropose: []
+  toBlock: []
+  toSave: []
+  hidePanel: {fileID: 0}
+  proposePanel: {fileID: 0}
+  blockPanel: {fileID: 0}
   myButton: {fileID: 114585151231614756}
 --- !u!114 &114816582672560422
 MonoBehaviour:
@@ -23645,9 +23516,6 @@ MonoBehaviour:
   - {fileID: 1999220736123096}
   - {fileID: 1381598909553240}
   - {fileID: 1069352532904312}
-  Hull: {fileID: 1635419053247264}
-  Turret: {fileID: 1430396106446010}
-  TurretCap: {fileID: 1286404730044384}
 --- !u!114 &114858065519814502
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -23659,7 +23527,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc9ac35d34c374e4aa33cd8aad89560d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajWiezy: 2
+  turret: {fileID: 0}
   curretTarget: {fileID: 0}
   staticTarget: {fileID: 1714336440674450}
   turnSpeed: 20
@@ -24285,7 +24153,7 @@ MonoBehaviour:
   whatToHit:
     serializedVersion: 2
     m_Bits: 6656
-  rodzajWiezy: 2
+  turret: {fileID: 0}
   muzzleFlash: {fileID: 0}
   tankStore: {fileID: 114154491682395056}
 --- !u!114 &114899578119627822
@@ -24299,20 +24167,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da577887ccc3dd440a0a5394bb80e7dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stanPrzycisku: 0
-  doUkrycia:
+  buttonState: 0
+  toHide:
   - {fileID: 114701378846182728}
-  doZaproponowania:
+  toPropose:
   - {fileID: 114100560185964838}
-  doZablokowania:
+  toBlock:
   - {fileID: 114017217563486516}
   - {fileID: 114720306450379120}
-  doZapisania:
+  toSave:
   - {fileID: 114219602633763696}
   - {fileID: 114899578119627822}
-  ukryj: {fileID: 1858057621306240}
-  zaproponuj: {fileID: 1088535803039460}
-  zablokuj: {fileID: 1307948614414926}
+  hidePanel: {fileID: 1858057621306240}
+  proposePanel: {fileID: 1088535803039460}
+  blockPanel: {fileID: 1307948614414926}
   myButton: {fileID: 114297004153878318}
 --- !u!114 &114901124408675680
 MonoBehaviour:
@@ -24643,24 +24511,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da577887ccc3dd440a0a5394bb80e7dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stanPrzycisku: 0
-  doUkrycia: []
-  doZaproponowania: []
-  doZablokowania:
-  - {fileID: 114497464403647352}
-  - {fileID: 114566124504754232}
-  - {fileID: 114641690548044466}
-  - {fileID: 114440569500610820}
-  - {fileID: 114752398217072756}
-  - {fileID: 114464363777116894}
-  doZapisania:
-  - {fileID: 114816139374130852}
-  - {fileID: 114328909383751576}
-  - {fileID: 114698288177125064}
-  - {fileID: 114916865752466116}
-  ukryj: {fileID: 1140741647190712}
-  zaproponuj: {fileID: 1793622463167486}
-  zablokuj: {fileID: 1170328116565890}
+  buttonState: 0
+  toHide: []
+  toPropose: []
+  toBlock: []
+  toSave: []
+  hidePanel: {fileID: 0}
+  proposePanel: {fileID: 0}
+  blockPanel: {fileID: 0}
   myButton: {fileID: 114139088447125466}
 --- !u!114 &114922534871183062
 MonoBehaviour:
@@ -25407,7 +25265,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc9ac35d34c374e4aa33cd8aad89560d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajWiezy: 0
+  turret: {fileID: 0}
   curretTarget: {fileID: 0}
   staticTarget: {fileID: 1863885695840820}
   turnSpeed: 20

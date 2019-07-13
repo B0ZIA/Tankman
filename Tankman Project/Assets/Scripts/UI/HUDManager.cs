@@ -83,41 +83,42 @@ public class HUDManager : MonoBehaviour
         while(true)
         {
             yield return new WaitForSecondsRealtime(0.1f);
-            ChcekUpdate();
+            UpdateHud();
         }
     }
 
 	
-	void ChcekUpdate ()
+	void UpdateHud ()
     {
+        //Aktualizuje Wszystkie slidery
         SliderHp.value = CalculateHealth();
-        //SliderHpOnTank.value = SliderHp.value; to jest ustawiane w PlayerRegenerationHP
-        SliderAmmo.value = (float)TankShoot.Instance.TempMaxAmmo / (float)TankShoot.Instance.MaxAmmo;
-        SliderReload.value = ((TankShoot.Instance.realReloadTime * -1f) + TankShoot.Instance.ReloadTime) / TankShoot.Instance.ReloadTime;
+        SliderAmmo.value = CalculateAmmo();
+        SliderReload.value = CalculateReloadTime();
         if (playerGO.myPlayer.hp != TankHealth.Instance.MaxHP)
-            SliderRegeneration.value = ((TankHealth.Instance.tempTime * -1f) + TankHealth.Instance.CzasDoRozpoczeciaRegeneracji) / TankHealth.Instance.CzasDoRozpoczeciaRegeneracji;
+            SliderRegeneration.value = CalculateTimeToRegeneration();
         else
             SliderRegeneration.value = 1;
-
         if (SliderExp.value == 1)
             SliderExp.fillRect.GetComponent<Image>().color = fullExpFillColor;
         else
             SliderExp.fillRect.GetComponent<Image>().color = normalExpFillColor;
 
+        //Aktualizuje Texty
         hpMaxHp.text = playerGO.myPlayer.hp + "/" + TankHealth.Instance.MaxHP;
-        if(GameManager.LocalPlayer.tankTier == TankTier.CzrawtyTier)
+        if (GameManager.LocalPlayer.tankTier == TankTier.CzrawtyTier)
             expMaxExpText.text = playerGO.myPlayer.score + "/∞";
         else
             expMaxExpText.text = playerGO.myPlayer.score + "/" + tempGranicaWbicjaLewla.ToString();
         currentAmmoText.text = TankShoot.Instance.TempMaxAmmo.ToString();
 
-        coinText.text = "   Coin: <color=yellow>"+ playerGO.myPlayer.coin.ToString()+"</color>";
+        coinText.text = "   Coin: <color=yellow>" + playerGO.myPlayer.coin.ToString() + "</color>";
         coinTextInShoop.text = coinText.text;
 
         zasobyText.text = "x" + playerGO.myPlayer.Zasoby.ToString();
         naprawiarkaText.text = "x" + playerGO.myPlayer.Naprawiarka.ToString();
         dynamitText.text = "x" + playerGO.myPlayer.Dynamit.ToString();
 
+        //Aktualizuje zębatki czyli tier czołgu
         switch (GameManager.LocalPlayer.tankTier)
         {
             case TankTier.PierwszyTier:
@@ -146,6 +147,22 @@ public class HUDManager : MonoBehaviour
         }
     }
 
+    private float CalculateAmmo()
+    {
+        return (float)TankShoot.Instance.TempMaxAmmo / (float)TankShoot.Instance.MaxAmmo;
+    }
+
+    private float CalculateReloadTime()
+    {
+        return ((TankShoot.Instance.realReloadTime * -1f) + TankShoot.Instance.ReloadTime) / TankShoot.Instance.ReloadTime;
+    }
+
+    private float CalculateTimeToRegeneration()
+    {
+        return ((TankHealth.Instance.tempTime * -1f) + TankHealth.Instance.CzasDoRozpoczeciaRegeneracji) / TankHealth.Instance.CzasDoRozpoczeciaRegeneracji;
+    }
+
+
     void PrzelaczZebatki(int aktywnaZebatka)
     {
         for (int i = 0; i < zebatki.Length; i++)
@@ -162,7 +179,7 @@ public class HUDManager : MonoBehaviour
 
     public float CalculateHealth()
     {
-        return playerGO.myPlayer.hp / TankHealth.Instance.MaxHP;
+        return GameManager.LocalPlayer.hp / TankHealth.Instance.MaxHP;
     }
 
 

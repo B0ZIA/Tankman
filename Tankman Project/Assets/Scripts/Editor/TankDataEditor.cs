@@ -87,18 +87,18 @@ public class TankDataEditor : Editor
 
         if(myTarget.tank == DostempneCzolgi.O_I)
         {
-            myTarget.otherTurrets = new AutomaticTurret.TowerType[]
+            myTarget.otherTurrets = new TowerType[]
             {
-                AutomaticTurret.TowerType.O_IButton,
-                AutomaticTurret.TowerType.O_ITopLeft,
-                AutomaticTurret.TowerType.O_ITopRight
+                TowerType.O_IButton,
+                TowerType.O_ITopLeft,
+                TowerType.O_ITopRight
             };
         }
         if (myTarget.tank == DostempneCzolgi.IS7)
         {
-            myTarget.otherTurrets = new AutomaticTurret.TowerType[]
+            myTarget.otherTurrets = new TowerType[]
             {
-                AutomaticTurret.TowerType.IS7OnHead
+                TowerType.IS7OnHead
             };
         }
     }

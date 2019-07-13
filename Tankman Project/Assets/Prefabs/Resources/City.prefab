@@ -6618,7 +6618,7 @@ GameObject:
   - component: {fileID: 4793487124454210}
   - component: {fileID: 114011090477020884}
   m_Layer: 0
-  m_Name: PIXELo
+  m_Name: City
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

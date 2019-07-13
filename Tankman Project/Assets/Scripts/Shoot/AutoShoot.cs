@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AutoShoot : Shoot, IAmRemoteShoot
 {
-    public AutomaticTurret.TowerType rodzajWiezy;
+    public TurretData turret;
     public ParticleSystem muzzleFlash;
     public GameOver tankStore;
 
@@ -15,32 +15,27 @@ public class AutoShoot : Shoot, IAmRemoteShoot
 
     public override int MaxAmmo
     {
-        get { return maxAmmo; }
-        set { return; }
+        get { return turret.maxAmmo; }
     }
 
     public override float ReloadTime
     {
-        get { return reloadTime; }
-        set { return; }
+        get { return turret.reloadTime; }
     }
 
     public override float ReloadMagazieTime
     {
-        get { return reloadMagazieTime; }
-        set { return; }
+        get { return turret.reloadMagazieTime; }
     }
 
     public override float Damage
     {
-        get { return damage; }
-        set { return; }
+        get { return turret.damage; }
     }
 
     public override float DamageLotery
     {
-        get { return damageLotery; }
-        set { return; }
+        get { return turret.damageLotery; }
     }
 
     void Start()
@@ -48,65 +43,12 @@ public class AutoShoot : Shoot, IAmRemoteShoot
         check = true;
         allow = true;
 
-        Set();
-    }
-
-    public void Set()
-    {
         Reset();
-
-        switch (rodzajWiezy)
-        {
-            case AutomaticTurret.TowerType.O_ITopLeft:
-                maxAmmo = 7;
-                reloadTime = 6;
-                reloadMagazieTime = 0.5f;
-                damage = 12f;
-                damageLotery = 0;
-                break;
-            case AutomaticTurret.TowerType.O_ITopRight:
-                maxAmmo = 5;
-                reloadTime = 5;
-                reloadMagazieTime = 0.75f;
-                damage = 20f;
-                damageLotery = 0;
-                break;
-            case AutomaticTurret.TowerType.O_IButton:
-                maxAmmo = 25;
-                reloadTime = 9f;
-                reloadMagazieTime = 0.3f;
-                damage = 5f;
-                damageLotery = 0;
-                break;
-            case AutomaticTurret.TowerType.IS7OnHead:
-                maxAmmo = 10;
-                reloadTime = 9;
-                reloadMagazieTime = 0.5f;
-                damage = 17f;
-                damageLotery = 0;
-                break;
-            case AutomaticTurret.TowerType.PZI:
-                maxAmmo = 8;
-                reloadTime = 4.5f;
-                reloadMagazieTime = 0.5f;
-                damage = 12f;
-                damageLotery = 0;
-                break;
-            case AutomaticTurret.TowerType.PZVI:
-                maxAmmo = 1;
-                reloadTime = 7;
-                reloadMagazieTime = 0.5f;
-                damage = 215f;
-                damageLotery = 0;
-                break;
-            default:
-                break;
-        }
     }
 
     public void Reset()
     {
-        tempMaxAmmo = maxAmmo;
+        tempMaxAmmo = MaxAmmo;
         StartCoroutine(CheckReload());
         timeToFire = 0;
         isReloadnig = false;

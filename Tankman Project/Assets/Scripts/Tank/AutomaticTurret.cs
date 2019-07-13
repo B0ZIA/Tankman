@@ -2,9 +2,12 @@
 
 public class AutomaticTurret : TrackingMechanism
 {
-    public TowerType rodzajWiezy;
-    public GameObject curretTarget;
-    public GameObject staticTarget;
+    [SerializeField]
+    private TurretData turret;
+    [SerializeField]
+    private GameObject curretTarget;
+    [SerializeField]
+    private GameObject staticTarget;
 
     [SerializeField]
     private float turnSpeed = 20;
@@ -17,7 +20,7 @@ public class AutomaticTurret : TrackingMechanism
     void Start ()
     {
         //Działko na IS7 jeśli nie widzi przeciwnika obraca się w tą samą stronę co główna wieża
-        if(rodzajWiezy == TowerType.IS7OnHead)
+        if(turret.towerType == TowerType.IS7OnHead)
 		    curretTarget = TankEvolution.Instance.BarrelEndPoint.gameObject;
         //(...) natomiast reszta działek w tę samą stronę co kadłub  
         else
@@ -26,7 +29,7 @@ public class AutomaticTurret : TrackingMechanism
 
     public void FixedUpdate()
     {
-        switch (rodzajWiezy)
+        switch (turret.towerType)
         {
             case TowerType.O_ITopLeft:
                 LimitedRotate(WhereToRotate.Forward);
@@ -89,22 +92,11 @@ public class AutomaticTurret : TrackingMechanism
     {
         if (coll.gameObject.tag == Tag.BOT || coll.gameObject.tag == Tag.REMOTEPLAYERBODY)
         {
-            if (rodzajWiezy == TowerType.IS7OnHead)
+            if (turret.towerType == TowerType.IS7OnHead)
                 curretTarget = TankEvolution.Instance.BarrelEndPoint;
             else
                 curretTarget = staticTarget;
         }
-    }
-
-
-    public enum TowerType
-    {
-        O_ITopLeft,
-        O_ITopRight,
-        O_IButton,
-        IS7OnHead,
-        PZI,
-        PZVI
     }
 
     public enum WhereToRotate

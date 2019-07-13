@@ -50,7 +50,7 @@ public class TankData : ScriptableObject
     public bool iHaveTurretCap = false;
     public bool turretCan360 = true;
     public string description;
-    public AutomaticTurret.TowerType[] otherTurrets;
+    public TowerType[] otherTurrets;
 
     public void SetDescriptionOnHUD()
     {

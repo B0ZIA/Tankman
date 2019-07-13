@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
+using System;
 
 /*
  * ###################################
@@ -37,8 +38,6 @@ public class GameManager : Photon.MonoBehaviour
     public const string GAME_VERSION = "2.7";  //You need change when you add new things for game
     public static string biomName;     //the name of the biomass that the server has drawn
 
-    //prefab names in resources //TODO: Zrobić enum
-    static string[] biomsPrefab = new string[] { "PIXEL", "PIXELo" };
     //how many bots
     static int howMuchTiger = 0;
     static int howMuchType = 0;
@@ -86,7 +85,7 @@ public class GameManager : Photon.MonoBehaviour
     public GameObject GetRandomGameObject(string gameObjectTag)
     {
         GameObject[] respawns = GameObject.FindGameObjectsWithTag("PlayerRespawn");
-        int i = Random.Range(0, respawns.Length);
+        int i = UnityEngine.Random.Range(0, respawns.Length);
         return respawns[i];
     }
 
@@ -110,50 +109,68 @@ public class GameManager : Photon.MonoBehaviour
     {
         if (PhotonNetwork.isMasterClient)
         {
-            int loteryBiom = Random.Range(0, biomsPrefab.Length);
-            loteryBiom = 0; //do testów
-            Instance.GetComponent<PhotonView>().RPC("UstawAktualnyBiomWszystkim", PhotonTargets.AllBuffered, biomsPrefab[loteryBiom]);
-            PhotonNetwork.Instantiate("Food_Spawner", new Vector3(0, 0, 0), Quaternion.identity, 0, null);
+            Map randomMap = (Map)UnityEngine.Random.Range(0, Enum.GetValues(typeof(Map)).Length);
+            Instance.GetComponent<PhotonView>().RPC("UstawAktualnyBiomWszystkim", PhotonTargets.AllBuffered, randomMap.ToString());
 
-            switch (biomsPrefab[loteryBiom])
+            SpawnItemSpawner();
+            switch (randomMap)
             {
-                case "PIXEL":
-                    howMuchTiger = 2;
-                    howMuchType = 2;
-                    howMuchT3476 = 4;
+                case Map.Village:
+                    SpawnT3476Bot(6);
+                    SpawnTypeBot(3);
+                    SpawnTigerBot(3);
                     break;
-                case "PIXELo":
-                    howMuchTiger = 3;
-                    howMuchType = 3;
-                    howMuchT3476 = 6;
+                //case Map.City:
+                //    SpawnT3476Bot(4);
+                //    SpawnTypeBot(2);
+                //    SpawnTigerBot(2);
+                //    break;
+                default:
+                    Debug.LogError("Map was not finded!");
                     break;
             }
-            PhotonNetwork.InstantiateSceneObject(biomsPrefab[loteryBiom], new Vector3(0, 0, 0), Quaternion.identity, 0, null);
-
-            for (int i = 0; i < howMuchTiger; i++)
-            {
-                GameObject tank = PhotonNetwork.InstantiateSceneObject("BOT_Tiger", new Vector3(0, 0, 0), Quaternion.identity, 0, null);
-                Instance.photonView.RPC("SetBotIDRPC", PhotonTargets.AllBuffered, tank.GetComponent<PhotonView>().viewID, Tiger_ID);
-                Tiger_ID++;
-            }
-            for (int i = 0; i < howMuchType; i++)
-            {
-                GameObject tank = PhotonNetwork.InstantiateSceneObject("BOT_Type_III_Chi-Ni", new Vector3(0, 0, 0), Quaternion.identity, 0, null);
-                Instance.photonView.RPC("SetBotIDRPC", PhotonTargets.AllBuffered, tank.GetComponent<PhotonView>().viewID, Type_ID);
-                Type_ID++;
-            }
-            for (int i = 0; i < howMuchT3476; i++)
-            {
-                GameObject tank = PhotonNetwork.InstantiateSceneObject("BOT_T3476", new Vector3(0, 0, 0), Quaternion.identity, 0, null);
-                Instance.photonView.RPC("SetBotIDRPC", PhotonTargets.AllBuffered, tank.GetComponent<PhotonView>().viewID, T3476_ID);
-                T3476_ID++;
-            }
+            SpawnMap(randomMap.ToString());
         }
     }
 
-    private void SpawnTigerBot()
+    public static void SpawnMap(String mapName)
     {
+        PhotonNetwork.InstantiateSceneObject(mapName, new Vector3(0, 0, 0), Quaternion.identity, 0, null);
+    }
 
+    public static void SpawnItemSpawner()
+    {
+        PhotonNetwork.Instantiate("Food_Spawner", new Vector3(0, 0, 0), Quaternion.identity, 0, null);
+    }
+
+    private static void SpawnT3476Bot(int howMuch)
+    {
+        for (int i = 0; i < howMuch; i++)
+        {
+            GameObject tank = PhotonNetwork.InstantiateSceneObject("BOT_T3476", new Vector3(0, 0, 0), Quaternion.identity, 0, null);
+            Instance.photonView.RPC("SetBotIDRPC", PhotonTargets.AllBuffered, tank.GetComponent<PhotonView>().viewID, T3476_ID);
+            T3476_ID++;
+        }
+    }
+
+    private static void SpawnTypeBot(int howMuch)
+    {
+        for (int i = 0; i < howMuch; i++)
+        {
+            GameObject tank = PhotonNetwork.InstantiateSceneObject("BOT_Type_III_Chi-Ni", new Vector3(0, 0, 0), Quaternion.identity, 0, null);
+            Instance.photonView.RPC("SetBotIDRPC", PhotonTargets.AllBuffered, tank.GetComponent<PhotonView>().viewID, Type_ID);
+            Type_ID++;
+        }
+    }
+
+    private static void SpawnTigerBot(int howMuch)
+    {
+        for (int i = 0; i < howMuch; i++)
+        {
+            GameObject tank = PhotonNetwork.InstantiateSceneObject("BOT_Tiger", new Vector3(0, 0, 0), Quaternion.identity, 0, null);
+            Instance.photonView.RPC("SetBotIDRPC", PhotonTargets.AllBuffered, tank.GetComponent<PhotonView>().viewID, Tiger_ID);
+            Tiger_ID++;
+        }
     }
 
     /// <summary>
@@ -213,14 +230,14 @@ public class GameManager : Photon.MonoBehaviour
     #region Mordowanie gracza (lub tyklo bicie ;)
 
     [PunRPC]
-    void OdbierzHpGraczowiRPC(PhotonPlayer ofiaraPP,float currentDamage, PhotonMessageInfo pmi)
+    void OdbierzHpGraczowiRPC(PhotonPlayer ofiaraPP, float currentDamage, PhotonMessageInfo pmi)
     {
         if (!PhotonNetwork.isMasterClient)
             return;
 
         float DAMAGE = TanksData.FindTankData(Player.FindPlayer(pmi.sender).tank).damage;
         float DAMAGELOTERY = TanksData.FindTankData(Player.FindPlayer(pmi.sender).tank).damageLotery;
-        float tempDamage = Mathf.Round(Random.Range(DAMAGE - DAMAGELOTERY, DAMAGE + DAMAGELOTERY));
+        float tempDamage = Mathf.Round(UnityEngine.Random.Range(DAMAGE - DAMAGELOTERY, DAMAGE + DAMAGELOTERY));
 
         if (Player.FindPlayer(pmi.sender).tank == DostempneCzolgi.O_I ||
             Player.FindPlayer(pmi.sender).tank == DostempneCzolgi.IS7)
@@ -297,7 +314,7 @@ public class GameManager : Photon.MonoBehaviour
                     Player.players[i].nation,
                     Player.players[i].gameObject.GetComponent<PlayerGO>().myPlayer.hp,
                     Player.players[i].gameObject.GetComponent<PlayerGO>().myPlayer.tank, 
-                    false); //true wysyłamy jeśli target ma gracza go na liście graczy
+                    false); //true wysyłamy jeśli target ma gracza na liście graczy
         }
     }
 
@@ -351,4 +368,10 @@ public class GameManager : Photon.MonoBehaviour
         newPlayerGO.GetComponent<TankEvolution>().SetStartTankHowNewPlayer(player.tank);
     }
     #endregion 
+
+    enum Map
+    {
+        Village//,
+        //City
+    }
 }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PoleRobocze : MonoBehaviour {
 
-    public Zapora zapora;
+    public AntiTankBarrier zapora;
     public Color normalnyKolor;
     public Color podkreslonyKolor;
     public GameObject DzwiekNiszczenia;

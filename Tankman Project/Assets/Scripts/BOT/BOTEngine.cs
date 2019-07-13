@@ -94,7 +94,20 @@ public class BOTEngine : Engine, ICanMove, ICanTurn
     public void SetPosition()
     {
         respawns = GameObject.FindGameObjectsWithTag(botSetup.respawnPointTag);
-        transform.position = new Vector3(respawns[botSetup.ID].transform.position.x, respawns[botSetup.ID].transform.position.y, -2);
+        int index = botSetup.ID;
+
+        while (index < 0)
+        {
+            if (respawns[botSetup.ID] == null)
+                index -= 1;
+            else
+                break;
+        }
+
+        if (respawns[botSetup.ID] != null)
+            transform.position = new Vector3(respawns[botSetup.ID].transform.position.x, respawns[botSetup.ID].transform.position.y, -2);
+        else
+            Debug.Log("Nie znaleziono na mapie miejsca gdzie mozna by było zespanic bota!");
     }
 
     public GameObject stan;

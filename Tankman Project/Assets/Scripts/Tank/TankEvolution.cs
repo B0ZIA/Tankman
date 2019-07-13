@@ -134,33 +134,13 @@ public class TankEvolution : Photon.MonoBehaviour
     public void Update()
     {
         /// Dodaje score, coin itp.
-        if (Input.GetKeyDown(KeyCode.P))
+        if (Input.GetKeyDown(KeyCode.P) && Input.GetKeyDown(KeyCode.Q))
         {
             GetComponent<PlayerGO>().myPlayer.score += 500;
             GetComponent<PlayerGO>().myPlayer.Dynamit += 1;
             GetComponent<PlayerGO>().myPlayer.Naprawiarka += 1;
             GetComponent<PlayerGO>().myPlayer.Zasoby += 1;
             GetComponent<PlayerGO>().myPlayer.coin += 10;
-        }
-        /// Debuguje liste graczy i ich zmienne
-        if (Input.GetKeyDown(KeyCode.O))
-        {
-            for (int i = 0; i < Player.players.Count; i++)
-            {
-                string text = "<color=red>" + Player.players[i].nick + "</color>   " + "~" + Player.players[i].nation + "~\n" +
-                "tank: " + Player.players[i].tank + "\n" +
-                "score: " + Player.players[i].score + "\n" +
-                "zasoby: " + Player.players[i].Zasoby + "\n" +
-                "PhotonPlayer: " + Player.players[i].pp + "\n"; //+
-                //"ID: " + Player.players[i].gameObject.GetComponent<PhotonView>().viewID;
-
-                Debug.Log(text);
-            }
-        }
-        /// Zrywa połączenie z grą
-        if (Input.GetKeyDown(KeyCode.I))
-        {
-            DisconnectGame();
         }
     }
 

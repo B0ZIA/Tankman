@@ -8,11 +8,11 @@ using UnityEngine.UI;
  * #            [#][#][ ]            #
  * ###################################
  */
-
+    
 /// <summary>
 /// Sctipt responsoible for shoot player. Don't turn off this script in PlayerSetup
 /// </summary>
-public class TankShoot : Shoot
+public class TankShoot : Shoot, IShoot
 {
     public static TankShoot Instance { get; private set; }
 
@@ -32,31 +32,26 @@ public class TankShoot : Shoot
     public override int MaxAmmo
     {
         get { return TankEvolution.Instance.Magazynek; }
-        set { return; }
     }
 
     public override float ReloadTime
     {
         get { return TankEvolution.Instance.Reload; }
-        set { return; }
     }
 
     public override float ReloadMagazieTime
     {
         get { return TankEvolution.Instance.ReloadBetweenMagazine; }
-        set { return; }
     }
 
     public override float Damage
     {
         get { return TankEvolution.Instance.Damage; }
-        set { return; }
     }
 
     public override float DamageLotery
     {
         get { return TankEvolution.Instance.DamageLotery; }
-        set { return; }
     }
 
     public void Awake()

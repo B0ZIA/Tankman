@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class WskaznikManager : Photon.MonoBehaviour {
 
-    public Zapora.RodzajZapory barrierType;
+    public AntiTankBarrier.RodzajZapory barrierType;
     public bool wolnoWstawiac;
     public GameObject zielonePole;
     public GameObject czerwonePole;
@@ -75,13 +75,13 @@ public class WskaznikManager : Photon.MonoBehaviour {
             string prefabName;
             switch (barrierType)
             {
-                case Zapora.RodzajZapory.Zasiek:
+                case AntiTankBarrier.RodzajZapory.Zasiek:
                     prefabName = "Map_Zasiek";
                     break;
-                case Zapora.RodzajZapory.ZebySmoka:
+                case AntiTankBarrier.RodzajZapory.ZebySmoka:
                     prefabName = "Map_ZębySmoka";
                     break;
-                case Zapora.RodzajZapory.StalowyX:
+                case AntiTankBarrier.RodzajZapory.StalowyX:
                     prefabName = "Map_StalowyX";
                     break;
                 default:

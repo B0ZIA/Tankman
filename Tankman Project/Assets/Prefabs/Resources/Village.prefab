@@ -500,7 +500,7 @@ GameObject:
   - component: {fileID: 4448027552597876}
   - component: {fileID: 114600609224906452}
   m_Layer: 0
-  m_Name: PIXEL
+  m_Name: Village
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

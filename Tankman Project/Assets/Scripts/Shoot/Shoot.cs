@@ -27,20 +27,20 @@ public abstract class Shoot : Photon.MonoBehaviour, IShoot
     public bool isReloadnig = false;
     public LayerMask whatToHit;
 
-    protected int maxAmmo;
-    public abstract int MaxAmmo { get; set; }
+    //protected int maxAmmo;
+    public virtual int MaxAmmo { get; }
 
-    protected float reloadTime;
-    public abstract float ReloadTime { get; set; }
+    //protected float reloadTime;
+    public virtual float ReloadTime { get; }
 
-    protected float reloadMagazieTime;
-    public abstract float ReloadMagazieTime { get; set; }
+    //protected float reloadMagazieTime;
+    public virtual float ReloadMagazieTime { get; }
 
-    protected float damage;
-    public abstract float Damage { get; set; }
+    //protected float damage;
+    public virtual float Damage { get; }
 
-    protected float damageLotery;
-    public abstract float DamageLotery { get; set; }
+    //protected float damageLotery;
+    public virtual float DamageLotery { get; }
     
 
 

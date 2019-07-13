@@ -6,8 +6,8 @@ using UnityEngine.UI;
 public class TriggerSth : MonoBehaviour
 {
     //Zawsze aktualne listy obiektów które są blisko gracza
-    public List<Zapora> tempObiektDoZniszczenia = new List<Zapora>();
-    public List<Zapora> tempObiektDoNaprawy = new List<Zapora>();
+    public List<AntiTankBarrier> tempObiektDoZniszczenia = new List<AntiTankBarrier>();
+    public List<AntiTankBarrier> tempObiektDoNaprawy = new List<AntiTankBarrier>();
 
     //(Nie)Pozwala włączyć pola edycji obiektów do wysadzenia/Naprawienia
     public bool ustawJakoDoZniszczenia = false;
@@ -80,12 +80,12 @@ public class TriggerSth : MonoBehaviour
             //(nie)aktywuje pola w pobliżu do wysadzenia
             if (ustawJakoDoZniszczenia)
             {
-                foreach (Zapora item in tempObiektDoZniszczenia)
+                foreach (AntiTankBarrier item in tempObiektDoZniszczenia)
                     item.poleDoNiszczenia.SetActive(true);
             }
             else
             {
-                foreach (Zapora item in tempObiektDoZniszczenia)
+                foreach (AntiTankBarrier item in tempObiektDoZniszczenia)
                     item.poleDoNiszczenia.SetActive(false);
             }
         }
@@ -95,12 +95,12 @@ public class TriggerSth : MonoBehaviour
             //(nie)aktywuje pola w pobliżu do naprawy
             if (ustawJakoDoNaprawy)
             {
-                foreach (Zapora item in tempObiektDoNaprawy)
+                foreach (AntiTankBarrier item in tempObiektDoNaprawy)
                     item.poleDoNaprawy.SetActive(true);
             }
             else
             {
-                foreach (Zapora item in tempObiektDoNaprawy)
+                foreach (AntiTankBarrier item in tempObiektDoNaprawy)
                     item.poleDoNaprawy.SetActive(false);
             }
         }
@@ -180,28 +180,28 @@ public class TriggerSth : MonoBehaviour
 
     public void SetBarrierInNearList(Collider2D collision)
     {
-        if (collision.GetComponent<Zapora>() == null)
+        if (collision.GetComponent<AntiTankBarrier>() == null)
             return;
         if (collision.tag == Tag.NAPRAWIONEZEBYSMOKA)
-            tempObiektDoZniszczenia.Add(collision.gameObject.GetComponent<Zapora>());
+            tempObiektDoZniszczenia.Add(collision.gameObject.GetComponent<AntiTankBarrier>());
         if (collision.tag == Tag.ZNISZCZONEZEBYSMOKA)
-            tempObiektDoNaprawy.Add(collision.gameObject.GetComponent<Zapora>());
+            tempObiektDoNaprawy.Add(collision.gameObject.GetComponent<AntiTankBarrier>());
     }
 
     public void SetBarrierOutNearList(Collider2D collision)
     {
-        if (collision.GetComponent<Zapora>() == null)
+        if (collision.GetComponent<AntiTankBarrier>() == null)
             return;
         if (collision.tag == Tag.NAPRAWIONEZEBYSMOKA)
-            tempObiektDoZniszczenia.Remove(collision.gameObject.GetComponent<Zapora>());
+            tempObiektDoZniszczenia.Remove(collision.gameObject.GetComponent<AntiTankBarrier>());
         if (collision.tag == Tag.ZNISZCZONEZEBYSMOKA)
-            tempObiektDoNaprawy.Remove(collision.gameObject.GetComponent<Zapora>());
+            tempObiektDoNaprawy.Remove(collision.gameObject.GetComponent<AntiTankBarrier>());
 
         //Wyłącza pola edycji
-        if (collision.gameObject.GetComponent<Zapora>().poleDoNaprawy != null)
-            collision.gameObject.GetComponent<Zapora>().poleDoNaprawy.SetActive(false);
-        if (collision.gameObject.GetComponent<Zapora>().poleDoNiszczenia != null)
-            collision.gameObject.GetComponent<Zapora>().poleDoNiszczenia.SetActive(false);
+        if (collision.gameObject.GetComponent<AntiTankBarrier>().poleDoNaprawy != null)
+            collision.gameObject.GetComponent<AntiTankBarrier>().poleDoNaprawy.SetActive(false);
+        if (collision.gameObject.GetComponent<AntiTankBarrier>().poleDoNiszczenia != null)
+            collision.gameObject.GetComponent<AntiTankBarrier>().poleDoNiszczenia.SetActive(false);
     }
 
     
@@ -257,7 +257,7 @@ public class TriggerSth : MonoBehaviour
             }
 
             wstawiaczZebowSmoka.GetComponent<SpriteRenderer>().sprite = mySprite;
-            WK.barrierType = (Zapora.RodzajZapory)RodzajZaporyIndex;
+            WK.barrierType = (AntiTankBarrier.RodzajZapory)RodzajZaporyIndex;
             Instantiate(wstawiaczZebowSmoka, transform.position, Quaternion.identity);
         }
         HUDManager.Instance.zasobyMenu.SetActive(false);

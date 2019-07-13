@@ -11,30 +11,24 @@ public class BotShoot : Shoot, IAmRemoteShoot
     [SerializeField]
     private BOTSetup botSetup;
 
-    public override int MaxAmmo { get { return botSetup.MyTank.maxAmmo; } set { } }
+    public override int MaxAmmo { get { return botSetup.MyTank.maxAmmo; }  }
 
-    public override float ReloadTime { get { return botSetup.MyTank.reload; } set { } }
+    public override float ReloadTime { get { return botSetup.MyTank.reload; }  }
 
-    public override float ReloadMagazieTime { get { return botSetup.MyTank.reloadBetweenMagazine; } set { } }
+    public override float ReloadMagazieTime { get { return botSetup.MyTank.reloadBetweenMagazine; }  }
 
-    public override float Damage { get { return botSetup.MyTank.damage; } set { } }
+    public override float Damage { get { return botSetup.MyTank.damage; }  }
 
-    public override float DamageLotery { get { return botSetup.MyTank.damageLotery; } set { } }
+    public override float DamageLotery { get { return botSetup.MyTank.damageLotery; }  }
 
     void Start()
     {
         Reset();
-
-        maxAmmo = MaxAmmo;
-        ReloadTime = ReloadTime;
-        ReloadMagazieTime = ReloadMagazieTime;
-        Damage = Damage;
-        DamageLotery = DamageLotery;
     }
 
     public void Reset()
     {
-        tempMaxAmmo = maxAmmo;
+        tempMaxAmmo = MaxAmmo;
         StartCoroutine(CheckReload());
         timeToFire = 0;
         isReloadnig = false;
@@ -103,15 +97,12 @@ public class BotShoot : Shoot, IAmRemoteShoot
 
     public override void CheckShooting()
     {
-        //Debug.Log("<color=red>1</color>");
         base.CheckShooting();
         if (!ICanShoot)
             return;
-        //Debug.Log("<color=yellow>2</color>");
 
         if (trafie && Time.time >= timeToFire)
         {
-            //Debug.Log("<color=blue>3</color>");
             trafie = false;
             timeToFire = Time.time + ReloadMagazieTime / 8;
             Shooting();
