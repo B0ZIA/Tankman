@@ -109,7 +109,7 @@ public class HUDManager : MonoBehaviour
             expMaxExpText.text = playerGO.myPlayer.score + "/∞";
         else
             expMaxExpText.text = playerGO.myPlayer.score + "/" + tempGranicaWbicjaLewla.ToString();
-        currentAmmoText.text = TankShoot.Instance.TempMaxAmmo.ToString();
+        currentAmmoText.text = TankShot.Instance.CurrentAmmo.ToString();
 
         coinText.text = "   Coin: <color=yellow>" + playerGO.myPlayer.coin.ToString() + "</color>";
         coinTextInShoop.text = coinText.text;
@@ -149,12 +149,12 @@ public class HUDManager : MonoBehaviour
 
     private float CalculateAmmo()
     {
-        return (float)TankShoot.Instance.TempMaxAmmo / (float)TankShoot.Instance.MaxAmmo;
+        return (float)TankShot.Instance.CurrentAmmo / (float)TankShot.Instance.MaxAmmo;
     }
 
     private float CalculateReloadTime()
     {
-        return ((TankShoot.Instance.realReloadTime * -1f) + TankShoot.Instance.ReloadTime) / TankShoot.Instance.ReloadTime;
+        return ((TankShot.Instance.realReloadTime * -1f) + TankShot.Instance.ReloadTime) / TankShot.Instance.ReloadTime;
     }
 
     private float CalculateTimeToRegeneration()

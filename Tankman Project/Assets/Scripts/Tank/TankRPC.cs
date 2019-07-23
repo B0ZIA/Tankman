@@ -21,7 +21,6 @@ public class TankRPC : Photon.MonoBehaviour
     public void ZebralemScore()
     {
         GetComponent<PhotonView>().RPC("ZebralemScoreRPC",playerGO.myPlayer.pp,50);
-        //GetComponent<PhotonView>().RPC("Zniszcz", PhotonTargets., null);
     }
 
     [PunRPC]

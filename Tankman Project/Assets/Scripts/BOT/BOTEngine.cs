@@ -266,7 +266,7 @@ public class BOTEngine : Engine, ICanMove, ICanTurn
         for (int i=0; i<botHead.Length; i++)
         {
             botHead[i].GetComponent<BOTTurret>().enabled = false;
-            botHead[i].GetComponent<BotShoot>().enabled = false;
+            botHead[i].GetComponent<BotShot>().enabled = false;
             botHead[i].GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
         }
         GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
@@ -282,7 +282,7 @@ public class BOTEngine : Engine, ICanMove, ICanTurn
         for (int i = 0; i < botHead.Length; i++)
         {
             botHead[i].GetComponent<BOTTurret>().enabled = true;
-            botHead[i].GetComponent<BotShoot>().enabled = true;
+            botHead[i].GetComponent<BotShot>().enabled = true;
             botHead[i].GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
         }
         SetPosition();

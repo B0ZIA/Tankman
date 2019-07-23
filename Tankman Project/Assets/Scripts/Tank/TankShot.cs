@@ -12,11 +12,11 @@ using UnityEngine.UI;
 /// <summary>
 /// Sctipt responsoible for shoot player. Don't turn off this script in PlayerSetup
 /// </summary>
-public class TankShoot : Shoot, IShoot
+public class TankShot : Shot, IShot
 {
-    public static TankShoot Instance { get; private set; }
+    public static TankShot Instance { get; private set; }
 
-    [Header("'TankShoot' Reference")]
+    [Header("'TankShot' Reference")]
     [Space]
     [SerializeField]
     protected GameOver playerGameOver;
@@ -39,7 +39,7 @@ public class TankShoot : Shoot, IShoot
         get { return TankEvolution.Instance.Reload; }
     }
 
-    public override float ReloadMagazieTime
+    public override float ReloadMagazineTime
     {
         get { return TankEvolution.Instance.ReloadBetweenMagazine; }
     }
@@ -49,7 +49,7 @@ public class TankShoot : Shoot, IShoot
         get { return TankEvolution.Instance.Damage; }
     }
 
-    public override float DamageLotery
+    public override float MaxDamageDisparity
     {
         get { return TankEvolution.Instance.DamageLotery; }
     }
@@ -66,7 +66,7 @@ public class TankShoot : Shoot, IShoot
 
     void Update ()
 	{
-        CheckShooting();
+        CheckShoot();
 	}
 
     public void SetShootingOpportunity(bool decision)
@@ -87,21 +87,21 @@ public class TankShoot : Shoot, IShoot
 
     public void ResetMagazine(int ammo)
     {
-        tempMaxAmmo = ammo;
+        currentAmmo = ammo;
     }
 
 
-    public override void Shooting()
+    public override void Shoot()
     {
         muzzleFlash.Play();
         //~~~~
-        base.Shooting();
+        base.Shoot();
         //~~~~
         RaycastHit2D hit = MakeRaycastHit2D();
 
         if (hit.collider != null)
         {
-            float tempDamage = Mathf.Round(Random.Range(Damage - DamageLotery, Damage + DamageLotery));
+            float tempDamage = Mathf.Round(Random.Range(Damage - MaxDamageDisparity, Damage + MaxDamageDisparity));
 
             HitPlayerHowPlayer(hit, tempDamage);
 
@@ -109,7 +109,7 @@ public class TankShoot : Shoot, IShoot
         }
     }
 
-    public override void CheckShooting()
+    public override void CheckShoot()
     {
         if (realReloadTime <= 0f)
         {
@@ -124,19 +124,19 @@ public class TankShoot : Shoot, IShoot
         }
 
         //~~~~
-        base.CheckShooting();
+        base.CheckShoot();
         if (!ICanShoot)
             return;
         //~~~~
 
         if (Input.GetButton("Fire1") && Time.time >= timeToFire)
         {
-            timeToFire = Time.time + ReloadMagazieTime / 8;
+            timeToFire = Time.time + ReloadMagazineTime / 8;
 
             if (!shoot)
                 return;
 
-            Shooting();
+            Shoot();
         }
     }
 

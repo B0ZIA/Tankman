@@ -22,9 +22,9 @@ GameObject:
   - component: {fileID: 114358312173968070}
   - component: {fileID: 212500984321847830}
   - component: {fileID: 61793474828043144}
-  - component: {fileID: 114940173134955458}
+  - component: {fileID: 114056152180977972}
   m_Layer: 8
-  m_Name: Map_Plot
+  m_Name: Barrier_Fence
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -37,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1136613940085880}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 24.398, y: -29.155, z: 0}
+  m_LocalPosition: {x: 14.092002, y: -3.301055, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -68,6 +68,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.1, y: 1.16}
   m_EdgeRadius: 0
+--- !u!114 &114056152180977972
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1136613940085880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 635d22984a1b0384e900357484592b16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  repairedTexture: {fileID: 21300000, guid: 2431a95ee9a06324d9a87b113ab662cd, type: 3}
+  destroyedTexture: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
+  destroyed: 0
 --- !u!114 &114358312173968070
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -94,28 +108,6 @@ MonoBehaviour:
   instantiationId: -1
   currentMasterID: -1
   isRuntimeInstantiated: 0
---- !u!114 &114940173134955458
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1136613940085880}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 0}
-  poleDoNaprawy: {fileID: 0}
-  jestemZniszczony: 0
 --- !u!212 &212500984321847830
 SpriteRenderer:
   m_ObjectHideFlags: 1

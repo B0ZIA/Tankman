@@ -23,11 +23,14 @@ public class TriggerSth : MonoBehaviour
     private bool przelacznikDlaNaprawiarka = true;
     private bool przelacznikDlaDynamit = true;
     private bool przelacznikDlaZasoby = true;
-    private bool przelacznikDlaZebySmoka = true;
+    private bool przelacznikDlaZapory = true;
 
     bool wykonajSieRaz2 = true;
     bool wykonajSieRaz = true;
-    public GameObject wstawiaczZebowSmoka;
+    public GameObject prefBarbedWireBuilder;
+    public GameObject prefDragonTeethBuilder;
+    public GameObject prefHedgehogBuilder;
+
 
     public Sprite zasiek;
     public Sprite zebySmoka;
@@ -66,10 +69,10 @@ public class TriggerSth : MonoBehaviour
             HUDManager.Instance.zasoby.GetComponent<Button>().interactable = true;
 
 
-        if (TankShoot.Instance.GetComponent<PlayerGO>().myPlayer.Naprawiarka <= 0)
+        if (TankShot.Instance.GetComponent<PlayerGO>().myPlayer.Naprawiarka <= 0)
             ustawJakoDoNaprawy = false;          //Niepozwala włączyć pola edycji obiektów do naprawy
 
-        if (TankShoot.Instance.GetComponent<PlayerGO>().myPlayer.Dynamit <= 0)
+        if (TankShot.Instance.GetComponent<PlayerGO>().myPlayer.Dynamit <= 0)
             ustawJakoDoZniszczenia = false;     //Niepozwala włączyć pola edycji obiektów do wysadzenia
     }
 
@@ -81,12 +84,12 @@ public class TriggerSth : MonoBehaviour
             if (ustawJakoDoZniszczenia)
             {
                 foreach (AntiTankBarrier item in tempObiektDoZniszczenia)
-                    item.poleDoNiszczenia.SetActive(true);
+                    item.fieldForDestroy.SetActive(true);
             }
             else
             {
                 foreach (AntiTankBarrier item in tempObiektDoZniszczenia)
-                    item.poleDoNiszczenia.SetActive(false);
+                    item.fieldForDestroy.SetActive(false);
             }
         }
 
@@ -96,12 +99,12 @@ public class TriggerSth : MonoBehaviour
             if (ustawJakoDoNaprawy)
             {
                 foreach (AntiTankBarrier item in tempObiektDoNaprawy)
-                    item.poleDoNaprawy.SetActive(true);
+                    item.fieldForRepair.SetActive(true);
             }
             else
             {
                 foreach (AntiTankBarrier item in tempObiektDoNaprawy)
-                    item.poleDoNaprawy.SetActive(false);
+                    item.fieldForRepair.SetActive(false);
             }
         }
     }
@@ -182,9 +185,9 @@ public class TriggerSth : MonoBehaviour
     {
         if (collision.GetComponent<AntiTankBarrier>() == null)
             return;
-        if (collision.tag == Tag.NAPRAWIONEZEBYSMOKA)
+        if (collision.tag == Tag.REPAIRED_BARRIER)
             tempObiektDoZniszczenia.Add(collision.gameObject.GetComponent<AntiTankBarrier>());
-        if (collision.tag == Tag.ZNISZCZONEZEBYSMOKA)
+        if (collision.tag == Tag.DESTROYED_BARRIER)
             tempObiektDoNaprawy.Add(collision.gameObject.GetComponent<AntiTankBarrier>());
     }
 
@@ -192,16 +195,16 @@ public class TriggerSth : MonoBehaviour
     {
         if (collision.GetComponent<AntiTankBarrier>() == null)
             return;
-        if (collision.tag == Tag.NAPRAWIONEZEBYSMOKA)
+        if (collision.tag == Tag.REPAIRED_BARRIER)
             tempObiektDoZniszczenia.Remove(collision.gameObject.GetComponent<AntiTankBarrier>());
-        if (collision.tag == Tag.ZNISZCZONEZEBYSMOKA)
+        if (collision.tag == Tag.DESTROYED_BARRIER)
             tempObiektDoNaprawy.Remove(collision.gameObject.GetComponent<AntiTankBarrier>());
 
         //Wyłącza pola edycji
-        if (collision.gameObject.GetComponent<AntiTankBarrier>().poleDoNaprawy != null)
-            collision.gameObject.GetComponent<AntiTankBarrier>().poleDoNaprawy.SetActive(false);
-        if (collision.gameObject.GetComponent<AntiTankBarrier>().poleDoNiszczenia != null)
-            collision.gameObject.GetComponent<AntiTankBarrier>().poleDoNiszczenia.SetActive(false);
+        if (collision.gameObject.GetComponent<AntiTankBarrier>().fieldForRepair != null)
+            collision.gameObject.GetComponent<AntiTankBarrier>().fieldForRepair.SetActive(false);
+        if (collision.gameObject.GetComponent<AntiTankBarrier>().fieldForDestroy != null)
+            collision.gameObject.GetComponent<AntiTankBarrier>().fieldForDestroy.SetActive(false);
     }
 
     
@@ -227,39 +230,24 @@ public class TriggerSth : MonoBehaviour
     }
 
     //Wykonuje się kedy kliknisz na ikonkę ZebówSmoka w zasobyMenu. Aktywuje/Dezaktywuje wstawianie Zębów Smoka
-    public void ZebySmokaPrzycisk(int RodzajZaporyIndex)
+    public void BuildDarbedWire()
     {
-        if (przelacznikDlaZebySmoka)
-        {
-            Sprite mySprite;
-            WskaznikManager WK = wstawiaczZebowSmoka.GetComponent<WskaznikManager>();
-            switch (RodzajZaporyIndex)
-            {
-                case 0:
-                    mySprite = zasiek;
-                    WK.gameObject.GetComponent<BoxCollider2D>().size = new Vector2(0.3f, 1.2f);
-                    WK.zielonePole.transform.localScale = new Vector3(0.5f, 1.3f, 1f);
-                    WK.czerwonePole.transform.localScale = new Vector3(0.5f, 1.3f, 1f);
-                    break;
-                case 1:
-                    mySprite = zebySmoka;
-                    WK.gameObject.GetComponent<BoxCollider2D>().size = new Vector2(0.5f, 0.5f);
-                    WK.zielonePole.transform.localScale = new Vector3(0.5f, 0.5f, 1f);
-                    WK.czerwonePole.transform.localScale = new Vector3(0.5f, 0.5f, 1f);
-                    break;
-                case 2:
-                    mySprite = stalowyX;
-                    WK.gameObject.GetComponent<BoxCollider2D>().size = new Vector2(0.5f, 0.5f);
-                    WK.zielonePole.transform.localScale = new Vector3(0.5f, 0.5f, 1f);
-                    WK.czerwonePole.transform.localScale = new Vector3(0.5f, 0.5f, 1f);
-                    break;
-                default: mySprite = zebySmoka; break;
-            }
+        if (przelacznikDlaZapory)
+            Instantiate(prefBarbedWireBuilder, transform.position, Quaternion.identity);
+        HUDManager.Instance.zasobyMenu.SetActive(false);
+    }
 
-            wstawiaczZebowSmoka.GetComponent<SpriteRenderer>().sprite = mySprite;
-            WK.barrierType = (AntiTankBarrier.RodzajZapory)RodzajZaporyIndex;
-            Instantiate(wstawiaczZebowSmoka, transform.position, Quaternion.identity);
-        }
+    public void BuildDragonTeeth()
+    {
+        if (przelacznikDlaZapory)
+            Instantiate(prefDragonTeethBuilder, transform.position, Quaternion.identity);
+        HUDManager.Instance.zasobyMenu.SetActive(false);
+    }
+
+    public void BuildHedgehog()
+    {
+        if (przelacznikDlaZapory)
+            Instantiate(prefHedgehogBuilder, transform.position, Quaternion.identity);
         HUDManager.Instance.zasobyMenu.SetActive(false);
     }
 
@@ -267,34 +255,28 @@ public class TriggerSth : MonoBehaviour
     void AktywujNaprawianie()
     {
         Cursor.SetCursor(cursorTextureNaprawka, hotSpot, cursorMode);//Ustawia ikonę kursora
-        GameManager.LocalPlayer.gameObject.GetComponent<TankShoot>().SetShootingOpportunity(false);
-        //hudManager.tankShoot.techTree.nieStrzelajGraczu = true;    //Wyłącza strzelanie podczas Naprawiania
+        GameManager.LocalPlayer.gameObject.GetComponent<TankShot>().SetShootingOpportunity(false);
         ustawJakoDoNaprawy = true;           //Pozwala włączyć pola edycji obiektów do naprawy
     }
 
     public void DezaktywujNaprawianie()
     {
         Cursor.SetCursor(null, Vector2.zero, cursorMode);      //Ustawia ikonę kursora
-        //hudManager.tankShoot.ZaChwilePozwoleStrzelac();
-        GameManager.LocalPlayer.gameObject.GetComponent<TankShoot>().SetShootingOpportunity(true);
-        //hudManager.tankShoot.techTree.nieStrzelajGraczu = false;//Zpowrotem pozwala na strzelanie
+        GameManager.LocalPlayer.gameObject.GetComponent<TankShot>().SetShootingOpportunity(true);
         ustawJakoDoNaprawy = false;          //Niepozwala włączyć pola edycji obiektów do naprawy
     }
 
     void AktywujWysadzanie()
     {
         Cursor.SetCursor(cursorTextureDynamit, hotSpot, cursorMode);//Ustawia ikonę kursora
-        GameManager.LocalPlayer.gameObject.GetComponent<TankShoot>().SetShootingOpportunity(false);
-        //hudManager.tankShoot.techTree.nieStrzelajGraczu = true;    //Wyłącza strzelanie podczas Naprawiania
+        GameManager.LocalPlayer.gameObject.GetComponent<TankShot>().SetShootingOpportunity(false);
         ustawJakoDoZniszczenia = true;       //Pozwala włączyć pola edycji obiektów do wysadzenia
     }
 
     public void DezaktywujWysadzanie()
     {
         Cursor.SetCursor(null, Vector2.zero, cursorMode);   //Ustawia ikonę kursora
-        //hudManager.tankShoot.ZaChwilePozwoleStrzelac();
-        GameManager.LocalPlayer.gameObject.GetComponent<TankShoot>().SetShootingOpportunity(true);
-        //hudManager.tankShoot.techTree.nieStrzelajGraczu = false;//Zpowrotem pozwala na strzelanie
+        GameManager.LocalPlayer.gameObject.GetComponent<TankShot>().SetShootingOpportunity(true);
         ustawJakoDoZniszczenia = false;     //Niepozwala włączyć pola edycji obiektów do wysadzenia
     }
 }

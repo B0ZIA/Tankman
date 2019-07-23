@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class BotShoot : Shoot, IAmRemoteShoot
+public class BotShot : Shot, IAmRemoteShoot
 {
     //Z interfejsu
     public bool check { get; set; }
@@ -15,11 +15,11 @@ public class BotShoot : Shoot, IAmRemoteShoot
 
     public override float ReloadTime { get { return botSetup.MyTank.reload; }  }
 
-    public override float ReloadMagazieTime { get { return botSetup.MyTank.reloadBetweenMagazine; }  }
+    public override float ReloadMagazineTime { get { return botSetup.MyTank.reloadBetweenMagazine; }  }
 
     public override float Damage { get { return botSetup.MyTank.damage; }  }
 
-    public override float DamageLotery { get { return botSetup.MyTank.damageLotery; }  }
+    public override float MaxDamageDisparity { get { return botSetup.MyTank.damageLotery; }  }
 
     void Start()
     {
@@ -28,7 +28,7 @@ public class BotShoot : Shoot, IAmRemoteShoot
 
     public void Reset()
     {
-        tempMaxAmmo = MaxAmmo;
+        currentAmmo = MaxAmmo;
         StartCoroutine(CheckReload());
         timeToFire = 0;
         isReloadnig = false;
@@ -39,20 +39,20 @@ public class BotShoot : Shoot, IAmRemoteShoot
 
     void Update()
     {
-        CheckShooting();
+        CheckShoot();
     }
 
-    public override void Shooting()
+    public override void Shoot()
     {
         allow = false;
 
-        base.Shooting();
+        base.Shoot();
 
         RaycastHit2D hit = MakeRaycastHit2D();
 
         if (hit.collider != null)
         {
-            float tempDamage = Mathf.Round(Random.Range(Damage - DamageLotery, Damage + DamageLotery));
+            float tempDamage = Mathf.Round(Random.Range(Damage - MaxDamageDisparity, Damage + MaxDamageDisparity));
 
             HitPlayerHowBot(hit, tempDamage);
 
@@ -95,17 +95,17 @@ public class BotShoot : Shoot, IAmRemoteShoot
         }
     }
 
-    public override void CheckShooting()
+    public override void CheckShoot()
     {
-        base.CheckShooting();
+        base.CheckShoot();
         if (!ICanShoot)
             return;
 
         if (trafie && Time.time >= timeToFire)
         {
             trafie = false;
-            timeToFire = Time.time + ReloadMagazieTime / 8;
-            Shooting();
+            timeToFire = Time.time + ReloadMagazineTime / 8;
+            Shoot();
         }
     }
 }

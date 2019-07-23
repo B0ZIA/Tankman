@@ -99,4 +99,6 @@ MonoBehaviour:
   - InitPlayer
   - SetPlayerRPC
   - SetPlayersListRPC
+  - DestroyBarrierRPC
+  - RepairBarrierRPC
   DisableAutoOpenWizard: 1

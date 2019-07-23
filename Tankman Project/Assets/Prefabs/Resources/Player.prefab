@@ -258,7 +258,7 @@ GameObject:
   - component: {fileID: 222644609670027500}
   - component: {fileID: 114610409131624298}
   m_Layer: 0
-  m_Name: "Wie\u017Ca (1)"
+  m_Name: "Wie\u017Ca"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1859,7 +1859,7 @@ GameObject:
   - component: {fileID: 222902549267655804}
   - component: {fileID: 114747735968705528}
   m_Layer: 0
-  m_Name: "Wie\u017Ca (3)"
+  m_Name: "Wie\u017Ca"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7283,7 +7283,7 @@ GameObject:
   - component: {fileID: 222682394163763284}
   - component: {fileID: 114580435949386264}
   m_Layer: 0
-  m_Name: "Wie\u017Ca (2)"
+  m_Name: "Wie\u017Ca"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8028,7 +8028,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1166972336701026}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 265.61053, y: 486.94473, z: 317.71857}
+  m_LocalPosition: {x: 296.6903, y: 208.54549, z: 317.71857}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4550386421071972}
@@ -11859,13 +11859,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonState: 0
-  toHide: []
-  toPropose: []
-  toBlock: []
-  toSave: []
-  hidePanel: {fileID: 0}
-  proposePanel: {fileID: 0}
-  blockPanel: {fileID: 0}
+  toHide:
+  - {fileID: 114386301380722808}
+  toPropose:
+  - {fileID: 114365503186249944}
+  toBlock:
+  - {fileID: 114524730328483556}
+  - {fileID: 114642067859549874}
+  toSave:
+  - {fileID: 114790309813884192}
+  - {fileID: 114117982178307896}
+  hidePanel: {fileID: 1838565738801628}
+  proposePanel: {fileID: 1437318975233586}
+  blockPanel: {fileID: 1786698875368778}
   myButton: {fileID: 114608987298067724}
 --- !u!114 &114118141937992774
 MonoBehaviour:
@@ -14701,7 +14707,7 @@ MonoBehaviour:
   whatToHit:
     serializedVersion: 2
     m_Bits: 6656
-  playerGameOver: {fileID: 0}
+  playerGameOver: {fileID: 114154491682395056}
   muzzleFlash: {fileID: 198872179401949100}
   techTree: {fileID: 114099976258188862}
   reloadText: {fileID: 114287529401464294}
@@ -14736,13 +14742,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonState: 0
-  toHide: []
-  toPropose: []
-  toBlock: []
-  toSave: []
-  hidePanel: {fileID: 0}
-  proposePanel: {fileID: 0}
-  blockPanel: {fileID: 0}
+  toHide:
+  - {fileID: 114916865752466116}
+  - {fileID: 114464363777116894}
+  toPropose:
+  - {fileID: 114698288177125064}
+  toBlock:
+  - {fileID: 114497464403647352}
+  - {fileID: 114566124504754232}
+  - {fileID: 114641690548044466}
+  - {fileID: 114440569500610820}
+  - {fileID: 114752398217072756}
+  toSave:
+  - {fileID: 114816139374130852}
+  - {fileID: 114328909383751576}
+  hidePanel: {fileID: 1609162060601582}
+  proposePanel: {fileID: 1253337305339318}
+  blockPanel: {fileID: 1490597715723352}
   myButton: {fileID: 114468109507516604}
 --- !u!114 &114329564165971556
 MonoBehaviour:
@@ -15269,7 +15285,11 @@ MonoBehaviour:
     type: 3}
   cursorMode: 1
   hotSpot: {x: 10, y: 10}
-  wstawiaczZebowSmoka: {fileID: 1392073114557476, guid: c70cc4c464bb0464a98fb7a42c90ee87,
+  prefBarbedWireBuilder: {fileID: 1392073114557476, guid: c70cc4c464bb0464a98fb7a42c90ee87,
+    type: 2}
+  prefDragonTeethBuilder: {fileID: 1670114222566254, guid: 61a7c4546e6b0054182f99bbbe5b5794,
+    type: 2}
+  prefHedgehogBuilder: {fileID: 1186517149135336, guid: 97119e487a2732949a0fe3177e668270,
     type: 2}
   zasiek: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
   zebySmoka: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
@@ -15416,12 +15436,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonState: 0
   toHide: []
-  toPropose: []
-  toBlock: []
-  toSave: []
-  hidePanel: {fileID: 0}
-  proposePanel: {fileID: 0}
-  blockPanel: {fileID: 0}
+  toPropose:
+  - {fileID: 114386301380722808}
+  toBlock:
+  - {fileID: 114524730328483556}
+  - {fileID: 114642067859549874}
+  toSave:
+  - {fileID: 114790309813884192}
+  - {fileID: 114117982178307896}
+  - {fileID: 114365503186249944}
+  hidePanel: {fileID: 1808368622187814}
+  proposePanel: {fileID: 1017980125580784}
+  blockPanel: {fileID: 1478144064243500}
   myButton: {fileID: 114492760585418380}
 --- !u!114 &114365602197860344
 MonoBehaviour:
@@ -15893,10 +15919,11 @@ MonoBehaviour:
   toHide: []
   toPropose: []
   toBlock: []
-  toSave: []
-  hidePanel: {fileID: 0}
-  proposePanel: {fileID: 0}
-  blockPanel: {fileID: 0}
+  toSave:
+  - {fileID: 114386301380722808}
+  hidePanel: {fileID: 1229392652715168}
+  proposePanel: {fileID: 1632953680315060}
+  blockPanel: {fileID: 1439126431680118}
   myButton: {fileID: 114429150295686128}
 --- !u!114 &114388674199083582
 MonoBehaviour:
@@ -16784,12 +16811,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonState: 0
   toHide: []
-  toPropose: []
-  toBlock: []
-  toSave: []
-  hidePanel: {fileID: 0}
-  proposePanel: {fileID: 0}
-  blockPanel: {fileID: 0}
+  toPropose:
+  - {fileID: 114752398217072756}
+  toBlock:
+  - {fileID: 114328909383751576}
+  - {fileID: 114698288177125064}
+  - {fileID: 114916865752466116}
+  - {fileID: 114464363777116894}
+  - {fileID: 114497464403647352}
+  - {fileID: 114641690548044466}
+  toSave:
+  - {fileID: 114816139374130852}
+  - {fileID: 114566124504754232}
+  - {fileID: 114440569500610820}
+  hidePanel: {fileID: 1666060577680520}
+  proposePanel: {fileID: 1138227145074712}
+  blockPanel: {fileID: 1310340987270042}
   myButton: {fileID: 114614028250404728}
 --- !u!114 &114445207950069594
 MonoBehaviour:
@@ -17026,11 +17063,21 @@ MonoBehaviour:
   buttonState: 0
   toHide: []
   toPropose: []
-  toBlock: []
-  toSave: []
-  hidePanel: {fileID: 0}
-  proposePanel: {fileID: 0}
-  blockPanel: {fileID: 0}
+  toBlock:
+  - {fileID: 114916865752466116}
+  - {fileID: 114497464403647352}
+  - {fileID: 114641690548044466}
+  - {fileID: 114752398217072756}
+  - {fileID: 114566124504754232}
+  - {fileID: 114440569500610820}
+  toSave:
+  - {fileID: 114816139374130852}
+  - {fileID: 114328909383751576}
+  - {fileID: 114698288177125064}
+  - {fileID: 114464363777116894}
+  hidePanel: {fileID: 1647359193534930}
+  proposePanel: {fileID: 1426368743344030}
+  blockPanel: {fileID: 1485157062517600}
   myButton: {fileID: 114365602197860344}
 --- !u!114 &114468109507516604
 MonoBehaviour:
@@ -17560,13 +17607,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonState: 0
-  toHide: []
-  toPropose: []
-  toBlock: []
-  toSave: []
-  hidePanel: {fileID: 0}
-  proposePanel: {fileID: 0}
-  blockPanel: {fileID: 0}
+  toHide:
+  - {fileID: 114752398217072756}
+  toPropose:
+  - {fileID: 114641690548044466}
+  toBlock:
+  - {fileID: 114328909383751576}
+  - {fileID: 114698288177125064}
+  - {fileID: 114916865752466116}
+  - {fileID: 114464363777116894}
+  - {fileID: 114566124504754232}
+  - {fileID: 114440569500610820}
+  toSave:
+  - {fileID: 114816139374130852}
+  - {fileID: 114497464403647352}
+  hidePanel: {fileID: 1375737142119038}
+  proposePanel: {fileID: 1615061913881340}
+  blockPanel: {fileID: 1095006128253164}
   myButton: {fileID: 114267295569173456}
 --- !u!114 &114498095121264618
 MonoBehaviour:
@@ -18152,13 +18209,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonState: 0
-  toHide: []
-  toPropose: []
-  toBlock: []
-  toSave: []
-  hidePanel: {fileID: 0}
-  proposePanel: {fileID: 0}
-  blockPanel: {fileID: 0}
+  toHide:
+  - {fileID: 114386301380722808}
+  toPropose:
+  - {fileID: 114642067859549874}
+  toBlock:
+  - {fileID: 114117982178307896}
+  - {fileID: 114365503186249944}
+  toSave:
+  - {fileID: 114790309813884192}
+  - {fileID: 114524730328483556}
+  hidePanel: {fileID: 1963854598195368}
+  proposePanel: {fileID: 1812214733505424}
+  blockPanel: {fileID: 1998952210501040}
   myButton: {fileID: 114445207950069594}
 --- !u!114 &114527557218651216
 MonoBehaviour:
@@ -18587,13 +18650,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonState: 0
-  toHide: []
-  toPropose: []
-  toBlock: []
-  toSave: []
-  hidePanel: {fileID: 0}
-  proposePanel: {fileID: 0}
-  blockPanel: {fileID: 0}
+  toHide:
+  - {fileID: 114752398217072756}
+  toPropose:
+  - {fileID: 114440569500610820}
+  toBlock:
+  - {fileID: 114328909383751576}
+  - {fileID: 114698288177125064}
+  - {fileID: 114916865752466116}
+  - {fileID: 114464363777116894}
+  - {fileID: 114497464403647352}
+  - {fileID: 114641690548044466}
+  toSave:
+  - {fileID: 114816139374130852}
+  - {fileID: 114566124504754232}
+  hidePanel: {fileID: 1397995415893708}
+  proposePanel: {fileID: 1059548819450004}
+  blockPanel: {fileID: 1065597374833748}
   myButton: {fileID: 114147464121676872}
 --- !u!114 &114567465716439638
 MonoBehaviour:
@@ -19960,12 +20033,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonState: 0
   toHide: []
-  toPropose: []
-  toBlock: []
-  toSave: []
-  hidePanel: {fileID: 0}
-  proposePanel: {fileID: 0}
-  blockPanel: {fileID: 0}
+  toPropose:
+  - {fileID: 114752398217072756}
+  toBlock:
+  - {fileID: 114328909383751576}
+  - {fileID: 114698288177125064}
+  - {fileID: 114916865752466116}
+  - {fileID: 114464363777116894}
+  - {fileID: 114566124504754232}
+  - {fileID: 114440569500610820}
+  toSave:
+  - {fileID: 114816139374130852}
+  - {fileID: 114497464403647352}
+  - {fileID: 114641690548044466}
+  hidePanel: {fileID: 1595503359938936}
+  proposePanel: {fileID: 1176720003030838}
+  blockPanel: {fileID: 1653278053908348}
   myButton: {fileID: 114943489271112164}
 --- !u!114 &114641952135123476
 MonoBehaviour:
@@ -20007,12 +20090,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonState: 0
   toHide: []
-  toPropose: []
-  toBlock: []
-  toSave: []
-  hidePanel: {fileID: 0}
-  proposePanel: {fileID: 0}
-  blockPanel: {fileID: 0}
+  toPropose:
+  - {fileID: 114386301380722808}
+  toBlock:
+  - {fileID: 114117982178307896}
+  - {fileID: 114365503186249944}
+  toSave:
+  - {fileID: 114790309813884192}
+  - {fileID: 114524730328483556}
+  - {fileID: 114642067859549874}
+  hidePanel: {fileID: 1712437451930232}
+  proposePanel: {fileID: 1460290711027174}
+  blockPanel: {fileID: 1192390416902876}
   myButton: {fileID: 114809544632978782}
 --- !u!114 &114642185466813740
 MonoBehaviour:
@@ -20773,8 +20862,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114358902698238452}
-        m_MethodName: ZebySmokaPrzycisk
-        m_Mode: 3
+        m_MethodName: BuildHedgehog
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -21027,12 +21116,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonState: 0
   toHide: []
-  toPropose: []
-  toBlock: []
-  toSave: []
-  hidePanel: {fileID: 0}
-  proposePanel: {fileID: 0}
-  blockPanel: {fileID: 0}
+  toPropose:
+  - {fileID: 114916865752466116}
+  - {fileID: 114464363777116894}
+  toBlock:
+  - {fileID: 114497464403647352}
+  - {fileID: 114566124504754232}
+  - {fileID: 114641690548044466}
+  - {fileID: 114440569500610820}
+  - {fileID: 114752398217072756}
+  toSave:
+  - {fileID: 114816139374130852}
+  - {fileID: 114328909383751576}
+  - {fileID: 114698288177125064}
+  hidePanel: {fileID: 1606425450336122}
+  proposePanel: {fileID: 1134871213750578}
+  blockPanel: {fileID: 1461818151268850}
   myButton: {fileID: 114107689646128278}
 --- !u!114 &114700307035525364
 MonoBehaviour:
@@ -21730,11 +21829,17 @@ MonoBehaviour:
   buttonState: 0
   toHide: []
   toPropose: []
-  toBlock: []
-  toSave: []
-  hidePanel: {fileID: 0}
-  proposePanel: {fileID: 0}
-  blockPanel: {fileID: 0}
+  toBlock:
+  - {fileID: 114328909383751576}
+  - {fileID: 114698288177125064}
+  - {fileID: 114916865752466116}
+  - {fileID: 114464363777116894}
+  toSave:
+  - {fileID: 114752398217072756}
+  - {fileID: 114816139374130852}
+  hidePanel: {fileID: 1676152580852754}
+  proposePanel: {fileID: 1242546335086024}
+  blockPanel: {fileID: 1961861627555556}
   myButton: {fileID: 114343334879191640}
 --- !u!114 &114756572218251816
 MonoBehaviour:
@@ -22276,8 +22381,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114358902698238452}
-        m_MethodName: ZebySmokaPrzycisk
-        m_Mode: 3
+        m_MethodName: BuildDarbedWire
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -22349,13 +22454,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonState: 0
-  toHide: []
-  toPropose: []
+  toHide:
+  - {fileID: 114642067859549874}
+  - {fileID: 114365503186249944}
+  - {fileID: 114386301380722808}
+  toPropose:
+  - {fileID: 114524730328483556}
+  - {fileID: 114117982178307896}
   toBlock: []
-  toSave: []
-  hidePanel: {fileID: 0}
-  proposePanel: {fileID: 0}
-  blockPanel: {fileID: 0}
+  toSave:
+  - {fileID: 114790309813884192}
+  hidePanel: {fileID: 1414443684965532}
+  proposePanel: {fileID: 1966384414490192}
+  blockPanel: {fileID: 1806694828734382}
   myButton: {fileID: 114623361774852988}
 --- !u!114 &114790422966377794
 MonoBehaviour:
@@ -22777,13 +22888,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonState: 0
-  toHide: []
-  toPropose: []
+  toHide:
+  - {fileID: 114698288177125064}
+  - {fileID: 114916865752466116}
+  - {fileID: 114464363777116894}
+  - {fileID: 114641690548044466}
+  - {fileID: 114440569500610820}
+  - {fileID: 114752398217072756}
+  toPropose:
+  - {fileID: 114328909383751576}
+  - {fileID: 114497464403647352}
+  - {fileID: 114566124504754232}
   toBlock: []
-  toSave: []
-  hidePanel: {fileID: 0}
-  proposePanel: {fileID: 0}
-  blockPanel: {fileID: 0}
+  toSave:
+  - {fileID: 114816139374130852}
+  hidePanel: {fileID: 1977069637150240}
+  proposePanel: {fileID: 1695223655166004}
+  blockPanel: {fileID: 1858510410849718}
   myButton: {fileID: 114585151231614756}
 --- !u!114 &114816582672560422
 MonoBehaviour:
@@ -24033,8 +24154,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114358902698238452}
-        m_MethodName: ZebySmokaPrzycisk
-        m_Mode: 3
+        m_MethodName: BuildDragonTeeth
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -24514,11 +24635,21 @@ MonoBehaviour:
   buttonState: 0
   toHide: []
   toPropose: []
-  toBlock: []
-  toSave: []
-  hidePanel: {fileID: 0}
-  proposePanel: {fileID: 0}
-  blockPanel: {fileID: 0}
+  toBlock:
+  - {fileID: 114464363777116894}
+  - {fileID: 114497464403647352}
+  - {fileID: 114641690548044466}
+  - {fileID: 114752398217072756}
+  - {fileID: 114566124504754232}
+  - {fileID: 114440569500610820}
+  toSave:
+  - {fileID: 114816139374130852}
+  - {fileID: 114328909383751576}
+  - {fileID: 114698288177125064}
+  - {fileID: 114916865752466116}
+  hidePanel: {fileID: 1140741647190712}
+  proposePanel: {fileID: 1793622463167486}
+  blockPanel: {fileID: 1170328116565890}
   myButton: {fileID: 114139088447125466}
 --- !u!114 &114922534871183062
 MonoBehaviour:
@@ -93243,7 +93374,7 @@ RectTransform:
   - {fileID: 224246144394611196}
   - {fileID: 224552456890250228}
   m_Father: {fileID: 224794124988425526}
-  m_RootOrder: 13
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -95804,7 +95935,7 @@ RectTransform:
   - {fileID: 224453115190648586}
   - {fileID: 224231555549983162}
   m_Father: {fileID: 224794124988425526}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -97442,7 +97573,7 @@ RectTransform:
   - {fileID: 224940337252664862}
   - {fileID: 224306243865095264}
   m_Father: {fileID: 224794124988425526}
-  m_RootOrder: 10
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -98162,10 +98293,10 @@ RectTransform:
   - {fileID: 224378624256260880}
   - {fileID: 224162481828657236}
   - {fileID: 224081496540751680}
-  - {fileID: 224693599253861750}
   - {fileID: 224863713745081308}
-  - {fileID: 224446347918559316}
   - {fileID: 224089439659281784}
+  - {fileID: 224693599253861750}
+  - {fileID: 224446347918559316}
   m_Father: {fileID: 224956088520336458}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -98707,7 +98838,7 @@ RectTransform:
   - {fileID: 224620402490480338}
   - {fileID: 224680567959983714}
   m_Father: {fileID: 224794124988425526}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}

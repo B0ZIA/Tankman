@@ -555,7 +555,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 0
-  myTank: {fileID: 11400000, guid: a5a57de19b8dc0a40af01130c9236314, type: 2}
+  myTank: {fileID: 11400000, guid: a95d74fb0ba4d934798550a942f6252a, type: 2}
   respawnPointTag: SpawnBot1
   componentToDisable:
   - {fileID: 114609478332413986}
@@ -752,7 +752,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae7b85809c91996459fbe7d36ea28ba2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myTank: {fileID: 11400000, guid: a5a57de19b8dc0a40af01130c9236314, type: 2}
   myPV: {fileID: 0}
   toFindStreet:
     serializedVersion: 2

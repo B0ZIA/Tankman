@@ -131,18 +131,6 @@ public class TankEvolution : Photon.MonoBehaviour
         SetStartTank();
     }
 
-    public void Update()
-    {
-        /// Dodaje score, coin itp.
-        if (Input.GetKeyDown(KeyCode.P) && Input.GetKeyDown(KeyCode.Q))
-        {
-            GetComponent<PlayerGO>().myPlayer.score += 500;
-            GetComponent<PlayerGO>().myPlayer.Dynamit += 1;
-            GetComponent<PlayerGO>().myPlayer.Naprawiarka += 1;
-            GetComponent<PlayerGO>().myPlayer.Zasoby += 1;
-            GetComponent<PlayerGO>().myPlayer.coin += 10;
-        }
-    }
 
     public void DisconnectGame()
     {
@@ -222,7 +210,7 @@ public class TankEvolution : Photon.MonoBehaviour
             for (int i = 0; i < turretsOI.Length; i++)
             {
                 turretsOI[i].SetActive(true);
-                turretsOI[i].GetComponent<AutoShoot>().Reset();
+                turretsOI[i].GetComponent<AutoShot>().Reset();
             }
         }
         else
@@ -237,7 +225,7 @@ public class TankEvolution : Photon.MonoBehaviour
         if (myTank.tank == DostempneCzolgi.IS7)
         {
             turretIS.SetActive(true);
-            turretIS.GetComponent<AutoShoot>().Reset();
+            turretIS.GetComponent<AutoShot>().Reset();
         }
         else
         {
@@ -270,7 +258,7 @@ public class TankEvolution : Photon.MonoBehaviour
         headTurnSpeed = myTank.headTurnSpeed;
         damageLotery = myTank.damageLotery;
         reloadBetweenMagazine = myTank.reloadBetweenMagazine;
-        GetComponent<TankShoot>().ResetMagazine(myTank.maxAmmo);
+        GetComponent<TankShot>().ResetMagazine(myTank.maxAmmo);
         if (photonView.isMine)
             GetComponent<PlayerGO>().myPlayer.hp = myTank.maxHp;
     }

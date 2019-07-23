@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AutoShoot : Shoot, IAmRemoteShoot
+public class AutoShot : Shot, IAmRemoteShoot
 {
     public TurretData turret;
     public ParticleSystem muzzleFlash;
@@ -23,7 +23,7 @@ public class AutoShoot : Shoot, IAmRemoteShoot
         get { return turret.reloadTime; }
     }
 
-    public override float ReloadMagazieTime
+    public override float ReloadMagazineTime
     {
         get { return turret.reloadMagazieTime; }
     }
@@ -33,7 +33,7 @@ public class AutoShoot : Shoot, IAmRemoteShoot
         get { return turret.damage; }
     }
 
-    public override float DamageLotery
+    public override float MaxDamageDisparity
     {
         get { return turret.damageLotery; }
     }
@@ -48,7 +48,7 @@ public class AutoShoot : Shoot, IAmRemoteShoot
 
     public void Reset()
     {
-        tempMaxAmmo = MaxAmmo;
+        currentAmmo = MaxAmmo;
         StartCoroutine(CheckReload());
         timeToFire = 0;
         isReloadnig = false;
@@ -57,7 +57,7 @@ public class AutoShoot : Shoot, IAmRemoteShoot
 
     void Update()
     {
-        CheckShooting();
+        CheckShoot();
     }
 
     public IEnumerator CheckReload()
@@ -71,17 +71,17 @@ public class AutoShoot : Shoot, IAmRemoteShoot
         }
     }
 
-    public override void Shooting()
+    public override void Shoot()
     {
         allow = false;
 
-        base.Shooting();
+        base.Shoot();
 
         RaycastHit2D hit = MakeRaycastHit2D();
 
         if (hit.collider != null)
         {
-            float tempDamage = Mathf.Round(Random.Range(Damage - DamageLotery, Damage + DamageLotery));
+            float tempDamage = Mathf.Round(Random.Range(Damage - MaxDamageDisparity, Damage + MaxDamageDisparity));
 
             HitPlayerHowAutoTurretPlayer(hit, tempDamage);
 
@@ -108,10 +108,10 @@ public class AutoShoot : Shoot, IAmRemoteShoot
         }
     }
 
-    public override void CheckShooting()
+    public override void CheckShoot()
     {
         //Debug.Log("<color=red>1</color>");
-        base.CheckShooting();
+        base.CheckShoot();
         if (!ICanShoot)
             return;
         //Debug.Log("<color=yellow>2</color>");
@@ -120,8 +120,8 @@ public class AutoShoot : Shoot, IAmRemoteShoot
         {
             //Debug.Log("<color=blue>3</color>");
             trafie = false;
-            timeToFire = Time.time + ReloadMagazieTime / 8;
-            Shooting();
+            timeToFire = Time.time + ReloadMagazineTime / 8;
+            Shoot();
         }
     }
 

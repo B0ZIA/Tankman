@@ -2,18 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface IShoot
+public interface IShot
 {
     int MaxAmmo { get; } 
-    int TempMaxAmmo { get; }
     float ReloadTime { get; }
-    float ReloadMagazieTime { get; }
+    float ReloadMagazineTime { get; }
     float Damage { get; }
-    float DamageLotery { get; }
+    float MaxDamageDisparity { get; }
 
 
-    void Shooting();
-    void CheckShooting();
+    void Shoot();
+    void CheckShoot();
     IEnumerator Reload();
     IEnumerator ReloadEffect();
 }

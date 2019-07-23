@@ -19,11 +19,11 @@ public class PoleRobocze : MonoBehaviour {
         //gracz który wykonuje akcje
         GameObject tempGracz = GameManager.LocalPlayer.gameObject;
 
-        tempGracz.GetComponent<TankShoot>().SetShootingOpportunity(true);
+        tempGracz.GetComponent<TankShot>().SetShootingOpportunity(true);
 
-        if (zapora.poleDoNaprawy.activeInHierarchy)
+        if (zapora.fieldForRepair.activeInHierarchy)
         {
-            zapora.NaprawZasiek();
+            zapora.Repair();
             Instantiate(DzwiekNaprawy);
             tempGracz.GetComponent<PlayerGO>().myPlayer.Naprawiarka -= 1;
             //tempGracz.GetComponent<PlayerGO>().triggerSth.szukajDoNaprawy = false;
@@ -31,9 +31,9 @@ public class PoleRobocze : MonoBehaviour {
             HUDManager.Instance.naprawiarkaTlo.SetActive(false);
             tempGracz.GetComponent<PlayerGO>().triggerSth.DezaktywujNaprawianie();
         }
-        if (zapora.poleDoNiszczenia.activeInHierarchy)
+        if (zapora.fieldForDestroy.activeInHierarchy)
         {
-            zapora.ZniszczZasiek();
+            zapora.Destroy();
             Instantiate(DzwiekNiszczenia);
             tempGracz.GetComponent<PlayerGO>().myPlayer.Dynamit -= 1;
             //tempGracz.GetComponent<PlayerGO>().triggerSth.szukajDoZniszczenia = false;
@@ -41,16 +41,16 @@ public class PoleRobocze : MonoBehaviour {
             HUDManager.Instance.dynamitTlo.SetActive(false);
             tempGracz.GetComponent<PlayerGO>().triggerSth.DezaktywujWysadzanie();
         }
-        zapora.poleDoNaprawy.SetActive(false);
-        zapora.poleDoNiszczenia.SetActive(false);
+        zapora.fieldForRepair.SetActive(false);
+        zapora.fieldForDestroy.SetActive(false);
         GetComponent<SpriteRenderer>().color = normalnyKolor;
-        //tempGracz.GetComponent<TankShoot>().nieStrzelajBoNajechalesNaPrzycisk = false;
+        //tempGracz.GetComponent<TankShot>().nieStrzelajBoNajechalesNaPrzycisk = false;
     }
 
     public void OnMouseEnter()
     {
         GetComponent<SpriteRenderer>().color = podkreslonyKolor;
-        GameManager.LocalPlayer.gameObject.GetComponent<TankShoot>().SetShootingOpportunity(false);
+        GameManager.LocalPlayer.gameObject.GetComponent<TankShot>().SetShootingOpportunity(false);
     }
 
     public void OnMouseExit()

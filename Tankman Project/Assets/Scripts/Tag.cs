@@ -20,9 +20,9 @@ public static class Tag {
     /// <summary>bullet object</summary>
     public const string POCISK = "Bullet";
     /// <summary>dragon teeth that are repaired</summary>
-    public const string NAPRAWIONEZEBYSMOKA = "NaprawioneZebySmoka";
+    public const string REPAIRED_BARRIER = "NaprawioneZebySmoka";
     /// <summary>dragon teeth that are destroyed</summary>
-    public const string ZNISZCZONEZEBYSMOKA = "ZniszczoneZebySmoka";
+    public const string DESTROYED_BARRIER = "ZniszczoneZebySmoka";
     /// <summary>bridge that is repaired</summary>
     public const string NAPRAWIONYMOST = "NaprawionyMost";
     /// <summary>bridge that is destroyer</summary>

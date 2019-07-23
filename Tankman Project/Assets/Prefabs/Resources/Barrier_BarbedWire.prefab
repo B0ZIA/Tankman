@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 61483870217129710}
   - component: {fileID: 114264155463453614}
   m_Layer: 8
-  m_Name: Map_Zasiek
+  m_Name: Barrier_BarbedWire
   m_TagString: NaprawioneZebySmoka
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -73,24 +73,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1580193466977568}
-  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -4.4534464, y: 7.055519, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 15.799, y: -3.362, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4638189134023904}
   - {fileID: 4485137800139916}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4485137800139916
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1395972986083442}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.0071, z: 0}
-  m_LocalScale: {x: 0.43063, y: 1.2253474, z: 0.43063}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.0016, y: 0.0048, z: 0}
+  m_LocalScale: {x: 0.34774613, y: 1.1767516, z: 0.43063077}
   m_Children: []
   m_Father: {fileID: 4164329795540294}
   m_RootOrder: 1
@@ -102,8 +102,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1710779208746020}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.0024, z: 0}
-  m_LocalScale: {x: 0.43063077, y: 1.2344117, z: 0.43063077}
+  m_LocalPosition: {x: -0.0016, y: 0.0048, z: 0}
+  m_LocalScale: {x: 0.34774613, y: 1.1767516, z: 0.43063077}
   m_Children: []
   m_Father: {fileID: 4164329795540294}
   m_RootOrder: 0
@@ -151,7 +151,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.4, y: 1.2}
+  m_Size: {x: 0.4, y: 0.4}
   m_EdgeRadius: 0
 --- !u!65 &65684968502971424
 BoxCollider:
@@ -206,17 +206,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 0
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 1710779208746020}
-  poleDoNaprawy: {fileID: 1395972986083442}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
+  destroyedTexture: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 030000000200000001000000
+  fieldForDestroy: {fileID: 1710779208746020}
+  fieldForRepair: {fileID: 1395972986083442}
 --- !u!114 &114830131421317476
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Shoot : Photon.MonoBehaviour, IShoot
+public abstract class Shot : Photon.MonoBehaviour, IShot
 {
-    [Header("'Shoot' Reference")]
+    [Header("'Shot' Reference")]
     [Space]
     [SerializeField]
     protected PhotonView myPV;
@@ -17,13 +17,13 @@ public abstract class Shoot : Photon.MonoBehaviour, IShoot
     [SerializeField]
     protected GameObject BulletTrailPrefab; //Prefab pocisku
 
-    [Header("'Shoot' Details")]
+    [Header("'Shot' Details")]
     [Space]
     public float shootDistance = 7.75f;
     protected float timeToFire = 0;
     public float realReloadTime;
-    protected int tempMaxAmmo;
-    public int TempMaxAmmo { get { return tempMaxAmmo; } }
+    protected int currentAmmo;
+    public int CurrentAmmo { get { return currentAmmo; } }
     public bool isReloadnig = false;
     public LayerMask whatToHit;
 
@@ -34,33 +34,33 @@ public abstract class Shoot : Photon.MonoBehaviour, IShoot
     public virtual float ReloadTime { get; }
 
     //protected float reloadMagazieTime;
-    public virtual float ReloadMagazieTime { get; }
+    public virtual float ReloadMagazineTime { get; }
 
     //protected float damage;
     public virtual float Damage { get; }
 
     //protected float damageLotery;
-    public virtual float DamageLotery { get; }
+    public virtual float MaxDamageDisparity { get; }
     
 
 
-    public virtual void Shooting()
+    public virtual void Shoot()
     {
-        tempMaxAmmo--;
+        currentAmmo--;
         if(shootSoundEffect != null)
             Instantiate(shootSoundEffect, transform.position, transform.rotation);
         myPV.RPC("RpcDoShootEffect", PhotonTargets.All, startFirePoint.position, startFirePoint.rotation);
     }
 
     protected bool ICanShoot = false;
-    public virtual void CheckShooting()
+    public virtual void CheckShoot()
     {
         if (isReloadnig)
         {
             ICanShoot = false;
             return;
         }
-        if (tempMaxAmmo <= 0)    //If you put in a whole magazine
+        if (currentAmmo <= 0)    //If you put in a whole magazine
         {
             StartCoroutine(Reload());   //start loading magazine
             StartCoroutine(ReloadEffect()); //show loading effect
@@ -77,7 +77,7 @@ public abstract class Shoot : Photon.MonoBehaviour, IShoot
 
         yield return new WaitForSecondsRealtime(ReloadTime);
 
-        tempMaxAmmo = MaxAmmo;
+        currentAmmo = MaxAmmo;
         isReloadnig = false;
     }
 

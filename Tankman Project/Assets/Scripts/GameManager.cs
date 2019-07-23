@@ -38,10 +38,6 @@ public class GameManager : Photon.MonoBehaviour
     public const string GAME_VERSION = "2.7";  //You need change when you add new things for game
     public static string biomName;     //the name of the biomass that the server has drawn
 
-    //how many bots
-    static int howMuchTiger = 0;
-    static int howMuchType = 0;
-    static int howMuchT3476 = 0;
     //bots ID 
     static int Tiger_ID = 0;
     static int Type_ID = 0;
@@ -66,6 +62,19 @@ public class GameManager : Photon.MonoBehaviour
         else
         {
             Destroy(gameObject);
+        }
+    }
+
+    private void Update()
+    {
+        /// Dodaje score, coin itp. TODO: Usunąć po premierze
+        if (Input.GetKeyDown(KeyCode.P) && Input.GetKeyDown(KeyCode.Q))
+        {
+            LocalPlayer.score += 500;
+            LocalPlayer.Dynamit += 1;
+            LocalPlayer.Naprawiarka += 1;
+            LocalPlayer.Zasoby += 1;
+            LocalPlayer.coin += 10;
         }
     }
 
@@ -115,12 +124,12 @@ public class GameManager : Photon.MonoBehaviour
             SpawnItemSpawner();
             switch (randomMap)
             {
-                case Map.Village:
+                case Map.Biom_Village:
                     SpawnT3476Bot(6);
                     SpawnTypeBot(3);
                     SpawnTigerBot(3);
                     break;
-                //case Map.City:
+                //case Map.City:  TODO: odkomentować jak mapa zostanie dopracowana
                 //    SpawnT3476Bot(4);
                 //    SpawnTypeBot(2);
                 //    SpawnTigerBot(2);
@@ -371,7 +380,7 @@ public class GameManager : Photon.MonoBehaviour
 
     enum Map
     {
-        Village//,
+        Biom_Village//,
         //City
     }
 }

@@ -9,7 +9,7 @@ public interface IAmRemoteShoot
     bool trafie { get; set; }
 
     void Check();
-    void CheckShooting();
+    void CheckShoot();
     IEnumerator CheckReload();
     void Reset();
 }

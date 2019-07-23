@@ -199,13 +199,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
     type: 2}
   poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
@@ -3848,13 +3841,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 1
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 324143796}
   poleDoNaprawy: {fileID: 208973563}
   jestemZniszczony: 0
@@ -4355,13 +4341,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 1
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 25900633}
   poleDoNaprawy: {fileID: 579743000}
   jestemZniszczony: 0
@@ -4804,13 +4783,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
     type: 2}
   poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
@@ -5094,13 +5066,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 1
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 1578130234}
   poleDoNaprawy: {fileID: 948785307}
   jestemZniszczony: 0
@@ -5570,13 +5535,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
     type: 2}
   poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
@@ -5740,13 +5698,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
     type: 2}
   poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
@@ -5875,13 +5826,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 1
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 1696262695}
   poleDoNaprawy: {fileID: 1900260505}
   jestemZniszczony: 0
@@ -6080,13 +6024,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
     type: 2}
   poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
@@ -6537,13 +6474,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
     type: 2}
   poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
@@ -7259,13 +7189,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
     type: 2}
   poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
@@ -8705,13 +8628,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 1
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 1108191745}
   poleDoNaprawy: {fileID: 1553516303}
   jestemZniszczony: 0
@@ -8910,13 +8826,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
     type: 2}
   poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
@@ -9227,13 +9136,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
     type: 2}
   poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
@@ -10067,13 +9969,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 1
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 719597873}
   poleDoNaprawy: {fileID: 960782950}
   jestemZniszczony: 0
@@ -11240,13 +11135,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 1
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 574684452}
   poleDoNaprawy: {fileID: 1309386520}
   jestemZniszczony: 0
@@ -11445,13 +11333,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
     type: 2}
   poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
@@ -11655,13 +11536,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 1
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 1755290235}
   poleDoNaprawy: {fileID: 1888137133}
   jestemZniszczony: 0
@@ -12192,13 +12066,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
     type: 2}
   poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
@@ -12327,13 +12194,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 1
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 129806300}
   poleDoNaprawy: {fileID: 586062827}
   jestemZniszczony: 0
@@ -12609,13 +12469,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 1
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 776839832}
   poleDoNaprawy: {fileID: 1861723946}
   jestemZniszczony: 0
@@ -12906,13 +12759,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 1
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 1294160957}
   poleDoNaprawy: {fileID: 513170458}
   jestemZniszczony: 0
@@ -13111,13 +12957,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
     type: 2}
   poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
@@ -13281,13 +13120,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
     type: 2}
   poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
@@ -15097,13 +14929,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
     type: 2}
   poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
@@ -16936,6 +16761,21 @@ Prefab:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114777106464119952, guid: 998fe4d3c3bcea54494efc63e9280f00,
+        type: 2}
+      propertyPath: rodzajZapory
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114777106464119952, guid: 998fe4d3c3bcea54494efc63e9280f00,
+        type: 2}
+      propertyPath: poleDoNaprawy
+      value: 
+      objectReference: {fileID: 468276187}
+    - target: {fileID: 114777106464119952, guid: 998fe4d3c3bcea54494efc63e9280f00,
+        type: 2}
+      propertyPath: poleDoNiszczenia
+      value: 
+      objectReference: {fileID: 468276188}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 998fe4d3c3bcea54494efc63e9280f00, type: 2}
   m_IsPrefabAsset: 0
@@ -16959,6 +16799,16 @@ MonoBehaviour:
   shadowIntensity: 83
   shadowScale: {x: 0.33, y: 0.33, z: 0.33}
   shadow: {fileID: 0}
+--- !u!1 &468276187 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1275026970446022, guid: 998fe4d3c3bcea54494efc63e9280f00,
+    type: 2}
+  m_PrefabInternal: {fileID: 468276184}
+--- !u!1 &468276188 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1342582021426042, guid: 998fe4d3c3bcea54494efc63e9280f00,
+    type: 2}
+  m_PrefabInternal: {fileID: 468276184}
 --- !u!1 &475333855
 GameObject:
   m_ObjectHideFlags: 0
@@ -17724,13 +17574,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 1
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 705476406}
   poleDoNaprawy: {fileID: 2012756470}
   jestemZniszczony: 0
@@ -18041,13 +17884,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
     type: 2}
   poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
@@ -19009,13 +18845,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 1
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 686540130}
   poleDoNaprawy: {fileID: 1033240967}
   jestemZniszczony: 0
@@ -19391,13 +19220,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
     type: 2}
   poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
@@ -19561,13 +19383,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
     type: 2}
   poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
@@ -20758,13 +20573,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
     type: 2}
   poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
@@ -21036,13 +20844,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
     type: 2}
   poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
@@ -21298,13 +21099,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 1
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 980068777}
   poleDoNaprawy: {fileID: 2119495340}
   jestemZniszczony: 0
@@ -22313,13 +22107,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
     type: 2}
   poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
@@ -22560,13 +22347,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 1
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 1004089508}
   poleDoNaprawy: {fileID: 1655023468}
   jestemZniszczony: 0
@@ -22843,13 +22623,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
     type: 2}
   poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
@@ -23630,13 +23403,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
     type: 2}
   poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
@@ -24478,13 +24244,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
     type: 2}
   poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
@@ -24799,13 +24558,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 1
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 711552228}
   poleDoNaprawy: {fileID: 413244819}
   jestemZniszczony: 0
@@ -25240,13 +24992,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
     type: 2}
   poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
@@ -25750,13 +25495,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
     type: 2}
   poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
@@ -26364,13 +26102,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
     type: 2}
   poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
@@ -27099,13 +26830,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 1
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 903475273}
   poleDoNaprawy: {fileID: 1891493663}
   jestemZniszczony: 0
@@ -27981,13 +27705,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
     type: 2}
   poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
@@ -28361,13 +28078,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
     type: 2}
   poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
@@ -28873,13 +28583,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
     type: 2}
   poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
@@ -33115,13 +32818,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 1
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 2055530552}
   poleDoNaprawy: {fileID: 1275416519}
   jestemZniszczony: 0
@@ -33320,13 +33016,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
     type: 2}
   poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
@@ -34122,13 +33811,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 1
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 1447818664}
   poleDoNaprawy: {fileID: 255023980}
   jestemZniszczony: 0
@@ -34551,13 +34233,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 1
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 1128935224}
   poleDoNaprawy: {fileID: 1548795570}
   jestemZniszczony: 0
@@ -35073,13 +34748,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
     type: 2}
   poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
@@ -35397,13 +35065,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
     type: 2}
   poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
@@ -36020,13 +35681,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
     type: 2}
   poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
@@ -36268,13 +35922,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
     type: 2}
   poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
@@ -36550,13 +36197,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
     type: 2}
   poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
@@ -36720,13 +36360,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
     type: 2}
   poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
@@ -37007,13 +36640,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
     type: 2}
   poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
@@ -37142,13 +36768,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 1
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 62332461}
   poleDoNaprawy: {fileID: 1353330149}
   jestemZniszczony: 0
@@ -37421,13 +37040,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
     type: 2}
   poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
@@ -37713,13 +37325,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 1
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 595784962}
   poleDoNaprawy: {fileID: 1977948566}
   jestemZniszczony: 0
@@ -38297,13 +37902,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
     type: 2}
   poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
@@ -38545,13 +38143,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
     type: 2}
   poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
@@ -39486,13 +39077,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
     type: 2}
   poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
@@ -39621,13 +39205,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 1
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 998252373}
   poleDoNaprawy: {fileID: 398192693}
   jestemZniszczony: 0
@@ -39791,13 +39368,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 1
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 1313065981}
   poleDoNaprawy: {fileID: 1410257992}
   jestemZniszczony: 0
@@ -40703,13 +40273,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
     type: 2}
   poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
@@ -40838,13 +40401,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 1
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 381742557}
   poleDoNaprawy: {fileID: 1151038557}
   jestemZniszczony: 0
@@ -41121,13 +40677,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
     type: 2}
   poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
@@ -41291,13 +40840,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
     type: 2}
   poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
@@ -41553,13 +41095,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 1
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 448553623}
   poleDoNaprawy: {fileID: 1232744161}
   jestemZniszczony: 0
@@ -42032,13 +41567,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
     type: 2}
   poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
@@ -42724,13 +42252,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
     type: 2}
   poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
@@ -42894,13 +42415,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
     type: 2}
   poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
@@ -43473,13 +42987,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
     type: 2}
   poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
@@ -44675,13 +44182,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 1
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 262927637}
   poleDoNaprawy: {fileID: 2136311833}
   jestemZniszczony: 0
@@ -44845,13 +44345,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 1
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 1276674009}
   poleDoNaprawy: {fileID: 1706170082}
   jestemZniszczony: 0
@@ -45200,13 +44693,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 1
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 578090676}
   poleDoNaprawy: {fileID: 1982230777}
   jestemZniszczony: 0
@@ -48000,13 +47486,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 1
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 998736890}
   poleDoNaprawy: {fileID: 890533691}
   jestemZniszczony: 0
@@ -48323,13 +47802,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 1
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 1548902883}
   poleDoNaprawy: {fileID: 501247344}
   jestemZniszczony: 0
@@ -49255,13 +48727,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
     type: 2}
   poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
@@ -49986,13 +49451,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
     type: 2}
   poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
@@ -51373,13 +50831,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 1
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 1884163839}
   poleDoNaprawy: {fileID: 1785990145}
   jestemZniszczony: 0
@@ -51543,13 +50994,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 1
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 1693645393}
   poleDoNaprawy: {fileID: 1698047511}
   jestemZniszczony: 0
@@ -53043,13 +52487,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
     type: 2}
   poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
@@ -53178,13 +52615,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 1
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 1689947879}
   poleDoNaprawy: {fileID: 786729790}
   jestemZniszczony: 0
@@ -54182,13 +53612,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 1
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 1456086321}
   poleDoNaprawy: {fileID: 1560137963}
   jestemZniszczony: 0
@@ -54460,13 +53883,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
     type: 2}
   poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
@@ -54937,13 +54353,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
     type: 2}
   poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
@@ -55107,13 +54516,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
     type: 2}
   poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
@@ -61156,13 +60558,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
     type: 2}
   poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
@@ -61714,13 +61109,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 1
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 951085573}
   poleDoNaprawy: {fileID: 342524446}
   jestemZniszczony: 0
@@ -62841,13 +62229,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 1
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 16823346}
   poleDoNaprawy: {fileID: 1313989715}
   jestemZniszczony: 0
@@ -63644,13 +63025,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
     type: 2}
   poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
@@ -65829,13 +65203,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 1
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 1113307477}
   poleDoNaprawy: {fileID: 178899565}
   jestemZniszczony: 0
@@ -66188,13 +65555,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
     type: 2}
   poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
@@ -66468,13 +65828,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 1
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 713730977}
   poleDoNaprawy: {fileID: 142905965}
   jestemZniszczony: 0
@@ -66785,13 +66138,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
     type: 2}
   poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
@@ -66920,13 +66266,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 1
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 209293209}
   poleDoNaprawy: {fileID: 32386074}
   jestemZniszczony: 0
@@ -69047,13 +68386,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
     type: 2}
   poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
@@ -69217,13 +68549,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
     type: 2}
   poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
@@ -69611,13 +68936,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
   poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
     type: 2}
   poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,

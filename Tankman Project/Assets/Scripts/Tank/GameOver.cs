@@ -69,9 +69,9 @@ public class GameOver : Photon.MonoBehaviour
         cameraFollow.target = camOryginalTarget.transform;
         GetComponent<TankRPC>().OnDeathRPC(false);
         gameOver.SetActive(false);
-        GetComponent<TankShoot>().isReloadnig = false;
-        GetComponent<TankShoot>().realReloadTime = 0f;
-        GetComponent<TankShoot>().SetShootingOpportunity(true);
+        GetComponent<TankShot>().isReloadnig = false;
+        GetComponent<TankShot>().realReloadTime = 0f;
+        GetComponent<TankShot>().SetShootingOpportunity(true);
         GetComponent<PlayerGO>().myPlayer.hp = 600f;
         GetComponent<TankEvolution>().SetStartTank();
         HUDManager.Instance.StartRefresh();

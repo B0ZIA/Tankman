@@ -40,6 +40,6 @@ public class TankObject : MonoBehaviour
     public GameObject Hull { get { return hull; } }
     /// <summary>...gracza posiada tankStore, evolution, photonview, i te najważniejsze </summary>
     public GameObject PlayerGO { get { return playerGO; } }
-    /// <summary>Główna wieża czołgu, posiada klasy Shoot i TrackingMechanism(zazwyczaj dziedziczone z innych)</summary>
+    /// <summary>Główna wieża czołgu, posiada klasy Shot i TrackingMechanism(zazwyczaj dziedziczone z innych)</summary>
     public GameObject MainTurret { get { return mainTurret; } }
 }

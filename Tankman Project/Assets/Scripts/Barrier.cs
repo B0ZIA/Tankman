@@ -1,18 +1,54 @@
 ﻿using UnityEngine;
-using System.Collections.Generic;
 
-public class Barrier
+public class Barrier : Photon.MonoBehaviour
 {
-    private Sprite repairedTexture;
-    private Sprite destroyedTexture;
-    private int[] tankTiersWhichCanDestroy;
+    [SerializeField]
+    protected Sprite repairedTexture;
+    [SerializeField]
+    protected Sprite destroyedTexture;
+
+    public bool destroyed = false;
 
 
 
-    public Barrier(Sprite repairedTexture, Sprite destroyedTexture, int[] tankTiersWhichCanDestroy)
+    void OnCollisionEnter2D(Collision2D coll)
     {
-        this.repairedTexture = repairedTexture;
-        this.destroyedTexture = destroyedTexture;
-        this.tankTiersWhichCanDestroy = tankTiersWhichCanDestroy;
+        if (coll.gameObject.tag == Tag.LOCALPLAYERBODY || coll.gameObject.tag == Tag.BOT)
+            Destroy();
     }
+
+    public void Destroy()
+    {
+        photonView.RPC("DestroyBarrierRPC", PhotonTargets.AllBuffered, null);
+    }
+
+    public void Repair()
+    {
+        photonView.RPC("RepairBarrierRPC", PhotonTargets.AllBuffered, null);
+    }
+
+    [PunRPC]
+    protected void DestroyBarrierRPC()
+    {
+        gameObject.tag = Tag.DESTROYED_BARRIER;
+        destroyed = true;
+        GetComponent<SpriteRenderer>().sprite = destroyedTexture;
+        GetComponent<BoxCollider2D>().isTrigger = true;
+    }
+
+    [PunRPC]
+    protected void RepairBarrierRPC()
+    {
+        destroyed = false;
+        gameObject.tag = Tag.REPAIRED_BARRIER;
+        GetComponent<SpriteRenderer>().sprite = repairedTexture;
+        GetComponent<BoxCollider2D>().isTrigger = false;
+    }
+}
+public enum BarrierType
+{
+    Zasiek,
+    ZebySmoka,
+    StalowyX,
+    Plot
 }

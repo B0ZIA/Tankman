@@ -2,10 +2,10 @@
 
 public class WstawiaczWskaznik : MonoBehaviour {
 
-    public WskaznikManager myWskaznikManager;
+    public BarrierBuilder barrierBuilder;
 
     private void OnMouseDown()
     {
-        myWskaznikManager.Wstaw();
+        barrierBuilder.BuildBarrier();
     }
 }
