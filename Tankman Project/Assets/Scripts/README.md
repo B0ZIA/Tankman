@@ -27,3 +27,9 @@ https://shaibagamestudio.itch.io/tankman
 Nasz fanpage:
 https://www.facebook.com/ShaibaGameStudio/
 
+
+### Skrypty zrefaktoryzowane:
+ * EngineAudio
+ * Tag
+ * Engine
+ * TankEngine
