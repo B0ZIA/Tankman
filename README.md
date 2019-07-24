@@ -5,10 +5,6 @@
 | [:fire:Play](#play) | [:camera:Screenshots](#screenshots) | [:wrench:Credits](#credits) | [:star:Resources](#resources) |
 | ----- | ----------- | ----------- | ----------- |
 
-<p align="center">
-  <img src="https://img.itch.zone/aW1nLzIyMjQxNzgucG5n/original/sI%2B84Y.png" />
-</p>
-
 ## Play
 
 you can play in Tankman for free or if you want to support us:
