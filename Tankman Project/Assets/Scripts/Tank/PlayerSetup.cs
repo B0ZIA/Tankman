@@ -10,7 +10,13 @@ using UnityEngine;
  */
 
 /// <summary>
-/// Setup local and remote player gameplay and permissions
+/// Setup local and remote player gameplay and permissions in game.
+/// Player can be:
+///     -LocalPlayer: you as a player
+///     -RemotePlayer: remote player clone.
+///     -ServerPlayer: stores game data, all permissions
+/// If you want to be ServerPlayer you must be first in game room or 
+/// ServerPlayer leave game and send you ServerPlayer permissions.
 /// </summary>
 public class PlayerSetup : Photon.MonoBehaviour
 {
@@ -22,7 +28,7 @@ public class PlayerSetup : Photon.MonoBehaviour
 
     private GameObject[] itemDetectors;
     private GameObject[] tempItemDetectors;
-    private bool startServerSync = true;
+    static bool GameWasSetupByThisServerPlayer = true;
 
     const int LOCAL_PLAYER_LAYER = 10;
     const int REMOTE_PLAYER_LAYER = 11;
@@ -43,7 +49,7 @@ public class PlayerSetup : Photon.MonoBehaviour
         {
             SetRemotePlayerTagAndLayer();
 
-            DisableComponentsHowRemotePlayer();
+            DisableComponentsAsRemotePlayer();
         }
     }
 
@@ -87,7 +93,7 @@ public class PlayerSetup : Photon.MonoBehaviour
         GetComponent<TankEvolution>().HullGameObject.gameObject.layer = REMOTE_PLAYER_LAYER;
     }
 
-    public void DisableComponentsHowRemotePlayer()
+    public void DisableComponentsAsRemotePlayer()
     {
         for (int i = 0; i < componentToDisable.Length; i++)
         {
@@ -103,20 +109,32 @@ public class PlayerSetup : Photon.MonoBehaviour
 
     void Update()
     {
-        //Sprawdzam czy przypadkiem nie zostałem serverem ub czy nim od początku nie byłem!
-        if (PhotonNetwork.isMasterClient && startServerSync && photonView.isMine)
+        if (ServerPermission() && !GameWasSetupByThisServerPlayer)
         {
-            //Niech każdy gracz zdalny ma włączony detektor itemów
-            StartCoroutine(SetOtherPlayerColliderScore());
-
-            //To ja widzę czy gracz zebrał item czy nie więc każę innym to synchronizować
-            StartCoroutine(UpdateScorePlayers());
-
-            //BOTy są lokalne tylko i wyłącznie na serverze więc niech takie będą
-            SetBotForServer();
-
-            startServerSync = false;
+            SetupGameAsFirstOrNewServerPlayer();
         }
+    }
+
+    void  SetupGameAsFirstOrNewServerPlayer()
+    {
+        //Niech każdy gracz zdalny ma włączony detektor itemów
+        StartCoroutine(SetOtherPlayerColliderScore());
+
+        //To ja widzę czy gracz zebrał item czy nie więc każę innym to synchronizować
+        StartCoroutine(UpdateScorePlayers());
+
+        //BOTy są lokalne tylko i wyłącznie na serverze więc niech takie będą
+        SetBotForServer();
+
+        GameWasSetupByThisServerPlayer = false;
+    }
+
+    bool ServerPermission()
+    {
+        if (PhotonNetwork.isMasterClient && photonView.isMine)
+            return true;
+        else
+            return false;
     }
 
     /// <summary>
