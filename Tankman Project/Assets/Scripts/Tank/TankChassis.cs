@@ -20,13 +20,31 @@ public class TankChassis : MonoBehaviour
 
     private void OnEnable()
     {
+        StartLeaveTrial();
+    }
+
+    private void OnDisable()
+    {
+        StopLeaveTrial();
+    }
+
+    private void Update()
+    {
+        if (Input.GetKey(KeyCode.S))
+            SetLeavingFrontTrial();
+        else if (Input.GetKey(KeyCode.W))
+            SetLeavingBackTrial();
+    }
+
+    private void StartLeaveTrial()
+    {
         forwardTrialleft.Play();
         forwardTrialRight.Play();
         buttonTrialleft.Play();
         buttonTrialRight.Play();
     }
 
-    private void OnDisable()
+    private void StopLeaveTrial()
     {
         forwardTrialleft.Stop();
         forwardTrialRight.Stop();
@@ -34,35 +52,31 @@ public class TankChassis : MonoBehaviour
         buttonTrialRight.Stop();
     }
 
-    private void Update()
+    private void SetLeavingFrontTrial()
     {
-        if (Input.GetKey(KeyCode.S))
-        {
-            //cofanie
-            ParticleSystem.MainModule psmain;
-            psmain = buttonTrialRight.main;
-            psmain.startColor = transparentTrial;
-            psmain = buttonTrialleft.main;
-            psmain.startColor = transparentTrial;
+        ParticleSystem.MainModule psmain;
+        psmain = buttonTrialRight.main;
+        psmain.startColor = transparentTrial;
+        psmain = buttonTrialleft.main;
+        psmain.startColor = transparentTrial;
 
-            psmain = forwardTrialRight.main;
-            psmain.startColor = normalTrial;
-            psmain = forwardTrialleft.main;
-            psmain.startColor = normalTrial;
-        }
-        else if (Input.GetKey(KeyCode.W))
-        {
-            //jazda!
-            ParticleSystem.MainModule psmain;
-            psmain = buttonTrialRight.main;
-            psmain.startColor = normalTrial;
-            psmain = buttonTrialleft.main;
-            psmain.startColor = normalTrial;
+        psmain = forwardTrialRight.main;
+        psmain.startColor = normalTrial;
+        psmain = forwardTrialleft.main;
+        psmain.startColor = normalTrial;
+    }
 
-            psmain = forwardTrialRight.main;
-            psmain.startColor = transparentTrial;
-            psmain = forwardTrialleft.main;
-            psmain.startColor = transparentTrial;
-        }
+    private void SetLeavingBackTrial()
+    {
+        ParticleSystem.MainModule psmain;
+        psmain = buttonTrialRight.main;
+        psmain.startColor = normalTrial;
+        psmain = buttonTrialleft.main;
+        psmain.startColor = normalTrial;
+
+        psmain = forwardTrialRight.main;
+        psmain.startColor = transparentTrial;
+        psmain = forwardTrialleft.main;
+        psmain.startColor = transparentTrial;
     }
 }

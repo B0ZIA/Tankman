@@ -5,7 +5,7 @@ using System;
 /*
  * ###################################
  * #        by Jakub Główczyk        #
- * #            [#][#][ ]            #
+ * #            [#][#][#]            #
  * ###################################
  */
 
@@ -102,10 +102,7 @@ public class TechTree : MonoBehaviour
         for (int i = 0; i < tankButtons.Count; i++)
         {
             if (tankButtons[i].tank == myTank)
-            {
-                //Debug.Log(tankButtons[i].tankButton);
                 return tankButtons[i].tankButton;
-            }
         }
         return null;
     }

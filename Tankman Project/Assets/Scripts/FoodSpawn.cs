@@ -78,12 +78,18 @@ public class FoodSpawn : Photon.MonoBehaviour
         return new Vector3(x, y, layer);
     }
 
+    public static Quaternion RandomRot()
+    {
+        Quaternion rot = Quaternion.Euler(0, 0, UnityEngine.Random.Range(1.0f, 360.0f));
+        return rot;
+    }
+
     int scoreCounter = 0;
     void GenerateFood()
     {
         if (scoreCounter < maxScore)
         {
-            SpawnItem(Items.Score, RandomPos());
+            SpawnItem(Items.Item_Exp, RandomPos());
             scoreCounter++;
         }
     }
@@ -93,7 +99,7 @@ public class FoodSpawn : Photon.MonoBehaviour
     {
         if (dynamiteCounter < maxDynamit)
         {
-            SpawnItem(Items.Dynamit, RandomPos());
+            SpawnItem(Items.Item_Dynamite, RandomPos());
             dynamiteCounter++;
         }
     }
@@ -103,7 +109,7 @@ public class FoodSpawn : Photon.MonoBehaviour
     {
         if (stockCounter >= maxZasoby)
         {
-            SpawnItem(Items.Zasoby, RandomPos());
+            SpawnItem(Items.Item_Zasoby, RandomPos());
             stockCounter++;
         }
     }
@@ -113,7 +119,7 @@ public class FoodSpawn : Photon.MonoBehaviour
     {
         if (repairCounter >= maxNaprawiarka)
         {
-            SpawnItem(Items.Naprawiarka, RandomPos());
+            SpawnItem(Items.Item_Naprawka, RandomPos());
             repairCounter++;
         }
     }
@@ -123,43 +129,24 @@ public class FoodSpawn : Photon.MonoBehaviour
     {
         if (coinCounter >= maxCoin)
         {
-            SpawnItem(Items.Coin, RandomPos());
+            SpawnItem(Items.Item_Coin, RandomPos());
             coinCounter++;
         }
     }
 
     void SpawnItem (Items whatSpawn, Vector3 pos)
     {
-        Quaternion rot = Quaternion.Euler(0, 0, UnityEngine.Random.Range(1.0f, 360.0f));
+        Quaternion rot = RandomRot();
 
-        switch (whatSpawn)
-        {
-            case Items.Score:
-                PhotonNetwork.InstantiateSceneObject("Item_Exp", pos, rot, 0, null);
-                break;
-            case Items.Coin:
-                PhotonNetwork.InstantiateSceneObject("Item_Coin", pos, rot, 0, null);
-                break;
-            case Items.Dynamit:
-                PhotonNetwork.InstantiateSceneObject("Item_Dynamite", pos, rot, 0, null);
-                break;
-            case Items.Naprawiarka:
-                PhotonNetwork.InstantiateSceneObject("Item_Naprawka", pos, rot, 0, null);
-                break;
-            case Items.Zasoby:
-                PhotonNetwork.InstantiateSceneObject("Item_Zasoby", pos, rot, 0, null);
-                break;
-            default:
-                break;
-        }
+        PhotonNetwork.InstantiateSceneObject(whatSpawn.ToString(), pos, rot, 0, null);
     }
 
     public enum Items
     {
-        Score,
-        Coin,
-        Dynamit,
-        Naprawiarka,
-        Zasoby
+        Item_Exp,
+        Item_Coin,
+        Item_Dynamite,
+        Item_Naprawka,
+        Item_Zasoby
     }
 }

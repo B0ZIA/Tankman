@@ -17,7 +17,6 @@ public class TankRPC : Photon.MonoBehaviour
 
 
 
-
     public void ZebralemScore()
     {
         GetComponent<PhotonView>().RPC("ZebralemScoreRPC",playerGO.myPlayer.pp,50);

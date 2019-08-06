@@ -20,7 +20,6 @@ public class AntiTankBarrier : Barrier
 
     void OnCollisionEnter2D (Collision2D coll)
     {
-        Debug.Log(coll.transform.name);
         if (coll.gameObject.tag == Tag.LOCALPLAYERBODY)
         {
             HUDManager.TankTier otherPlayerTankTier = coll.gameObject.GetComponent<TankEngine>().tankStore.playerSetup.GetComponent<PlayerGO>().myPlayer.tankTier;
