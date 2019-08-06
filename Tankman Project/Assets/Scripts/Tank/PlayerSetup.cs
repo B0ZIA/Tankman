@@ -10,7 +10,7 @@ using UnityEngine;
  */
 
 /// <summary>
-/// Ustawia gracza lokalnego, zdalnego i server(czyli gracza MasterClient)
+/// Setup local and remote player gameplay and permissions
 /// </summary>
 public class PlayerSetup : Photon.MonoBehaviour
 {
@@ -27,72 +27,50 @@ public class PlayerSetup : Photon.MonoBehaviour
     const int LOCAL_PLAYER_LAYER = 10;
     const int REMOTE_PLAYER_LAYER = 11;
 
-    /* 
-     *  ##############################################################################
-     *  #                                                                            #
-     *  # Gra ruszyła... trzeba ustawić gracza lokalniego i zdalnego!                #
-     *  #                                                                            #
-     *  # Trzeba uzgodnić kto jest serverem i czy wykonał należące do niego zadania. #
-     *  #                                                                            #
-     *  # Czy gra się dopiero zaczyna czy ja tylko do niej dołączyłem?!              #
-     *  #                                                                            #
-     *  ##############################################################################
-     */
-
 
 
     void Start()
     {
-        //Na początek ustawię tagi graczy w swojej kopi gry. Każdy gracz w mojej kopi gry ma 
-        // włączony ten skrypt więc każdy to wykona :P
-        SetTag();
-
         if (photonView.isMine)
         {
-            //Dopiero co została załadowana secna gry więc trzeba ją zaktualizować
-            SetGameScene();
+            SetLocalPlayerTagAndLayer();
 
-            //Chej! jestem tu nowy więc rozkażę każdemu botowi aby wysłał mi swoje dane!
-            UpdateBot();
+            SetupGameScene();
+
+            SetupRemoteBots();
         }
         else
         {
-            //Jestem zdalnną kopią czołgu gracza który gra na innym kompie więc
-            // niech tak pozostanie!
-            DisableComponents();
+            SetRemotePlayerTagAndLayer();
+
+            DisableComponentsHowRemotePlayer();
         }
     }
 
-    /// <summary>
-    /// Ustawia tag TEGO gracza a dokładnie tag GameObject'u gdzie jest collider czołgu -
-    ///  czy jest to "LocalBody" czy "RemoteBody" 
-    /// </summary>
-    public void SetTag()
+    private void SetLocalPlayerTagAndLayer()
     {
-        if (base.photonView.isMine)
-        {
-            gameObject.tag = Tag.LOCALPLAYER;
-            GetComponent<TankEvolution>().HullGameObject.gameObject.tag = Tag.LOCALPLAYERBODY;
-            GetComponent<TankEvolution>().HullGameObject.gameObject.layer = LOCAL_PLAYER_LAYER;
-        }
-        else
-        {
-            gameObject.tag = Tag.REMOTEPLAYER;
-            GetComponent<TankEvolution>().HullGameObject.gameObject.tag = Tag.REMOTEPLAYERBODY;
-            GetComponent<TankEvolution>().HullGameObject.gameObject.layer = REMOTE_PLAYER_LAYER;
-        }
+        gameObject.tag = Tag.LOCALPLAYER;
+        GetComponent<TankEvolution>().HullGameObject.gameObject.tag = Tag.LOCALPLAYERBODY;
+        GetComponent<TankEvolution>().HullGameObject.gameObject.layer = LOCAL_PLAYER_LAYER;
     }
 
-    /// <summary>
-    /// Ustawia scene roboczą dla gracza
-    /// </summary>
-    void SetGameScene()
+    static void SetupGameScene()
+    {
+        DisableLoadingBaner();
+    }
+
+    static void DisableLoadingBaner()
     {
         GameObject Camera = GameObject.FindGameObjectWithTag("SceneCamera");
         Camera.SetActive(false);
     }
 
-    private static void UpdateBot()
+    private static void SetupRemoteBots()
+    {
+        SetRemoteBotsHP();
+    }
+
+    private static void SetRemoteBotsHP()
     {
         GameObject[] bots = GameObject.FindGameObjectsWithTag("BOTID");
         for (int i = 0; i < bots.Length; i++)
@@ -102,7 +80,14 @@ public class PlayerSetup : Photon.MonoBehaviour
         }
     }
 
-    public void DisableComponents()
+    private void SetRemotePlayerTagAndLayer()
+    {
+        gameObject.tag = Tag.REMOTEPLAYER;
+        GetComponent<TankEvolution>().HullGameObject.gameObject.tag = Tag.REMOTEPLAYERBODY;
+        GetComponent<TankEvolution>().HullGameObject.gameObject.layer = REMOTE_PLAYER_LAYER;
+    }
+
+    public void DisableComponentsHowRemotePlayer()
     {
         for (int i = 0; i < componentToDisable.Length; i++)
         {
@@ -114,6 +99,7 @@ public class PlayerSetup : Photon.MonoBehaviour
             objectsToDisable[i].SetActive(false);
         }
     }
+    
 
     void Update()
     {

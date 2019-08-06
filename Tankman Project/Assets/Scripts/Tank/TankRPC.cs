@@ -50,7 +50,7 @@ public class TankRPC : Photon.MonoBehaviour
             tankStore.stan.SetActive(true);
             body.material = defaultMat;
             head.material = defaultMat;
-            Player.FindPlayer(pmi.sender).gameObject.GetComponent<PlayerSetup>().SetTag();
+            Player.FindPlayer(pmi.sender).gameObject.GetComponent<PlayerSetup>().SetPlayerTagAndLayer();
         }
     }
 
