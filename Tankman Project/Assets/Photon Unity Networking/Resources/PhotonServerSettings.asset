@@ -31,74 +31,51 @@ MonoBehaviour:
   - AdDamage
   - Chat
   - ColorRpc
+  - DeathRPC
+  - DestroyBarrierRPC
   - DestroyRpc
   - DoJump
   - Flash
   - HiBOTRPC
-  - HiRPC
+  - InitPlayer
   - InstantiateRpc
   - Marco
   - MyBOTInfoRPC
-  - MyInfoHowNewPlayerRPC
-  - MyInfoRPC
   - NaprawBotaRPC
-  - NaprawZasiekRPC
+  - OdbierzHpGraczowiJakoBotRPC
   - OdbierzHpGraczowiRPC
   - OdbierzHpOfiaraRPC
   - PickupItemInit
   - PlayAudioHitRPC
-  - PlayerConnected
-  - PlayerDisconnected
   - PleaseServerForUpdateRPC
   - Polo
   - PunPickup
   - PunPickupSimple
   - PunRespawn
+  - RepairBarrierRPC
   - RequestForPickupItems
   - RequestForPickupTimes
-  - RPC_WylaczStan
   - RpcAddPlayerScoreforKillBot
   - RpcDoShootEffect
   - RpcDoShootEffectBOT
   - RpcSetLastShooter
   - RpcSyncHP
-  - RpcUpdateScore
   - SetBotIDRPC
+  - SetCameraDeathHowBotRPC
   - SetCameraDeathRPC
   - SetCamouflage
   - SetHpRPC
   - SetItemPositionRPC
-  - SetPlayerListAfterServerMigrationRPC
+  - SetPlayerDataRPC
+  - SetPlayerRPC
+  - SetPlayersListRPC
+  - ShakeMyCameraRPC
+  - SpawnSceneObjectRPC
   - SpawnujGraczaRPC
   - TaggedPlayer
   - UstawAktualnyBiomWszystkim
   - UstawCzolgRPC
-  - WstawSceneObjectRPC
   - ZabiJOfiareRPC
   - ZebralemScoreRPC
   - ZniszczBotaRPC
-  - ZniszczZasiekRPC
-  - ServerCanJChangeTankRPC
-  - SetTankRPC
-  - UstawCzolgClientRPC
-  - ShakeMyCameraRPC
-  - OdbierzHpGraczowiJakoBotRPC
-  - SpawnSceneObjectRPC
-  - DeathRPC
-  - SetCameraDeathHowBotRPC
-  - SendPlayerListRPC
-  - SetPlayerListRPC
-  - WyslijSwojeDaneRPC
-  - SetPlayerConnected
-  - InitPlayerConnected
-  - NewPlayerFullPackConnected
-  - SendPlayerRPC
-  - ServerSetPlayerRPC
-  - SetupRPC
-  - ServerSetPlayersForMeRPC
-  - InitPlayer
-  - SetPlayerRPC
-  - SetPlayersListRPC
-  - DestroyBarrierRPC
-  - RepairBarrierRPC
   DisableAutoOpenWizard: 1

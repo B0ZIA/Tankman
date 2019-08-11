@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 /*
@@ -13,33 +12,36 @@ using UnityEngine;
 /// Setup local and remote player gameplay and permissions in game.
 /// Player can be:
 ///     -LocalPlayer: you as a player
-///     -RemotePlayer: remote player clone.
-///     -ServerPlayer: stores game data, all permissions
+///     -RemotePlayer: remote player clone in your game
+///     -ServerPlayer: player who stores game data and have all permissions
 /// If you want to be ServerPlayer you must be first in game room or 
 /// ServerPlayer leave game and send you ServerPlayer permissions.
 /// </summary>
 public class PlayerSetup : Photon.MonoBehaviour
 {
     [SerializeField]
-    Behaviour[] componentToDisable;
+    private Behaviour[] remotePlayerInactiveComponents;
 
     [SerializeField]
-    GameObject[] objectsToDisable;
+    private GameObject[] remotePlayerInactiveGameObjects;
 
     private GameObject[] itemDetectors;
     private GameObject[] tempItemDetectors;
-    static bool GameWasSetupByThisServerPlayer = true;
+    static bool GameWasSetupForMeAsServerPlayer = true;
 
-    const int LOCAL_PLAYER_LAYER = 10;
-    const int REMOTE_PLAYER_LAYER = 11;
-
+    public const int LOCAL_PLAYER_LAYER = 10;
+    public const int REMOTE_PLAYER_LAYER = 11;
+    const int TIME_TO_UPDATE_ITEM_DETECTOR = 1;
 
 
     void Start()
     {
+        GameObject myColliderObject = GetComponent<TankEvolution>().HullGameObject;
+
         if (photonView.isMine)
         {
-            SetLocalPlayerTagAndLayer();
+            SetGameObjectTag(myColliderObject, Tag.REMOTEPLAYERBODY);
+            SetGameObjectLayer(myColliderObject, LOCAL_PLAYER_LAYER);
 
             SetupGameScene();
 
@@ -47,17 +49,22 @@ public class PlayerSetup : Photon.MonoBehaviour
         }
         else
         {
-            SetRemotePlayerTagAndLayer();
+            SetGameObjectTag(myColliderObject, Tag.REMOTEPLAYERBODY);
+            SetGameObjectLayer(myColliderObject, REMOTE_PLAYER_LAYER);
 
-            DisableComponentsAsRemotePlayer();
+            DisableComponents(remotePlayerInactiveComponents);
+            DisableGameObjects(remotePlayerInactiveGameObjects);
         }
     }
 
-    private void SetLocalPlayerTagAndLayer()
+    public void SetGameObjectTag(GameObject gameObject, string tag)
     {
-        gameObject.tag = Tag.LOCALPLAYER;
-        GetComponent<TankEvolution>().HullGameObject.gameObject.tag = Tag.LOCALPLAYERBODY;
-        GetComponent<TankEvolution>().HullGameObject.gameObject.layer = LOCAL_PLAYER_LAYER;
+        gameObject.tag = tag;
+    }
+
+    public void SetGameObjectLayer(GameObject gameObject, int layer)
+    {
+        gameObject.layer = layer;
     }
 
     static void SetupGameScene()
@@ -86,47 +93,29 @@ public class PlayerSetup : Photon.MonoBehaviour
         }
     }
 
-    private void SetRemotePlayerTagAndLayer()
+    public void DisableComponents(Behaviour[] components)
     {
-        gameObject.tag = Tag.REMOTEPLAYER;
-        GetComponent<TankEvolution>().HullGameObject.gameObject.tag = Tag.REMOTEPLAYERBODY;
-        GetComponent<TankEvolution>().HullGameObject.gameObject.layer = REMOTE_PLAYER_LAYER;
-    }
-
-    public void DisableComponentsAsRemotePlayer()
-    {
-        for (int i = 0; i < componentToDisable.Length; i++)
+        for (int i = 0; i < components.Length; i++)
         {
-            componentToDisable[i].enabled = false;
-        }
-
-        for (int i = 0; i < objectsToDisable.Length; i++)
-        {
-            objectsToDisable[i].SetActive(false);
+            components[i].enabled = false;
         }
     }
-    
+
+    public void DisableGameObjects(GameObject[] gameObjects)
+    {
+        for (int i = 0; i < gameObjects.Length; i++)
+        {
+            gameObjects[i].SetActive(false);
+        }
+    }
 
     void Update()
     {
-        if (ServerPermission() && !GameWasSetupByThisServerPlayer)
+        if (ServerPermission() && !GameWasSetupForMeAsServerPlayer)
         {
-            SetupGameAsFirstOrNewServerPlayer();
+            Debug.Log("I am server");
+            SetupGameForMeAsServerPlayer();
         }
-    }
-
-    void  SetupGameAsFirstOrNewServerPlayer()
-    {
-        //Niech każdy gracz zdalny ma włączony detektor itemów
-        StartCoroutine(SetOtherPlayerColliderScore());
-
-        //To ja widzę czy gracz zebrał item czy nie więc każę innym to synchronizować
-        StartCoroutine(UpdateScorePlayers());
-
-        //BOTy są lokalne tylko i wyłącznie na serverze więc niech takie będą
-        SetBotForServer();
-
-        GameWasSetupByThisServerPlayer = false;
     }
 
     bool ServerPermission()
@@ -137,52 +126,52 @@ public class PlayerSetup : Photon.MonoBehaviour
             return false;
     }
 
-    /// <summary>
-    /// Co sekundę dba o to aby każdy zdalny gracz (w tej kopi gry) miał
-    ///  włączony detektor "serverowy" który wysyła dane detektora do lokalnych graczy przez RPC
-    /// </summary>
-    /// <returns></returns>
-    IEnumerator SetOtherPlayerColliderScore()
+    void SetupGameForMeAsServerPlayer()
+    {
+        StartCoroutine(SetupingPlayersItemDetectorWhenNewPlayerJoin());
+
+        SetItemsDetector();
+        tempItemDetectors = itemDetectors;
+        StartCoroutine(SendingRemotePlayersTheirDataStoredByServer());
+
+        SetBotForServer();
+
+        GameWasSetupForMeAsServerPlayer = false;
+    }
+    
+    IEnumerator SetupingPlayersItemDetectorWhenNewPlayerJoin()
     {
         while (true)
         {
-            yield return new WaitForSecondsRealtime(1);
+            yield return new WaitForSecondsRealtime(TIME_TO_UPDATE_ITEM_DETECTOR);
+
             if (tempItemDetectors.Length != itemDetectors.Length)
             {
-                Debug.Log("Rozpoczynam Włączanie colliderów czołgu u master Clienta! bo dołączył nowy gracz!!!");
-                itemDetectors = GameObject.FindGameObjectsWithTag("ItemDetector");
-                for (int i = 0; i < itemDetectors.Length; i++)
-                {
-                    if (itemDetectors != null)
-                    {
-                        itemDetectors[i].GetComponent<ItemDetector>().enabled = true;
-                    }
-                }
+                SetItemsDetector();
                 itemDetectors = GameObject.FindGameObjectsWithTag("ItemDetector");
             }
+
             tempItemDetectors = GameObject.FindGameObjectsWithTag("ItemDetector");
         }
     }
 
-    /// <summary>
-    /// Co sekundę pobiera od każdego zdalnego gracza (w tej kopii gry)
-    ///  jego itemy i wysyła je odpowiedni do lokaknych graczy przez RPC
-    ///  itemy: score, coin, dynamit, naprawiarka, zasoby
-    /// </summary>
-    /// <returns></returns>
-    IEnumerator UpdateScorePlayers()
+    private void SetItemsDetector()
     {
         itemDetectors = GameObject.FindGameObjectsWithTag("ItemDetector");
         for (int i = 0; i < itemDetectors.Length; i++)
         {
-            itemDetectors[i].GetComponent<ItemDetector>().enabled = true;
+            if (itemDetectors != null)
+            {
+                itemDetectors[i].GetComponent<ItemDetector>().enabled = true;
+            }
         }
-        tempItemDetectors = itemDetectors;
+    }
 
+    IEnumerator SendingRemotePlayersTheirDataStoredByServer()
+    {
         while (true)
         {
             yield return new WaitForSecondsRealtime(1f);
-            //TODO: może jednak skorzystać z Player.players
             GameObject[] players = GameObject.FindGameObjectsWithTag("RemotePlayer");
             for (int i = 0; i < players.Length; i++)
             {
@@ -192,7 +181,7 @@ public class PlayerSetup : Photon.MonoBehaviour
                     if (tempPlayer != null)
                     {
                         Player player = tempPlayer;
-                        players[i].GetComponent<PlayerSetup>().UpdateScore
+                        players[i].GetComponent<PlayerSetup>().UpdatePlayerData
                         (
                             player.score,
                             player.coin,
@@ -205,28 +194,22 @@ public class PlayerSetup : Photon.MonoBehaviour
             }
         }
     }
-    void UpdateScore(int SCORE, int COIN, int DYNAMIT, int NAPRAWIARKA, int ZASOBY)
+    void UpdatePlayerData(int SCORE, int COIN, int DYNAMIT, int NAPRAWIARKA, int ZASOBY)
     {
-        //Każdy inny gracz w tej kopii gry(kopii masterClienta)
-        //wysyła swoje score(czyli score które przechwuje masterClient)
-        //swoim sobowtórom we wszystkich innych kopiach gry
-        photonView.RPC("RpcUpdateScore", PhotonTargets.All, SCORE, COIN, DYNAMIT, NAPRAWIARKA, ZASOBY);
+        photonView.RPC("SetPlayerDataRPC", PhotonTargets.All, SCORE, COIN, DYNAMIT, NAPRAWIARKA, ZASOBY);
     }
 
     [PunRPC]
-    void RpcUpdateScore(int SCORE, int COIN, int DYNAMIT, int NAPRAWIARKA, int ZASOBY)
+    void SetPlayerDataRPC(int SCORE, int COIN, int DYNAMIT, int NAPRAWIARKA, int ZASOBY)
     {
         if (GetComponent<PlayerGO>().myPlayer == null)
             return;
 
-        //Każdy gracz w swojej kopi gry ustawia sobie
-        // itemy które wysłał mu server
         GetComponent<PlayerGO>().myPlayer.score = SCORE;
         GetComponent<PlayerGO>().myPlayer.coin = COIN;
         GetComponent<PlayerGO>().myPlayer.Dynamit = DYNAMIT;
         GetComponent<PlayerGO>().myPlayer.Naprawiarka = NAPRAWIARKA;
         GetComponent<PlayerGO>().myPlayer.Zasoby = ZASOBY;
-
     }
 
     private static void SetBotForServer()
