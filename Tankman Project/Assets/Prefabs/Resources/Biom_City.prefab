@@ -6618,7 +6618,7 @@ GameObject:
   - component: {fileID: 4793487124454210}
   - component: {fileID: 114011090477020884}
   m_Layer: 0
-  m_Name: City
+  m_Name: Biom_City
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24230,17 +24230,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 0}
-  poleDoNaprawy: {fileID: 0}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114011090477020884
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -24395,17 +24390,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 0}
-  poleDoNaprawy: {fileID: 0}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114027101228542210
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -24476,17 +24466,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 0}
-  poleDoNaprawy: {fileID: 0}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114040285299576386
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -24553,17 +24538,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 0}
-  poleDoNaprawy: {fileID: 0}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114048593214661010
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -24627,17 +24607,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 1
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 1479188309188684}
-  poleDoNaprawy: {fileID: 1990412929190886}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114050225898867876
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -24795,17 +24770,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 0}
-  poleDoNaprawy: {fileID: 0}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114055031937162420
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -24843,17 +24813,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 0}
-  poleDoNaprawy: {fileID: 0}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114062056989001562
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -24891,17 +24856,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 1
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 1758578950489628}
-  poleDoNaprawy: {fileID: 1466673342033554}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114068058098569002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -24913,17 +24873,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 0}
-  poleDoNaprawy: {fileID: 0}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114069885084247840
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -24935,17 +24890,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 1
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 1318088662210896}
-  poleDoNaprawy: {fileID: 1084951139643690}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114070048895981562
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -25086,17 +25036,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 1
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 1199665196831858}
-  poleDoNaprawy: {fileID: 1470512033923220}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114083270567372766
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -25149,17 +25094,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 1
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 1977801836227382}
-  poleDoNaprawy: {fileID: 1237720610920426}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114086704285795612
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -25186,17 +25126,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 0}
-  poleDoNaprawy: {fileID: 0}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114088230142576662
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -25234,17 +25169,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 0}
-  poleDoNaprawy: {fileID: 0}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114096527475535490
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -25256,17 +25186,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 1
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 1065398584462024}
-  poleDoNaprawy: {fileID: 1406566830764978}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114099330914917646
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -25310,17 +25235,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 0}
-  poleDoNaprawy: {fileID: 0}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114107320215524342
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -25622,17 +25542,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 1
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 1080785968152902}
-  poleDoNaprawy: {fileID: 1023124232963164}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114142148721436246
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -25710,17 +25625,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 1
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 1842443372610028}
-  poleDoNaprawy: {fileID: 1868505712667992}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114151298803618030
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -25745,17 +25655,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 1
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 1704183396065848}
-  poleDoNaprawy: {fileID: 1292589007450588}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114157516400187622
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -25782,17 +25687,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 0}
-  poleDoNaprawy: {fileID: 0}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114162957549393944
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -25804,17 +25704,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 1
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 1583844461706618}
-  poleDoNaprawy: {fileID: 1292596517634332}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114166289125354072
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -25826,17 +25721,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 0}
-  poleDoNaprawy: {fileID: 0}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114167199898253180
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -25848,17 +25738,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 1
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 1796835875104808}
-  poleDoNaprawy: {fileID: 1136620731017122}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114168133585292832
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -25976,17 +25861,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 0}
-  poleDoNaprawy: {fileID: 0}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114176490424483326
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -26055,17 +25935,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 0}
-  poleDoNaprawy: {fileID: 0}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114181925118403140
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -26276,17 +26151,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 1
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 1463551993391586}
-  poleDoNaprawy: {fileID: 1531538173064240}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114212273992984574
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -26737,17 +26607,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 0}
-  poleDoNaprawy: {fileID: 0}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114257500516204868
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -26777,17 +26642,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 1
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 1074830403471428}
-  poleDoNaprawy: {fileID: 1133319754828056}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114259360872937534
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -26817,17 +26677,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 0}
-  poleDoNaprawy: {fileID: 0}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114266691431732100
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -26927,17 +26782,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 0}
-  poleDoNaprawy: {fileID: 0}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114275752037672738
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -26964,17 +26814,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 0}
-  poleDoNaprawy: {fileID: 0}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114279358808881718
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -27142,17 +26987,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 1
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 1696794063148454}
-  poleDoNaprawy: {fileID: 1598476360386402}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114302646864556932
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -27267,17 +27107,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 1
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 1277617654142660}
-  poleDoNaprawy: {fileID: 1973071819780102}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114310790165489390
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -27307,17 +27142,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 0}
-  poleDoNaprawy: {fileID: 0}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114314542605305436
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -27329,17 +27159,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 0}
-  poleDoNaprawy: {fileID: 0}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114316170391739804
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -27530,17 +27355,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 0}
-  poleDoNaprawy: {fileID: 0}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114340817422014416
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -27567,17 +27387,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 0}
-  poleDoNaprawy: {fileID: 0}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114345796329633700
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -27589,17 +27404,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 1
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 1438243464794622}
-  poleDoNaprawy: {fileID: 1230027162739422}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114345998541047114
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -27726,17 +27536,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 1
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 1544818541952450}
-  poleDoNaprawy: {fileID: 1351314289897130}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114362761409897822
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -27763,17 +27568,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 0}
-  poleDoNaprawy: {fileID: 0}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114366914257539084
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -27829,17 +27629,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 0}
-  poleDoNaprawy: {fileID: 0}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114373561724569368
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -27910,17 +27705,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 0}
-  poleDoNaprawy: {fileID: 0}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114383668654505384
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -27972,17 +27762,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 0}
-  poleDoNaprawy: {fileID: 0}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114402009769625096
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -28093,17 +27878,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 1
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 1105630741757258}
-  poleDoNaprawy: {fileID: 1312268551025966}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114413252808646238
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -28133,17 +27913,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 0}
-  poleDoNaprawy: {fileID: 0}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114417017595887206
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -28459,17 +28234,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 0}
-  poleDoNaprawy: {fileID: 0}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114474337772141310
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -28507,17 +28277,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 0}
-  poleDoNaprawy: {fileID: 0}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114476788448623948
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -28570,17 +28335,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 1
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 1364840366444872}
-  poleDoNaprawy: {fileID: 1314884455498528}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114483754472376972
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -28610,17 +28370,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 1
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 1649302841971126}
-  poleDoNaprawy: {fileID: 1386564223259476}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114497241723535226
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -28665,17 +28420,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 0}
-  poleDoNaprawy: {fileID: 0}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114509505432088574
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -28749,17 +28499,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 0}
-  poleDoNaprawy: {fileID: 0}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114532058759244082
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -28786,17 +28531,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 1
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 1172381213965740}
-  poleDoNaprawy: {fileID: 1123289404642034}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114534664248734834
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -28864,17 +28604,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 1
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 1089495724675728}
-  poleDoNaprawy: {fileID: 1935799687659862}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114540961879594828
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -28941,17 +28676,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 1
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 1716969343999068}
-  poleDoNaprawy: {fileID: 1315835554686810}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114551510247758360
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -29084,17 +28814,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 0}
-  poleDoNaprawy: {fileID: 0}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114566216720355544
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -29124,17 +28849,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 1
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 1081045654180734}
-  poleDoNaprawy: {fileID: 1988158435583656}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114577215829599672
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -29247,17 +28967,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 1
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 1512867205297896}
-  poleDoNaprawy: {fileID: 1605320115894646}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114600781455751478
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -29332,17 +29047,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 0}
-  poleDoNaprawy: {fileID: 0}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114610647691810148
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -29354,17 +29064,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 0}
-  poleDoNaprawy: {fileID: 0}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114613022775359660
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -29645,17 +29350,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 0}
-  poleDoNaprawy: {fileID: 0}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114659855363769298
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -29667,17 +29367,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 0}
-  poleDoNaprawy: {fileID: 0}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114660372392852416
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -29719,17 +29414,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 0}
-  poleDoNaprawy: {fileID: 0}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114673180591129170
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -29785,17 +29475,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 1
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 1673163632506214}
-  poleDoNaprawy: {fileID: 1135561452037052}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114682410662743814
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -29848,17 +29533,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 0}
-  poleDoNaprawy: {fileID: 0}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114685873463182944
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -30024,17 +29704,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 0}
-  poleDoNaprawy: {fileID: 0}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114700826897330190
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -30120,17 +29795,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 1
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 1630152434917844}
-  poleDoNaprawy: {fileID: 1500696459180204}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114710084733880522
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -30168,17 +29838,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 0}
-  poleDoNaprawy: {fileID: 0}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114713394935893884
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -30204,17 +29869,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 0}
-  poleDoNaprawy: {fileID: 0}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114720168375920820
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -30370,17 +30030,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 1
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 1144164229233934}
-  poleDoNaprawy: {fileID: 1574392034787322}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114754184750831568
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -30451,17 +30106,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 0}
-  poleDoNaprawy: {fileID: 0}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114757814150678420
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -30528,17 +30178,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 1
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 1412291660855694}
-  poleDoNaprawy: {fileID: 1948448608879852}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114770852738617062
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -30623,17 +30268,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 0}
-  poleDoNaprawy: {fileID: 0}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114777290935054618
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -30645,17 +30285,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 0}
-  poleDoNaprawy: {fileID: 0}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114778704077326700
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -30745,17 +30380,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 0}
-  poleDoNaprawy: {fileID: 0}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114797539006459704
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -30767,17 +30397,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 0}
-  poleDoNaprawy: {fileID: 0}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114798273242666232
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -30904,17 +30529,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 1
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 1774183840947824}
-  poleDoNaprawy: {fileID: 1139175092442314}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114824095621190570
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -30926,17 +30546,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 1
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 1835492912475236}
-  poleDoNaprawy: {fileID: 1584810749789408}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114825961463164486
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -31000,17 +30615,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 1
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 1731549701431340}
-  poleDoNaprawy: {fileID: 1961264171579710}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114832609155828646
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -31142,17 +30752,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 1
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 1201147449073596}
-  poleDoNaprawy: {fileID: 1590241397851888}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114847069387706624
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -31278,17 +30883,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 1
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 1507450443027134}
-  poleDoNaprawy: {fileID: 1550712192095992}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114859729338715158
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -31359,17 +30959,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 0}
-  poleDoNaprawy: {fileID: 0}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114874662528114328
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -31436,17 +31031,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 0}
-  poleDoNaprawy: {fileID: 0}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114887503938789200
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -31484,17 +31074,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 0}
-  poleDoNaprawy: {fileID: 0}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114889057028681678
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -31539,17 +31124,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 0}
-  poleDoNaprawy: {fileID: 0}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114898788319774844
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -31601,17 +31181,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 1
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 1802784585000896}
-  poleDoNaprawy: {fileID: 1700594244177462}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114901476433050826
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -31653,17 +31228,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 0}
-  poleDoNaprawy: {fileID: 0}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114912156815549716
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -31690,17 +31260,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 0}
-  poleDoNaprawy: {fileID: 0}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114913939721700344
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -31742,17 +31307,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 1
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 1970155616208244}
-  poleDoNaprawy: {fileID: 1649287136698416}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114925062774132730
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -31797,17 +31357,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 0}
-  poleDoNaprawy: {fileID: 0}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114926199443608892
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -31819,17 +31374,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 1
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 1657717690798044}
-  poleDoNaprawy: {fileID: 1050558396250132}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114929648993368034
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -31911,17 +31461,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 1
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 1612043130110622}
-  poleDoNaprawy: {fileID: 1475864298075476}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114945215660329566
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -31933,17 +31478,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 1
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 1030307664836790}
-  poleDoNaprawy: {fileID: 1339847249145072}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114953245171478852
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -31970,17 +31510,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 1
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 1972509834263944}
-  poleDoNaprawy: {fileID: 1435380831859816}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114957556767703980
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -31992,17 +31527,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 0}
-  poleDoNaprawy: {fileID: 0}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114961700019376114
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -32029,17 +31559,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 0}
-  poleDoNaprawy: {fileID: 0}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114964540006261926
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -32069,17 +31594,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  zasiekNormalny: {fileID: 21300000, guid: 258c71308aae72e49a3a9573fa14b71b, type: 3}
-  zasiekZniszczony: {fileID: 21300000, guid: ba149fc3c8b67ee48a768fb01f831feb, type: 3}
-  zabSmokaNormalny: {fileID: 21300000, guid: 786db9f9b60d6b944b0c21ce72bfe7f1, type: 3}
-  zabSmokaZniszczony: {fileID: 21300000, guid: 3b165ccf1b5ba1442b70caa861e4a413, type: 3}
-  stalowyXNormalny: {fileID: 21300000, guid: 87554efcca7f4634fa0b595dcab74870, type: 3}
-  stalowyXZniszczony: {fileID: 21300000, guid: 33675c9debd8286429b110730d06a3c7, type: 3}
-  plotZniszczony: {fileID: 21300000, guid: 783aaa2a9b61c964981f9cfe741acd26, type: 3}
-  poleDoNiszczenia: {fileID: 0}
-  poleDoNaprawy: {fileID: 0}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &114970442553653072
 MonoBehaviour:
   m_ObjectHideFlags: 1

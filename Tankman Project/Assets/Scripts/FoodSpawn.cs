@@ -107,7 +107,7 @@ public class FoodSpawn : Photon.MonoBehaviour
     int stockCounter;
     void GenerateStock()
     {
-        if (stockCounter >= maxZasoby)
+        if (stockCounter < maxZasoby)
         {
             SpawnItem(Items.Item_Zasoby, RandomPos());
             stockCounter++;
@@ -117,7 +117,7 @@ public class FoodSpawn : Photon.MonoBehaviour
     int repairCounter;
     void GenerateRepair()
     {
-        if (repairCounter >= maxNaprawiarka)
+        if (repairCounter < maxNaprawiarka)
         {
             SpawnItem(Items.Item_Naprawka, RandomPos());
             repairCounter++;
@@ -127,7 +127,7 @@ public class FoodSpawn : Photon.MonoBehaviour
     int coinCounter;
     void GenerateCoin()
     {
-        if (coinCounter >= maxCoin)
+        if (coinCounter < maxCoin)
         {
             SpawnItem(Items.Item_Coin, RandomPos());
             coinCounter++;

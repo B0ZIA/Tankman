@@ -7430,6 +7430,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4181954183840324}
   - component: {fileID: 114370078756222910}
+  - component: {fileID: 114748977720145966}
   m_Layer: 0
   m_Name: Trzymacz_Tank_Camera
   m_TagString: Untagged
@@ -8028,7 +8029,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1166972336701026}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 296.6903, y: 208.54549, z: 317.71857}
+  m_LocalPosition: {x: 14.480044, y: 10.749077, z: 317.71857}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4550386421071972}
@@ -8325,7 +8326,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 3.5
+  orthographic size: 4.25
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -12967,8 +12968,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc9ac35d34c374e4aa33cd8aad89560d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turret: {fileID: 0}
-  curretTarget: {fileID: 0}
+  turret: {fileID: 11400000, guid: ae2dbd373e45f0a46b0ac34ce3307fc3, type: 2}
+  curretTarget: {fileID: 1096686373124928}
   staticTarget: {fileID: 1096686373124928}
   turnSpeed: 20
 --- !u!114 &114186079116014582
@@ -15345,7 +15346,7 @@ MonoBehaviour:
   whatToHit:
     serializedVersion: 2
     m_Bits: 6656
-  turret: {fileID: 0}
+  turret: {fileID: 11400000, guid: ae2dbd373e45f0a46b0ac34ce3307fc3, type: 2}
   muzzleFlash: {fileID: 0}
   tankStore: {fileID: 114154491682395056}
 --- !u!114 &114363595526411266
@@ -15535,7 +15536,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1999220736123096}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d8238cc53530b64fbb7828c3d3bb591, type: 3}
   m_Name: 
@@ -17307,7 +17308,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turret: {fileID: 11400000, guid: a47a4e654d9349547ae5a84c524c537b, type: 2}
-  curretTarget: {fileID: 0}
+  curretTarget: {fileID: 1307161742363390}
   staticTarget: {fileID: 1307161742363390}
   turnSpeed: 20
 --- !u!114 &114482730257057052
@@ -19108,7 +19109,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d3f4636dac7e8b46be6407515ad1915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameOver: {fileID: 0}
+  gameOver: {fileID: 114154491682395056}
   cameraShake: {fileID: 114877452639450838}
 --- !u!114 &114591757205738898
 MonoBehaviour:
@@ -20013,7 +20014,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1489128152944866}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ec96f35bab3f2a14e9e606b2e10d8ea0, type: 3}
   m_Name: 
@@ -21723,6 +21724,18 @@ MonoBehaviour:
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   delegates: []
+--- !u!114 &114748977720145966
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1999220736123096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b7173e41ebbc5b4fa51bccbfe25f0b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 4732706634311186}
 --- !u!114 &114749343764621770
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -22176,7 +22189,7 @@ MonoBehaviour:
   whatToHit:
     serializedVersion: 2
     m_Bits: 6656
-  turret: {fileID: 0}
+  turret: {fileID: 11400000, guid: 7618005e44db9d04c855fe88668cd483, type: 2}
   muzzleFlash: {fileID: 0}
   tankStore: {fileID: 114154491682395056}
 --- !u!114 &114780045113808908
@@ -23607,36 +23620,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef1be90219b656d4ea55a971f57dd9a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  componentToDisable:
+  remotePlayerInactiveComponents:
+  - {fileID: 114532274308444128}
   - {fileID: 114323634102474602}
+  - {fileID: 114154491682395056}
+  - {fileID: 114781344151161048}
+  - {fileID: 114596698315399644}
+  - {fileID: 82117909509012948}
   - {fileID: 82173189119396054}
   - {fileID: 114749343764621770}
-  - {fileID: 114427474492456294}
-  - {fileID: 114151662177483284}
-  - {fileID: 114532274308444128}
-  - {fileID: 114481780528121258}
-  - {fileID: 58062099190781096}
-  - {fileID: 114969427324727140}
-  - {fileID: 58822740916052282}
-  - {fileID: 114182683423146960}
-  - {fileID: 58056819858892514}
+  - {fileID: 114747156443066884}
   - {fileID: 114858065519814502}
-  - {fileID: 58779143086853788}
-  - {fileID: 114481780528121258}
-  - {fileID: 114778015016747610}
-  - {fileID: 114362008068043946}
+  - {fileID: 114182683423146960}
+  - {fileID: 114969427324727140}
   - {fileID: 114898944017547980}
-  - {fileID: 114799975722550708}
-  - {fileID: 114596698315399644}
+  - {fileID: 114362008068043946}
+  - {fileID: 114778015016747610}
+  - {fileID: 58779143086853788}
+  - {fileID: 58056819858892514}
+  - {fileID: 58822740916052282}
+  - {fileID: 114652264098419334}
+  - {fileID: 114812992346266730}
+  - {fileID: 114163448287053372}
+  - {fileID: 114151662177483284}
   - {fileID: 114587887753781620}
   - {fileID: 58328826815229328}
-  - {fileID: 114099976258188862}
-  objectsToDisable:
-  - {fileID: 1201608252474948}
+  - {fileID: 114481780528121258}
+  - {fileID: 114799975722550708}
+  - {fileID: 58062099190781096}
+  - {fileID: 114231382201597766}
+  remotePlayerInactiveGameObjects:
+  - {fileID: 1340167105744888}
+  - {fileID: 1069352532904312}
   - {fileID: 1401189472654018}
   - {fileID: 1999220736123096}
-  - {fileID: 1381598909553240}
-  - {fileID: 1069352532904312}
 --- !u!114 &114858065519814502
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -23648,8 +23665,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc9ac35d34c374e4aa33cd8aad89560d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turret: {fileID: 0}
-  curretTarget: {fileID: 0}
+  turret: {fileID: 11400000, guid: 86f47cdcb734c43429430600b2ae3c64, type: 2}
+  curretTarget: {fileID: 1714336440674450}
   staticTarget: {fileID: 1714336440674450}
   turnSpeed: 20
 --- !u!114 &114861918440844984
@@ -24274,7 +24291,7 @@ MonoBehaviour:
   whatToHit:
     serializedVersion: 2
     m_Bits: 6656
-  turret: {fileID: 0}
+  turret: {fileID: 11400000, guid: 86f47cdcb734c43429430600b2ae3c64, type: 2}
   muzzleFlash: {fileID: 0}
   tankStore: {fileID: 114154491682395056}
 --- !u!114 &114899578119627822
@@ -25396,8 +25413,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc9ac35d34c374e4aa33cd8aad89560d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turret: {fileID: 0}
-  curretTarget: {fileID: 0}
+  turret: {fileID: 11400000, guid: 7618005e44db9d04c855fe88668cd483, type: 2}
+  curretTarget: {fileID: 1863885695840820}
   staticTarget: {fileID: 1863885695840820}
   turnSpeed: 20
 --- !u!114 &114970234147598766

@@ -78,4 +78,4 @@ MonoBehaviour:
   - ZabiJOfiareRPC
   - ZebralemScoreRPC
   - ZniszczBotaRPC
-  DisableAutoOpenWizard: 1
+  DisableAutoOpenWizard: 0

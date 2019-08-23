@@ -47,9 +47,14 @@ public abstract class Shot : Photon.MonoBehaviour, IShot
     public virtual void Shoot()
     {
         currentAmmo--;
-        if(shootSoundEffect != null)
-            Instantiate(shootSoundEffect, transform.position, transform.rotation);
+        InstantianeAudio(transform.position, shootSoundEffect);
         myPV.RPC("RpcDoShootEffect", PhotonTargets.All, startFirePoint.position, startFirePoint.rotation);
+    }
+
+    public void InstantianeAudio(Vector3 position, GameObject prefab)
+    {
+        if (prefab != null)
+            Instantiate(prefab, position, transform.rotation);
     }
 
     protected bool ICanShoot = false;

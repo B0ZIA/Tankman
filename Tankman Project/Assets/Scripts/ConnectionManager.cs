@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using UnityEditor.VersionControl;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -26,7 +27,7 @@ public class ConnectionManager : Photon.MonoBehaviour
         PhotonNetwork.sendRate = 30;
         PhotonNetwork.sendRateOnSerialize = 30;
         PhotonNetwork.ConnectUsingSettings(GameManager.GAME_VERSION);
-    }
+    }   
 
     /// <summary>
     /// Jeśli stworzysz pokój (czyli jesteś serverem) to w scenie roboczej
@@ -45,7 +46,6 @@ public class ConnectionManager : Photon.MonoBehaviour
     void OnDisconnectedFromPhoton()
     {
         Debug.Log("Gracz zerwał połączene");
-        //Player.players.Clear();
         SceneManager.LoadScene(1);
     }
 
@@ -157,18 +157,22 @@ public class ConnectionManager : Photon.MonoBehaviour
     {
         if (scene.buildIndex != 1 && scene.buildIndex != 0)
         {
-            //Debug.Log("Prubuję dołączyć do pokoju: "+ gameManager.gameMode + "_" + roomIndex);
-            PhotonNetwork.JoinOrCreateRoom(GameManager.myMode.ToString() + "_" + roomIndex, roomOptions: new RoomOptions() /*{ maxPlayers = 1 }*/, typedLobby: TypedLobby.Default);
-            //PhotonNetwork.JoinOrCreateRoom(gameManager.gameMode, new RoomOptions(), TypedLobby.Default);
+            //Debug.Log("Prubuję dołączyć do pokoju: "+ GameManager.myMode.ToString() + "_" + roomIndex);
+            PhotonNetwork.JoinOrCreateRoom(GameManager.myMode.ToString() + "_" + roomIndex,new RoomOptions(), new TypedLobby());
         }
     }
 
     void OnPhotonCreateRoomFailed()
     {
-        //Debug.Log("nie udało się stworzyć pokoju: " + gameManager.gameMode + "_" + roomIndex);
+        //Debug.Log("nie udało się stworzyć pokoju: " + GameManager.myMode.ToString() + "_" + roomIndex);
         roomIndex++;
-        //Debug.Log("Prubuję dołączyć do pokoju: " + gameManager.gameMode + "_" + roomIndex);
+        //Debug.Log("Próbuję dołączyć do pokoju: " + GameManager.myMode.ToString() + "_" + roomIndex);
         PhotonNetwork.JoinOrCreateRoom(GameManager.myMode.ToString() + "_" + roomIndex, roomOptions: new RoomOptions() /*{ maxPlayers = 1 }*/, typedLobby: TypedLobby.Default);
+    }
+
+    void OnPhotonJoinRoomFailed(object[] cause)
+    {
+        Debug.Log("OnPhotonJoinRoomFailed got called. This can happen if the room is not existing or full or closed.");
     }
 
     #endregion

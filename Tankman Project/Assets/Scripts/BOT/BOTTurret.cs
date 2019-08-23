@@ -25,7 +25,6 @@ public class BOTTurret : TrackingMechanism
         if (coll.gameObject.tag == Tag.LOCALPLAYERBODY || coll.gameObject.tag == Tag.REMOTEPLAYERBODY)
         {
             target = coll.gameObject;
-            botMovement.mamGraczaWZasiegu = true;
         }
     }
 
@@ -34,7 +33,6 @@ public class BOTTurret : TrackingMechanism
         if (coll.gameObject.tag == Tag.LOCALPLAYERBODY || coll.gameObject.tag == Tag.REMOTEPLAYERBODY)
         {
             target = staticTarget;
-            botMovement.mamGraczaWZasiegu = false;
         }
     }
 }

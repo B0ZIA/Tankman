@@ -9,12 +9,12 @@ using System.Collections;
 public class BOTEngine : Engine, ICanMove, ICanTurn
 {
     public PhotonView myPV;
-
+        
     private float tempMoveSpeed;
     public override float MoveSpeed { get { return botSetup.MyTank.speed; }}
 
     private float tempTurnSpeed;
-    public override float TurnSpeed { get { return botSetup.MyTank.turnSpeed; }}
+    public override float TurnSpeed { get { return botSetup.MyTank.turnSpeed * 7f; }}
 
     private float respawnTime = 30f;    //Czas potrzebny do odrodzenia się czołgu po jego śmierci 
     private float shootDistance = 1f;   //Zasięg strzału czołgu 
@@ -33,7 +33,6 @@ public class BOTEngine : Engine, ICanMove, ICanTurn
     public Material deathMatereial;
     public Material defaultMaterial;
 
-    public bool mamGraczaWZasiegu;
     private bool move;
 
 
@@ -74,9 +73,6 @@ public class BOTEngine : Engine, ICanMove, ICanTurn
                 botHealt.AddPlayerScoreforKillBot();
             }
         }
-
-        if (mamGraczaWZasiegu)
-            target = botHead[0].GetComponent<BOTTurret>().target;
 
         if(target != null)
         {
@@ -161,7 +157,7 @@ public class BOTEngine : Engine, ICanMove, ICanTurn
             yield return new WaitForSecondsRealtime(0.5f);
             bezpiecznik++;
             if (bezpiecznik > 10)
-                mamGraczaWZasiegu = false;
+                //mamGraczaWZasiegu = false;
             //UnityEngine.Debug.Log("Cały czas szukam target !!!");
 
             //Radar szuka najbliższego obiektu dlatego kiedy zrobi pełne kółko to
