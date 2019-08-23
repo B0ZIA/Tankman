@@ -198,12 +198,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!61 &551326
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3840,10 +3840,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 1
-  poleDoNiszczenia: {fileID: 324143796}
-  poleDoNaprawy: {fileID: 208973563}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &40739593
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4340,10 +4342,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 1
-  poleDoNiszczenia: {fileID: 25900633}
-  poleDoNaprawy: {fileID: 579743000}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &49310526
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4782,12 +4786,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!61 &51672362
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5065,10 +5069,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 1
-  poleDoNiszczenia: {fileID: 1578130234}
-  poleDoNaprawy: {fileID: 948785307}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &59289067
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5450,6 +5456,300 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &63129787
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 63129788}
+  - component: {fileID: 63129792}
+  - component: {fileID: 63129791}
+  - component: {fileID: 63129790}
+  - component: {fileID: 63129789}
+  m_Layer: 5
+  m_Name: LoginButton
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &63129788
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 63129787}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2076684050}
+  m_Father: {fileID: 178401373}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.0010109, y: -0.0012512207}
+  m_SizeDelta: {x: 276.9, y: 79.948}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!82 &63129789
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 63129787}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 15d2e465afbc5544495e21ea8bdaaad4, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &63129790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 63129787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 1, g: 0, b: 0, a: 1}
+    m_PressedColor: {r: 1, g: 1, b: 1, a: 1}
+    m_DisabledColor: {r: 1, g: 0, b: 0, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 63129791}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 101435404}
+        m_MethodName: LoginPlayer_Click
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &63129791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 63129787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.29411766}
+  m_RaycastTarget: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 0
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &63129792
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 63129787}
+  m_CullTransparentMesh: 0
+--- !u!1 &64368198
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 64368199}
+  - component: {fileID: 64368201}
+  - component: {fileID: 64368200}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &64368199
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 64368198}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1139768649}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -0.5}
+  m_SizeDelta: {x: -20, y: -13}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &64368200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 64368198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 0
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 
+--- !u!222 &64368201
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 64368198}
+  m_CullTransparentMesh: 0
 --- !u!1 &68284082
 GameObject:
   m_ObjectHideFlags: 0
@@ -5534,12 +5834,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!61 &68284087
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5697,12 +5997,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!61 &75992647
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5825,10 +6125,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 1
-  poleDoNiszczenia: {fileID: 1696262695}
-  poleDoNaprawy: {fileID: 1900260505}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &83207215
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6023,12 +6325,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!61 &92627523
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6242,6 +6544,94 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &101435400
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 101435401}
+  - component: {fileID: 101435403}
+  - component: {fileID: 101435402}
+  - component: {fileID: 101435404}
+  m_Layer: 5
+  m_Name: Account
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &101435401
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 101435400}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2069946390}
+  - {fileID: 479998273}
+  - {fileID: 1651079096}
+  - {fileID: 464162472}
+  m_Father: {fileID: 1605493295}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -254.29999}
+  m_SizeDelta: {x: 0, y: -508.4}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &101435402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 101435400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &101435403
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 101435400}
+  m_CullTransparentMesh: 0
+--- !u!114 &101435404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 101435400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f70e1995157b293489151ab126cf2a32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  registration: {fileID: 1651079099}
+  login: {fileID: 464162475}
+  playerDisplay: {fileID: 1253317321}
 --- !u!1 &102064083
 GameObject:
   m_ObjectHideFlags: 0
@@ -6473,12 +6863,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!61 &106612921
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6563,7 +6953,7 @@ GameObject:
   - component: {fileID: 107053403}
   - component: {fileID: 107053402}
   m_Layer: 5
-  m_Name: Text (1)
+  m_Name: StartText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6608,7 +6998,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: e00995507c2406448b4c8429136104dd, type: 3}
-    m_FontSize: 55
+    m_FontSize: 45
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 10
@@ -6619,7 +7009,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: START
+  m_Text: Play
 --- !u!222 &107053403
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7188,12 +7578,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!61 &127689981
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7267,6 +7657,81 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &128119012
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 128119013}
+  - component: {fileID: 128119015}
+  - component: {fileID: 128119014}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &128119013
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 128119012}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1270522471}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -0.5}
+  m_SizeDelta: {x: -20, y: -13}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &128119014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 128119012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 0
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 
+--- !u!222 &128119015
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 128119012}
+  m_CullTransparentMesh: 0
 --- !u!1 &129806300
 GameObject:
   m_ObjectHideFlags: 0
@@ -7759,6 +8224,151 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &174320431
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 174320432}
+  - component: {fileID: 174320434}
+  - component: {fileID: 174320433}
+  m_Layer: 5
+  m_Name: RegisterText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &174320432
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 174320431}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1285190230}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -0.3399353, y: 0.68992996}
+  m_SizeDelta: {x: 0.44000244, y: 0.11000061}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &174320433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 174320431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: e00995507c2406448b4c8429136104dd, type: 3}
+    m_FontSize: 45
+    m_FontStyle: 1
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 65
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Register
+--- !u!222 &174320434
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 174320431}
+  m_CullTransparentMesh: 0
+--- !u!1 &178401372
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 178401373}
+  - component: {fileID: 178401375}
+  - component: {fileID: 178401374}
+  m_Layer: 5
+  m_Name: Login
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &178401373
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 178401372}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1.0007435}
+  m_Children:
+  - {fileID: 63129788}
+  m_Father: {fileID: 479998273}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.000045776, y: -105.1}
+  m_SizeDelta: {x: 277.59998, y: 80.42853}
+  m_Pivot: {x: 0.5, y: 0}
+--- !u!114 &178401374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 178401372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.28627452}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: b96ec12630a86cd48963ecc55f1b0b10, type: 3}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &178401375
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 178401372}
+  m_CullTransparentMesh: 0
 --- !u!1 &178899565
 GameObject:
   m_ObjectHideFlags: 0
@@ -8578,6 +9188,81 @@ Transform:
   m_Father: {fileID: 2060426146}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &209655254
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 209655255}
+  - component: {fileID: 209655257}
+  - component: {fileID: 209655256}
+  m_Layer: 5
+  m_Name: Placeholder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &209655255
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 209655254}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1139768649}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -0.5}
+  m_SizeDelta: {x: -20, y: -13}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &209655256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 209655254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 0.5}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 2
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Enter text...
+--- !u!222 &209655257
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 209655254}
+  m_CullTransparentMesh: 0
 --- !u!1 &220169946
 GameObject:
   m_ObjectHideFlags: 0
@@ -8627,10 +9312,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 1
-  poleDoNiszczenia: {fileID: 1108191745}
-  poleDoNaprawy: {fileID: 1553516303}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &220169949
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8825,12 +9512,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!61 &228251572
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9135,12 +9822,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!61 &235345455
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9365,6 +10052,225 @@ Transform:
   m_Father: {fileID: 125079270}
   m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &246595872
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 246595873}
+  - component: {fileID: 246595877}
+  - component: {fileID: 246595876}
+  - component: {fileID: 246595875}
+  - component: {fileID: 246595874}
+  m_Layer: 5
+  m_Name: RegisterButton
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &246595873
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 246595872}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 729774634}
+  m_Father: {fileID: 685679717}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.0010109, y: -0.0012512207}
+  m_SizeDelta: {x: 276.9, y: 79.948}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!82 &246595874
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 246595872}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 15d2e465afbc5544495e21ea8bdaaad4, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &246595875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 246595872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 1, g: 0, b: 0, a: 1}
+    m_PressedColor: {r: 1, g: 1, b: 1, a: 1}
+    m_DisabledColor: {r: 1, g: 0, b: 0, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 0
+  m_TargetGraphic: {fileID: 246595876}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 101435404}
+        m_MethodName: Register_Click
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &246595876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 246595872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.29411766}
+  m_RaycastTarget: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 0
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &246595877
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 246595872}
+  m_CullTransparentMesh: 0
 --- !u!1 &247763663
 GameObject:
   m_ObjectHideFlags: 0
@@ -9968,10 +10874,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 1
-  poleDoNiszczenia: {fileID: 719597873}
-  poleDoNaprawy: {fileID: 960782950}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &266883223
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11134,10 +12042,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 1
-  poleDoNiszczenia: {fileID: 574684452}
-  poleDoNaprawy: {fileID: 1309386520}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &280588444
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11332,12 +12242,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!61 &281537923
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11535,10 +12445,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 1
-  poleDoNiszczenia: {fileID: 1755290235}
-  poleDoNaprawy: {fileID: 1888137133}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &298775848
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11981,6 +12893,153 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &327452073
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 327452074}
+  - component: {fileID: 327452077}
+  - component: {fileID: 327452076}
+  - component: {fileID: 327452075}
+  m_Layer: 5
+  m_Name: Name
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &327452074
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 327452073}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2053809382}
+  - {fileID: 1544568269}
+  - {fileID: 596564677}
+  m_Father: {fileID: 464162472}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.000030279, y: 30.2}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &327452075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 327452073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 575553740, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 327452076}
+  m_TextComponent: {fileID: 1544568270}
+  m_Placeholder: {fileID: 2053809383}
+  m_ContentType: 0
+  m_InputType: 0
+  m_AsteriskChar: 42
+  m_KeyboardType: 0
+  m_LineType: 0
+  m_HideMobileInput: 0
+  m_CharacterValidation: 0
+  m_CharacterLimit: 0
+  m_OnEndEdit:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.InputField+SubmitEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  m_OnValueChanged:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 464162475}
+        m_MethodName: VerifyInputs
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.UI.InputField+OnChangeEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_CustomCaretColor: 0
+  m_SelectionColor: {r: 0.65882355, g: 0.80784315, b: 1, a: 0.7529412}
+  m_Text: 
+  m_CaretBlinkRate: 0.85
+  m_CaretWidth: 1
+  m_ReadOnly: 0
+--- !u!114 &327452076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 327452073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &327452077
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 327452073}
+  m_CullTransparentMesh: 0
 --- !u!1 &329294271
 GameObject:
   m_ObjectHideFlags: 0
@@ -12065,12 +13124,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!61 &329294276
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12193,10 +13252,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 1
-  poleDoNiszczenia: {fileID: 129806300}
-  poleDoNaprawy: {fileID: 586062827}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &333754645
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12468,10 +13529,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 1
-  poleDoNiszczenia: {fileID: 776839832}
-  poleDoNaprawy: {fileID: 1861723946}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &353768729
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12758,10 +13821,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 1
-  poleDoNiszczenia: {fileID: 1294160957}
-  poleDoNaprawy: {fileID: 513170458}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &356686401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12956,12 +14021,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!61 &357240622
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13119,12 +14184,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!61 &365148808
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14771,6 +15836,153 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &441346344
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 441346345}
+  - component: {fileID: 441346348}
+  - component: {fileID: 441346347}
+  - component: {fileID: 441346346}
+  m_Layer: 5
+  m_Name: Password
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &441346345
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 441346344}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1500505702}
+  - {fileID: 1764940412}
+  - {fileID: 682768765}
+  m_Father: {fileID: 464162472}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.000022411, y: -16.571}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &441346346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 441346344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 575553740, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 441346347}
+  m_TextComponent: {fileID: 1764940413}
+  m_Placeholder: {fileID: 1500505703}
+  m_ContentType: 0
+  m_InputType: 0
+  m_AsteriskChar: 42
+  m_KeyboardType: 0
+  m_LineType: 0
+  m_HideMobileInput: 0
+  m_CharacterValidation: 0
+  m_CharacterLimit: 0
+  m_OnEndEdit:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.InputField+SubmitEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  m_OnValueChanged:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 464162475}
+        m_MethodName: VerifyInputs
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.UI.InputField+OnChangeEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_CustomCaretColor: 0
+  m_SelectionColor: {r: 0.65882355, g: 0.80784315, b: 1, a: 0.7529412}
+  m_Text: 
+  m_CaretBlinkRate: 0.85
+  m_CaretWidth: 1
+  m_ReadOnly: 0
+--- !u!114 &441346347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 441346344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &441346348
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 441346344}
+  m_CullTransparentMesh: 0
 --- !u!1 &446017986
 GameObject:
   m_ObjectHideFlags: 0
@@ -14928,12 +16140,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!61 &446407715
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15119,6 +16331,128 @@ Transform:
   m_Father: {fileID: 1257193353}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &450632388
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 450632389}
+  - component: {fileID: 450632392}
+  - component: {fileID: 450632391}
+  - component: {fileID: 450632390}
+  m_Layer: 5
+  m_Name: EnternAccount
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &450632389
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 450632388}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 697772330}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 160, y: 130.3}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &450632390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 450632388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 450632391}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 101435404}
+        m_MethodName: EnternAccount_Click
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &450632391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 450632388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: 9e95e10f646d286449a60b1d9b77d386, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &450632392
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 450632388}
+  m_CullTransparentMesh: 0
 --- !u!1 &451542414
 GameObject:
   m_ObjectHideFlags: 0
@@ -15541,6 +16875,94 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &464162471
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 464162472}
+  - component: {fileID: 464162474}
+  - component: {fileID: 464162473}
+  - component: {fileID: 464162475}
+  m_Layer: 5
+  m_Name: Login
+  m_TagString: LoginPanel
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &464162472
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 464162471}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.9999081, y: 0.9999081, z: 0.9999081}
+  m_Children:
+  - {fileID: 1183397352}
+  - {fileID: 327452074}
+  - {fileID: 441346345}
+  - {fileID: 1364350471}
+  m_Father: {fileID: 101435401}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -16.599854, y: 0}
+  m_SizeDelta: {x: -861.1, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &464162473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 464162471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.4392157}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: c37d25ead89f2c14c8e0f5263ffdb179, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &464162474
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 464162471}
+  m_CullTransparentMesh: 0
+--- !u!114 &464162475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 464162471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7134e448449ba3e4cbbe1010bfa9614a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameField: {fileID: 327452075}
+  passwordField: {fileID: 441346346}
+  submitButton: {fileID: 1670016247}
 --- !u!1001 &468276184
 Prefab:
   m_ObjectHideFlags: 0
@@ -16770,12 +18192,312 @@ Prefab:
         type: 2}
       propertyPath: poleDoNaprawy
       value: 
-      objectReference: {fileID: 468276187}
+      objectReference: {fileID: 0}
     - target: {fileID: 114777106464119952, guid: 998fe4d3c3bcea54494efc63e9280f00,
         type: 2}
       propertyPath: poleDoNiszczenia
       value: 
-      objectReference: {fileID: 468276188}
+      objectReference: {fileID: 0}
+    - target: {fileID: 114649144194025796, guid: 998fe4d3c3bcea54494efc63e9280f00,
+        type: 2}
+      propertyPath: viewIdField
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114649144194025796, guid: 998fe4d3c3bcea54494efc63e9280f00,
+        type: 2}
+      propertyPath: instantiationId
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114894055061394760, guid: 998fe4d3c3bcea54494efc63e9280f00,
+        type: 2}
+      propertyPath: viewIdField
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114894055061394760, guid: 998fe4d3c3bcea54494efc63e9280f00,
+        type: 2}
+      propertyPath: instantiationId
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114140319413632068, guid: 998fe4d3c3bcea54494efc63e9280f00,
+        type: 2}
+      propertyPath: viewIdField
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114140319413632068, guid: 998fe4d3c3bcea54494efc63e9280f00,
+        type: 2}
+      propertyPath: instantiationId
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114289164614357618, guid: 998fe4d3c3bcea54494efc63e9280f00,
+        type: 2}
+      propertyPath: viewIdField
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 114289164614357618, guid: 998fe4d3c3bcea54494efc63e9280f00,
+        type: 2}
+      propertyPath: instantiationId
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 114243044964586840, guid: 998fe4d3c3bcea54494efc63e9280f00,
+        type: 2}
+      propertyPath: viewIdField
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 114243044964586840, guid: 998fe4d3c3bcea54494efc63e9280f00,
+        type: 2}
+      propertyPath: instantiationId
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 114511342854464420, guid: 998fe4d3c3bcea54494efc63e9280f00,
+        type: 2}
+      propertyPath: viewIdField
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 114511342854464420, guid: 998fe4d3c3bcea54494efc63e9280f00,
+        type: 2}
+      propertyPath: instantiationId
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 114463356272424250, guid: 998fe4d3c3bcea54494efc63e9280f00,
+        type: 2}
+      propertyPath: viewIdField
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 114463356272424250, guid: 998fe4d3c3bcea54494efc63e9280f00,
+        type: 2}
+      propertyPath: instantiationId
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 114749720417091660, guid: 998fe4d3c3bcea54494efc63e9280f00,
+        type: 2}
+      propertyPath: viewIdField
+      value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 114749720417091660, guid: 998fe4d3c3bcea54494efc63e9280f00,
+        type: 2}
+      propertyPath: instantiationId
+      value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 114421765261703006, guid: 998fe4d3c3bcea54494efc63e9280f00,
+        type: 2}
+      propertyPath: viewIdField
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 114421765261703006, guid: 998fe4d3c3bcea54494efc63e9280f00,
+        type: 2}
+      propertyPath: instantiationId
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 114434229088640326, guid: 998fe4d3c3bcea54494efc63e9280f00,
+        type: 2}
+      propertyPath: viewIdField
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 114434229088640326, guid: 998fe4d3c3bcea54494efc63e9280f00,
+        type: 2}
+      propertyPath: instantiationId
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 114488329947294804, guid: 998fe4d3c3bcea54494efc63e9280f00,
+        type: 2}
+      propertyPath: viewIdField
+      value: 26
+      objectReference: {fileID: 0}
+    - target: {fileID: 114488329947294804, guid: 998fe4d3c3bcea54494efc63e9280f00,
+        type: 2}
+      propertyPath: instantiationId
+      value: 26
+      objectReference: {fileID: 0}
+    - target: {fileID: 114082579421910168, guid: 998fe4d3c3bcea54494efc63e9280f00,
+        type: 2}
+      propertyPath: viewIdField
+      value: 28
+      objectReference: {fileID: 0}
+    - target: {fileID: 114082579421910168, guid: 998fe4d3c3bcea54494efc63e9280f00,
+        type: 2}
+      propertyPath: instantiationId
+      value: 28
+      objectReference: {fileID: 0}
+    - target: {fileID: 114894137711873526, guid: 998fe4d3c3bcea54494efc63e9280f00,
+        type: 2}
+      propertyPath: viewIdField
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 114894137711873526, guid: 998fe4d3c3bcea54494efc63e9280f00,
+        type: 2}
+      propertyPath: instantiationId
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 114955702105191124, guid: 998fe4d3c3bcea54494efc63e9280f00,
+        type: 2}
+      propertyPath: viewIdField
+      value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 114955702105191124, guid: 998fe4d3c3bcea54494efc63e9280f00,
+        type: 2}
+      propertyPath: instantiationId
+      value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 114972472319448098, guid: 998fe4d3c3bcea54494efc63e9280f00,
+        type: 2}
+      propertyPath: viewIdField
+      value: 38
+      objectReference: {fileID: 0}
+    - target: {fileID: 114972472319448098, guid: 998fe4d3c3bcea54494efc63e9280f00,
+        type: 2}
+      propertyPath: instantiationId
+      value: 38
+      objectReference: {fileID: 0}
+    - target: {fileID: 114213664499523054, guid: 998fe4d3c3bcea54494efc63e9280f00,
+        type: 2}
+      propertyPath: viewIdField
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 114213664499523054, guid: 998fe4d3c3bcea54494efc63e9280f00,
+        type: 2}
+      propertyPath: instantiationId
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618202974505544, guid: 998fe4d3c3bcea54494efc63e9280f00,
+        type: 2}
+      propertyPath: viewIdField
+      value: 41
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618202974505544, guid: 998fe4d3c3bcea54494efc63e9280f00,
+        type: 2}
+      propertyPath: instantiationId
+      value: 41
+      objectReference: {fileID: 0}
+    - target: {fileID: 114006515082341966, guid: 998fe4d3c3bcea54494efc63e9280f00,
+        type: 2}
+      propertyPath: viewIdField
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 114006515082341966, guid: 998fe4d3c3bcea54494efc63e9280f00,
+        type: 2}
+      propertyPath: instantiationId
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 114323996241223350, guid: 998fe4d3c3bcea54494efc63e9280f00,
+        type: 2}
+      propertyPath: viewIdField
+      value: 52
+      objectReference: {fileID: 0}
+    - target: {fileID: 114323996241223350, guid: 998fe4d3c3bcea54494efc63e9280f00,
+        type: 2}
+      propertyPath: instantiationId
+      value: 52
+      objectReference: {fileID: 0}
+    - target: {fileID: 114999472511338622, guid: 998fe4d3c3bcea54494efc63e9280f00,
+        type: 2}
+      propertyPath: viewIdField
+      value: 57
+      objectReference: {fileID: 0}
+    - target: {fileID: 114999472511338622, guid: 998fe4d3c3bcea54494efc63e9280f00,
+        type: 2}
+      propertyPath: instantiationId
+      value: 57
+      objectReference: {fileID: 0}
+    - target: {fileID: 114524918318748426, guid: 998fe4d3c3bcea54494efc63e9280f00,
+        type: 2}
+      propertyPath: viewIdField
+      value: 65
+      objectReference: {fileID: 0}
+    - target: {fileID: 114524918318748426, guid: 998fe4d3c3bcea54494efc63e9280f00,
+        type: 2}
+      propertyPath: instantiationId
+      value: 65
+      objectReference: {fileID: 0}
+    - target: {fileID: 114999782243308188, guid: 998fe4d3c3bcea54494efc63e9280f00,
+        type: 2}
+      propertyPath: viewIdField
+      value: 66
+      objectReference: {fileID: 0}
+    - target: {fileID: 114999782243308188, guid: 998fe4d3c3bcea54494efc63e9280f00,
+        type: 2}
+      propertyPath: instantiationId
+      value: 66
+      objectReference: {fileID: 0}
+    - target: {fileID: 114887546674747132, guid: 998fe4d3c3bcea54494efc63e9280f00,
+        type: 2}
+      propertyPath: viewIdField
+      value: 67
+      objectReference: {fileID: 0}
+    - target: {fileID: 114887546674747132, guid: 998fe4d3c3bcea54494efc63e9280f00,
+        type: 2}
+      propertyPath: instantiationId
+      value: 67
+      objectReference: {fileID: 0}
+    - target: {fileID: 114757875597985630, guid: 998fe4d3c3bcea54494efc63e9280f00,
+        type: 2}
+      propertyPath: viewIdField
+      value: 68
+      objectReference: {fileID: 0}
+    - target: {fileID: 114757875597985630, guid: 998fe4d3c3bcea54494efc63e9280f00,
+        type: 2}
+      propertyPath: instantiationId
+      value: 68
+      objectReference: {fileID: 0}
+    - target: {fileID: 114181460356341338, guid: 998fe4d3c3bcea54494efc63e9280f00,
+        type: 2}
+      propertyPath: viewIdField
+      value: 69
+      objectReference: {fileID: 0}
+    - target: {fileID: 114181460356341338, guid: 998fe4d3c3bcea54494efc63e9280f00,
+        type: 2}
+      propertyPath: instantiationId
+      value: 69
+      objectReference: {fileID: 0}
+    - target: {fileID: 114507618361044014, guid: 998fe4d3c3bcea54494efc63e9280f00,
+        type: 2}
+      propertyPath: viewIdField
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 114507618361044014, guid: 998fe4d3c3bcea54494efc63e9280f00,
+        type: 2}
+      propertyPath: instantiationId
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 114804419996219726, guid: 998fe4d3c3bcea54494efc63e9280f00,
+        type: 2}
+      propertyPath: viewIdField
+      value: 71
+      objectReference: {fileID: 0}
+    - target: {fileID: 114804419996219726, guid: 998fe4d3c3bcea54494efc63e9280f00,
+        type: 2}
+      propertyPath: instantiationId
+      value: 71
+      objectReference: {fileID: 0}
+    - target: {fileID: 114540097778691566, guid: 998fe4d3c3bcea54494efc63e9280f00,
+        type: 2}
+      propertyPath: viewIdField
+      value: 72
+      objectReference: {fileID: 0}
+    - target: {fileID: 114540097778691566, guid: 998fe4d3c3bcea54494efc63e9280f00,
+        type: 2}
+      propertyPath: instantiationId
+      value: 72
+      objectReference: {fileID: 0}
+    - target: {fileID: 114338000941059772, guid: 998fe4d3c3bcea54494efc63e9280f00,
+        type: 2}
+      propertyPath: viewIdField
+      value: 73
+      objectReference: {fileID: 0}
+    - target: {fileID: 114338000941059772, guid: 998fe4d3c3bcea54494efc63e9280f00,
+        type: 2}
+      propertyPath: instantiationId
+      value: 73
+      objectReference: {fileID: 0}
+    - target: {fileID: 114555046656616822, guid: 998fe4d3c3bcea54494efc63e9280f00,
+        type: 2}
+      propertyPath: viewIdField
+      value: 74
+      objectReference: {fileID: 0}
+    - target: {fileID: 114555046656616822, guid: 998fe4d3c3bcea54494efc63e9280f00,
+        type: 2}
+      propertyPath: instantiationId
+      value: 74
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 998fe4d3c3bcea54494efc63e9280f00, type: 2}
   m_IsPrefabAsset: 0
@@ -16799,16 +18521,6 @@ MonoBehaviour:
   shadowIntensity: 83
   shadowScale: {x: 0.33, y: 0.33, z: 0.33}
   shadow: {fileID: 0}
---- !u!1 &468276187 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1275026970446022, guid: 998fe4d3c3bcea54494efc63e9280f00,
-    type: 2}
-  m_PrefabInternal: {fileID: 468276184}
---- !u!1 &468276188 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1342582021426042, guid: 998fe4d3c3bcea54494efc63e9280f00,
-    type: 2}
-  m_PrefabInternal: {fileID: 468276184}
 --- !u!1 &475333855
 GameObject:
   m_ObjectHideFlags: 0
@@ -16887,6 +18599,78 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &479998272
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 479998273}
+  - component: {fileID: 479998275}
+  - component: {fileID: 479998274}
+  m_Layer: 5
+  m_Name: LoginOrRegister
+  m_TagString: LoginOrRegisterPanel
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &479998273
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 479998272}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1253317320}
+  - {fileID: 1434807790}
+  - {fileID: 178401373}
+  m_Father: {fileID: 101435401}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -16.599854, y: 0}
+  m_SizeDelta: {x: -861.1, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &479998274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 479998272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.4392157}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &479998275
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 479998272}
+  m_CullTransparentMesh: 0
 --- !u!1 &489824023
 GameObject:
   m_ObjectHideFlags: 0
@@ -17440,7 +19224,7 @@ GameObject:
   - component: {fileID: 509290920}
   - component: {fileID: 509290922}
   m_Layer: 5
-  m_Name: LEWA
+  m_Name: LEFT
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17466,7 +19250,7 @@ RectTransform:
   - {fileID: 1777126996}
   - {fileID: 726633302}
   m_Father: {fileID: 1605493295}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 1}
@@ -17573,10 +19357,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 1
-  poleDoNiszczenia: {fileID: 705476406}
-  poleDoNaprawy: {fileID: 2012756470}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &512912787
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17883,12 +19669,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!61 &514581291
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18844,10 +20630,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 1
-  poleDoNiszczenia: {fileID: 686540130}
-  poleDoNaprawy: {fileID: 1033240967}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &553948005
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19067,7 +20855,7 @@ RectTransform:
   m_Children:
   - {fileID: 247763664}
   m_Father: {fileID: 1605493295}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -19219,12 +21007,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!61 &567818158
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19382,12 +21170,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!61 &569357596
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19461,6 +21249,81 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &570169270
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 570169271}
+  - component: {fileID: 570169273}
+  - component: {fileID: 570169272}
+  m_Layer: 5
+  m_Name: LoginText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &570169271
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 570169270}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1670016245}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -0.3399353, y: 0.68992996}
+  m_SizeDelta: {x: 0.44000244, y: 0.11000061}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &570169272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 570169270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: e00995507c2406448b4c8429136104dd, type: 3}
+    m_FontSize: 45
+    m_FontStyle: 1
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 65
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Login
+--- !u!222 &570169273
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 570169270}
+  m_CullTransparentMesh: 0
 --- !u!1 &574684452
 GameObject:
   m_ObjectHideFlags: 0
@@ -20000,7 +21863,7 @@ GameObject:
   - component: {fileID: 589851444}
   - component: {fileID: 589851443}
   m_Layer: 5
-  m_Name: PRAWA
+  m_Name: RIGHT
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20021,7 +21884,7 @@ RectTransform:
   - {fileID: 2045045448}
   - {fileID: 1763435266}
   m_Father: {fileID: 1605493295}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -20488,6 +22351,81 @@ Transform:
   m_Father: {fileID: 1092775138}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &596564676
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 596564677}
+  - component: {fileID: 596564679}
+  - component: {fileID: 596564678}
+  m_Layer: 5
+  m_Name: Text (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &596564677
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 596564676}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 327452074}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -117.16, y: 0.0000019073}
+  m_SizeDelta: {x: 85.27, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &596564678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 596564676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 3
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Name:'
+--- !u!222 &596564679
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 596564676}
+  m_CullTransparentMesh: 0
 --- !u!1 &596786664
 GameObject:
   m_ObjectHideFlags: 0
@@ -20572,12 +22510,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!61 &596786669
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20843,12 +22781,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!61 &614798856
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21098,10 +23036,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 1
-  poleDoNiszczenia: {fileID: 980068777}
-  poleDoNaprawy: {fileID: 2119495340}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &627322531
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22022,6 +23962,81 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &682768764
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 682768765}
+  - component: {fileID: 682768767}
+  - component: {fileID: 682768766}
+  m_Layer: 5
+  m_Name: Text (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &682768765
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 682768764}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 441346345}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -117.88, y: 0.0000019073}
+  m_SizeDelta: {x: 86.72, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &682768766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 682768764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 3
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Password:'
+--- !u!222 &682768767
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 682768764}
+  m_CullTransparentMesh: 0
 --- !u!1 &684571638
 GameObject:
   m_ObjectHideFlags: 0
@@ -22106,12 +24121,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!61 &684571643
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22185,6 +24200,76 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &685679716
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 685679717}
+  - component: {fileID: 685679719}
+  - component: {fileID: 685679718}
+  m_Layer: 5
+  m_Name: Register
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &685679717
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 685679716}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.6, y: 0.6, z: 1.0007435}
+  m_Children:
+  - {fileID: 246595873}
+  m_Father: {fileID: 1651079096}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.000045776, y: -112}
+  m_SizeDelta: {x: 277.59998, y: 80.42853}
+  m_Pivot: {x: 0.5, y: 0}
+--- !u!114 &685679718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 685679716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.28627452}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: b96ec12630a86cd48963ecc55f1b0b10, type: 3}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &685679719
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 685679716}
+  m_CullTransparentMesh: 0
 --- !u!1 &686540130
 GameObject:
   m_ObjectHideFlags: 0
@@ -22346,10 +24431,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 1
-  poleDoNiszczenia: {fileID: 1004089508}
-  poleDoNaprawy: {fileID: 1655023468}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &695790347
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22460,6 +24547,76 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &697772329
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 697772330}
+  - component: {fileID: 697772332}
+  - component: {fileID: 697772331}
+  m_Layer: 5
+  m_Name: Entern
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &697772330
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 697772329}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 450632389}
+  m_Father: {fileID: 2069946390}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -127.29993}
+  m_SizeDelta: {x: -344.90002, y: -129.81752}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &697772331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 697772329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.392}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &697772332
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 697772329}
+  m_CullTransparentMesh: 0
 --- !u!1 &701438164
 GameObject:
   m_ObjectHideFlags: 0
@@ -22622,12 +24779,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!61 &704405187
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23402,12 +25559,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!61 &715806532
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23954,6 +26111,81 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 726633301}
   m_CullTransparentMesh: 0
+--- !u!1 &729774633
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 729774634}
+  - component: {fileID: 729774636}
+  - component: {fileID: 729774635}
+  m_Layer: 5
+  m_Name: RegisterText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &729774634
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 729774633}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 246595873}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -0.3399353, y: 0.68992996}
+  m_SizeDelta: {x: 0.44000244, y: 0.11000061}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &729774635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 729774633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: e00995507c2406448b4c8429136104dd, type: 3}
+    m_FontSize: 45
+    m_FontStyle: 1
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 65
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Register
+--- !u!222 &729774636
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 729774633}
+  m_CullTransparentMesh: 0
 --- !u!1 &732640076
 GameObject:
   m_ObjectHideFlags: 0
@@ -24243,12 +26475,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!61 &742821808
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24557,10 +26789,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 1
-  poleDoNiszczenia: {fileID: 711552228}
-  poleDoNaprawy: {fileID: 413244819}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &751619856
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24991,12 +27225,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!61 &767633697
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25494,12 +27728,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!61 &779479212
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -26101,12 +28335,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!61 &789301504
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -26829,10 +29063,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 1
-  poleDoNiszczenia: {fileID: 903475273}
-  poleDoNaprawy: {fileID: 1891493663}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &807235859
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27704,12 +29940,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!61 &839352003
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -27783,6 +30019,81 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &840433134
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 840433135}
+  - component: {fileID: 840433137}
+  - component: {fileID: 840433136}
+  m_Layer: 5
+  m_Name: Log
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &840433135
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 840433134}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1.0007435}
+  m_Children: []
+  m_Father: {fileID: 1651079096}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.000049591, y: 115.06}
+  m_SizeDelta: {x: 504.9, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &840433136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 840433134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 19
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Register an account.
+--- !u!222 &840433137
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 840433134}
+  m_CullTransparentMesh: 0
 --- !u!1 &843526817
 GameObject:
   m_ObjectHideFlags: 0
@@ -27941,7 +30252,7 @@ RectTransform:
   - {fileID: 102184536}
   - {fileID: 745507840}
   m_Father: {fileID: 1605493295}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -28077,12 +30388,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!61 &863855964
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -28498,6 +30809,81 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &885542075
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 885542076}
+  - component: {fileID: 885542078}
+  - component: {fileID: 885542077}
+  m_Layer: 5
+  m_Name: Text (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &885542076
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 885542075}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1139768649}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -117.88, y: 0.0000019073}
+  m_SizeDelta: {x: 86.72, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &885542077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 885542075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 3
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Password:'
+--- !u!222 &885542078
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 885542075}
+  m_CullTransparentMesh: 0
 --- !u!1 &886684054
 GameObject:
   m_ObjectHideFlags: 0
@@ -28582,12 +30968,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!61 &886684059
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -32410,6 +34796,81 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &892619802
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 892619803}
+  - component: {fileID: 892619805}
+  - component: {fileID: 892619804}
+  m_Layer: 5
+  m_Name: Text (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &892619803
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 892619802}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1270522471}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -117.16, y: 0.0000019073}
+  m_SizeDelta: {x: 85.27, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &892619804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 892619802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 3
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Name:'
+--- !u!222 &892619805
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 892619802}
+  m_CullTransparentMesh: 0
 --- !u!1 &898779357
 GameObject:
   m_ObjectHideFlags: 0
@@ -32817,10 +35278,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 1
-  poleDoNiszczenia: {fileID: 2055530552}
-  poleDoNaprawy: {fileID: 1275416519}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &905860444
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33015,12 +35478,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!61 &923636158
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -33810,10 +36273,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 1
-  poleDoNiszczenia: {fileID: 1447818664}
-  poleDoNaprawy: {fileID: 255023980}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &956512556
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34232,10 +36697,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 1
-  poleDoNiszczenia: {fileID: 1128935224}
-  poleDoNaprawy: {fileID: 1548795570}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &963368099
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34747,12 +37214,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!61 &981298183
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -35064,12 +37531,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!61 &992913671
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -35680,12 +38147,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!61 &1025160556
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -35921,12 +38388,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!61 &1030434618
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -36196,12 +38663,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!61 &1040134493
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -36359,12 +38826,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!61 &1055066723
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -36639,12 +39106,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!61 &1063503071
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -36767,10 +39234,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 1
-  poleDoNiszczenia: {fileID: 62332461}
-  poleDoNaprawy: {fileID: 1353330149}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &1076704676
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37039,12 +39508,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!61 &1082688184
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -37324,10 +39793,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 1
-  poleDoNiszczenia: {fileID: 595784962}
-  poleDoNaprawy: {fileID: 1977948566}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &1092775140
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37901,12 +40372,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!61 &1115388866
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -38142,12 +40613,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!61 &1124974983
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -38678,6 +41149,153 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1139768648
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1139768649}
+  - component: {fileID: 1139768652}
+  - component: {fileID: 1139768651}
+  - component: {fileID: 1139768650}
+  m_Layer: 5
+  m_Name: Password
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1139768649
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1139768648}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 209655255}
+  - {fileID: 64368199}
+  - {fileID: 885542076}
+  m_Father: {fileID: 1651079096}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.000022411, y: -16.571}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1139768650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1139768648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 575553740, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1139768651}
+  m_TextComponent: {fileID: 64368200}
+  m_Placeholder: {fileID: 209655256}
+  m_ContentType: 0
+  m_InputType: 0
+  m_AsteriskChar: 42
+  m_KeyboardType: 0
+  m_LineType: 0
+  m_HideMobileInput: 0
+  m_CharacterValidation: 0
+  m_CharacterLimit: 0
+  m_OnEndEdit:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.InputField+SubmitEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  m_OnValueChanged:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1651079099}
+        m_MethodName: VerifyInputs
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.UI.InputField+OnChangeEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_CustomCaretColor: 0
+  m_SelectionColor: {r: 0.65882355, g: 0.80784315, b: 1, a: 0.7529412}
+  m_Text: 
+  m_CaretBlinkRate: 0.85
+  m_CaretWidth: 1
+  m_ReadOnly: 0
+--- !u!114 &1139768651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1139768648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &1139768652
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1139768648}
+  m_CullTransparentMesh: 0
 --- !u!1 &1146040661
 GameObject:
   m_ObjectHideFlags: 0
@@ -39076,12 +41694,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!61 &1151317710
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -39204,10 +41822,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 1
-  poleDoNiszczenia: {fileID: 998252373}
-  poleDoNaprawy: {fileID: 398192693}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &1151888426
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39367,10 +41987,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 1
-  poleDoNiszczenia: {fileID: 1313065981}
-  poleDoNaprawy: {fileID: 1410257992}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &1168443072
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39716,6 +42338,81 @@ PolygonCollider2D:
       - {x: 0.49, y: 0.78}
       - {x: 1.05, y: 0.78}
       - {x: 1.05, y: 0.93}
+--- !u!1 &1183397351
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1183397352}
+  - component: {fileID: 1183397354}
+  - component: {fileID: 1183397353}
+  m_Layer: 5
+  m_Name: Log
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1183397352
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1183397351}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1.0007435}
+  m_Children: []
+  m_Father: {fileID: 464162472}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.000049591, y: 115.06}
+  m_SizeDelta: {x: 504.9, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1183397353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1183397351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 19
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Log into your account.
+--- !u!222 &1183397354
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1183397351}
+  m_CullTransparentMesh: 0
 --- !u!1 &1197433118
 GameObject:
   m_ObjectHideFlags: 0
@@ -40272,12 +42969,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!61 &1244612801
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -40400,10 +43097,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 1
-  poleDoNiszczenia: {fileID: 381742557}
-  poleDoNaprawy: {fileID: 1151038557}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &1247133111
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40676,12 +43375,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!61 &1248642163
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -40839,12 +43538,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!61 &1249901694
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -41045,6 +43744,81 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1253317319
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1253317320}
+  - component: {fileID: 1253317322}
+  - component: {fileID: 1253317321}
+  m_Layer: 5
+  m_Name: Log
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1253317320
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1253317319}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1.0007435}
+  m_Children: []
+  m_Father: {fileID: 479998273}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.000038146973, y: 115.06}
+  m_SizeDelta: {x: 613.96, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1253317321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1253317319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 19
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: No user logged in.
+--- !u!222 &1253317322
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1253317319}
+  m_CullTransparentMesh: 0
 --- !u!1 &1257193352
 GameObject:
   m_ObjectHideFlags: 0
@@ -41094,10 +43868,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 1
-  poleDoNiszczenia: {fileID: 448553623}
-  poleDoNaprawy: {fileID: 1232744161}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &1257193355
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41566,12 +44342,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!61 &1266687943
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -41645,6 +44421,153 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1270522470
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1270522471}
+  - component: {fileID: 1270522474}
+  - component: {fileID: 1270522473}
+  - component: {fileID: 1270522472}
+  m_Layer: 5
+  m_Name: Name
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1270522471
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1270522470}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1938261092}
+  - {fileID: 128119013}
+  - {fileID: 892619803}
+  m_Father: {fileID: 1651079096}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.000030279, y: 30.2}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1270522472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1270522470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 575553740, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1270522473}
+  m_TextComponent: {fileID: 128119014}
+  m_Placeholder: {fileID: 1938261093}
+  m_ContentType: 0
+  m_InputType: 0
+  m_AsteriskChar: 42
+  m_KeyboardType: 0
+  m_LineType: 0
+  m_HideMobileInput: 0
+  m_CharacterValidation: 0
+  m_CharacterLimit: 0
+  m_OnEndEdit:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.InputField+SubmitEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  m_OnValueChanged:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1651079099}
+        m_MethodName: VerifyInputs
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.UI.InputField+OnChangeEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_CustomCaretColor: 0
+  m_SelectionColor: {r: 0.65882355, g: 0.80784315, b: 1, a: 0.7529412}
+  m_Text: 
+  m_CaretBlinkRate: 0.85
+  m_CaretWidth: 1
+  m_ReadOnly: 0
+--- !u!114 &1270522473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1270522470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &1270522474
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1270522470}
+  m_CullTransparentMesh: 0
 --- !u!1 &1271935995
 GameObject:
   m_ObjectHideFlags: 0
@@ -42055,6 +44978,225 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1284895187}
   m_CullTransparentMesh: 0
+--- !u!1 &1285190229
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1285190230}
+  - component: {fileID: 1285190234}
+  - component: {fileID: 1285190233}
+  - component: {fileID: 1285190232}
+  - component: {fileID: 1285190231}
+  m_Layer: 5
+  m_Name: RegisterButton
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1285190230
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1285190229}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 174320432}
+  m_Father: {fileID: 1434807790}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.0010109, y: -0.0012512207}
+  m_SizeDelta: {x: 276.9, y: 79.948}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!82 &1285190231
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1285190229}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 15d2e465afbc5544495e21ea8bdaaad4, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &1285190232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1285190229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 1, g: 0, b: 0, a: 1}
+    m_PressedColor: {r: 1, g: 1, b: 1, a: 1}
+    m_DisabledColor: {r: 1, g: 0, b: 0, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1285190233}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 101435404}
+        m_MethodName: RegisterPlayer_Click
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &1285190233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1285190229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.29411766}
+  m_RaycastTarget: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 0
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &1285190234
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1285190229}
+  m_CullTransparentMesh: 0
 --- !u!1 &1294160957
 GameObject:
   m_ObjectHideFlags: 0
@@ -42251,12 +45393,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!61 &1296839350
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -42414,12 +45556,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!61 &1301833244
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -42986,12 +46128,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!61 &1320091060
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -44181,10 +47323,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 1
-  poleDoNiszczenia: {fileID: 262927637}
-  poleDoNaprawy: {fileID: 2136311833}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &1332655681
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44344,10 +47488,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 1
-  poleDoNiszczenia: {fileID: 1276674009}
-  poleDoNaprawy: {fileID: 1706170082}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &1335679815
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44692,10 +47838,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 1
-  poleDoNiszczenia: {fileID: 578090676}
-  poleDoNaprawy: {fileID: 1982230777}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &1361555676
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44879,6 +48027,76 @@ Transform:
   m_Father: {fileID: 125079270}
   m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1364350470
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1364350471}
+  - component: {fileID: 1364350473}
+  - component: {fileID: 1364350472}
+  m_Layer: 5
+  m_Name: Login
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1364350471
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1364350470}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.6, y: 0.6, z: 1.0007435}
+  m_Children:
+  - {fileID: 1670016245}
+  m_Father: {fileID: 464162472}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.000045776, y: -112}
+  m_SizeDelta: {x: 277.59998, y: 80.42853}
+  m_Pivot: {x: 0.5, y: 0}
+--- !u!114 &1364350472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1364350470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.28627452}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: b96ec12630a86cd48963ecc55f1b0b10, type: 3}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &1364350473
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1364350470}
+  m_CullTransparentMesh: 0
 --- !u!1 &1369665687
 GameObject:
   m_ObjectHideFlags: 0
@@ -46740,6 +49958,76 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1434807789
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1434807790}
+  - component: {fileID: 1434807792}
+  - component: {fileID: 1434807791}
+  m_Layer: 5
+  m_Name: Register
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1434807790
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1434807789}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1.0007435}
+  m_Children:
+  - {fileID: 1285190230}
+  m_Father: {fileID: 479998273}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.000045776, y: -0.000019073}
+  m_SizeDelta: {x: 277.59998, y: 80.42853}
+  m_Pivot: {x: 0.5, y: 0}
+--- !u!114 &1434807791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1434807789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.28627452}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: b96ec12630a86cd48963ecc55f1b0b10, type: 3}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &1434807792
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1434807789}
+  m_CullTransparentMesh: 0
 --- !u!1 &1441893129
 GameObject:
   m_ObjectHideFlags: 0
@@ -46880,7 +50168,7 @@ GameObject:
   - component: {fileID: 1442955803}
   - component: {fileID: 1442955802}
   m_Layer: 5
-  m_Name: START
+  m_Name: StartButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -47485,10 +50773,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 1
-  poleDoNiszczenia: {fileID: 998736890}
-  poleDoNaprawy: {fileID: 890533691}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &1471148535
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47801,10 +51091,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 1
-  poleDoNiszczenia: {fileID: 1548902883}
-  poleDoNaprawy: {fileID: 501247344}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &1484259202
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48032,6 +51324,81 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1500505701
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1500505702}
+  - component: {fileID: 1500505704}
+  - component: {fileID: 1500505703}
+  m_Layer: 5
+  m_Name: Placeholder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1500505702
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1500505701}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 441346345}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -0.5}
+  m_SizeDelta: {x: -20, y: -13}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1500505703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1500505701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 0.5}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 2
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Enter text...
+--- !u!222 &1500505704
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1500505701}
+  m_CullTransparentMesh: 0
 --- !u!1 &1509174479
 GameObject:
   m_ObjectHideFlags: 0
@@ -48726,12 +52093,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!61 &1533593277
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -48883,6 +52250,81 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1544568268
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1544568269}
+  - component: {fileID: 1544568271}
+  - component: {fileID: 1544568270}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1544568269
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1544568268}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 327452074}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -0.5}
+  m_SizeDelta: {x: -20, y: -13}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1544568270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1544568268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 0
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 
+--- !u!222 &1544568271
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1544568268}
+  m_CullTransparentMesh: 0
 --- !u!1 &1547646791
 GameObject:
   m_ObjectHideFlags: 0
@@ -49450,12 +52892,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!61 &1558810719
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -50830,10 +54272,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 1
-  poleDoNiszczenia: {fileID: 1884163839}
-  poleDoNaprawy: {fileID: 1785990145}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &1597833048
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50993,10 +54437,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 1
-  poleDoNiszczenia: {fileID: 1693645393}
-  poleDoNaprawy: {fileID: 1698047511}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &1603262103
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51136,6 +54582,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 409005726}
+  - {fileID: 101435401}
   - {fileID: 509290919}
   - {fileID: 589851440}
   - {fileID: 851194025}
@@ -51671,6 +55118,94 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1651079095
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1651079096}
+  - component: {fileID: 1651079098}
+  - component: {fileID: 1651079097}
+  - component: {fileID: 1651079099}
+  m_Layer: 5
+  m_Name: Register
+  m_TagString: RegisterPanel
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1651079096
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1651079095}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.9999081, y: 0.9999081, z: 0.9999081}
+  m_Children:
+  - {fileID: 840433135}
+  - {fileID: 1270522471}
+  - {fileID: 1139768649}
+  - {fileID: 685679717}
+  m_Father: {fileID: 101435401}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -16.599854, y: 0}
+  m_SizeDelta: {x: -861.1, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1651079097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1651079095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.4392157}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: c37d25ead89f2c14c8e0f5263ffdb179, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &1651079098
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1651079095}
+  m_CullTransparentMesh: 0
+--- !u!114 &1651079099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1651079095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04e765c1f263f6842bea0be32090d26a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameField: {fileID: 1270522472}
+  passwordField: {fileID: 1139768650}
+  submitButton: {fileID: 246595875}
 --- !u!1 &1655023468
 GameObject:
   m_ObjectHideFlags: 0
@@ -52090,6 +55625,225 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1670016244
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1670016245}
+  - component: {fileID: 1670016249}
+  - component: {fileID: 1670016248}
+  - component: {fileID: 1670016247}
+  - component: {fileID: 1670016246}
+  m_Layer: 5
+  m_Name: LoginButton
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1670016245
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1670016244}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 570169271}
+  m_Father: {fileID: 1364350471}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.0010109, y: -0.0012512207}
+  m_SizeDelta: {x: 276.9, y: 79.948}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!82 &1670016246
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1670016244}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 15d2e465afbc5544495e21ea8bdaaad4, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &1670016247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1670016244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 1, g: 0, b: 0, a: 1}
+    m_PressedColor: {r: 1, g: 1, b: 1, a: 1}
+    m_DisabledColor: {r: 1, g: 0, b: 0, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 0
+  m_TargetGraphic: {fileID: 1670016248}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 101435404}
+        m_MethodName: Login_Click
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &1670016248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1670016244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.29411766}
+  m_RaycastTarget: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 0
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &1670016249
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1670016244}
+  m_CullTransparentMesh: 0
 --- !u!1 &1674762203
 GameObject:
   m_ObjectHideFlags: 0
@@ -52486,12 +56240,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!61 &1683998315
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -52614,10 +56368,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 1
-  poleDoNiszczenia: {fileID: 1689947879}
-  poleDoNaprawy: {fileID: 786729790}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &1686330748
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53548,7 +57304,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5aeaa4c0d5da504196b22811a0aa7fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myShadowEffect: {fileID: 0}
 --- !u!4 &1712007111
 Transform:
   m_ObjectHideFlags: 0
@@ -53611,10 +57366,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 1
-  poleDoNiszczenia: {fileID: 1456086321}
-  poleDoNaprawy: {fileID: 1560137963}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &1714912444
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53882,12 +57639,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!61 &1726360265
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -54352,12 +58109,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!61 &1741159537
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -54515,12 +58272,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!61 &1742994797
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -55176,7 +58933,7 @@ GameObject:
   - component: {fileID: 1763435268}
   - component: {fileID: 1763435267}
   m_Layer: 5
-  m_Name: START
+  m_Name: Start
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -55234,6 +58991,81 @@ CanvasRenderer:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1763435265}
+  m_CullTransparentMesh: 0
+--- !u!1 &1764940411
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1764940412}
+  - component: {fileID: 1764940414}
+  - component: {fileID: 1764940413}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1764940412
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1764940411}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 441346345}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -0.5}
+  m_SizeDelta: {x: -20, y: -13}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1764940413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1764940411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 0
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 
+--- !u!222 &1764940414
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1764940411}
   m_CullTransparentMesh: 0
 --- !u!1 &1765607012
 GameObject:
@@ -60557,12 +64389,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!61 &1828469323
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -61108,10 +64940,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 1
-  poleDoNiszczenia: {fileID: 951085573}
-  poleDoNaprawy: {fileID: 342524446}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &1868911509
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62179,6 +66013,81 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1938261091
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1938261092}
+  - component: {fileID: 1938261094}
+  - component: {fileID: 1938261093}
+  m_Layer: 5
+  m_Name: Placeholder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1938261092
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1938261091}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1270522471}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -0.5}
+  m_SizeDelta: {x: -20, y: -13}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1938261093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1938261091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 0.5}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 2
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Enter text...
+--- !u!222 &1938261094
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1938261091}
+  m_CullTransparentMesh: 0
 --- !u!1 &1940842662
 GameObject:
   m_ObjectHideFlags: 0
@@ -62228,10 +66137,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 1
-  poleDoNiszczenia: {fileID: 16823346}
-  poleDoNaprawy: {fileID: 1313989715}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &1940842665
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63024,12 +66935,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!61 &2000085759
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -65202,10 +69113,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 1
-  poleDoNiszczenia: {fileID: 1113307477}
-  poleDoNaprawy: {fileID: 178899565}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &2031779071
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65554,12 +69467,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!61 &2041201714
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -65827,10 +69740,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 1
-  poleDoNiszczenia: {fileID: 713730977}
-  poleDoNaprawy: {fileID: 142905965}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &2051440945
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65941,6 +69856,81 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &2053809381
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2053809382}
+  - component: {fileID: 2053809384}
+  - component: {fileID: 2053809383}
+  m_Layer: 5
+  m_Name: Placeholder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2053809382
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2053809381}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 327452074}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -0.5}
+  m_SizeDelta: {x: -20, y: -13}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2053809383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2053809381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 0.5}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 2
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Enter text...
+--- !u!222 &2053809384
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2053809381}
+  m_CullTransparentMesh: 0
 --- !u!1 &2055530552
 GameObject:
   m_ObjectHideFlags: 0
@@ -66137,12 +70127,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!61 &2058751804
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -66265,10 +70255,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 1
-  poleDoNiszczenia: {fileID: 209293209}
-  poleDoNaprawy: {fileID: 32386074}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!114 &2060426148
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66535,6 +70527,76 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &2069946389
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2069946390}
+  - component: {fileID: 2069946392}
+  - component: {fileID: 2069946391}
+  m_Layer: 5
+  m_Name: Entern
+  m_TagString: EnternPanel
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2069946390
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2069946389}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.9999081, y: 0.9999081, z: 0.9999081}
+  m_Children:
+  - {fileID: 697772330}
+  m_Father: {fileID: 101435401}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -16.599854, y: 0}
+  m_SizeDelta: {x: -861.1, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2069946391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2069946389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &2069946392
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2069946389}
+  m_CullTransparentMesh: 0
 --- !u!1 &2073591622
 GameObject:
   m_ObjectHideFlags: 0
@@ -66772,6 +70834,81 @@ CanvasRenderer:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2076617115}
+  m_CullTransparentMesh: 0
+--- !u!1 &2076684049
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2076684050}
+  - component: {fileID: 2076684052}
+  - component: {fileID: 2076684051}
+  m_Layer: 5
+  m_Name: LoginText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2076684050
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2076684049}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 63129788}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -0.3399353, y: 0.68992996}
+  m_SizeDelta: {x: 0.44000244, y: 0.11000061}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2076684051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2076684049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: e00995507c2406448b4c8429136104dd, type: 3}
+    m_FontSize: 45
+    m_FontStyle: 1
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 65
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Login
+--- !u!222 &2076684052
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2076684049}
   m_CullTransparentMesh: 0
 --- !u!1 &2087122642
 GameObject:
@@ -68385,12 +72522,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!61 &2114066011
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -68548,12 +72685,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!61 &2118431887
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -68935,12 +73072,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc04c2f890e2d42b31593a7996ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rodzajZapory: 3
-  poleDoNiszczenia: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  poleDoNaprawy: {fileID: 1136613940085880, guid: 14b19e08e092a8a4ea255567031be29f,
-    type: 2}
-  jestemZniszczony: 0
+  repairedTexture: {fileID: 0}
+  destroyedTexture: {fileID: 0}
+  destroyed: 0
+  tankTiersWhichCanDestroy: 
+  fieldForDestroy: {fileID: 0}
+  fieldForRepair: {fileID: 0}
 --- !u!61 &2137841349
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class AutoShot : Shot, IAmRemoteShoot
@@ -85,7 +84,6 @@ public class AutoShot : Shot, IAmRemoteShoot
 
             HitPlayerHowAutoTurretPlayer(hit, tempDamage);
 
-            //HitBotHowAutoPlayer(hit, tempDamage, tankStore.GetComponent<PlayerGO>().myPlayer);
             HitBotHowPlayer(hit, tempDamage);
         }
         allow = true;

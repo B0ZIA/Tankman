@@ -199,7 +199,7 @@ public class TankEvolution : Photon.MonoBehaviour
 
             TechTree.Instance.FindTankButton(TanksData.FindTankEnum(myTank)).OnClick();
 
-            cameraOrthographicSize = myTank.cameraSize;
+            cameraOrthographicSize = myTank.cameraSize+10;
         }
 
         #region Wyjątki czołgów 

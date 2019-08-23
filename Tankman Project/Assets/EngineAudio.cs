@@ -2,7 +2,7 @@
 
 public class EngineAudio
 {
-    private AudioSource audioSource;// Reference to the audio source used to play engine sounds. NB: different to the shooting audio source.
+    private AudioSource audioSource;// Reference to the audio source used to play engine sounds.
     private AudioClip engineIdling;// Audio to play when the tank isn't moving.
     private AudioClip engineDriving;// Audio to play when the tank is moving.
     private float pitchRange;// The amount by which the pitch of the engine noises can vary.

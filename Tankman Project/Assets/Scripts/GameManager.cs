@@ -35,7 +35,7 @@ public class GameManager : Photon.MonoBehaviour
     
     public static ModeManager.Mode myMode;  //one from four game mode
     public static NationManager.Nation myNation = NationManager.Nation.IIIRZESZA; //player nation
-    public const string GAME_VERSION = "2.7";  //You need change when you add new things for game
+    public const string GAME_VERSION = "2.8";  //You need change when you add new things for game
     public static string biomName;     //the name of the biomass that the server has drawn
 
     //bots ID 

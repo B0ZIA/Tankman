@@ -22,13 +22,7 @@ public class TankObject : MonoBehaviour
     [SerializeField]
     private Player player;
 
-    public void Start()
-    {
-        Debug.Log("Ustawiam player gracza");
-        //player = playerGO.GetComponent<PlayerGO>().myPlayer;
-        //Debug.Log(player.nick);
 
-    }
 
     /// <summary>Jeśli to nie bot to można się odwołacz do tego czyli gracza.</summary>
     public Player Player { get { if (playerGO.GetComponent<PlayerGO>().myPlayer != null) return playerGO.GetComponent<PlayerGO>().myPlayer; else { Debug.Log("Niema takiego gracza!"); return null; } } }
