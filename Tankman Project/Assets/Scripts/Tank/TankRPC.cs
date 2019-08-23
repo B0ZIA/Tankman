@@ -50,7 +50,20 @@ public class TankRPC : Photon.MonoBehaviour
             tankStore.stan.SetActive(true);
             body.material = defaultMat;
             head.material = defaultMat;
-            Player.FindPlayer(pmi.sender).gameObject.GetComponent<PlayerSetup>().SetTag();
+            PlayerSetup ps = Player.FindPlayer(pmi.sender).gameObject.GetComponent<PlayerSetup>();
+            GameObject myColliderObject = GetComponent<TankEvolution>().HullGameObject;
+            if (ps.photonView.isMine)
+            {
+                ps.SetGameObjectTag(myColliderObject, Tag.REMOTEPLAYERBODY);
+                ps.SetGameObjectLayer(myColliderObject, PlayerSetup.LOCAL_PLAYER_LAYER);
+
+            }
+            else
+            {
+                ps.SetGameObjectTag(myColliderObject, Tag.REMOTEPLAYERBODY);
+                ps.SetGameObjectLayer(myColliderObject, PlayerSetup.LOCAL_PLAYER_LAYER);
+
+            }
         }
     }
 
