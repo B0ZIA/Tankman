@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 
 /*
  * ###################################
@@ -10,7 +10,7 @@
 public class TankEngine : Engine, ICanMove, ICanTurn
 {
     public static TankEngine Instance { get; private set; }
-    public GameOver tankStore; //dla Zapór 
+    public GameOver tankStore;
     [SerializeField]
     private PhotonView myPV;
     private EngineAudio engineAudio;
@@ -69,13 +69,13 @@ public class TankEngine : Engine, ICanMove, ICanTurn
                                       float tempSpeed = (cofanie) 
                                                     ?
                 (TankWaterCollision.Instance.ISwim || TankWaterCollision.Instance.ISink)
-                /*jeśli cofam w wodzie*/            ?     /*jeśli cofam 'nie' w wodzie*/
+                /*If I'm backing in water*/            ?     /*If I'm backing in not water*/
                 MoveSpeed * 0.75f * 0.65f           :                 MoveSpeed * 0.75f 
 
                 :
                 
                 (TankWaterCollision.Instance.ISwim || TankWaterCollision.Instance.ISink)
-                /*jeśli jadę normalnie przez wode*/ ?           /*jeśli jadę normalnie*/
+                /*if I drive normally through water*/ ?           /*if i drive normally*/
                 MoveSpeed * 0.65f                   :                      MoveSpeed;
 
         Move(tempSpeed, SpeedValue);
