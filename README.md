@@ -2,8 +2,8 @@
 
 'Tankman' is a browser game created by Jakub Główczyk and Dawid Tomaszewski  
 
-| [:fire:Play](#play) | [:camera:Screenshots](#screenshots) | [:wrench:Credits](#credits) | [:star:Resources](#resources) |
-| ----- | ----------- | ----------- | ----------- |
+| [:fire:Play](#play) | [:camera:Screenshots](#screenshots) | [:wrench:Credits](#credits) | [:star:Resources](#resources) |  [:blue_heart:Scripts](https://github.com/B0ZIA/Tankman/tree/master/Tankman%20Project/Assets/Scripts)
+| ----- | ----------- | ----------- | ----------- | ----------- |
 
 ## Play
 
