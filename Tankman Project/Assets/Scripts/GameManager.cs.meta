@@ -1,10 +1,10 @@
 fileFormatVersion: 2
 guid: 755f3b5b2578f0442998239f72e70fab
-timeCreated: 1529230357
-licenseType: Free
 MonoImporter:
+  externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - tanksData: {fileID: 11400000, guid: 38031a81da9c885498c613b7ac2ca067, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
