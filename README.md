@@ -2,8 +2,8 @@
 
 'Tankman' is a browser game created by Jakub Główczyk and Dawid Tomaszewski  
 
-| [:fire:Play](#play) | [:camera:Screenshots](#screenshots) | [:wrench:Credits](#credits) | [:star:Resources](#resources) |
-| ----- | ----------- | ----------- | ----------- |
+| [:fire:Play](#play) | [:camera:Screenshots](#screenshots) | [:wrench:Credits](#credits) | [:star:Resources](#resources) |  [:blue_heart:Scripts](https://github.com/B0ZIA/Tankman/tree/master/Tankman%20Project/Assets/Scripts)
+| ----- | ----------- | ----------- | ----------- | ----------- |
 
 ## Play
 
@@ -31,7 +31,7 @@ you can play in Tankman for free or if you want to support us:
 
 - Graphics: [Dawid Tomaszewski](https://praetorianshaxo.wixsite.com/haxo-game-studios)
 - Networking: [Photon Unity Networking](https://www.photonengine.com/pun)
-- Data Base: XAMPP, PhpMyAdmin
+- Database: [XAMPP](https://www.apachefriends.org/pl/index.html), [PhpMyAdmin](http://localhost/phpmyadmin)
 - Game Engine: [Unity](https://unity3d.com/)
 - Thanks to all of the game development community for their awesome help.
 
