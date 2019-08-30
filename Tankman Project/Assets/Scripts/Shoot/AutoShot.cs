@@ -96,7 +96,7 @@ public class AutoShot : Shot, IAmRemoteShoot
 
         if (hit.collider != null)
         {
-            if (hit.collider.tag == Tag.BOT || hit.collider.tag == Tag.REMOTEPLAYERBODY)
+            if (hit.collider.tag == TagManager.GetTag(Tag.Bot) || hit.collider.tag == TagManager.GetTag(Tag.RemotePlayerBody))
             {
                 if (allow == true)
                 {

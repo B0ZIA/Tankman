@@ -43,7 +43,7 @@ public class TankRPC : Photon.MonoBehaviour
             tankStore.stan.SetActive(false);
             body.material = deathMat;
             head.material = deathMat;
-            Player.FindPlayer(pmi.sender).gameObject.GetComponent<TankEvolution>().HullGameObject.tag = Tag.STATICGAMEOBJECT;
+            Player.FindPlayer(pmi.sender).gameObject.GetComponent<TankEvolution>().HullGameObject.tag = TagManager.GetTag(Tag.StaticGameObject);
         }
         else
         {
@@ -54,15 +54,13 @@ public class TankRPC : Photon.MonoBehaviour
             GameObject myColliderObject = GetComponent<TankEvolution>().HullGameObject;
             if (ps.photonView.isMine)
             {
-                ps.SetGameObjectTag(myColliderObject, Tag.REMOTEPLAYERBODY);
+                TagManager.SetGameObjectTag(myColliderObject, Tag.LocalPlayerBody);
                 ps.SetGameObjectLayer(myColliderObject, PlayerSetup.LOCAL_PLAYER_LAYER);
-
             }
             else
             {
-                ps.SetGameObjectTag(myColliderObject, Tag.REMOTEPLAYERBODY);
+                TagManager.SetGameObjectTag(myColliderObject, Tag.RemotePlayerBody);
                 ps.SetGameObjectLayer(myColliderObject, PlayerSetup.LOCAL_PLAYER_LAYER);
-
             }
         }
     }

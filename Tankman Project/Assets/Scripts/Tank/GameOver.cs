@@ -85,7 +85,8 @@ public class GameOver : Photon.MonoBehaviour
     /// </summary>
     void UstawPozycje()
     {
-        GetComponent<TankEvolution>().TankGameObject.transform.position = GameManager.Instance.GetRandomGameObject(Tag.PLAYERSPAWN).transform.position;
+        Vector3 pos = GameManager.Instance.GetRandomGameObject(TagManager.GetTag(Tag.PlayerSpawn)).transform.position;
+        GetComponent<TankEvolution>().TankGameObject.transform.position = pos;
     }
 
     public void ShakeCamera()

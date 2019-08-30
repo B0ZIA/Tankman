@@ -113,7 +113,7 @@ public abstract class Shot : Photon.MonoBehaviour, IShot
     /// <param name="hit"></param>
     protected void HitBotHowPlayer(RaycastHit2D hit, float damage)
     {
-        if (hit.collider.tag == Tag.BOT)
+        if (hit.collider.tag == TagManager.GetTag(Tag.Bot))
         {
             hit.collider.GetComponent<BOTHealt>().myPV.RPC("AdBotDamage", PhotonTargets.All, damage); //niech bot sprawdza jako czołg ma gracz
             hit.collider.GetComponent<BOTHealt>().SetLastShooter(myPV.GetComponent<PlayerGO>().myPlayer);
@@ -128,7 +128,7 @@ public abstract class Shot : Photon.MonoBehaviour, IShot
     /// <param name="damage"></param>
     protected void HitPlayerHowBot(RaycastHit2D hit, float damage)
     {
-        if (hit.collider.tag == Tag.LOCALPLAYERBODY || hit.collider.tag == Tag.REMOTEPLAYERBODY)
+        if (hit.collider.tag == TagManager.GetTag(Tag.LocalPlayerBody) || hit.collider.tag == TagManager.GetTag(Tag.RemotePlayerBody))
         {
             if (hit.collider.GetComponent<TankObject>().Player.hp > 0)
                 GameManager.Instance.photonView.RPC("OdbierzHpGraczowiJakoBotRPC", PhotonTargets.MasterClient,
@@ -146,7 +146,7 @@ public abstract class Shot : Photon.MonoBehaviour, IShot
     /// <param name="hit"></param>
     protected void HitPlayerHowPlayer(RaycastHit2D hit, float damage)
     {
-        if (hit.collider.tag == Tag.REMOTEPLAYERBODY)
+        if (hit.collider.tag == TagManager.GetTag(Tag.RemotePlayerBody))
         {
             if (hit.collider.GetComponent<TankObject>().Player.hp > 0)
                 GameManager.Instance.photonView.RPC("OdbierzHpGraczowiRPC", PhotonTargets.MasterClient, 

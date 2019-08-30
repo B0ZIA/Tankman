@@ -53,8 +53,8 @@ public class TankEngine : Engine, ICanMove, ICanTurn
     {
         engineAudio.SetAudio(SpeedValue, TurnValue);
 
-        SpeedValue = Input.GetAxis("Vertical1");
-        TurnValue = Input.GetAxis("Horizontal1");
+        SpeedValue = Input.GetAxis("Vertical");
+        TurnValue = Input.GetAxis("Horizontal");
 
         if (Input.GetKey(KeyCode.S))
             //cofanie

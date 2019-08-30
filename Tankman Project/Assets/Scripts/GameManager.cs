@@ -83,7 +83,7 @@ public class GameManager : Photon.MonoBehaviour
     /// </summary>
     public void SpawnPlayer()
     {
-        GameObject myPlayerGO = PhotonNetwork.Instantiate("Player", GetRandomGameObject(Tag.PLAYERSPAWN).transform.position, GetRandomGameObject(Tag.PLAYERSPAWN).transform.rotation, 0);
+        GameObject myPlayerGO = PhotonNetwork.Instantiate("Player", GetRandomGameObject(TagManager.GetTag(Tag.PlayerSpawn)).transform.position, GetRandomGameObject(TagManager.GetTag(Tag.PlayerSpawn)).transform.rotation, 0);
         UpdateMyPlayer(myPlayerGO.GetComponent<PhotonView>().viewID);
     }
 

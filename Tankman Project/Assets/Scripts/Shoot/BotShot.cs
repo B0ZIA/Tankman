@@ -67,7 +67,7 @@ public class BotShot : Shot, IAmRemoteShoot
 
         if (hit.collider != null)
         {
-            if (hit.collider.tag == Tag.LOCALPLAYERBODY || hit.collider.tag == Tag.REMOTEPLAYERBODY)
+            if (hit.collider.tag == TagManager.GetTag(Tag.LocalPlayerBody) || hit.collider.tag == TagManager.GetTag(Tag.RemotePlayerBody))
             {
                 if (allow == true)
                 {

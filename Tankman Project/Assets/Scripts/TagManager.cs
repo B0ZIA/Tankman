@@ -1,50 +1,80 @@
-﻿/*
+﻿using UnityEngine;
+/*
  * ###################################
  * #        by Jakub Główczyk        #
  * #            [#][#][#]            #
  * ###################################
  */
 
-public static class Tag {
+public static class TagManager
+{
+    public static void SetGameObjectTag(GameObject gameObject, Tag tag)
+    {
+        gameObject.tag = tag.ToString();
+    }
 
+    public static string GetTag(Tag tag)
+    {
+        return tag.ToString();
+    }
+
+    public static Tag FindTagEnum(string tag)
+    {
+        Tag _tag = Tag.Null;
+
+        try
+        {
+            _tag = (Tag)System.Enum.Parse(typeof(Tag), tag);
+        }
+        catch(UnityException ue)
+        {
+            Debug.LogWarning(ue.Message);
+        }
+
+        Debug.Log(_tag);
+        return _tag;
+    }
+}
+public enum Tag
+{
+    /// <summary>Default Tag</summary>
+    Null,
     /// <summary>Main bot object</summary>
-    public const string BOT = "BOT";
+    Bot,
     /// <summary>local player object when tank have collider</summary>
-    public const string LOCALPLAYERBODY = "LocalBody";
+    LocalPlayerBody,
     /// <summary>remote player object when tank have collider</summary>
-    public const string REMOTEPLAYERBODY = "RemoteBody";
+    RemotePlayerBody,
     /// <summary>Main local player object</summary>
-    public const string LOCALPLAYER = "LocalPlayer";
+    LocalPlayer,
     /// <summary>Main remote player object</summary>
-    public const string REMOTEPLAYER = "RemotePlayer";
+    RemotePlayer,
     /// <summary>bullet object</summary>
-    public const string POCISK = "Bullet";
+    Bullet,
     /// <summary>dragon teeth that are repaired</summary>
-    public const string REPAIRED_BARRIER = "NaprawioneZebySmoka";
+    RepairedBarrier,
     /// <summary>dragon teeth that are destroyed</summary>
-    public const string DESTROYED_BARRIER = "ZniszczoneZebySmoka";
-    /// <summary>bridge that is repaired</summary>
-    public const string NAPRAWIONYMOST = "NaprawionyMost";
-    /// <summary>bridge that is destroyer</summary>
-    public const string ZNISZCZONYMOST = "ZniszczonyMost";
+    DestroyedBarrier,
     /// <summary>Item which you can find on current map</summary>
-    public const string DYNAMIT = "Dynamit";
+    Dymanite,
     /// <summary>Item which you can find on current map</summary>
-    public const string NAPRAWIARKA = "Naprawiarka";
+    RepairDevice,
     /// <summary>Item which you can find on current map</summary>
-    public const string ZASOBY = "Zasoby";
+    Resources,
     /// <summary>Item which you can find on current map</summary>
-    public const string COIN = "Coin";
+    Coin,
     /// <summary>Item which you can find on current map</summary>
-    public const string SCORE = "Food";
+    Score,
     /// <summary>Object with collider when tank have limit movening</summary>
-    public const string WODA = "Woda";
+    Water,
     /// <summary>Object with collider when tank can dead</summary>
-    public const string GLEBOKAWODA = "GlebokaWoda";
+    DeepWater,
     /// <summary>GameObject which spawn items</summary>
-    public const string FOODSPAWNER = "FoodSpawner";
+    FoodSpawner,
     /// <summary>Point where player can spawn your tank</summary>
-    public const string PLAYERSPAWN = "PlayerRespawn";
+    PlayerSpawn,
     /// <summary>all GameObject on the current map with which the bullet can collide (bridge,house etc.)</summary>
-    public const string STATICGAMEOBJECT = "StaticElement";
+    StaticGameObject,
+    /// <summary>Bots driving on this points</summary>
+    RoadPoint
 }

@@ -57,14 +57,14 @@ public class TankWaterCollision : MonoBehaviour
     public void OnTriggerEnter2D(Collider2D collision)
     {
         //Debug.Log(collision.tag);
-        if (collision.tag == Tag.GLEBOKAWODA)
+        if (collision.tag == TagManager.GetTag(Tag.DeepWater))
         {
             sink = true;
 
             if (!IHasBeenSinking)
                 StartCoroutine(TopienieCzolgu());
         }
-        if (collision.tag == Tag.WODA)
+        if (collision.tag == TagManager.GetTag(Tag.Water))
         {
             swim = true;
         }
@@ -72,13 +72,13 @@ public class TankWaterCollision : MonoBehaviour
 
     public void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.tag == Tag.GLEBOKAWODA)
+        if (collision.tag == TagManager.GetTag(Tag.DeepWater))
         {
             sink = false;
             sinkTime = maxSinkTime;
             HUDManager.Instance.meltTime.text = "";
         }
-        if (collision.tag == Tag.WODA)
+        if (collision.tag == TagManager.GetTag(Tag.Water))
         {
             swim = false;
         }

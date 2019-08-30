@@ -42,34 +42,40 @@ public class ItemDetector : Photon.MonoBehaviour
         Player myPlayer = tankEvolution.GetComponent<PlayerGO>().myPlayer;
         PhotonView myPV = tankEvolution.GetComponent<TankRPC>().myPV;
 
-        switch (coll.gameObject.tag)
+        Tag tag;
+        if (TagManager.FindTagEnum(coll.gameObject.tag) == null)
+            return;
+        else
+            tag = TagManager.FindTagEnum(coll.gameObject.tag);
+
+        switch (tag)
         {
-            case Tag.DYNAMIT:
+            case Tag.PlayerSpawn:
                 if (myPlayer.Dynamit < 3)
                 {
                     myPlayer.Dynamit += 1;
                     myPV.RPC("SetItemPositionRPC", PhotonTargets.AllBuffered, coll.gameObject.GetComponent<PhotonView>().viewID, FoodSpawn.RandomPos());
                 }
                 break;
-            case Tag.NAPRAWIARKA:
+            case Tag.RepairDevice:
                 if (myPlayer.Naprawiarka < 3)
                 {
                     myPlayer.Naprawiarka += 1;
                     myPV.RPC("SetItemPositionRPC", PhotonTargets.AllBuffered, coll.gameObject.GetComponent<PhotonView>().viewID, FoodSpawn.RandomPos());
                 }
                 break;
-            case Tag.ZASOBY:
+            case Tag.Resources:
                 if (myPlayer.Zasoby < 3)
                 {
                     myPlayer.Zasoby += 1;
                     myPV.RPC("SetItemPositionRPC", PhotonTargets.AllBuffered, coll.gameObject.GetComponent<PhotonView>().viewID, FoodSpawn.RandomPos());
                 }
                 break;
-            case Tag.COIN:
+            case Tag.Coin:
                 myPlayer.coin += 1;
                 myPV.RPC("SetItemPositionRPC", PhotonTargets.AllBuffered, coll.gameObject.GetComponent<PhotonView>().viewID, FoodSpawn.RandomPos());
                 break;
-            case Tag.SCORE:
+            case Tag.Score:
                 if (myPlayer.score < HUDManager.tempGranicaWbicjaLewla)
                 {
                     myPlayer.score += 50;

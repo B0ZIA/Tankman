@@ -40,7 +40,7 @@ public class PlayerSetup : Photon.MonoBehaviour
 
         if (photonView.isMine)
         {
-            SetGameObjectTag(myColliderObject, Tag.REMOTEPLAYERBODY);
+            TagManager.SetGameObjectTag(myColliderObject, Tag.LocalPlayerBody);
             SetGameObjectLayer(myColliderObject, LOCAL_PLAYER_LAYER);
 
             SetupGameScene();
@@ -49,7 +49,7 @@ public class PlayerSetup : Photon.MonoBehaviour
         }
         else
         {
-            SetGameObjectTag(myColliderObject, Tag.REMOTEPLAYERBODY);
+            TagManager.SetGameObjectTag(myColliderObject, Tag.RemotePlayerBody);
             SetGameObjectLayer(myColliderObject, REMOTE_PLAYER_LAYER);
 
             DisableComponents(remotePlayerInactiveComponents);
@@ -57,10 +57,10 @@ public class PlayerSetup : Photon.MonoBehaviour
         }
     }
 
-    public void SetGameObjectTag(GameObject gameObject, string tag)
-    {
-        gameObject.tag = tag;
-    }
+    //public void SetGameObjectTag(GameObject gameObject, string tag)
+    //{
+    //    gameObject.tag = tag;
+    //}
 
     public void SetGameObjectLayer(GameObject gameObject, int layer)
     {

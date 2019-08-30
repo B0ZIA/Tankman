@@ -82,7 +82,7 @@ public class AutomaticTurret : TrackingMechanism
 
     void OnTriggerEnter2D(Collider2D coll)
     {
-        if (coll.gameObject.tag == Tag.BOT || coll.gameObject.tag == Tag.REMOTEPLAYERBODY)
+        if (coll.gameObject.tag == TagManager.GetTag(Tag.Bot) || coll.gameObject.tag == TagManager.GetTag(Tag.RemotePlayerBody))
         {
             curretTarget = coll.gameObject;
         }
@@ -90,7 +90,7 @@ public class AutomaticTurret : TrackingMechanism
 
 	void OnTriggerExit2D(Collider2D coll)
     {
-        if (coll.gameObject.tag == Tag.BOT || coll.gameObject.tag == Tag.REMOTEPLAYERBODY)
+        if (coll.gameObject.tag == TagManager.GetTag(Tag.Bot) || coll.gameObject.tag == TagManager.GetTag(Tag.RemotePlayerBody))
         {
             if (turret.towerType == TowerType.IS7OnHead)
                 curretTarget = TankEvolution.Instance.BarrelEndPoint;

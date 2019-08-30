@@ -33,9 +33,9 @@ public class BarrierBuilder : Photon.MonoBehaviour
 
     public void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.tag == Tag.STATICGAMEOBJECT
-            || collision.tag == Tag.REPAIRED_BARRIER
-            || collision.tag == Tag.DESTROYED_BARRIER)
+        if (collision.tag == TagManager.GetTag(Tag.StaticGameObject)
+            || collision.tag == TagManager.GetTag(Tag.RepairedBarrier)
+            || collision.tag == TagManager.GetTag(Tag.DestroyedBarrier))
         {
             canNotBuildPanel.SetActive(true);
             canBuildPanel.SetActive(false);
@@ -45,9 +45,9 @@ public class BarrierBuilder : Photon.MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.tag == Tag.STATICGAMEOBJECT 
-            || collision.tag == Tag.REPAIRED_BARRIER 
-            || collision.tag == Tag.DESTROYED_BARRIER)
+        if (collision.tag == TagManager.GetTag(Tag.StaticGameObject)
+            || collision.tag == TagManager.GetTag(Tag.RepairedBarrier)
+            || collision.tag == TagManager.GetTag(Tag.DestroyedBarrier))
         {
             canBuildPanel.SetActive(true);
             canNotBuildPanel.SetActive(false);

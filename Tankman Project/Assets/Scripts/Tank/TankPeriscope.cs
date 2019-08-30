@@ -28,7 +28,7 @@ public class TankPeriscope : MonoBehaviour
 
     void CheckPlayerInNear(Collider2D collision)
     {
-        if (collision.tag == Tag.REMOTEPLAYERBODY)
+        if (collision.tag == TagManager.GetTag(Tag.RemotePlayerBody))
         {
             gameOver.onPlayerDead += collision.GetComponent<TankObject>().PlayerGO.GetComponent<GameOver>().tankPeriscope.CameraShake;
             //PlayersInNear.Add(collision.GetComponent<Keeper>().keep.GetComponent<PlayerGO>().myPlayer);
@@ -37,7 +37,7 @@ public class TankPeriscope : MonoBehaviour
 
     void CheckPlayerOutNear(Collider2D collision)
     {
-        if (collision.tag == Tag.REMOTEPLAYERBODY)
+        if (collision.tag == TagManager.GetTag(Tag.RemotePlayerBody))
         {
             gameOver.onPlayerDead -= collision.GetComponent<TankObject>().PlayerGO.GetComponent<GameOver>().tankPeriscope.CameraShake;
             //PlayersInNear.Remove(collision.GetComponent<Keeper>().keep.GetComponent<PlayerGO>().myPlayer);

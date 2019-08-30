@@ -20,7 +20,7 @@ public class AntiTankBarrier : Barrier
 
     void OnCollisionEnter2D (Collision2D coll)
     {
-        if (coll.gameObject.tag == Tag.LOCALPLAYERBODY)
+        if (coll.gameObject.tag == TagManager.GetTag(Tag.LocalPlayerBody))
         {
             HUDManager.TankTier otherPlayerTankTier = coll.gameObject.GetComponent<TankEngine>().tankStore.playerSetup.GetComponent<PlayerGO>().myPlayer.tankTier;
             Debug.Log(otherPlayerTankTier);
@@ -35,7 +35,7 @@ public class AntiTankBarrier : Barrier
                 }
             }
         }
-        if(coll.gameObject.tag == Tag.BOT)  
+        if(coll.gameObject.tag == TagManager.GetTag(Tag.Bot))  
         {
             Destroy();
         }
