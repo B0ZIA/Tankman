@@ -1,25 +1,19 @@
 using UnityEngine;
 
-/*
- * ###################################
- * #          by Jakub Główczyk      #
- * #            [#][#][#]            #
- * ###################################
- */
+
 
 public class TankEngine : Engine, ICanMove, ICanTurn
 {
     public static TankEngine Instance { get; private set; }
-    public GameOver tankStore;
-    [SerializeField]
-    private PhotonView myPV;
+    public GameOver gameOver;
+    [SerializeField] private PhotonView myPV;
     private EngineAudio engineAudio;
 
     public override float MoveSpeed { get { return TankEvolution.Instance.Speed; }}
     public override float TurnSpeed{ get { return TankEvolution.Instance.TurnSpeed; } }
     public float SpeedValue { get; private set; }
     public float TurnValue { get; private set; }
-    public bool cofanie { get; private set; }
+    public bool retreat { get; private set; }
 
     [Header("Audio:")]
     [SerializeField]
@@ -57,25 +51,23 @@ public class TankEngine : Engine, ICanMove, ICanTurn
         TurnValue = Input.GetAxis("Horizontal");
 
         if (Input.GetKey(KeyCode.S))
-            //cofanie
-            cofanie = true;
+            retreat = true;
         else if (Input.GetKey(KeyCode.W))
-            //jazda!
-            cofanie = false;
+            retreat = false;
     }
 
     private void FixedUpdate()
     {
-                                      float tempSpeed = (cofanie) 
+                                      float tempSpeed = (retreat) 
                                                     ?
                 (TankWaterCollision.Instance.ISwim || TankWaterCollision.Instance.ISink)
-                /*If I'm backing in water*/            ?     /*If I'm backing in not water*/
+                /*If I'm backing in water*/         ?     /*If I'm backing in not water*/
                 MoveSpeed * 0.75f * 0.65f           :                 MoveSpeed * 0.75f 
 
                 :
                 
                 (TankWaterCollision.Instance.ISwim || TankWaterCollision.Instance.ISink)
-                /*if I drive normally through water*/ ?           /*if i drive normally*/
+                /*if I drive normally through water*/?           /*if i drive normally*/
                 MoveSpeed * 0.65f                   :                      MoveSpeed;
 
         Move(tempSpeed, SpeedValue);

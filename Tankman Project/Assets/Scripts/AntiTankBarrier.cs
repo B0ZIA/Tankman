@@ -22,14 +22,14 @@ public class AntiTankBarrier : Barrier
     {
         if (coll.gameObject.tag == TagManager.GetTag(Tag.LocalPlayerBody))
         {
-            HUDManager.TankTier otherPlayerTankTier = coll.gameObject.GetComponent<TankEngine>().tankStore.playerSetup.GetComponent<PlayerGO>().myPlayer.tankTier;
+            HUDManager.TankTier otherPlayerTankTier = coll.gameObject.GetComponent<TankEngine>().gameOver.playerSetup.GetComponent<PlayerGO>().myPlayer.tankTier;
             Debug.Log(otherPlayerTankTier);
             for (int i = 0; i < tankTiersWhichCanDestroy.Length; i++)
             {
                 if (tankTiersWhichCanDestroy[i] == otherPlayerTankTier)
                 {
                     Destroy();
-                    TriggerSth triggerSth = coll.gameObject.GetComponent<TankEngine>().tankStore.triggerSth;
+                    TriggerSth triggerSth = coll.gameObject.GetComponent<TankEngine>().gameOver.triggerSth;
                     triggerSth.StartCoroutine(triggerSth.ResetColliera());
                     break;
                 }
