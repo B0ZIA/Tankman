@@ -2,12 +2,14 @@ using UnityEngine;
 
 
 
-public class TankEngine : Engine, ICanMove, ICanTurn
+public class TankEngine : Engine, IMove, ITurn
 {
+    public const float RETREAT_SPEED_RATIO = 0.75f;
+    public const float SWIM_SPEED_RATIO = 0.65f;
     public static TankEngine Instance { get; private set; }
-    public GameOver gameOver;
+
     [SerializeField] private PhotonView myPV;
-    private EngineAudio engineAudio;
+    [SerializeField] private EngineAudio engineAudio;
 
     public override float MoveSpeed { get { return TankEvolution.Instance.Speed; }}
     public override float TurnSpeed{ get { return TankEvolution.Instance.TurnSpeed; } }
@@ -48,29 +50,36 @@ public class TankEngine : Engine, ICanMove, ICanTurn
         engineAudio.SetAudio(SpeedValue, TurnValue);
 
         SpeedValue = Input.GetAxis("Vertical");
-        TurnValue = Input.GetAxis("Horizontal");
-
-        if (Input.GetKey(KeyCode.S))
+        if (SpeedValue < 0)
             retreat = true;
-        else if (Input.GetKey(KeyCode.W))
+        else
             retreat = false;
+
+        TurnValue = Input.GetAxis("Horizontal");
     }
 
     private void FixedUpdate()
     {
-                                      float tempSpeed = (retreat) 
-                                                    ?
-                (TankWaterCollision.Instance.ISwim || TankWaterCollision.Instance.ISink)
-                /*If I'm backing in water*/         ?     /*If I'm backing in not water*/
-                MoveSpeed * 0.75f * 0.65f           :                 MoveSpeed * 0.75f 
+        Move(CalculateMoveSpeed(), SpeedValue);
 
-                :
-                
-                (TankWaterCollision.Instance.ISwim || TankWaterCollision.Instance.ISink)
-                /*if I drive normally through water*/?           /*if i drive normally*/
-                MoveSpeed * 0.65f                   :                      MoveSpeed;
-
-        Move(tempSpeed, SpeedValue);
         TurnForValue(TurnSpeed, TurnValue);
+    }
+
+    private float CalculateMoveSpeed()
+    {
+        if (retreat)
+        {
+            if (TankWaterCollision.Instance.ISwim || TankWaterCollision.Instance.ISink)
+                return MoveSpeed * RETREAT_SPEED_RATIO * SWIM_SPEED_RATIO;
+            else
+                return MoveSpeed * RETREAT_SPEED_RATIO;
+        }
+        else
+        {
+            if (TankWaterCollision.Instance.ISwim || TankWaterCollision.Instance.ISink)
+                return MoveSpeed * SWIM_SPEED_RATIO;
+            else
+                return MoveSpeed;
+        }
     }
 }

@@ -6,7 +6,7 @@ using System.Collections;
 /// <summary>
 /// Scritp responsible for Bot AI
 /// </summary>
-public class BOTEngine : Engine, ICanMove, ICanTurn
+public class BOTEngine : Engine, IMove, ITurn
 {
     public PhotonView myPV;
         

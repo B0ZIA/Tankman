@@ -4,7 +4,7 @@ using MyFirstLiblary;
 /// <summary>
 /// Zwykły silnik który może obiektem obracać, go przesuwać i wydawać dzwięk 
 /// </summary>
-public class Engine : Photon.MonoBehaviour, ICanMove, ICanTurn
+public class Engine : Photon.MonoBehaviour, IMove, ITurn
 {
     private Rigidbody2D myRB;
     public virtual float MoveSpeed { get; set; }

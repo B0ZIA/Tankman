@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface ICanTurn
+public interface ITurn
 {
     float TurnSpeed { get; set; }
 
