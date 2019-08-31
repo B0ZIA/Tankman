@@ -62,7 +62,7 @@ public class TankEngine : Engine, IMove, ITurn
     {
         Move(CalculateMoveSpeed(), SpeedValue);
 
-        TurnForValue(TurnSpeed, TurnValue);
+        Turn(TurnSpeed, TurnValue);
     }
 
     private float CalculateMoveSpeed()

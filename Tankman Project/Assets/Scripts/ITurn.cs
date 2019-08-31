@@ -6,5 +6,5 @@ public interface ITurn
 {
     float TurnSpeed { get; set; }
 
-    void TurnForValue(float turnSpeed, float inputValue);
+    void Turn(float turnSpeed, float inputValue);
 }
