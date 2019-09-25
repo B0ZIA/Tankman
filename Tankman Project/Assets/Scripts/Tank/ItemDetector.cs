@@ -54,32 +54,32 @@ public class ItemDetector : Photon.MonoBehaviour
                 if (myPlayer.Dynamit < 3)
                 {
                     myPlayer.Dynamit += 1;
-                    myPV.RPC("SetItemPositionRPC", PhotonTargets.AllBuffered, coll.gameObject.GetComponent<PhotonView>().viewID, FoodSpawn.RandomPos());
+                    myPV.RPC("SetItemPositionRPC", PhotonTargets.AllBuffered, coll.gameObject.GetComponent<PhotonView>().viewID, ItemManager.RandomPos());
                 }
                 break;
             case Tag.RepairDevice:
                 if (myPlayer.Naprawiarka < 3)
                 {
                     myPlayer.Naprawiarka += 1;
-                    myPV.RPC("SetItemPositionRPC", PhotonTargets.AllBuffered, coll.gameObject.GetComponent<PhotonView>().viewID, FoodSpawn.RandomPos());
+                    myPV.RPC("SetItemPositionRPC", PhotonTargets.AllBuffered, coll.gameObject.GetComponent<PhotonView>().viewID, ItemManager.RandomPos());
                 }
                 break;
             case Tag.Resources:
                 if (myPlayer.Zasoby < 3)
                 {
                     myPlayer.Zasoby += 1;
-                    myPV.RPC("SetItemPositionRPC", PhotonTargets.AllBuffered, coll.gameObject.GetComponent<PhotonView>().viewID, FoodSpawn.RandomPos());
+                    myPV.RPC("SetItemPositionRPC", PhotonTargets.AllBuffered, coll.gameObject.GetComponent<PhotonView>().viewID, ItemManager.RandomPos());
                 }
                 break;
             case Tag.Coin:
                 myPlayer.coin += 1;
-                myPV.RPC("SetItemPositionRPC", PhotonTargets.AllBuffered, coll.gameObject.GetComponent<PhotonView>().viewID, FoodSpawn.RandomPos());
+                myPV.RPC("SetItemPositionRPC", PhotonTargets.AllBuffered, coll.gameObject.GetComponent<PhotonView>().viewID, ItemManager.RandomPos());
                 break;
             case Tag.Score:
                 if (myPlayer.score < HUDManager.tempGranicaWbicjaLewla)
                 {
                     myPlayer.score += 50;
-                    myPV.RPC("SetItemPositionRPC", PhotonTargets.AllBuffered, coll.gameObject.GetComponent<PhotonView>().viewID, FoodSpawn.RandomPos());
+                    myPV.RPC("SetItemPositionRPC", PhotonTargets.AllBuffered, coll.gameObject.GetComponent<PhotonView>().viewID, ItemManager.RandomPos());
                 }
                 break;
         }

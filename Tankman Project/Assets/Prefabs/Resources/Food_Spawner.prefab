@@ -91,3 +91,4 @@ MonoBehaviour:
   maxNaprawiarka: 5
   maxZasoby: 5
   maxCoin: 200
+  gold_texture: {fileID: 21300000, guid: 89cef5795a90c024c9daf45d91e988be, type: 3}

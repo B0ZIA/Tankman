@@ -1,9 +1,7 @@
 using UnityEngine;
 
-
-
 public class TankEngine : Engine, IMove, ITurn
-{
+{   
     public const float RETREAT_SPEED_RATIO = 0.75f;
     public const float SWIM_SPEED_RATIO = 0.65f;
     public static TankEngine Instance { get; private set; }

@@ -8,7 +8,7 @@ using System;
  * ###################################
  */
 
-public class FoodSpawn : Photon.MonoBehaviour
+public class ItemManager : Photon.MonoBehaviour
 {
     [SerializeField]
     public GameObject prefFood;
@@ -39,6 +39,7 @@ public class FoodSpawn : Photon.MonoBehaviour
     private const float SPAWN_POS_MIN_Y =-30.00f;
     private const float SPAWN_POS_MAX_Y = 30.00f;
 
+    public Sprite gold_texture;
 
 
     void Start()
@@ -61,11 +62,24 @@ public class FoodSpawn : Photon.MonoBehaviour
 
     public void SpawnAllItem()
     {
-        InvokeRepeating("GenerateFood", 0, spawnSpeed);
-        InvokeRepeating("GenerateDynamite", 0, spawnSpeed);
-        InvokeRepeating("GenerateZasoby", 0, spawnSpeed);
-        InvokeRepeating("GenerateNaprawka", 0, spawnSpeed);
-        InvokeRepeating("GenerateCoin", 0, spawnSpeed);
+        //InvokeRepeating("GenerateFood", 0, spawnSpeed);
+        //InvokeRepeating("GenerateDynamite", 0, spawnSpeed);
+        //InvokeRepeating("GenerateZasoby", 0, spawnSpeed);
+        //InvokeRepeating("GenerateNaprawka", 0, spawnSpeed);
+        //InvokeRepeating("GenerateCoin", 0, spawnSpeed);
+        SpawningGold();
+    }
+
+    public void SpawningGold()
+    {
+        Item item = new Gold(gold_texture);
+        item.Create();
+
+        for (int i = 0; i < maxCoin; i++)
+        {
+            Item currentGold = (Gold)item.Clone();
+            currentGold.Create();
+        }
     }
 
     public static Vector3 RandomPos()
