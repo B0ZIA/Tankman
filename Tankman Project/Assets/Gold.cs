@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Gold : Item, ICloneable
 {
@@ -9,10 +7,27 @@ public class Gold : Item, ICloneable
         Debug.Log("Stworzono nowy Gold!");
     }
 
+    public override void Create()
+    {
+        base.Create();
+        itemObject.tag = TagManager.GetTag(Tag.Score);
+        itemObject.AddComponent<PhotonView>();
+        //itemObject.GetComponent<PhotonView>().ObservedComponents.Add(itemObject.transform);
+    }
+
     protected override GameObject itemObject { get; set; }
 
-    public override void GiveRevard()
+    public override void GiveRevard(Player player)
     {
-        //TODO: Dodać punkty do sklepu
+        player.coin += 1;
+
+        transform.position = ItemManager.RandomPos();
+        photonView.RPC("SetItemPositionRPC", PhotonTargets.All, transform.position);
+    }
+
+    [PunRPC]
+    void SetItemPositionRPC(Vector3 pos)
+    {
+        transform.position = pos;
     }
 }

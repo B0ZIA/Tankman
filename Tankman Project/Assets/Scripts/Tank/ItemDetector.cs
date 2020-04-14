@@ -9,7 +9,7 @@
 public class ItemDetector : Photon.MonoBehaviour
 {
     [SerializeField]
-    private Rigidbody2D Rig2;
+    private Rigidbody2D tank;
     [SerializeField]
     private TankEvolution tankEvolution;
 
@@ -26,8 +26,8 @@ public class ItemDetector : Photon.MonoBehaviour
 
     void Update()
     {
-        GetComponent<Rigidbody2D>().position = Rig2.position;
-        GetComponent<Rigidbody2D>().rotation = Rig2.rotation;
+        GetComponent<Rigidbody2D>().position = tank.position;
+        GetComponent<Rigidbody2D>().rotation = tank.rotation;
     }
 
 
@@ -42,11 +42,7 @@ public class ItemDetector : Photon.MonoBehaviour
         Player myPlayer = tankEvolution.GetComponent<PlayerGO>().myPlayer;
         PhotonView myPV = tankEvolution.GetComponent<TankRPC>().myPV;
 
-        Tag tag;
-        if (TagManager.FindTagEnum(coll.gameObject.tag) == null)
-            return;
-        else
-            tag = TagManager.FindTagEnum(coll.gameObject.tag);
+        Tag tag = TagManager.FindTagEnum(coll.gameObject.tag);
 
         switch (tag)
         {
@@ -72,8 +68,8 @@ public class ItemDetector : Photon.MonoBehaviour
                 }
                 break;
             case Tag.Coin:
-                myPlayer.coin += 1;
-                myPV.RPC("SetItemPositionRPC", PhotonTargets.AllBuffered, coll.gameObject.GetComponent<PhotonView>().viewID, ItemManager.RandomPos());
+                coll.GetComponent<Gold>().GiveRevard(myPlayer);
+                //myPV.RPC("SetItemPositionRPC", PhotonTargets.AllBuffered, coll.gameObject.GetComponent<PhotonView>().viewID, ItemManager.RandomPos());
                 break;
             case Tag.Score:
                 if (myPlayer.score < HUDManager.tempGranicaWbicjaLewla)

@@ -94,8 +94,6 @@ public class ConnectionManager : Photon.MonoBehaviour
             serverText = "<color=red>Server permissions!</color>";
         else
             serverText = "";
-        if (Input.GetKeyDown(KeyCode.L))
-            Player.DebugListyGraczy();
 
         deltaTime += (Time.unscaledDeltaTime - deltaTime) * 0.1f;
         int ping = PhotonNetwork.networkingPeer.RoundTripTime;
@@ -209,7 +207,7 @@ public class ConnectionManager : Photon.MonoBehaviour
         var tmpPlayer = Player.FindPlayer(OldPlayerPP);
         if (tmpPlayer != null)
         {
-            Player.players.Remove(tmpPlayer);
+            Player.GetPlayers().Remove(tmpPlayer);
         }
     }
 
@@ -228,7 +226,7 @@ public class ConnectionManager : Photon.MonoBehaviour
 
         //Każdy gracz (wraz z nowym) dodaje tego nowego gracza do listy graczy
         Player player = new Player();
-        Player.players.Add(player);
+        Player.GetPlayers().Add(player);
         player.nick = newPlayer.NickName;
         player.pp = newPlayer;
 

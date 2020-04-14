@@ -72,12 +72,12 @@ public class ItemManager : Photon.MonoBehaviour
 
     public void SpawningGold()
     {
-        Item item = new Gold(gold_texture);
+        Gold item = new Gold(gold_texture);
         item.Create();
 
         for (int i = 0; i < maxCoin; i++)
         {
-            Item currentGold = (Gold)item.Clone();
+            Gold currentGold = (Gold)item.Clone();
             currentGold.Create();
         }
     }

@@ -127,9 +127,5 @@ public class TankRPC : Photon.MonoBehaviour
         GetComponent<TankEvolution>().TurretCapGameObject.GetComponent<SpriteRenderer>().material = newMat;
     }
 
-    [PunRPC]
-    void SetItemPositionRPC(int ID, Vector3 pos)
-    {
-        PhotonView.Find(ID).gameObject.transform.position = pos;
-    }
+    
 }

@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Item : MonoBehaviour, ICloneable
+public abstract class Item : Photon.MonoBehaviour, ICloneable
 {
     protected abstract GameObject itemObject { get; set; }
     protected Sprite texture;
+
+    private SpriteRenderer spriteRenderer;
 
     public Item(Sprite _texture)
     {
@@ -20,10 +22,15 @@ public abstract class Item : MonoBehaviour, ICloneable
     public virtual void Create()
     {
         itemObject = new GameObject();
-
-        itemObject.AddComponent<SpriteRenderer>().sprite = texture;
         itemObject.transform.position = ItemManager.RandomPos();
+
+        spriteRenderer = itemObject.AddComponent<SpriteRenderer>();
+        spriteRenderer.sprite = texture;
+        spriteRenderer.sortingOrder = 10;
+
+
+        itemObject.AddComponent<BoxCollider2D>().size = new Vector2(0.2f, 0.2f);
     }
 
-    public abstract void GiveRevard();
+    public abstract void GiveRevard(Player player);
 }

@@ -314,15 +314,18 @@ public class GameManager : Photon.MonoBehaviour
     {
         if (!PhotonNetwork.isMasterClient)
             return;
-        for (int i = 0; i < Player.players.Count; i++)
+
+        for (int i = 0; i < Player.GetPlayers().Count; i++)
         {
-            if (Player.players[i].pp != pmi.sender)
-                photonView.RPC("SetPlayerRPC", pmi.sender, 
-                    Player.players[i].pp, 
-                    Player.players[i].gameObject.GetComponent<PhotonView>().viewID, 
-                    Player.players[i].nation,
-                    Player.players[i].gameObject.GetComponent<PlayerGO>().myPlayer.hp,
-                    Player.players[i].gameObject.GetComponent<PlayerGO>().myPlayer.tank, 
+            var player = Player.GetPlayers()[i];
+
+            if (player.pp != pmi.sender)
+                photonView.RPC("SetPlayerRPC", pmi.sender,
+                    player.pp,
+                    player.gameObject.GetComponent<PhotonView>().viewID,
+                    player.nation,
+                    player.gameObject.GetComponent<PlayerGO>().myPlayer.hp,
+                    player.gameObject.GetComponent<PlayerGO>().myPlayer.tank, 
                     false); //true wysyłamy jeśli target ma gracza na liście graczy
         }
     }
@@ -350,7 +353,7 @@ public class GameManager : Photon.MonoBehaviour
         else
         {
             player = new Player();
-            Player.players.Add(player);
+            Player.GetPlayers().Add(player);
         }
 
         //Ustawiam podstawowe dane tego gracza 

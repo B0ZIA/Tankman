@@ -4,7 +4,7 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Manager
+  - Null
   - Bot
   - LocalPlayerBody
   - RemotePlayerBody
@@ -23,6 +23,16 @@ TagManager:
   - FoodSpawner
   - PlayerSpawn
   - StaticGameObject
+  - RoadPoint
+  - ShopButton
+  - RemoteBody
+  - TrzymaczStan
+  - ItemDetector
+  - target
+  - Head
+  - TriggerWskaznik
+  - LocalName
+  - Manager
   layers:
   - Default
   - TransparentFX

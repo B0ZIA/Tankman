@@ -14,20 +14,20 @@ using UnityEngine;
 public class Player
 {
     //Dane lokalne 
-    public static List<Player> players = new List<Player>();    //Lista wszystkich graczy w jednym miejscu
-    public static Player myPlayer;    //To jest gracz lokalny
+    private static List<Player> players = new List<Player>();
+    public static Player myPlayer;
 
     //Dane podstawowe 
-    public string nick;               //Nazwa gracza 
-    public NationManager.Nation nation;  //Nacja którą wybrał gracz
-    public PhotonPlayer pp;           //Dzięki temu moge w latwy sposob szukac graczy itp.
-    public GameObject gameObject;     //potrzebny w odwolaniach poprzez PhotonPlayer do obiektu gracza
-    public DostempneCzolgi tank;    //Czołg gracza
-    public float hp = 600f;           //Punkty zycia gracza
+    public string nick;
+    public NationManager.Nation nation;
+    public PhotonPlayer pp;    
+    public GameObject gameObject;  
+    public DostempneCzolgi tank;  
+    public float hp = 600f;         
 
     //Dane ukryte, dla servera
-    public HUDManager.TankTier tankTier; //Poziom czołgu gracza
-    public int Score = 0;             //Punkty gracza potrzebne do ulepszenia czołgu
+    public HUDManager.TankTier tankTier; 
+    public int Score = 0;       
     public int score
     {
         get { return Score; }
@@ -81,24 +81,11 @@ public class Player
         nation = NationManager.Nation.IIIRZESZA;
     }
 
-    /// <summary>
-    /// Debuguje ilosc wszystkich graczy i wypisuje ich po kolei w konsoli
-    /// </summary>
-    public static void DebugListyGraczy()
+    public static List<Player> GetPlayers()
     {
-        Debug.Log("Debug listy graczy! Ilosc graczy:" +
-            players.Count + " wszyscy gracze: ");
-        foreach(var player in players)
-        {
-            Debug.Log(player.nick + ", ");
-        }
+        return players;
     }
 
-    /// <summary>
-    /// Pozwala znalesc gracza dzieki podanemu pp,zwraca Player gracza
-    /// </summary>
-    /// <param name="pp"></param>
-    /// <returns>PhotonPlayer szukanego gracza</returns>
     public static Player FindPlayer(PhotonPlayer pp)
     {
         for(int i = 0; i < players.Count; i++)

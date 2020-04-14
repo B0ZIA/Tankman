@@ -9,7 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1f9a9bc96ca85e14592ce4feb0dca442, type: 3}
-  m_Name: PZVI
+  m_Name: PZVV
   m_EditorClassIdentifier: 
   hullTexture: {fileID: 21300000, guid: 3e61b8fb43c20b34a935cd8feb505ea3, type: 3}
   turretTexture: {fileID: 21300000, guid: e6044eeba8925af4f9c8beb6973e5030, type: 3}
@@ -17,27 +17,27 @@ MonoBehaviour:
   tank: 1
   level: 3
   maxAmmo: 1
-  maxHp: 720
-  damage: 300
-  damageLotery: 4
-  headTurnSpeed: 40
+  maxHp: 860
+  damage: 215
+  damageLotery: 15
+  headTurnSpeed: 25
   turnSpeed: 20
-  speed: 0.9
+  speed: 0.85
   reload: 7
   reloadBetweenMagazine: 1
   cameraSize: 3.5
-  offset: {x: 0, y: 0}
-  size: {x: 5, y: 10}
+  offset: {x: -0.05, y: -0.01}
+  size: {x: 4.61, y: 2.54}
   turretPos: {x: 0, y: 0}
   turretCapPos: {x: 0, y: 0}
-  barrlelEndPos: {x: 0, y: 0.4}
+  barrlelEndPos: {x: -3.94, y: 0.04}
   iHaveTurretCap: 0
   turretCan360: 1
-  description: "<color=red>PZVI- </color>\"Tygrys\" Niemiecki czo\u0142g ci\u0119\u017Cki "
+  description: <color=red>PZVV- </color>
   otherTurrets: 
   curretTab: 1
   curretTabTier: 2
-  tempDescription: <color=red>PZVI- </color>
-  tempDescription2: "\"Tygrys\" Niemiecki czo\u0142g ci\u0119\u017Cki "
+  tempDescription: <color=red>PZVV- </color>
+  tempDescription2: 
   czyPosiadamLufe: 1
   czyPosiadamPrzykrycieLufy: 0
