@@ -2,13 +2,6 @@
 using UnityEngine;
 using System;
 
-/*
- * ###################################
- * #        by Jakub Główczyk        #
- * #            [#][#][#]            #
- * ###################################
- */
-
 /// <summary>
 /// Zawiera informacje o czołgach
 /// </summary>

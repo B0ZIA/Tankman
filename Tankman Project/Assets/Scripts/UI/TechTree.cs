@@ -2,13 +2,6 @@
 using System.Collections.Generic;
 using System;
 
-/*
- * ###################################
- * #        by Jakub Główczyk        #
- * #            [#][#][#]            #
- * ###################################
- */
-
 public class TechTree : MonoBehaviour
 {
     public static TechTree Instance { get; private set; }

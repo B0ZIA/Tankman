@@ -3,13 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-/*
- * ###################################
- * #        by Jakub Główczyk        #
- * #            [#][#][#]            #
- * ###################################
- */
-
 /// <summary>
 /// The Script responsible for choosing the game mode: {1vs1, Blitskrieg, 2 Teams, FFA}
 /// </summary>

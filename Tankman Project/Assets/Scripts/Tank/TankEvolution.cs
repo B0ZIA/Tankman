@@ -2,13 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-/*
- * ###################################
- * #        by Jakub Główczyk        #
- * #            [#][ ][ ]            #
- * ###################################
- */
-
 /// <summary>
 /// Odpowiada za ewolucje gracza, jego "level up". Zawiera także odniesienia do podzespołów czołgu,
 /// wszystkie zmienne czołgu (speed, reload, HP) do których odwołują się inne skrypty.  

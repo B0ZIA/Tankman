@@ -3,13 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-/*
- * ###################################
- * #        by Jakub Główczyk        #
- * #            [#][#][ ]            #
- * ###################################
- */
-
 public class NationManager : MonoBehaviour {
 
     public GameObject[] flagi;  //Bardzo ważna jest kolejność: według enuma Nation... od 0, rosnąco

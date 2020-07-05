@@ -1,13 +1,6 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-/*
- * ###################################
- * #        by Jakub Główczyk        #
- * #            [#][#][ ]            #
- * ###################################
- */
-
 /// <summary>
 /// Zwykła smutna klasa Player, ktora posiada kazdy gracz.
 /// </summary>

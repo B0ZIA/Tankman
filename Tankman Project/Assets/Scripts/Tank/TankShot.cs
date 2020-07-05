@@ -1,13 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
-
-/*
- * ###################################
- * #        by Jakub Główczyk        #
- * #            [#][#][ ]            #
- * ###################################
- */
     
 /// <summary>
 /// Sctipt responsoible for shoot player. Don't turn off this script in PlayerSetup

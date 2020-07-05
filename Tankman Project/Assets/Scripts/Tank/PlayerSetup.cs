@@ -1,13 +1,6 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-/*
- * ###################################
- * #        by Jakub Główczyk        #
- * #            [#][ ][ ]            #
- * ###################################
- */
-
 /// <summary>
 /// Setup local and remote player gameplay and permissions in game.
 /// Player can be:

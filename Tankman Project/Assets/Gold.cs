@@ -12,7 +12,6 @@ public class Gold : Item, ICloneable
         base.Create();
         itemObject.tag = TagManager.GetTag(Tag.Score);
         itemObject.AddComponent<PhotonView>();
-        //itemObject.GetComponent<PhotonView>().ObservedComponents.Add(itemObject.transform);
     }
 
     protected override GameObject itemObject { get; set; }

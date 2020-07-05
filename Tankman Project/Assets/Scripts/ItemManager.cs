@@ -1,13 +1,6 @@
 ﻿using UnityEngine;
 using System;
 
-/*
- * ###################################
- * #        by Jakub Główczyk        #
- * #            [#][#][ ]            #
- * ###################################
- */
-
 public class ItemManager : Photon.MonoBehaviour
 {
     [SerializeField]

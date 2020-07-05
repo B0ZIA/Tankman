@@ -1,10 +1,4 @@
 ﻿using UnityEngine;
-/*
- * ###################################
- * #        by Jakub Główczyk        #
- * #            [#][#][#]            #
- * ###################################
- */
 
 public static class TagManager
 {

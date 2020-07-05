@@ -11,7 +11,6 @@ public abstract class Item : Photon.MonoBehaviour, ICloneable
 
     public Item(Sprite _texture)
     {
-        //Konstruktor zadba aby ustawić wszystkie atrybuty
         texture = _texture;
     }
 

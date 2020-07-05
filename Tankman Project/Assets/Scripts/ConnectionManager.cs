@@ -3,13 +3,6 @@ using UnityEditor.VersionControl;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-/*
- * ###################################
- * #        by Jakub Główczyk        #
- * #            [#][#][ ]            #
- * ###################################
- */
-
 /// <summary>
 /// ConnectionManager służy do połączenia się gracza z grą, poinformowania go
 /// gdzie jest w grze, ile ma FPS'ów, PING'u

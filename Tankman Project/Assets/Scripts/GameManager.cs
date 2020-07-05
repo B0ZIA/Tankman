@@ -2,13 +2,6 @@
 using UnityEngine.SceneManagement;
 using System;
 
-/*
- * ###################################
- * #        by Jakub Główczyk        #
- * #            [#][#][ ]            #
- * ###################################
- */
-
 /// <summary>
 /// He is responsible for the overall operation of the game
 /// </summary>

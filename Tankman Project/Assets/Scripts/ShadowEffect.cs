@@ -1,12 +1,5 @@
 ﻿using UnityEngine;
 
-/*
- * ###################################
- * #        by Jakub Główczyk        #
- * #            [#][#][#]            #
- * ###################################
- */
-
 public class ShadowEffect : MonoBehaviour
 {
     [Range(0.05f, 0.15f)]

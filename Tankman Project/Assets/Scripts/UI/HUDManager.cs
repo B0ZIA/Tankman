@@ -3,13 +3,6 @@ using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
 
-/*
- * ###################################
- * #        by Jakub Główczyk        #
- * #            [#][ ][ ]            #
- * ###################################
- */
-
 public class HUDManager : MonoBehaviour
 {
     public static HUDManager Instance { get; private set; }
