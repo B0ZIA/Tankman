@@ -1,10 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-
-/// <summary>
-/// to powinna być metoda a nie klasa no ale czyja klasa?
-/// </summary>
 public class FollowArround  :  MonoBehaviour 
 {
     private void Update () 
