@@ -5,17 +5,12 @@ using UnityEngine;
 public class Wskaznik : MonoBehaviour {
 
     public TrybWskaznika trybWskaznika;
-    //public float distance;
-
-
-
     public float dystansDoMyszki;
-    public Transform raycastStart; //Start fite point
+    public Transform raycastStart;
 
 
 
     public float maxDistance;
-    //public GameObject object1;
     public GameObject maxFirePoint;
     public LayerMask WhatToHit;
 
@@ -71,8 +66,6 @@ public class Wskaznik : MonoBehaviour {
             GetComponent<SpriteRenderer>().color = green;
             transform.localPosition = new Vector3(-dystansDoMyszki*3, 0, 0);
         }
-       //distance = Vector2.Distance(object1.transform.position, Camera.main.ScreenToWorldPoint(Input.mousePosition));
-        //object2.transform.localPosition = new Vector3(-distance * 3, 0, 0);
     }
 
     public enum TrybWskaznika
