@@ -26,7 +26,6 @@ public class PoleRobocze : MonoBehaviour {
             zapora.Repair();
             Instantiate(DzwiekNaprawy);
             tempGracz.GetComponent<PlayerGO>().myPlayer.Naprawiarka -= 1;
-            //tempGracz.GetComponent<PlayerGO>().triggerSth.szukajDoNaprawy = false;
             tempGracz.GetComponent<PlayerGO>().triggerSth.StartCoroutine(tempGracz.GetComponent<PlayerGO>().triggerSth.ResetColliera());
             HUDManager.Instance.naprawiarkaTlo.SetActive(false);
             tempGracz.GetComponent<PlayerGO>().triggerSth.DezaktywujNaprawianie();
@@ -36,7 +35,6 @@ public class PoleRobocze : MonoBehaviour {
             zapora.Destroy();
             Instantiate(DzwiekNiszczenia);
             tempGracz.GetComponent<PlayerGO>().myPlayer.Dynamit -= 1;
-            //tempGracz.GetComponent<PlayerGO>().triggerSth.szukajDoZniszczenia = false;
             tempGracz.GetComponent<PlayerGO>().triggerSth.StartCoroutine(tempGracz.GetComponent<PlayerGO>().triggerSth.ResetColliera());
             HUDManager.Instance.dynamitTlo.SetActive(false);
             tempGracz.GetComponent<PlayerGO>().triggerSth.DezaktywujWysadzanie();
@@ -44,7 +42,6 @@ public class PoleRobocze : MonoBehaviour {
         zapora.fieldForRepair.SetActive(false);
         zapora.fieldForDestroy.SetActive(false);
         GetComponent<SpriteRenderer>().color = normalnyKolor;
-        //tempGracz.GetComponent<TankShot>().nieStrzelajBoNajechalesNaPrzycisk = false;
     }
 
     public void OnMouseEnter()
