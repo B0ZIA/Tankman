@@ -117,7 +117,6 @@ public class BOTEngine : Engine, IMove, ITurn
     
     void SetTargetPosition()
     {
-        //UnityEngine.Debug.Log("Rozpoczynam akcje szukania targetu !");
         //Rozpoczyna akcję szukania targetu,
         // jeśli taka akcja już się wykonuje to jej nie powiela
         if(!szukamTargetu)
@@ -132,33 +131,11 @@ public class BOTEngine : Engine, IMove, ITurn
         szukamTargetu = true;
         while (true)
         {
-            //zakreśla w nieskończoność kułka radarem aby znaleźć target
-            RaycastHit2D hit = new RaycastHit2D();// = MakeRaycast(Color.black, toFindStreet, shootDistance);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            RaycastHit2D hit = new RaycastHit2D();
 
             yield return new WaitForSecondsRealtime(0.5f);
             bezpiecznik++;
             if (bezpiecznik > 10)
-                //mamGraczaWZasiegu = false;
-            //UnityEngine.Debug.Log("Cały czas szukam target !!!");
 
             //Radar szuka najbliższego obiektu dlatego kiedy zrobi pełne kółko to
             //jego zasięg się zwiększy bo nic nie znalazł...
@@ -169,11 +146,8 @@ public class BOTEngine : Engine, IMove, ITurn
             {
                 if (hit.collider.tag == "RoadPoint")
                 {
-                   // UnityEngine.Debug.Log("Znalazłem target !!!");
-                    //~
                     tempTargetRoad = target;
                     target = hit.collider.gameObject;
-                    //~
                     break;
                 }
             }
@@ -187,7 +161,6 @@ public class BOTEngine : Engine, IMove, ITurn
         int i = 0;
         while(true)
         {
-            //UnityEngine.Debug.Log("Zmieniam zasięg radaru !!!");
             yield return new WaitForSecondsRealtime(1);
             if(i < 4)
                 shootDistance += 2;
@@ -341,10 +314,7 @@ public class BOTEngine : Engine, IMove, ITurn
             }
             if (i == 1)
             {
-                //if (radar.TargetPrzedemna)
-                    tempMoveSpeed = MoveSpeed * -1;
-                //else
-                    //tempTurnSpeed = tempTurnSpeed * -1;
+                tempMoveSpeed = MoveSpeed * -1;
                 time = 2f;
             }
             if (i == 2)
