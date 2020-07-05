@@ -69,7 +69,6 @@ public class BOTHealt : Photon.MonoBehaviour
     [PunRPC]
     void RpcDoShootEffect(Vector3 StartfirePoint, Quaternion aa)
     {
-        //muzzleFlash.Play();
         Debug.Log("Ustaw właściciela pocisku");
         BulletTrailPrefab.GetComponent<BulletMovment>().own = gameObject;
         Instantiate(BulletTrailPrefab, StartfirePoint, aa);
@@ -83,7 +82,6 @@ public class BOTHealt : Photon.MonoBehaviour
     [PunRPC]
     void RpcDoShootEffectBOT(Vector3 StartfirePoint, Quaternion aa, PhotonMessageInfo pmi)
     {
-        //muzzleFlash.Play();
         BulletTrailPrefab.GetComponent<BulletMovment>().own = gameObject;
         Instantiate(BulletTrailPrefab, StartfirePoint, aa);
     }
