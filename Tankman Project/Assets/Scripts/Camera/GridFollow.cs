@@ -7,12 +7,7 @@ public class GridFollow : MonoBehaviour {
     public float grid = 0.5f;
     float x = 0f;
     float y = 0f;
-    //public Camera camera = Camera.main;
-
-    //public void Start()
-    //{
-    //    camera = Camera.main;
-    //}
+    
 
 
     void Update ()
@@ -22,8 +17,7 @@ public class GridFollow : MonoBehaviour {
             float reciprocalGrid = 1f / grid;
 
             var mousePos = Input.mousePosition;
-            mousePos.z = 10; // select distance = 10 units from the camera
-            //Debug.Log(camera.ScreenToWorldPoint(mousePos));
+            mousePos.z = 10;
 
             x = Mathf.Round(Camera.main.ScreenToWorldPoint(mousePos).x * reciprocalGrid) / reciprocalGrid;
             y = Mathf.Round(Camera.main.ScreenToWorldPoint(mousePos).y * reciprocalGrid) / reciprocalGrid;
