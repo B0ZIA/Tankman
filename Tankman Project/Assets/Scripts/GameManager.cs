@@ -102,44 +102,6 @@ public class GameManager : Photon.MonoBehaviour
             true); //Player gracza wysyłamy jeśli target ma go na liście graczy
     }
 
-    /// <summary>
-    /// Wykonuje ją tylko i wyłącznie MasterClient,
-    /// server spawni losową mapę dla wszystkich, spawni FoodSpawner
-    /// oraz spawni boty zależnie od wcześniej zespawnowanego biomu
-    /// </summary>
-    public static void InstantianeSceneObject()
-    {
-        if (PhotonNetwork.isMasterClient)
-        {
-            Map randomMap = (Map)UnityEngine.Random.Range(0, Enum.GetValues(typeof(Map)).Length);
-            Instance.GetComponent<PhotonView>().RPC("UstawAktualnyBiomWszystkim", PhotonTargets.AllBuffered, randomMap.ToString());
-
-            SpawnItemSpawner();
-            switch (randomMap)
-            {
-                case Map.Biom_Village:
-                    SpawnT3476Bot(6);
-                    SpawnTypeBot(3);
-                    SpawnTigerBot(3);
-                    break;
-                //case Map.City:  TODO: odkomentować jak mapa zostanie dopracowana
-                //    SpawnT3476Bot(4);
-                //    SpawnTypeBot(2);
-                //    SpawnTigerBot(2);
-                //    break;
-                default:
-                    Debug.LogError("Map was not finded!");
-                    break;
-            }
-            SpawnMap(randomMap.ToString());
-        }
-    }
-
-    public static void SpawnMap(String mapName)
-    {
-        PhotonNetwork.InstantiateSceneObject(mapName, new Vector3(0, 0, 0), Quaternion.identity, 0, null);
-    }
-
     public static void SpawnItemSpawner()
     {
         PhotonNetwork.Instantiate("Food_Spawner", new Vector3(0, 0, 0), Quaternion.identity, 0, null);
