@@ -29,7 +29,11 @@ public class ConnectionManager : Photon.MonoBehaviour
     /// </summary>
     void OnCreatedRoom()
     {
-        GameManager.InstantianeSceneObject();
+        Maps map = MapsManager.RandomMapType();
+        MapsManager.AsMasterSpawnMapForAllPlayers(map);
+        ItemManager.SpawnItemSpawner();
+        MapData mapData = MapsManager.Instance.GetMapData(map);
+        BotsManager.Instance.AsMasterSpawnBotsForAllPlayers(mapData);
         photonView.RPC("InitPlayer", PhotonTargets.All, PhotonNetwork.player); //Tak naprawdę wysyłasz to tylko sobie
     }
 

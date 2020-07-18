@@ -3,7 +3,7 @@
 public class BOTSetup : Photon.MonoBehaviour
 {
     //id tego bota w tym pokoju - uniwersalne 
-    public int ID = 0;
+    private int ID = 0;
 
     [SerializeField]
     private TankData myTank;
@@ -24,6 +24,8 @@ public class BOTSetup : Photon.MonoBehaviour
     [SerializeField]
     private Transform turretPoint;
 
+
+
     public GameObject Hull
     {
         get
@@ -31,7 +33,24 @@ public class BOTSetup : Photon.MonoBehaviour
             return hull;
         }
     }
+    public int GetID()
+    {
+        return ID;
+    }
 
+    public void AsMasterSetIDForAllPlayers(int id)
+    {
+        if(PhotonNetwork.isMasterClient)
+        {
+            photonView.RPC("SetIdRPC", PhotonTargets.AllBuffered, id);
+        }
+    }
+
+    [PunRPC]
+    void SetIdRPC(int id)
+    {
+        ID = id;
+    }
 
 
     void Start()

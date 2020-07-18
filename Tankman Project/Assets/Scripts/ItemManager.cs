@@ -45,6 +45,10 @@ public class ItemManager : Photon.MonoBehaviour
 
         SetupSpawn();
     }
+    public static void SpawnItemSpawner()
+    {
+        PhotonNetwork.Instantiate("Food_Spawner", new Vector3(0, 0, 0), Quaternion.identity, 0, null);
+    }
 
     public void SetupSpawn()
     {

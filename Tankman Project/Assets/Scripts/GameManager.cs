@@ -29,12 +29,6 @@ public class GameManager : Photon.MonoBehaviour
     public static ModeManager.Mode myMode;  //one from four game mode
     public static NationManager.Nation myNation = NationManager.Nation.IIIRZESZA; //player nation
     public const string GAME_VERSION = "2.8";  //You need change when you add new things for game
-    public static string biomName;     //the name of the biomass that the server has drawn
-
-    //bots ID 
-    static int Tiger_ID = 0;
-    static int Type_ID = 0;
-    static int T3476_ID = 0;
 
     //level boundary
     public const int FIRST_LEVEL_LIMIT = 1000;
@@ -102,41 +96,6 @@ public class GameManager : Photon.MonoBehaviour
             true); //Player gracza wysyłamy jeśli target ma go na liście graczy
     }
 
-    public static void SpawnItemSpawner()
-    {
-        PhotonNetwork.Instantiate("Food_Spawner", new Vector3(0, 0, 0), Quaternion.identity, 0, null);
-    }
-
-    private static void SpawnT3476Bot(int howMuch)
-    {
-        for (int i = 0; i < howMuch; i++)
-        {
-            GameObject tank = PhotonNetwork.InstantiateSceneObject("BOT_T3476", new Vector3(0, 0, 0), Quaternion.identity, 0, null);
-            Instance.photonView.RPC("SetBotIDRPC", PhotonTargets.AllBuffered, tank.GetComponent<PhotonView>().viewID, T3476_ID);
-            T3476_ID++;
-        }
-    }
-
-    private static void SpawnTypeBot(int howMuch)
-    {
-        for (int i = 0; i < howMuch; i++)
-        {
-            GameObject tank = PhotonNetwork.InstantiateSceneObject("BOT_Type_III_Chi-Ni", new Vector3(0, 0, 0), Quaternion.identity, 0, null);
-            Instance.photonView.RPC("SetBotIDRPC", PhotonTargets.AllBuffered, tank.GetComponent<PhotonView>().viewID, Type_ID);
-            Type_ID++;
-        }
-    }
-
-    private static void SpawnTigerBot(int howMuch)
-    {
-        for (int i = 0; i < howMuch; i++)
-        {
-            GameObject tank = PhotonNetwork.InstantiateSceneObject("BOT_Tiger", new Vector3(0, 0, 0), Quaternion.identity, 0, null);
-            Instance.photonView.RPC("SetBotIDRPC", PhotonTargets.AllBuffered, tank.GetComponent<PhotonView>().viewID, Tiger_ID);
-            Tiger_ID++;
-        }
-    }
-
     /// <summary>
     /// Metoda którą wykonuje server. spawnuje podany obiekt(nazwaObiektu) w podanej pozycji i rotacji.
     /// Każdy gracz może poprosić server aby zespawnił obiekt, serwer sprawdza czy tak może być 
@@ -155,12 +114,6 @@ public class GameManager : Photon.MonoBehaviour
             return;
 
         PhotonNetwork.InstantiateSceneObject(nazwaObiektu, pos, rot, 0, null);
-    }
-
-    [PunRPC]
-    void SetBotIDRPC(int photonViewID, int botID)
-    {
-        PhotonView.Find(photonViewID).gameObject.GetComponent<BOTSetup>().ID = botID;
     }
 
     [PunRPC]
@@ -183,12 +136,6 @@ public class GameManager : Photon.MonoBehaviour
         newPlayerGO.GetComponent<PlayerGO>().myPlayer = player;
         newPlayerGO.GetComponent<PlayerGO>().myPlayer.nation = myNation;
         newPlayerGO.name = "Player_" + player.nick; //+nick
-    }
-
-    [PunRPC]
-    void UstawAktualnyBiomWszystkim(string BIOMNAME)
-    {
-        biomName = BIOMNAME;
     }
 
     #region Mordowanie gracza (lub tyklo bicie ;)
@@ -336,9 +283,5 @@ public class GameManager : Photon.MonoBehaviour
     }
     #endregion 
 
-    enum Map
-    {
-        Biom_Village//,
-        //City
-    }
+    
 }
