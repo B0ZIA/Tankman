@@ -90,7 +90,7 @@ public class TechTree : MonoBehaviour
         }
     }
 
-    public TankButton FindTankButton(DostempneCzolgi myTank)
+    public TankButton FindTankButton(Tanks myTank)
     {
         for (int i = 0; i < tankButtons.Count; i++)
         {
@@ -100,7 +100,7 @@ public class TechTree : MonoBehaviour
         return null;
     }
 
-    public DostempneCzolgi FindTankEnum(TankButton myTankButton)
+    public Tanks FindTankEnum(TankButton myTankButton)
     {
         for (int i = 0; i < tankButtons.Count; i++)
         {
@@ -114,7 +114,7 @@ public class TechTree : MonoBehaviour
 [Serializable]
 public struct TankButtonEnum
 {
-    public DostempneCzolgi tank;
+    public Tanks tank;
     public TankButton tankButton;
 }
 

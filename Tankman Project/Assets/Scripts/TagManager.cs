@@ -15,7 +15,6 @@ public static class TagManager
     public static Tag FindTagEnum(string tag)
     {
         Tag _tag = Tag.Null;
-        Debug.Log(tag);
         try
         {
             _tag = (Tag)System.Enum.Parse(typeof(Tag), tag);
@@ -24,8 +23,6 @@ public static class TagManager
         {
             Debug.LogWarning(ue.Message);
         }
-
-        Debug.Log(_tag);
         return _tag;
     }
 }

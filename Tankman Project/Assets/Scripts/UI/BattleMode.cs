@@ -6,7 +6,7 @@ using UnityEngine.UI;
 /// <summary>
 /// The Script responsible for choosing the game mode: {1vs1, Blitskrieg, 2 Teams, FFA}
 /// </summary>
-public class ModeManager : MonoBehaviour {
+public class BattleMode : MonoBehaviour {
 
     [SerializeField]
 	private GameObject[] modeButton;
@@ -23,17 +23,17 @@ public class ModeManager : MonoBehaviour {
 	{
 		switch (mode)
 		{
-			case (int)Mode.FFA:
-                GameManager.myMode = Mode.FFA;
+			case (int)Type.FFA:
+                GameManager.myMode = Type.FFA;
 			 break;
-			case (int)Mode.Blitzkrieg:
-                GameManager.myMode = Mode.Blitzkrieg;
+			case (int)Type.Blitzkrieg:
+                GameManager.myMode = Type.Blitzkrieg;
 			break;
-			case (int)Mode.TwoTeams:
-                GameManager.myMode = Mode.TwoTeams;
+			case (int)Type.TwoTeams:
+                GameManager.myMode = Type.TwoTeams;
 			 break;
-			case (int)Mode.OnevsOne:
-                GameManager.myMode = Mode.OnevsOne;
+			case (int)Type.OnevsOne:
+                GameManager.myMode = Type.OnevsOne;
 			 break;
 			default:
 				Debug.Log("Nie ustawiono właściwego trybu gry!");
@@ -49,7 +49,7 @@ public class ModeManager : MonoBehaviour {
         }
 	}
 
-	public enum Mode
+	public enum Type
 	{
 		FFA,
 		Blitzkrieg,

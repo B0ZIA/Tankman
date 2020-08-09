@@ -3,7 +3,7 @@
 public class TankRPC : Photon.MonoBehaviour
 {
     public PhotonView myPV;
-    public GameOver tankStore;
+    public TankDeath tankStore;
     public PlayerGO playerGO;
 
     public GameObject explosion;
@@ -34,33 +34,33 @@ public class TankRPC : Photon.MonoBehaviour
     }
 
     [PunRPC]
-    void DeathRPC(bool deadOrResurrection, PhotonMessageInfo pmi)
+    void DeathRPC(bool life, PhotonMessageInfo pmi)
     {
-        if(deadOrResurrection)
+        if(life)
         {
-            Player.FindPlayer(pmi.sender).score = Player.FindPlayer(pmi.sender).score/7;
+            PlayersManager.FindPlayer(pmi.sender).score = PlayersManager.FindPlayer(pmi.sender).score/7;
             Instantiate(explosion, body.transform.position, body.transform.rotation);
             tankStore.stan.SetActive(false);
             body.material = deathMat;
             head.material = deathMat;
-            Player.FindPlayer(pmi.sender).gameObject.GetComponent<TankEvolution>().HullGameObject.tag = TagManager.GetTag(Tag.StaticGameObject);
+            PlayersManager.FindPlayer(pmi.sender).gameObject.GetComponent<TankEvolution>().HullGameObject.tag = TagManager.GetTag(Tag.StaticGameObject);
         }
         else
         {
             tankStore.stan.SetActive(true);
             body.material = defaultMat;
             head.material = defaultMat;
-            PlayerSetup ps = Player.FindPlayer(pmi.sender).gameObject.GetComponent<PlayerSetup>();
+            PlayerSetup ps = PlayersManager.FindPlayer(pmi.sender).gameObject.GetComponent<PlayerSetup>();
             GameObject myColliderObject = GetComponent<TankEvolution>().HullGameObject;
             if (ps.photonView.isMine)
             {
                 TagManager.SetGameObjectTag(myColliderObject, Tag.LocalPlayerBody);
-                ps.SetGameObjectLayer(myColliderObject, PlayerSetup.LOCAL_PLAYER_LAYER);
+                LayerManager.SetGameObjectLayer(myColliderObject, Layer.LocalPlayer);
             }
             else
             {
                 TagManager.SetGameObjectTag(myColliderObject, Tag.RemotePlayerBody);
-                ps.SetGameObjectLayer(myColliderObject, PlayerSetup.LOCAL_PLAYER_LAYER);
+                LayerManager.SetGameObjectLayer(myColliderObject, Layer.RemotePlayer);
             }
         }
     }
@@ -75,8 +75,8 @@ public class TankRPC : Photon.MonoBehaviour
     void SetCameraDeathRPC(PhotonMessageInfo pmi)
     {
         Debug.Log("Ustawiam u siebie CAMERE!!!!!!!!!!");
-        Debug.Log(Player.FindPlayer(pmi.sender).gameObject.name);
-        tankStore.camDeadTarget = Player.FindPlayer(pmi.sender).gameObject.GetComponent<TankEvolution>().HullGameObject;    //TO DO: wysłać to przez RPC
+        Debug.Log(PlayersManager.FindPlayer(pmi.sender).gameObject.name);
+        tankStore.camDeadTarget = PlayersManager.FindPlayer(pmi.sender).gameObject.GetComponent<TankEvolution>().HullGameObject;    //TO DO: wysłać to przez RPC
     }
 
     [PunRPC]

@@ -22,8 +22,6 @@ public class PlayerSetup : Photon.MonoBehaviour
     private GameObject[] tempItemDetectors;
     static bool GameWasSetupForMeAsServerPlayer = true;
 
-    public const int LOCAL_PLAYER_LAYER = 10;
-    public const int REMOTE_PLAYER_LAYER = 11;
     const int TIME_TO_UPDATE_ITEM_DETECTOR = 1;
 
 
@@ -34,7 +32,7 @@ public class PlayerSetup : Photon.MonoBehaviour
         if (photonView.isMine)
         {
             TagManager.SetGameObjectTag(myColliderObject, Tag.LocalPlayerBody);
-            SetGameObjectLayer(myColliderObject, LOCAL_PLAYER_LAYER);
+            LayerManager.SetGameObjectLayer(myColliderObject, Layer.LocalPlayer);
 
             SetupGameScene();
 
@@ -43,21 +41,12 @@ public class PlayerSetup : Photon.MonoBehaviour
         else
         {
             TagManager.SetGameObjectTag(myColliderObject, Tag.RemotePlayerBody);
-            SetGameObjectLayer(myColliderObject, REMOTE_PLAYER_LAYER);
+            LayerManager.SetGameObjectLayer(myColliderObject, Layer.RemotePlayer);
+
 
             DisableComponents(remotePlayerInactiveComponents);
             DisableGameObjects(remotePlayerInactiveGameObjects);
         }
-    }
-
-    //public void SetGameObjectTag(GameObject gameObject, string tag)
-    //{
-    //    gameObject.tag = tag;
-    //}
-
-    public void SetGameObjectLayer(GameObject gameObject, int layer)
-    {
-        gameObject.layer = layer;
     }
 
     static void SetupGameScene()
@@ -78,12 +67,12 @@ public class PlayerSetup : Photon.MonoBehaviour
 
     private static void SetRemoteBotsHP()
     {
-        GameObject[] bots = GameObject.FindGameObjectsWithTag("BOTID");
-        for (int i = 0; i < bots.Length; i++)
-        {
-            if (bots.Length > 0)
-                bots[i].GetComponent<BOTSetup>().Hull.GetComponent<BOTHealt>().DownloadHP();
-        }
+        //GameObject[] bots = GameObject.FindGameObjectsWithTag("BOTID");
+        //for (int i = 0; i < bots.Length; i++)
+        //{
+        //    if (bots.Length > 0)
+        //        bots[i].GetComponent<BOTSetup>().Hull.GetComponent<BOTHealt>().DownloadHP();
+        //}
     }
 
     public void DisableComponents(Behaviour[] components)

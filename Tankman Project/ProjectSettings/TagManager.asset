@@ -33,6 +33,18 @@ TagManager:
   - TriggerWskaznik
   - LocalName
   - Manager
+  - Zasoby
+  - Naprawiarka
+  - Food
+  - BOTID
+  - Dynamit
+  - BOT
+  - StaticElement
+  - NaprawioneZebySmoka
+  - SpawnBot3
+  - SpawnBot1
+  - SpawnBot2
+  - PlayerRespawn
   layers:
   - Default
   - TransparentFX
@@ -42,12 +54,12 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - a
+  - aa
+  - LOCAL_PLAYER_LAYER
+  - REMOTE_PLAYER_LAYER
+  - aaa
+  - aaaa
   - 
   - 
   - 

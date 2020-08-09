@@ -36,7 +36,7 @@ public class TankDataEditor : Editor
         GUILayout.Space(10);
         EditorGUILayout.BeginHorizontal();
         GUILayout.Label("Czołg:", EditorStyles.boldLabel);
-        myTarget.tank = (DostempneCzolgi)EditorGUILayout.EnumPopup(myTarget.tank);
+        myTarget.tank = (Tanks)EditorGUILayout.EnumPopup(myTarget.tank);
         EditorGUILayout.EndHorizontal();
 
 
@@ -85,7 +85,7 @@ public class TankDataEditor : Editor
             ". Nie trzeba podawać nazwy czołgu specjalnie do tego opisu bo ona zostanie wygenerowana automatycznie" +
             " więc... pisz od razu opis ;)", skin.GetStyle("tankDescription"));
 
-        if(myTarget.tank == DostempneCzolgi.O_I)
+        if(myTarget.tank == Tanks.O_I)
         {
             myTarget.otherTurrets = new TowerType[]
             {
@@ -94,7 +94,7 @@ public class TankDataEditor : Editor
                 TowerType.O_ITopRight
             };
         }
-        if (myTarget.tank == DostempneCzolgi.IS7)
+        if (myTarget.tank == Tanks.IS7)
         {
             myTarget.otherTurrets = new TowerType[]
             {

@@ -12,7 +12,7 @@ public class TankShot : Shot, IShot
     [Header("'TankShot' Reference")]
     [Space]
     [SerializeField]
-    protected GameOver playerGameOver;
+    protected TankDeath playerGameOver;
     [SerializeField]
     protected ParticleSystem muzzleFlash;
     [SerializeField]
@@ -136,9 +136,9 @@ public class TankShot : Shot, IShot
     [PunRPC]
     protected override void RpcDoShootEffect(Vector3 pos, Quaternion rot, PhotonMessageInfo pmi)
     {
-        if(Player.FindPlayer(pmi.sender).gameObject != null)
-        BulletTrailPrefab.GetComponent<BulletMovment>().own = 
-            Player.FindPlayer(pmi.sender).gameObject.GetComponent<TankEvolution>().HullGameObject;
+        if(PlayersManager.FindPlayer(pmi.sender).gameObject != null)
+        BulletTrailPrefab.GetComponent<BulletMovment>().own =
+            PlayersManager.FindPlayer(pmi.sender).gameObject.GetComponent<TankEvolution>().HullGameObject;
         Instantiate(BulletTrailPrefab, pos, rot);
     }
 }

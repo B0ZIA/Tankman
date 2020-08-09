@@ -13,7 +13,7 @@ public class TankWaterCollision : MonoBehaviour
     [SerializeField]
     private PhotonView myPV;
     [SerializeField]
-    private GameOver playerGameOver;
+    private TankDeath playerGameOver;
 
     private int maxSinkTime = 60;   //Tyle czasu potrzebuje aby utonąć
     private int sinkTime;   //aktualny czas przebywania w wodzie

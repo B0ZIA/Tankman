@@ -130,7 +130,7 @@ public abstract class Shot : Photon.MonoBehaviour, IShot
     {
         if (hit.collider.tag == TagManager.GetTag(Tag.LocalPlayerBody) || hit.collider.tag == TagManager.GetTag(Tag.RemotePlayerBody))
         {
-            if (hit.collider.GetComponent<TankObject>().Player.hp > 0)
+            if (hit.collider.GetComponent<TankObject>().Player.currentHp > 0)
                 GameManager.Instance.photonView.RPC("OdbierzHpGraczowiJakoBotRPC", PhotonTargets.MasterClient,
                     hit.collider.GetComponent<TankObject>().Player.pp, damage);
 
@@ -148,7 +148,7 @@ public abstract class Shot : Photon.MonoBehaviour, IShot
     {
         if (hit.collider.tag == TagManager.GetTag(Tag.RemotePlayerBody))
         {
-            if (hit.collider.GetComponent<TankObject>().Player.hp > 0)
+            if (hit.collider.GetComponent<TankObject>().Player.currentHp > 0)
                 GameManager.Instance.photonView.RPC("OdbierzHpGraczowiRPC", PhotonTargets.MasterClient, 
                     hit.collider.GetComponent<TankObject>().Player.pp, damage);
 

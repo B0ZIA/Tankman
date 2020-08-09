@@ -13,8 +13,8 @@ public class GameManager : Photon.MonoBehaviour
     {
         get
         {
-            if (Player.FindPlayer(PhotonNetwork.player) != null)
-                return Player.FindPlayer(PhotonNetwork.player);
+            if (PlayersManager.FindPlayer(PhotonNetwork.player) != null)
+                return PlayersManager.FindPlayer(PhotonNetwork.player);
             else
             {
                 Debug.LogError("Don't find localPlayer! Mayby he isn't on scene?!");
@@ -25,8 +25,10 @@ public class GameManager : Photon.MonoBehaviour
 
     [SerializeField]
     private TanksData tanksData;   //only setup static list
+    [SerializeField]
+    private HostData gameplay;
     
-    public static ModeManager.Mode myMode;  //one from four game mode
+    public static BattleMode.Type myMode;  //one from four game mode
     public static NationManager.Nation myNation = NationManager.Nation.IIIRZESZA; //player nation
     public const string GAME_VERSION = "2.8";  //You need change when you add new things for game
 
@@ -52,26 +54,9 @@ public class GameManager : Photon.MonoBehaviour
         }
     }
 
-    private void Update()
+    public HostData GetGameplay()
     {
-        /// Dodaje score, coin itp. TODO: Usunąć po premierze
-        if (Input.GetKeyDown(KeyCode.P) && Input.GetKeyDown(KeyCode.Q))
-        {
-            LocalPlayer.score += 500;
-            LocalPlayer.Dynamit += 1;
-            LocalPlayer.Naprawiarka += 1;
-            LocalPlayer.Zasoby += 1;
-            LocalPlayer.coin += 10;
-        }
-    }
-
-    /// <summary>
-    /// Jako nowy gracz spawnie się i każę reszcie połączyć sobie gracza z listy z tym spawnem
-    /// </summary>
-    public void SpawnPlayer()
-    {
-        GameObject myPlayerGO = PhotonNetwork.Instantiate("Player", GetRandomGameObject(TagManager.GetTag(Tag.PlayerSpawn)).transform.position, GetRandomGameObject(TagManager.GetTag(Tag.PlayerSpawn)).transform.rotation, 0);
-        UpdateMyPlayer(myPlayerGO.GetComponent<PhotonView>().viewID);
+        return gameplay;
     }
 
     /// <summary>
@@ -83,17 +68,6 @@ public class GameManager : Photon.MonoBehaviour
         GameObject[] respawns = GameObject.FindGameObjectsWithTag("PlayerRespawn");
         int i = UnityEngine.Random.Range(0, respawns.Length);
         return respawns[i];
-    }
-
-    public void UpdateMyPlayer(int viewID)
-    {
-        photonView.RPC("SetPlayerRPC", PhotonTargets.All,
-            LocalPlayer.pp,
-            viewID,
-            NationManager.myNation,
-            TanksData.FindTankData(NationManager.ReturnStartTank(NationManager.myNation)).maxHp,
-            NationManager.ReturnStartTank(NationManager.myNation),
-            true); //Player gracza wysyłamy jeśli target ma go na liście graczy
     }
 
     /// <summary>
@@ -110,33 +84,13 @@ public class GameManager : Photon.MonoBehaviour
         if (!PhotonNetwork.isMasterClient)  //jeśli nie jestem serwerem
             return;
 
-        if (Player.FindPlayer(pmi.sender).Zasoby <= 0)  //Jeśli gracz który chce wstawiać nie ma narzędzi
+        if (PlayersManager.FindPlayer(pmi.sender).Zasoby <= 0)  //Jeśli gracz który chce wstawiać nie ma narzędzi
             return;
 
         PhotonNetwork.InstantiateSceneObject(nazwaObiektu, pos, rot, 0, null);
     }
 
-    [PunRPC]
-    void SpawnujGraczaRPC(int pvID, PhotonMessageInfo pmi)
-    {
-        GameObject newPlayerGO = PhotonView.Find(pvID).gameObject;
-        Player player;
-
-        if (Player.FindPlayer(pmi.sender) == null)
-        {
-            Debug.LogError("Błąd krytyczny!");
-            return;
-        }
-        else
-        {
-            player = Player.FindPlayer(pmi.sender);
-        }
-
-        player.gameObject = newPlayerGO;    //Tu jest problem
-        newPlayerGO.GetComponent<PlayerGO>().myPlayer = player;
-        newPlayerGO.GetComponent<PlayerGO>().myPlayer.nation = myNation;
-        newPlayerGO.name = "Player_" + player.nick; //+nick
-    }
+    
 
     #region Mordowanie gracza (lub tyklo bicie ;)
 
@@ -146,20 +100,20 @@ public class GameManager : Photon.MonoBehaviour
         if (!PhotonNetwork.isMasterClient)
             return;
 
-        float DAMAGE = TanksData.FindTankData(Player.FindPlayer(pmi.sender).tank).damage;
-        float DAMAGELOTERY = TanksData.FindTankData(Player.FindPlayer(pmi.sender).tank).damageLotery;
+        float DAMAGE = TanksData.FindTankData(PlayersManager.FindPlayer(pmi.sender).tank).damage;
+        float DAMAGELOTERY = TanksData.FindTankData(PlayersManager.FindPlayer(pmi.sender).tank).damageLotery;
         float tempDamage = Mathf.Round(UnityEngine.Random.Range(DAMAGE - DAMAGELOTERY, DAMAGE + DAMAGELOTERY));
 
-        if (Player.FindPlayer(pmi.sender).tank == DostempneCzolgi.O_I ||
-            Player.FindPlayer(pmi.sender).tank == DostempneCzolgi.IS7)
+        if (PlayersManager.FindPlayer(pmi.sender).tank == Tanks.O_I ||
+            PlayersManager.FindPlayer(pmi.sender).tank == Tanks.IS7)
             tempDamage = currentDamage;
 
-        Player ofiara = Player.FindPlayer(ofiaraPP);
-        if (ofiara.hp <= tempDamage)
+        Player ofiara = PlayersManager.FindPlayer(ofiaraPP);
+        if (ofiara.currentHp <= tempDamage)
         {
             GetComponent<PhotonView>().RPC("ZabiJOfiareRPC", ofiaraPP, ofiaraPP);
-            int reward = TanksData.FindTankData(Player.FindPlayer(pmi.sender).gameObject.GetComponent<PlayerGO>().myPlayer.tank).level * 200;
-            Player.FindPlayer(pmi.sender).gameObject.GetComponent<PlayerGO>().myPlayer.score += reward;
+            int reward = TanksData.FindTankData(PlayersManager.FindPlayer(pmi.sender).gameObject.GetComponent<PlayerGO>().myPlayer.tank).level * 200;
+            PlayersManager.FindPlayer(pmi.sender).gameObject.GetComponent<PlayerGO>().myPlayer.score += reward;
         }
         else
         {
@@ -173,9 +127,9 @@ public class GameManager : Photon.MonoBehaviour
         if (!PhotonNetwork.isMasterClient)
             return;
 
-        Player ofiara = Player.FindPlayer(ofiaraPP);
+        Player ofiara = PlayersManager.FindPlayer(ofiaraPP);
 
-        if (ofiara.hp <= DAMAGE)
+        if (ofiara.currentHp <= DAMAGE)
             GetComponent<PhotonView>().RPC("ZabiJOfiareRPC", ofiaraPP, ofiaraPP);
         else
             GetComponent<PhotonView>().RPC("OdbierzHpOfiaraRPC", PhotonTargets.All, ofiaraPP, DAMAGE);
@@ -185,103 +139,41 @@ public class GameManager : Photon.MonoBehaviour
     void OdbierzHpOfiaraRPC(PhotonPlayer ofiaraPP, float damage)
     {
         //Debug.Log("Gracz " + Player.FindPlayer(ofiaraPP).nick + " stracił " + damage + " punktów!");
-        Player.FindPlayer(ofiaraPP).hp -= damage;
+        PlayersManager.FindPlayer(ofiaraPP).currentHp -= damage;
     }
 
     [PunRPC]
     void ZabiJOfiareRPC(PhotonPlayer ofiaraPP)
     {
-        Player.FindPlayer(ofiaraPP).gameObject.GetComponent<GameOver>().OnDead();
+        PlayersManager.FindPlayer(ofiaraPP).gameObject.GetComponent<TankDeath>().OnDead();
     }
 
     #endregion
 
-    /// <summary>
-    /// Ustawia wszystkich graczy zdalnych w mojej kopii gry
-    /// (tylko to co potrzebuje zwykły szary gracz)
-    /// </summary>
-    public void UpdatePlayerList()
+    #region LoadingGameScene
+
+    public void LoadGameScene()
     {
-    #region Proces proszenia server o dane, ustawianie ich dla gracza proszącego
-        if (!PhotonNetwork.isMasterClient)
-            photonView.RPC("SetPlayersListRPC", PhotonTargets.MasterClient, null);
+        SceneManager.LoadSceneAsync("GameScene");
     }
 
-    /// <summary>
-    /// Wysyłam (ja server) dane wszystkich graczy proszącemu o to 
-    /// </summary>
-    /// <param name="pmi">proszący o dane</param>
-    [PunRPC]
-    void SetPlayersListRPC(PhotonMessageInfo pmi)
+    void OnEnable()
     {
-        if (!PhotonNetwork.isMasterClient)
-            return;
+        SceneManager.sceneLoaded += OnLevelFinishedLoading;
+    }
 
-        for (int i = 0; i < Player.GetPlayers().Count; i++)
+    void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnLevelFinishedLoading;
+    }
+
+    void OnLevelFinishedLoading(Scene scene, LoadSceneMode mode)
+    {
+        if (scene.buildIndex != 1 && scene.buildIndex != 0)
         {
-            var player = Player.GetPlayers()[i];
-
-            if (player.pp != pmi.sender)
-                photonView.RPC("SetPlayerRPC", pmi.sender,
-                    player.pp,
-                    player.gameObject.GetComponent<PhotonView>().viewID,
-                    player.nation,
-                    player.gameObject.GetComponent<PlayerGO>().myPlayer.hp,
-                    player.gameObject.GetComponent<PlayerGO>().myPlayer.tank, 
-                    false); //true wysyłamy jeśli target ma gracza na liście graczy
+            Matchmaking.JoinToAnyBattleOfType(myMode);
         }
     }
 
-    /// <summary>
-    /// To wykonuje gracz proszący o dane reszty graczy,
-    ///  ustawia podstawowe dane o tych graczach
-    /// </summary>
-    /// <param name="remotePlayerPP"></param>
-    /// <param name="remotePlayerIndex"></param>
-    /// <param name="remotePlayerID"></param>
-    /// <param name="remoteNation"></param>
-    /// <param name="remoteHP"></param>
-    /// <param name="playerIsOnPlayersList"></param>
-    [PunRPC]
-    void SetPlayerRPC(PhotonPlayer remotePlayerPP, int remotePlayerID, NationManager.Nation remoteNation,
-                        float remoteHP, DostempneCzolgi remoteTank, bool playerIsOnPlayersList = false)
-    {
-        //Tworzę gracza i dodaje go do mojej listy graczy 
-        Player player;
-        if (playerIsOnPlayersList)
-        {
-            player = Player.FindPlayer(remotePlayerPP);
-        }
-        else
-        {
-            player = new Player();
-            Player.GetPlayers().Add(player);
-        }
-
-        //Ustawiam podstawowe dane tego gracza 
-        player.nick = remotePlayerPP.NickName;
-        player.pp = remotePlayerPP;
-        player.nation = remoteNation;
-        player.hp = remoteHP;
-        player.tank = remoteTank;
-
-        //Ustawiam odwołanie gracza z listy i właściwego obiektu
-        GameObject newPlayerGO = PhotonView.Find(remotePlayerID).gameObject;
-        player.gameObject = newPlayerGO;
-        newPlayerGO.GetComponent<PlayerGO>().myPlayer = player;
-
-        //Taki bajer
-        newPlayerGO.name = "Player_" + player.nick;
-
-        //Ustawiam dane widoczne dla gracza proszącego (ustawiam czołg, sliderHP i nick) 
-        newPlayerGO.GetComponent<PlayerGO>().myPlayer.hp = player.hp;
-        newPlayerGO.GetComponent<PlayerGO>().myPlayer.nick = player.nick;
-        newPlayerGO.GetComponent<Nick>().nick.text = player.nick;
-        newPlayerGO.GetComponent<PlayerGO>().myPlayer.nation = player.nation;
-        newPlayerGO.GetComponent<PlayerGO>().myPlayer.tank = player.tank;
-        newPlayerGO.GetComponent<TankEvolution>().SetStartTankHowNewPlayer(player.tank);
-    }
-    #endregion 
-
-    
+    #endregion
 }

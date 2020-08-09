@@ -46,7 +46,7 @@ public class BulletMovment : MonoBehaviour {
             if(coll.tag == TagManager.GetTag(Tag.LocalPlayerBody))
             {
                 //to lokalny gracz potrząsa swoją kamerą
-                coll.GetComponent<TankObject>().PlayerGO.GetComponent<GameOver>().tankCamera.GetComponent<Shake>().CamShake();
+                coll.GetComponent<TankObject>().PlayerGO.GetComponent<TankDeath>().tankCamera.GetComponent<Shake>().CamShake();
                 //i robię BOOM!
                 Instantiate(Explosion, boom.position, transform.rotation);
                 Destroy(gameObject);
@@ -100,7 +100,7 @@ public class BulletMovment : MonoBehaviour {
             if (coll.tag == TagManager.GetTag(Tag.RemotePlayerBody) || coll.tag == TagManager.GetTag(Tag.LocalPlayerBody))
             {
                 //jeśli tak lokalny gracz potrząsa swoją kamerą
-                coll.GetComponent<TankObject>().PlayerGO.GetComponent<GameOver>().tankCamera.GetComponent<Shake>().CamShake();
+                coll.GetComponent<TankObject>().PlayerGO.GetComponent<TankDeath>().tankCamera.GetComponent<Shake>().CamShake();
                 //i zrobi boom!
                 Instantiate(Explosion, boom.position, transform.rotation);
                 Destroy(gameObject);

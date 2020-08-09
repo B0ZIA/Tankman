@@ -1,13 +1,15 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
 /// Zwykła smutna klasa Player, ktora posiada kazdy gracz.
 /// </summary>
+[Serializable]
 public class Player
 {
     //Dane lokalne 
-    private static List<Player> players = new List<Player>();
+    //private static List<Player> players = new List<Player>();
     public static Player myPlayer;
 
     //Dane podstawowe 
@@ -15,8 +17,8 @@ public class Player
     public NationManager.Nation nation;
     public PhotonPlayer pp;    
     public GameObject gameObject;  
-    public DostempneCzolgi tank;  
-    public float hp = 600f;         
+    public Tanks tank;  
+    public float currentHp = 600f;         
 
     //Dane ukryte, dla servera
     public HUDManager.TankTier tankTier; 
@@ -35,18 +37,21 @@ public class Player
         }
     }
     public int coin = 0;
+    [SerializeField]
     private int _dynamit;
     public int Dynamit
     {
         get { return _dynamit; }
         set { if (value <= 3 && value >= 0) _dynamit = value; }
     }
+    [SerializeField]
     private int _naprawiarka;
     public int Naprawiarka
     {
         get { return _naprawiarka; }
         set { if (value <= 3 && value >= 0) _naprawiarka = value; }
     }
+    [SerializeField]
     private int _zasoby;
     public int Zasoby
     {
@@ -66,26 +71,9 @@ public class Player
         }
     }
 
-
-
     public Player()
     {
         nick = "UnknowPlayer";
         nation = NationManager.Nation.IIIRZESZA;
-    }
-
-    public static List<Player> GetPlayers()
-    {
-        return players;
-    }
-
-    public static Player FindPlayer(PhotonPlayer pp)
-    {
-        for(int i = 0; i < players.Count; i++)
-        {
-            if (players[i].pp == pp)
-                return players[i];
-        }
-        return null;
     }
 }

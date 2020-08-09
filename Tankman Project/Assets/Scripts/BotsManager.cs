@@ -24,18 +24,25 @@ public class BotsManager : MonoBehaviour
     {
         if(PhotonNetwork.isMasterClient)
         {
-            for (int i = 0; i < mapData.bots.Count; i++)
+            if (mapData.bots != null)
             {
-                BotPrefab prefab = botsList.FirstOrDefault(p => p.type == mapData.bots[i].type);
-
-                for (int j = 0; j < mapData.bots[i].count; j++)
+                for (int i = 0; i < mapData.bots.Count; i++)
                 {
-                    Vector3 tankPos = Vector3.zero;
-                    Quaternion tankRot = Quaternion.identity;
+                    BotPrefab prefab = botsList.FirstOrDefault(p => p.type == mapData.bots[i].type);
 
-                    GameObject tank = PhotonNetwork.InstantiateSceneObject(prefab.prefab.name, tankPos, tankRot, 0, null);
-                    tank.GetComponent<BOTSetup>().AsMasterSetIDForAllPlayers(BotID(prefab.type, j));
+                    for (int j = 0; j < mapData.bots[i].count; j++)
+                    {
+                        Vector3 tankPos = Vector3.zero;
+                        Quaternion tankRot = Quaternion.identity;
+
+                        GameObject tank = PhotonNetwork.InstantiateSceneObject(prefab.prefab.name, tankPos, tankRot, 0, null);
+                        tank.GetComponent<BOTSetup>().AsMasterSetIDForAllPlayers(BotID(prefab.type, j));
+                    }
                 }
+            }
+            else
+            {
+                Debug.LogWarning("MapData do not have bots list");
             }
         }
     }

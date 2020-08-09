@@ -5,7 +5,7 @@ public class AutoShot : Shot, IAmRemoteShoot
 {
     public TurretData turret;
     public ParticleSystem muzzleFlash;
-    public GameOver tankStore;
+    public TankDeath tankStore;
 
     //Z interfejsu
     public bool check { get; set; }
@@ -126,7 +126,7 @@ public class AutoShot : Shot, IAmRemoteShoot
     [PunRPC]
     protected override void RpcDoShootEffect(Vector3 pos, Quaternion rot, PhotonMessageInfo pmi)
     {
-        BulletTrailPrefab.GetComponent<BulletMovment>().own = Player.FindPlayer(pmi.sender).gameObject.GetComponent<TankEvolution>().HullGameObject;
+        BulletTrailPrefab.GetComponent<BulletMovment>().own = PlayersManager.FindPlayer(pmi.sender).gameObject.GetComponent<TankEvolution>().HullGameObject;
         Instantiate(BulletTrailPrefab, pos, rot);
     }
 }

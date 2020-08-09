@@ -54,18 +54,18 @@ public class NationManager : MonoBehaviour {
         JAPONIA
     }
 
-    public static DostempneCzolgi ReturnStartTank(Nation nation)
+    public static Tanks ReturnStartTank(Nation nation)
     {
         switch (nation)
         {
             case Nation.ZSRR:
-                return DostempneCzolgi.T38;
+                return Tanks.T38;
             case Nation.IIIRZESZA:
-                return DostempneCzolgi.PZI;
+                return Tanks.PZI;
             case Nation.JAPONIA:
-                return DostempneCzolgi.KHA_GO;
+                return Tanks.KHA_GO;
             default:
-                return DostempneCzolgi.PZI;
+                return Tanks.PZI;
         }
     }
 }

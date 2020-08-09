@@ -10,7 +10,7 @@ public class TankPeriscope : MonoBehaviour
     public List<Player> PlayersInNear { get; private set; }
 
     [SerializeField]
-    private GameOver gameOver;
+    private TankDeath gameOver;
     [SerializeField]
     private Shake cameraShake;
 
@@ -30,7 +30,7 @@ public class TankPeriscope : MonoBehaviour
     {
         if (collision.tag == TagManager.GetTag(Tag.RemotePlayerBody))
         {
-            gameOver.onPlayerDead += collision.GetComponent<TankObject>().PlayerGO.GetComponent<GameOver>().tankPeriscope.CameraShake;
+            gameOver.onPlayerDead += collision.GetComponent<TankObject>().PlayerGO.GetComponent<TankDeath>().tankPeriscope.CameraShake;
             //PlayersInNear.Add(collision.GetComponent<Keeper>().keep.GetComponent<PlayerGO>().myPlayer);
         }
     }
@@ -39,7 +39,7 @@ public class TankPeriscope : MonoBehaviour
     {
         if (collision.tag == TagManager.GetTag(Tag.RemotePlayerBody))
         {
-            gameOver.onPlayerDead -= collision.GetComponent<TankObject>().PlayerGO.GetComponent<GameOver>().tankPeriscope.CameraShake;
+            gameOver.onPlayerDead -= collision.GetComponent<TankObject>().PlayerGO.GetComponent<TankDeath>().tankPeriscope.CameraShake;
             //PlayersInNear.Remove(collision.GetComponent<Keeper>().keep.GetComponent<PlayerGO>().myPlayer);
         }
     }

@@ -4,7 +4,7 @@
 /// Scritp responsoible for player progres in game. 
 /// Don't turn off this script in PlayerSetup
 /// </summary>
-public class GameOver : Photon.MonoBehaviour
+public class TankDeath : Photon.MonoBehaviour
 {
     [Header("Inne skrypty:")]
     public Camera2DFollow cameraFollow;
@@ -72,12 +72,12 @@ public class GameOver : Photon.MonoBehaviour
         GetComponent<TankShot>().isReloadnig = false;
         GetComponent<TankShot>().realReloadTime = 0f;
         GetComponent<TankShot>().SetShootingOpportunity(true);
-        GetComponent<PlayerGO>().myPlayer.hp = 600f;
+        GetComponent<PlayerGO>().myPlayer.currentHp = 600f;
         GetComponent<TankEvolution>().SetStartTank();
         HUDManager.Instance.StartRefresh();
         TankWaterCollision.Instance.Setup();
         TechTree.Instance.TankSwitchTierButton(1);
-        GameManager.Instance.UpdateMyPlayer(photonView.viewID);
+        PlayersManager.Instance.UpdateMyPlayer(photonView.viewID);
     }
 
     /// <summary>

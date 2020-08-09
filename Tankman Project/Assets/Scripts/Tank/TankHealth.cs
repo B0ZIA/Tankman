@@ -50,7 +50,7 @@ public class TankHealth : Photon.MonoBehaviour
     void Start ()
     {
         player = GetComponent<PlayerGO>().myPlayer;
-        tempHp = player.hp;
+        tempHp = player.currentHp;
 	}
 
 	void Update ()
@@ -58,13 +58,13 @@ public class TankHealth : Photon.MonoBehaviour
         //Jeśli gracz PONOWNIE oberwie to przerywam regeneracje
         if (a)
         {
-            if (tempHp != player.hp)
+            if (tempHp != player.currentHp)
             {
                 //Debug.Log("Gracz oberwał ponownie, przerywam regeneracje...");
-                photonView.RPC("SetHpRPC", PhotonTargets.Others, GetComponent<PlayerGO>().myPlayer.hp, MaxHP);
+                photonView.RPC("SetHpRPC", PhotonTargets.Others, GetComponent<PlayerGO>().myPlayer.currentHp, MaxHP);
                 czekajNaRegeneracje = false;
                 przerwijRegeneracje = true;
-                tempHp = player.hp;
+                tempHp = player.currentHp;
             }
         }
 
@@ -74,14 +74,14 @@ public class TankHealth : Photon.MonoBehaviour
 
 
         //Jesli nie mam maksymalnej ilosci HP
-        if (player.hp != MaxHP)
+        if (player.currentHp != MaxHP)
         {
             //Debug.Log("OHO! trzeba czekać na regenerecje");
-            photonView.RPC("SetHpRPC", PhotonTargets.Others, GetComponent<PlayerGO>().myPlayer.hp, MaxHP);
+            photonView.RPC("SetHpRPC", PhotonTargets.Others, GetComponent<PlayerGO>().myPlayer.currentHp, MaxHP);
             czyPotrzebaRegeneracji = false;     //Zamykam pętle powyżej
             przerwijRegeneracje = false;
             czekajNaRegeneracje = true;
-            tempHp = player.hp;
+            tempHp = player.currentHp;
             a = true;
             StartCoroutine(CzekanieNaRegeneracje());
         }
@@ -98,7 +98,7 @@ public class TankHealth : Photon.MonoBehaviour
                 //Przerywam pętle
                 i = (int)czasDoRozpoczeciaRegeneracji;
                 //Debug.Log("...podczas oczekiwania na regeneracje !");
-                photonView.RPC("SetHpRPC", PhotonTargets.Others, GetComponent<PlayerGO>().myPlayer.hp, MaxHP);
+                photonView.RPC("SetHpRPC", PhotonTargets.Others, GetComponent<PlayerGO>().myPlayer.currentHp, MaxHP);
             }
         }
         if (czekajNaRegeneracje)
@@ -117,31 +117,31 @@ public class TankHealth : Photon.MonoBehaviour
     IEnumerator Regeneracja()
     {
         //Debug.Log("Rozpoczynam Regeneracje !");
-        float ihp = player.hp;
+        float ihp = player.currentHp;
         float imaxHp = MaxHP;
 
         while(ihp < imaxHp)
         {
             yield return new WaitForSecondsRealtime((11f - szybkoscRegeneracji) / 10);
             a = false;
-            player.hp += 10f;
-            ihp = player.hp;
+            player.currentHp += 10f;
+            ihp = player.currentHp;
             imaxHp = MaxHP;
             tempHp = ihp;
-            photonView.RPC("SetHpRPC", PhotonTargets.Others, GetComponent<PlayerGO>().myPlayer.hp, MaxHP);
+            photonView.RPC("SetHpRPC", PhotonTargets.Others, GetComponent<PlayerGO>().myPlayer.currentHp, MaxHP);
             if (przerwijRegeneracje)
             {
                 //Przerywam pętle
                 //Debug.Log("...podczas regeneracji !");
-                photonView.RPC("SetHpRPC", PhotonTargets.Others, GetComponent<PlayerGO>().myPlayer.hp, MaxHP);
+                photonView.RPC("SetHpRPC", PhotonTargets.Others, GetComponent<PlayerGO>().myPlayer.currentHp, MaxHP);
                 ihp = imaxHp;
             }
             a = true;
         }
         //Debug.Log("Kończe regeneracje ponieważ mam już pełne HP!");
-        if (player.hp > MaxHP)
-          player.hp = MaxHP;
-        photonView.RPC("SetHpRPC", PhotonTargets.Others, GetComponent<PlayerGO>().myPlayer.hp, MaxHP);
+        if (player.currentHp > MaxHP)
+          player.currentHp = MaxHP;
+        photonView.RPC("SetHpRPC", PhotonTargets.Others, GetComponent<PlayerGO>().myPlayer.currentHp, MaxHP);
         tempHp = MaxHP;
         czyPotrzebaRegeneracji = true;
         przerwijRegeneracje = false;
@@ -152,7 +152,7 @@ public class TankHealth : Photon.MonoBehaviour
     [PunRPC]
     void SetHpRPC(float HP, float MAXHP)
     {
-        GetComponent<PlayerGO>().myPlayer.hp = HP;
+        GetComponent<PlayerGO>().myPlayer.currentHp = HP;
         sliderHpOnTank.value = HP / MAXHP;
     }
 }

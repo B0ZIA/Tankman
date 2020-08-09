@@ -69,10 +69,12 @@ public class ShadowEffect : MonoBehaviour
 
     public void SetPosition()
     {
-        shadow.transform.rotation = transform.rotation;
-        shadow.transform.position = new Vector3(transform.position.x + objectHeight, transform.position.y - objectHeight, 0);
+        if (shadow != null)
+        {
+            shadow.transform.rotation = transform.rotation;
+            shadow.transform.position = new Vector3(transform.position.x + objectHeight, transform.position.y - objectHeight, 0);
+        }
     }
-
 
     void Awake()
     {
