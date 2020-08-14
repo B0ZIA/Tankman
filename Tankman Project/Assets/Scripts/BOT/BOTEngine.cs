@@ -180,15 +180,15 @@ public class BOTEngine : Engine, IMove, ITurn
     {
         if (movement == true)
         {
-            if (coll.gameObject.tag == TagManager.GetTag(Tag.StaticGameObject)
-                || coll.gameObject.tag == TagManager.GetTag(Tag.RemotePlayerBody)
-                || coll.gameObject.tag == TagManager.GetTag(Tag.LocalPlayerBody))
+            if (coll.gameObject.tag == TagsManager.GetTag(Tag.StaticGameObject)
+                || coll.gameObject.tag == TagsManager.GetTag(Tag.RemotePlayerBody)
+                || coll.gameObject.tag == TagsManager.GetTag(Tag.LocalPlayerBody))
             {
                 SetTargetPosition();
                 StartCoroutine(ChangeSpeed());
             }
 
-            if (coll.gameObject.tag == TagManager.GetTag(Tag.Bot))
+            if (coll.gameObject.tag == TagsManager.GetTag(Tag.Bot))
             {   
                 StartCoroutine(ChangeSpeed());
             }
@@ -197,7 +197,7 @@ public class BOTEngine : Engine, IMove, ITurn
     //If BOT collision he's target
     void OnTriggerEnter2D(Collider2D coll)
     {
-        if (coll.gameObject.tag == TagManager.GetTag(Tag.RoadPoint))
+        if (coll.gameObject.tag == TagsManager.GetTag(Tag.RoadPoint))
         {
             //UnityEngine.Debug.Log("<color=blue>BOT</color>: idę za Kolejnym punktem ścieżki");
             RoadPoint roadPoint = coll.gameObject.GetComponent<RoadPoint>();

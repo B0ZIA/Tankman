@@ -42,7 +42,7 @@ public class ItemDetector : Photon.MonoBehaviour
         Player myPlayer = tankEvolution.GetComponent<PlayerGO>().myPlayer;
         PhotonView myPV = tankEvolution.GetComponent<TankRPC>().myPV;
 
-        Tag tag = TagManager.FindTagEnum(coll.gameObject.tag);
+        Tag tag = TagsManager.FindTagEnum(coll.gameObject.tag);
 
         switch (tag)
         {

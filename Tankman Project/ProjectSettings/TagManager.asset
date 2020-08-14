@@ -54,12 +54,12 @@ TagManager:
   - UI
   - 
   - 
-  - a
-  - aa
-  - LOCAL_PLAYER_LAYER
-  - REMOTE_PLAYER_LAYER
-  - aaa
-  - aaaa
+  - 
+  - 
+  - LocalPlayer
+  - RemotePlayer
+  - 
+  - 
   - 
   - 
   - 

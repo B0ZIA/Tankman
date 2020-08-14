@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class FollowArround  :  MonoBehaviour 
+public class RotatToCamera  :  MonoBehaviour 
 {
     private void Update () 
     {

@@ -22,7 +22,7 @@ public class BOTTurret : TrackingMechanism
 
     void OnTriggerEnter2D(Collider2D coll)
     {
-        if (coll.gameObject.tag == TagManager.GetTag(Tag.LocalPlayerBody) || coll.gameObject.tag == TagManager.GetTag(Tag.RemotePlayerBody))
+        if (coll.gameObject.tag == TagsManager.GetTag(Tag.LocalPlayerBody) || coll.gameObject.tag == TagsManager.GetTag(Tag.RemotePlayerBody))
         {
             target = coll.gameObject;
         }
@@ -30,7 +30,7 @@ public class BOTTurret : TrackingMechanism
 
     public void OnTriggerExit2D(Collider2D coll)
     {
-        if (coll.gameObject.tag == TagManager.GetTag(Tag.LocalPlayerBody) || coll.gameObject.tag == TagManager.GetTag(Tag.RemotePlayerBody))
+        if (coll.gameObject.tag == TagsManager.GetTag(Tag.LocalPlayerBody) || coll.gameObject.tag == TagsManager.GetTag(Tag.RemotePlayerBody))
         {
             target = staticTarget;
         }

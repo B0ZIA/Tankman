@@ -7,7 +7,7 @@
 public class TankDeath : Photon.MonoBehaviour
 {
     [Header("Inne skrypty:")]
-    public Camera2DFollow cameraFollow;
+    public CameraFollow cameraFollow;
     public PlayerSetup playerSetup;
     public TriggerSth triggerSth;
  
@@ -85,7 +85,7 @@ public class TankDeath : Photon.MonoBehaviour
     /// </summary>
     void UstawPozycje()
     {
-        Vector3 pos = GameManager.Instance.GetRandomGameObject(TagManager.GetTag(Tag.PlayerSpawn)).transform.position;
+        Vector3 pos = GameManager.Instance.GetRandomGameObject(TagsManager.GetTag(Tag.PlayerSpawn)).transform.position;
         GetComponent<TankEvolution>().TankGameObject.transform.position = pos;
     }
 

@@ -185,9 +185,9 @@ public class TriggerSth : MonoBehaviour
     {
         if (collision.GetComponent<AntiTankBarrier>() == null)
             return;
-        if (collision.tag == TagManager.GetTag(Tag.RepairedBarrier))
+        if (collision.tag == TagsManager.GetTag(Tag.RepairedBarrier))
             tempObiektDoZniszczenia.Add(collision.gameObject.GetComponent<AntiTankBarrier>());
-        if (collision.tag == TagManager.GetTag(Tag.DestroyedBarrier))
+        if (collision.tag == TagsManager.GetTag(Tag.DestroyedBarrier))
             tempObiektDoNaprawy.Add(collision.gameObject.GetComponent<AntiTankBarrier>());
     }
 
@@ -195,9 +195,9 @@ public class TriggerSth : MonoBehaviour
     {
         if (collision.GetComponent<AntiTankBarrier>() == null)
             return;
-        if (collision.tag == TagManager.GetTag(Tag.RepairedBarrier))
+        if (collision.tag == TagsManager.GetTag(Tag.RepairedBarrier))
             tempObiektDoZniszczenia.Remove(collision.gameObject.GetComponent<AntiTankBarrier>());
-        if (collision.tag == TagManager.GetTag(Tag.DestroyedBarrier))
+        if (collision.tag == TagsManager.GetTag(Tag.DestroyedBarrier))
             tempObiektDoNaprawy.Remove(collision.gameObject.GetComponent<AntiTankBarrier>());
 
         //Wyłącza pola edycji

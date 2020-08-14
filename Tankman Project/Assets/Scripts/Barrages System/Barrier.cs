@@ -13,7 +13,7 @@ public class Barrier : Photon.MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D coll)
     {
-        if (coll.gameObject.tag == TagManager.GetTag(Tag.LocalPlayerBody) || coll.gameObject.tag == TagManager.GetTag(Tag.Bot))
+        if (coll.gameObject.tag == TagsManager.GetTag(Tag.LocalPlayerBody) || coll.gameObject.tag == TagsManager.GetTag(Tag.Bot))
             Destroy();
     }
 
@@ -30,7 +30,7 @@ public class Barrier : Photon.MonoBehaviour
     [PunRPC]
     protected void DestroyBarrierRPC()
     {
-        gameObject.tag = TagManager.GetTag(Tag.DestroyedBarrier);
+        gameObject.tag = TagsManager.GetTag(Tag.DestroyedBarrier);
         destroyed = true;
         GetComponent<SpriteRenderer>().sprite = destroyedTexture;
         GetComponent<BoxCollider2D>().isTrigger = true;
@@ -40,7 +40,7 @@ public class Barrier : Photon.MonoBehaviour
     protected void RepairBarrierRPC()
     {
         destroyed = false;
-        gameObject.tag = TagManager.GetTag(Tag.RepairedBarrier);
+        gameObject.tag = TagsManager.GetTag(Tag.RepairedBarrier);
         GetComponent<SpriteRenderer>().sprite = repairedTexture;
         GetComponent<BoxCollider2D>().isTrigger = false;
     }

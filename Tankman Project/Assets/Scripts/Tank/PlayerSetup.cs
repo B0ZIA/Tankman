@@ -31,7 +31,7 @@ public class PlayerSetup : Photon.MonoBehaviour
 
         if (photonView.isMine)
         {
-            TagManager.SetGameObjectTag(myColliderObject, Tag.LocalPlayerBody);
+            TagsManager.SetGameObjectTag(myColliderObject, Tag.LocalPlayerBody);
             LayerManager.SetGameObjectLayer(myColliderObject, Layer.LocalPlayer);
 
             SetupGameScene();
@@ -40,7 +40,7 @@ public class PlayerSetup : Photon.MonoBehaviour
         }
         else
         {
-            TagManager.SetGameObjectTag(myColliderObject, Tag.RemotePlayerBody);
+            TagsManager.SetGameObjectTag(myColliderObject, Tag.RemotePlayerBody);
             LayerManager.SetGameObjectLayer(myColliderObject, Layer.RemotePlayer);
 
 

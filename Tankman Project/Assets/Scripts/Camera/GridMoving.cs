@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GridFollow : MonoBehaviour {
+public class GridMoving : MonoBehaviour {
 
     public float grid = 0.5f;
     float x = 0f;

@@ -53,7 +53,7 @@ public class Wskaznik : MonoBehaviour {
 
         if (hit.collider != null)
         {
-            if(hit.collider.tag == TagManager.GetTag(Tag.RemotePlayerBody) || hit.collider.tag == TagManager.GetTag(Tag.Bot))
+            if(hit.collider.tag == TagsManager.GetTag(Tag.RemotePlayerBody) || hit.collider.tag == TagsManager.GetTag(Tag.Bot))
                 GetComponent<SpriteRenderer>().color = red;
             else
                 GetComponent<SpriteRenderer>().color = yellow;

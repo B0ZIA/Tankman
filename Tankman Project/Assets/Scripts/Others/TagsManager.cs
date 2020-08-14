@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public static class TagManager
+public static class TagsManager
 {
     public static void SetGameObjectTag(GameObject gameObject, Tag tag)
     {
