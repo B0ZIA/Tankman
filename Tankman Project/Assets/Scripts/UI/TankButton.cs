@@ -2,13 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine.UI;
 
-/*
- * ###################################
- * #        by Jakub Główczyk        #
- * #            [#][#][#]            #
- * ###################################
- */
-
 public class TankButton : MonoBehaviour
 {
     [SerializeField]

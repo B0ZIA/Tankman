@@ -3,13 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-/*
- * ###################################
- * #        by Jakub Główczyk        #
- * #            [#][ ][ ]            #
- * ###################################
- */
-
 public class ShopManager : MonoBehaviour
 {
     public static ShopManager Instance { get; private set; }
@@ -238,10 +231,6 @@ public class ShopManager : MonoBehaviour
 
     public void SetTexture(MoroButton.Camouflage myCamoflage)
     {
-        //tankStore.bodyTlo.material = skinMat;
-        //tankStore.headTlo.material = skinMat;
-        //tankStore.OtherElements2.GetComponent<SpriteRenderer>().material = skinMat;
-        //tankStore.OtherElements.GetComponent<SpriteRenderer>().material = skinMat;
         GameManager.LocalPlayer.gameObject.GetComponent<TankRPC>().myPV.RPC("SetCamouflage", PhotonTargets.AllBuffered, myCamoflage);
     }
 }

@@ -1,12 +1,5 @@
 ﻿using UnityEngine;
 
-/*
- * ###################################
- * #        by Jakub Główczyk        #
- * #            [#][#][#]            #
- * ###################################
- */
-
 /// <summary>
 /// Script Responsible for Synchronization Position Players
 /// </summary>

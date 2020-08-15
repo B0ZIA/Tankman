@@ -42,7 +42,7 @@ public class ItemDetector : Photon.MonoBehaviour
         Player myPlayer = tankEvolution.GetComponent<PlayerGO>().myPlayer;
         PhotonView myPV = tankEvolution.GetComponent<TankRPC>().myPV;
 
-        Tag tag = TagManager.FindTagEnum(coll.gameObject.tag);
+        Tag tag = TagsManager.FindTagEnum(coll.gameObject.tag);
 
         switch (tag)
         {
@@ -50,21 +50,20 @@ public class ItemDetector : Photon.MonoBehaviour
                 if (myPlayer.Dynamit < 3)
                 {
                     myPlayer.Dynamit += 1;
-                    myPV.RPC("SetItemPositionRPC", PhotonTargets.AllBuffered, coll.gameObject.GetComponent<PhotonView>().viewID, ItemManager.RandomPos());
+                    //myPV.RPC("SetItemPositionRPC", PhotonTargets.AllBuffered, coll.gameObject.GetComponent<PhotonView>().viewID, ItemManager.RandomPos());
                 }
                 break;
             case Tag.RepairDevice:
                 if (myPlayer.Naprawiarka < 3)
                 {
                     myPlayer.Naprawiarka += 1;
-                    myPV.RPC("SetItemPositionRPC", PhotonTargets.AllBuffered, coll.gameObject.GetComponent<PhotonView>().viewID, ItemManager.RandomPos());
+                    //myPV.RPC("SetItemPositionRPC", PhotonTargets.AllBuffered, coll.gameObject.GetComponent<PhotonView>().viewID, ItemManager.RandomPos());
                 }
                 break;
             case Tag.Resources:
                 if (myPlayer.Zasoby < 3)
                 {
                     myPlayer.Zasoby += 1;
-                    myPV.RPC("SetItemPositionRPC", PhotonTargets.AllBuffered, coll.gameObject.GetComponent<PhotonView>().viewID, ItemManager.RandomPos());
                 }
                 break;
             case Tag.Coin:
@@ -75,7 +74,7 @@ public class ItemDetector : Photon.MonoBehaviour
                 if (myPlayer.score < HUDManager.tempGranicaWbicjaLewla)
                 {
                     myPlayer.score += 50;
-                    myPV.RPC("SetItemPositionRPC", PhotonTargets.AllBuffered, coll.gameObject.GetComponent<PhotonView>().viewID, ItemManager.RandomPos());
+                    //myPV.RPC("SetItemPositionRPC", PhotonTargets.AllBuffered, coll.gameObject.GetComponent<PhotonView>().viewID, ItemManager.RandomPos());
                 }
                 break;
         }

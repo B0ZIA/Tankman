@@ -2,13 +2,6 @@
 using UnityEngine;
 using System;
 
-/*
- * ###################################
- * #        by Jakub Główczyk        #
- * #            [#][#][#]            #
- * ###################################
- */
-
 /// <summary>
 /// Zawiera informacje o czołgach
 /// </summary>
@@ -23,7 +16,7 @@ public class TanksData : ScriptableObject
         tanks = _tanks;
     }
 
-    public static TankData FindTankData(DostempneCzolgi myTank)
+    public static TankData FindTankData(Tanks myTank)
     {
         for (int i = 0; i < tanks.Count; i++)
         {
@@ -33,7 +26,7 @@ public class TanksData : ScriptableObject
         return null;
     }
 
-    public static DostempneCzolgi FindTankEnum(TankData myTank)
+    public static Tanks FindTankEnum(TankData myTank)
     {
         for (int i = 0; i < tanks.Count; i++)
         {
@@ -48,12 +41,12 @@ public class TanksData : ScriptableObject
 [Serializable]
 public struct NamedTank
 {
-    public DostempneCzolgi tank;
+    public Tanks tank;
     public TankData tankData;
 }
 
 
-public enum DostempneCzolgi
+public enum Tanks
 {
     //III Rzesza
     PZI,

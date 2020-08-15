@@ -3,20 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-/*
- * ###################################
- * #        by Jakub Główczyk        #
- * #            [ ][ ][ ]            #
- * ###################################
- */
-
-public class Nick : Photon.MonoBehaviour {
-
-    //private GameManager gameManager;
-
+public class Nick : Photon.MonoBehaviour
+{
     public Text nick;
     public Color transparent;
-
     public Image fill;
     public Image background;
 

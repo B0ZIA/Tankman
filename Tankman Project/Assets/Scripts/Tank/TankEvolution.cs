@@ -2,13 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-/*
- * ###################################
- * #        by Jakub Główczyk        #
- * #            [#][ ][ ]            #
- * ###################################
- */
-
 /// <summary>
 /// Odpowiada za ewolucje gracza, jego "level up". Zawiera także odniesienia do podzespołów czołgu,
 /// wszystkie zmienne czołgu (speed, reload, HP) do których odwołują się inne skrypty.  
@@ -205,7 +198,7 @@ public class TankEvolution : Photon.MonoBehaviour
         #region Wyjątki czołgów 
 
         //OI'emu musimy włączyć działka lub je wyłączyć (jeśli zginął i np. KHA-GO będzie przez to przechodzić)
-        if (myTank.tank == DostempneCzolgi.O_I)
+        if (myTank.tank == Tanks.O_I)
         {
             for (int i = 0; i < turretsOI.Length; i++)
             {
@@ -222,7 +215,7 @@ public class TankEvolution : Photon.MonoBehaviour
         }
 
         //IS7 również posiada wieżyczkę na wieży 
-        if (myTank.tank == DostempneCzolgi.IS7)
+        if (myTank.tank == Tanks.IS7)
         {
             turretIS.SetActive(true);
             turretIS.GetComponent<AutoShot>().Reset();
@@ -233,7 +226,7 @@ public class TankEvolution : Photon.MonoBehaviour
         }
 
         // natomiast HA-TO ma nierychomą wieżyczkę no ale trzeba ją wyprostować (prędkość obrotu ma = 0)  
-        if (myTank.tank == DostempneCzolgi.HA_TO_300MM)
+        if (myTank.tank == Tanks.HA_TO_300MM)
         {
             turret.transform.localRotation = Quaternion.identity;
         }
@@ -260,7 +253,7 @@ public class TankEvolution : Photon.MonoBehaviour
         reloadBetweenMagazine = myTank.reloadBetweenMagazine;
         GetComponent<TankShot>().ResetMagazine(myTank.maxAmmo);
         if (photonView.isMine)
-            GetComponent<PlayerGO>().myPlayer.hp = myTank.maxHp;
+            GetComponent<PlayerGO>().myPlayer.currentHp = myTank.maxHp;
     }
 
 
@@ -341,7 +334,7 @@ public class TankEvolution : Photon.MonoBehaviour
     /// Bardo niebezpieczna metoda no ale cóż, kiedyś się poprawi ;) TODO: 0_0
     /// </summary>
     /// <param name="tank"></param>
-    public void SetStartTankHowNewPlayer(DostempneCzolgi tank)
+    public void SetStartTankHowNewPlayer(Tanks tank)
     {
         SetTankObject(TanksData.FindTankData(tank));
     }
@@ -390,10 +383,10 @@ public class TankEvolution : Photon.MonoBehaviour
 
 
     [PunRPC]
-    void PleaseServerForUpdateRPC(DostempneCzolgi newTank, PhotonMessageInfo pmi)
+    void PleaseServerForUpdateRPC(Tanks newTank, PhotonMessageInfo pmi)
     {
         #region Security
-        int playerOldTankLevel = TanksData.FindTankData(Player.FindPlayer(pmi.sender).tank).level;  //(int)newTank - 1;// TankManager.czolgii[newTank].level - 1;//Player.FindPlayer(pmi.sender).gameObject.GetComponent<TankEvolution>().myTank.level;
+        int playerOldTankLevel = TanksData.FindTankData(PlayersManager.FindPlayer(pmi.sender).tank).level;  //(int)newTank - 1;// TankManager.czolgii[newTank].level - 1;//Player.FindPlayer(pmi.sender).gameObject.GetComponent<TankEvolution>().myTank.level;
         int requiredScore = TankEvolution.UstawGranice(playerOldTankLevel);
 
         if (!PhotonNetwork.isMasterClient)
@@ -408,7 +401,7 @@ public class TankEvolution : Photon.MonoBehaviour
             ); //może być tylko o jeden mniejszy od nowego albo ten sam
             return;
         }
-        if (Player.FindPlayer(pmi.sender).score < requiredScore)
+        if (PlayersManager.FindPlayer(pmi.sender).score < requiredScore)
         {
             Debug.LogError("Gracz ma za mało score!"); //Przynajmniej w kopii gry servera
             return;
@@ -416,7 +409,7 @@ public class TankEvolution : Photon.MonoBehaviour
         #endregion
         {
             TankData goodTankParametrs = TanksData.FindTankData(newTank);
-            Player.FindPlayer(pmi.sender).tank = newTank;   //Server przechowuje i tylko on sobie ustawia właściwy typ i u siebie trzyma
+            PlayersManager.FindPlayer(pmi.sender).tank = newTank;   //Server przechowuje i tylko on sobie ustawia właściwy typ i u siebie trzyma
             photonView.RPC("UstawCzolgRPC", PhotonTargets.All, newTank,
                 goodTankParametrs.cameraSize,
                 goodTankParametrs.damage,
@@ -433,7 +426,7 @@ public class TankEvolution : Photon.MonoBehaviour
     //         / gracz je podmienia i odrazu ustawia aktualizując czołg.
     //         \
     [PunRPC]// \/
-    void UstawCzolgRPC(DostempneCzolgi newTank,
+    void UstawCzolgRPC(Tanks newTank,
                 float cameraSize,
                 float damage,
                 float damageLotery,

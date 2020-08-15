@@ -4,13 +4,6 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-/*
- * ###################################
- * #        by Jakub Główczyk        #
- * #            [#][ ][ ]            #
- * ###################################
- */
-
 /// <summary>
 /// The Script responsible for choosing Player nick
 /// </summary>

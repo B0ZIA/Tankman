@@ -3,13 +3,6 @@ using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
 
-/*
- * ###################################
- * #        by Jakub Główczyk        #
- * #            [#][ ][ ]            #
- * ###################################
- */
-
 public class HUDManager : MonoBehaviour
 {
     public static HUDManager Instance { get; private set; }
@@ -94,7 +87,7 @@ public class HUDManager : MonoBehaviour
         SliderHp.value = CalculateHealth();
         SliderAmmo.value = CalculateAmmo();
         SliderReload.value = CalculateReloadTime();
-        if (playerGO.myPlayer.hp != TankHealth.Instance.MaxHP)
+        if (playerGO.myPlayer.currentHp != TankHealth.Instance.MaxHP)
             SliderRegeneration.value = CalculateTimeToRegeneration();
         else
             SliderRegeneration.value = 1;
@@ -104,7 +97,7 @@ public class HUDManager : MonoBehaviour
             SliderExp.fillRect.GetComponent<Image>().color = normalExpFillColor;
 
         //Aktualizuje Texty
-        hpMaxHp.text = playerGO.myPlayer.hp + "/" + TankHealth.Instance.MaxHP;
+        hpMaxHp.text = playerGO.myPlayer.currentHp + "/" + TankHealth.Instance.MaxHP;
         if (GameManager.LocalPlayer.tankTier == TankTier.CzrawtyTier)
             expMaxExpText.text = playerGO.myPlayer.score + "/∞";
         else
@@ -179,7 +172,7 @@ public class HUDManager : MonoBehaviour
 
     public float CalculateHealth()
     {
-        return GameManager.LocalPlayer.hp / TankHealth.Instance.MaxHP;
+        return GameManager.LocalPlayer.currentHp / TankHealth.Instance.MaxHP;
     }
 
 

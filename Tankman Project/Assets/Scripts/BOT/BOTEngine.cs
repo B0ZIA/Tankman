@@ -89,21 +89,21 @@ public class BOTEngine : Engine, IMove, ITurn
 
     public void SetPosition()
     {
-        respawns = GameObject.FindGameObjectsWithTag(botSetup.respawnPointTag);
-        int index = botSetup.ID;
+        //respawns = GameObject.FindGameObjectsWithTag(botSetup.respawnPointTag);
+        //int index = botSetup.ID;
 
-        while (index < 0)
-        {
-            if (respawns[botSetup.ID] == null)
-                index -= 1;
-            else
-                break;
-        }
+        //while (index < 0)
+        //{
+        //    if (respawns[botSetup.ID] == null)
+        //        index -= 1;
+        //    else
+        //        break;
+        //}
 
-        if (respawns[botSetup.ID] != null)
-            transform.position = new Vector3(respawns[botSetup.ID].transform.position.x, respawns[botSetup.ID].transform.position.y, -2);
-        else
-            Debug.Log("Nie znaleziono na mapie miejsca gdzie mozna by było zespanic bota!");
+        //if (respawns[botSetup.ID] != null)
+        //    transform.position = new Vector3(respawns[botSetup.ID].transform.position.x, respawns[botSetup.ID].transform.position.y, -2);
+        //else
+        //    Debug.Log("Nie znaleziono na mapie miejsca gdzie mozna by było zespanic bota!");
     }
 
     public GameObject stan;
@@ -117,7 +117,6 @@ public class BOTEngine : Engine, IMove, ITurn
     
     void SetTargetPosition()
     {
-        //UnityEngine.Debug.Log("Rozpoczynam akcje szukania targetu !");
         //Rozpoczyna akcję szukania targetu,
         // jeśli taka akcja już się wykonuje to jej nie powiela
         if(!szukamTargetu)
@@ -132,33 +131,11 @@ public class BOTEngine : Engine, IMove, ITurn
         szukamTargetu = true;
         while (true)
         {
-            //zakreśla w nieskończoność kułka radarem aby znaleźć target
-            RaycastHit2D hit = new RaycastHit2D();// = MakeRaycast(Color.black, toFindStreet, shootDistance);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            RaycastHit2D hit = new RaycastHit2D();
 
             yield return new WaitForSecondsRealtime(0.5f);
             bezpiecznik++;
             if (bezpiecznik > 10)
-                //mamGraczaWZasiegu = false;
-            //UnityEngine.Debug.Log("Cały czas szukam target !!!");
 
             //Radar szuka najbliższego obiektu dlatego kiedy zrobi pełne kółko to
             //jego zasięg się zwiększy bo nic nie znalazł...
@@ -169,11 +146,8 @@ public class BOTEngine : Engine, IMove, ITurn
             {
                 if (hit.collider.tag == "RoadPoint")
                 {
-                   // UnityEngine.Debug.Log("Znalazłem target !!!");
-                    //~
                     tempTargetRoad = target;
                     target = hit.collider.gameObject;
-                    //~
                     break;
                 }
             }
@@ -187,7 +161,6 @@ public class BOTEngine : Engine, IMove, ITurn
         int i = 0;
         while(true)
         {
-            //UnityEngine.Debug.Log("Zmieniam zasięg radaru !!!");
             yield return new WaitForSecondsRealtime(1);
             if(i < 4)
                 shootDistance += 2;
@@ -207,15 +180,15 @@ public class BOTEngine : Engine, IMove, ITurn
     {
         if (movement == true)
         {
-            if (coll.gameObject.tag == TagManager.GetTag(Tag.StaticGameObject)
-                || coll.gameObject.tag == TagManager.GetTag(Tag.RemotePlayerBody)
-                || coll.gameObject.tag == TagManager.GetTag(Tag.LocalPlayerBody))
+            if (coll.gameObject.tag == TagsManager.GetTag(Tag.StaticGameObject)
+                || coll.gameObject.tag == TagsManager.GetTag(Tag.RemotePlayerBody)
+                || coll.gameObject.tag == TagsManager.GetTag(Tag.LocalPlayerBody))
             {
                 SetTargetPosition();
                 StartCoroutine(ChangeSpeed());
             }
 
-            if (coll.gameObject.tag == TagManager.GetTag(Tag.Bot))
+            if (coll.gameObject.tag == TagsManager.GetTag(Tag.Bot))
             {   
                 StartCoroutine(ChangeSpeed());
             }
@@ -224,7 +197,7 @@ public class BOTEngine : Engine, IMove, ITurn
     //If BOT collision he's target
     void OnTriggerEnter2D(Collider2D coll)
     {
-        if (coll.gameObject.tag == TagManager.GetTag(Tag.RoadPoint))
+        if (coll.gameObject.tag == TagsManager.GetTag(Tag.RoadPoint))
         {
             //UnityEngine.Debug.Log("<color=blue>BOT</color>: idę za Kolejnym punktem ścieżki");
             RoadPoint roadPoint = coll.gameObject.GetComponent<RoadPoint>();
@@ -341,10 +314,7 @@ public class BOTEngine : Engine, IMove, ITurn
             }
             if (i == 1)
             {
-                //if (radar.TargetPrzedemna)
-                    tempMoveSpeed = MoveSpeed * -1;
-                //else
-                    //tempTurnSpeed = tempTurnSpeed * -1;
+                tempMoveSpeed = MoveSpeed * -1;
                 time = 2f;
             }
             if (i == 2)

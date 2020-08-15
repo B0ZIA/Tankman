@@ -22,7 +22,7 @@ public class TankData : ScriptableObject
     public Sprite turretCapTexture;
 
     [Header("Values:")]
-    public DostempneCzolgi tank = DostempneCzolgi.PZI;
+    public Tanks tank = Tanks.PZI;
     public int level = 1;
     public int maxAmmo = 8;
     public float maxHp = 320f;

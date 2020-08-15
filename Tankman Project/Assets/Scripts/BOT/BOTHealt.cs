@@ -38,7 +38,7 @@ public class BOTHealt : Photon.MonoBehaviour
 
     public void SendDamage(Transform hit, float damage)
     {
-        hit.GetComponent<GameOver>().photonView.RPC("AdDamage", PhotonTargets.Others, damage);
+        hit.GetComponent<TankDeath>().photonView.RPC("AdDamage", PhotonTargets.Others, damage);
     }
 
     [PunRPC]
@@ -51,7 +51,7 @@ public class BOTHealt : Photon.MonoBehaviour
         }
         else
         {
-            GameManager.LocalPlayer.gameObject.GetComponent<PlayerGO>().myPlayer.hp -= damages;
+            GameManager.LocalPlayer.gameObject.GetComponent<PlayerGO>().myPlayer.currentHp -= damages;
         }
     }
 
@@ -69,7 +69,6 @@ public class BOTHealt : Photon.MonoBehaviour
     [PunRPC]
     void RpcDoShootEffect(Vector3 StartfirePoint, Quaternion aa)
     {
-        //muzzleFlash.Play();
         Debug.Log("Ustaw właściciela pocisku");
         BulletTrailPrefab.GetComponent<BulletMovment>().own = gameObject;
         Instantiate(BulletTrailPrefab, StartfirePoint, aa);
@@ -83,7 +82,6 @@ public class BOTHealt : Photon.MonoBehaviour
     [PunRPC]
     void RpcDoShootEffectBOT(Vector3 StartfirePoint, Quaternion aa, PhotonMessageInfo pmi)
     {
-        //muzzleFlash.Play();
         BulletTrailPrefab.GetComponent<BulletMovment>().own = gameObject;
         Instantiate(BulletTrailPrefab, StartfirePoint, aa);
     }
@@ -103,8 +101,8 @@ public class BOTHealt : Photon.MonoBehaviour
     [PunRPC]
     void RpcSetLastShooter(PhotonPlayer pp)
     {
-        if(Player.FindPlayer(pp).gameObject != null)
-            lastShooter = Player.FindPlayer(pp).gameObject;
+        if(PlayersManager.FindPlayer(pp).gameObject != null)
+            lastShooter = PlayersManager.FindPlayer(pp).gameObject;
     }
 
     public void SyncHP(float realHP)

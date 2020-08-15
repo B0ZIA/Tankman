@@ -3,13 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-/*
- * ###################################
- * #        by Jakub Główczyk        #
- * #            [#][ ][ ]            #
- * ###################################
- */
-
 public class MoroButton : MonoBehaviour {
 
     public StanMoroButtonu stanPrzycisku;

@@ -3,13 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-/*
- * ###################################
- * #        by Jakub Główczyk        #
- * #            [#][#][ ]            #
- * ###################################
- */
-
 public class NationManager : MonoBehaviour {
 
     public GameObject[] flagi;  //Bardzo ważna jest kolejność: według enuma Nation... od 0, rosnąco
@@ -61,18 +54,18 @@ public class NationManager : MonoBehaviour {
         JAPONIA
     }
 
-    public static DostempneCzolgi ReturnStartTank(Nation nation)
+    public static Tanks ReturnStartTank(Nation nation)
     {
         switch (nation)
         {
             case Nation.ZSRR:
-                return DostempneCzolgi.T38;
+                return Tanks.T38;
             case Nation.IIIRZESZA:
-                return DostempneCzolgi.PZI;
+                return Tanks.PZI;
             case Nation.JAPONIA:
-                return DostempneCzolgi.KHA_GO;
+                return Tanks.KHA_GO;
             default:
-                return DostempneCzolgi.PZI;
+                return Tanks.PZI;
         }
     }
 }
