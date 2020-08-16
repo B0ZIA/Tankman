@@ -114,7 +114,7 @@ public class PlayerSetup : Photon.MonoBehaviour
 
         SetItemsDetector();
         tempItemDetectors = itemDetectors;
-        StartCoroutine(SendingRemotePlayersTheirDataStoredByServer());
+        StartCoroutine(Host.Instance.SendingRemotePlayersTheirDataStoredByServer());
 
         SetBotForServer();
 
@@ -149,34 +149,8 @@ public class PlayerSetup : Photon.MonoBehaviour
         }
     }
 
-    IEnumerator SendingRemotePlayersTheirDataStoredByServer()
-    {
-        while (true)
-        {
-            yield return new WaitForSecondsRealtime(1f);
-            GameObject[] players = GameObject.FindGameObjectsWithTag("RemotePlayer");
-            for (int i = 0; i < players.Length; i++)
-            {
-                if (players.Length > 0)
-                {
-                    Player tempPlayer = players[i].GetComponent<PlayerGO>().myPlayer;
-                    if (tempPlayer != null)
-                    {
-                        Player player = tempPlayer;
-                        players[i].GetComponent<PlayerSetup>().UpdatePlayerData
-                        (
-                            player.score,
-                            player.coin,
-                            player.Dynamit,
-                            player.Naprawiarka,
-                            player.Zasoby
-                        );
-                    }
-                }
-            }
-        }
-    }
-    void UpdatePlayerData(int SCORE, int COIN, int DYNAMIT, int NAPRAWIARKA, int ZASOBY)
+    
+    public void UpdatePlayerData(int SCORE, int COIN, int DYNAMIT, int NAPRAWIARKA, int ZASOBY)
     {
         photonView.RPC("SetPlayerDataRPC", PhotonTargets.All, SCORE, COIN, DYNAMIT, NAPRAWIARKA, ZASOBY);
     }
