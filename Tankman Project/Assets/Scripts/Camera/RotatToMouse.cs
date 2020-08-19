@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class RotatToCamera  :  MonoBehaviour 
+public class RotatToMouse  :  MonoBehaviour 
 {
     private void Update () 
     {

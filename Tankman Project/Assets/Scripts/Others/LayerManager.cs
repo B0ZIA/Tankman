@@ -36,6 +36,7 @@ public enum Layer
     IgnoreRaycast = 2,
     Water = 4,
     UI = 5,
+    CollisionObject = 9,
     LocalPlayer = 10,
     RemotePlayer = 11,
 }

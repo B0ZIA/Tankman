@@ -75,7 +75,7 @@ public class HUDManager : MonoBehaviour
     {
         while(true)
         {
-            yield return new WaitForSecondsRealtime(0.1f);
+            yield return new WaitForSecondsRealtime(0.5f);
             UpdateHud();
         }
     }

@@ -69,11 +69,8 @@ public class ShopManager : MonoBehaviour
 
     void Update()
     {
-        /// DO MORA ///
-
-
-
-        ///         ///
+        if (!shopActive)
+            return;
 
         tempUpdatePoint = player.updatePoint - dzialoLevel - zawieszenieLevel - pancerzLevel - silnikLevel;
         if (tempUpdatePoint < 0)

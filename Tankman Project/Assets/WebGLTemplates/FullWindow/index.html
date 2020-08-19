@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Pancerniak</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.javascript"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/Pancerniak.io.json", {onProgress: UnityProgress});
+	  window.addEventListener("resize", onResize);
+	  
+	  function onResize()
+	  {
+		unityInstance.SendMessage("FullWindow", "SetWidth", window.innerWidth);
+		unityInstance.SendMessage("FullWindow", "SetHeight", window.innerHeight);
+		unityInstance.SendMessage("FullWindow", "OnResize");
+	  }
+	  
+    </script>
+  </head>
+  <body style="margin:0; overflow:hidden;">
+	<div class="webgl-content">
+      <div id="unityContainer"></div>
+      <div class="footer">
+      </div>
+    </div>
+  </body>
+</html>
