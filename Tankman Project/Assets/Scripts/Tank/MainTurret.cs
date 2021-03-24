@@ -1,8 +1,6 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
-/// <summary>
-/// Główne działo czołgu.
-/// </summary>
 public class MainTurret : TrackingMechanism
 {
     public static MainTurret Instance { get; private set; }
@@ -12,10 +10,6 @@ public class MainTurret : TrackingMechanism
     [SerializeField]
     private PhotonView myPV;
 
-    public override float RotatingSpeed
-    {
-        get { return TankEvolution.Instance.TurnSpeed; }
-    }
 
 
     public void Awake()
@@ -28,6 +22,10 @@ public class MainTurret : TrackingMechanism
             enabled = false;
     }
 
+    private void Start()
+    {
+        rotatingSpeed = TankEvolution.Instance.HeadTurnSpeed;
+    }
 
     void FixedUpdate()
     {

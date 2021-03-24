@@ -7,7 +7,7 @@
 public class TankDeath : Photon.MonoBehaviour
 {
     [Header("Inne skrypty:")]
-    public CameraFollow cameraFollow;
+    public CameraClamp cameraFollow;
     public PlayerSetup playerSetup;
     public TriggerSth triggerSth;
  

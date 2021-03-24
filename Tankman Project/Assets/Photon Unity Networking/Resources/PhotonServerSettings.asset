@@ -61,11 +61,11 @@ MonoBehaviour:
   - RpcDoShootEffectBOT
   - RpcSetLastShooter
   - RpcSyncHP
-  - SetBotIDRPC
   - SetCameraDeathHowBotRPC
   - SetCameraDeathRPC
   - SetCamouflage
   - SetHpRPC
+  - SetIdRPC
   - SetItemPositionRPC
   - SetPlayerDataRPC
   - SetPlayerRPC
@@ -74,11 +74,9 @@ MonoBehaviour:
   - SpawnSceneObjectRPC
   - SpawnujGraczaRPC
   - TaggedPlayer
-  - UstawAktualnyBiomWszystkim
+  - UpdatePlayersList
   - UstawCzolgRPC
   - ZabiJOfiareRPC
   - ZebralemScoreRPC
   - ZniszczBotaRPC
-  - SetIdRPC
-  - UpdatePlayersList
-  DisableAutoOpenWizard: 0
+  DisableAutoOpenWizard: 1

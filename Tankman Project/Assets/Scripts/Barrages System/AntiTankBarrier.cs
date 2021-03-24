@@ -20,20 +20,20 @@ public class AntiTankBarrier : Barrier
 
     void OnCollisionEnter2D (Collision2D coll)
     {
-        if (coll.gameObject.tag == TagsManager.GetTag(Tag.LocalPlayerBody))
+        if (coll.gameObject.CompareTag(TagsManager.GetTag(Tag.LocalPlayerBody)))
         {
-            //HUDManager.TankTier otherPlayerTankTier = coll.gameObject.GetComponent<TankEngine>().gameOver.playerSetup.GetComponent<PlayerGO>().myPlayer.tankTier;
-            //Debug.Log(otherPlayerTankTier);
-            //for (int i = 0; i < tankTiersWhichCanDestroy.Length; i++)
-            //{
-            //    if (tankTiersWhichCanDestroy[i] == otherPlayerTankTier)
-            //    {
-            //        Destroy();
-            //        TriggerSth triggerSth = coll.gameObject.GetComponent<TankEngine>().gameOver.triggerSth;
-            //        triggerSth.StartCoroutine(triggerSth.ResetColliera());
-            //        break;
-            //    }
-            //}
+            HUDManager.TankTier otherPlayerTankTier = coll.gameObject.GetComponentInParent<PlayerGO>().myPlayer.tankTier;
+            Debug.Log(otherPlayerTankTier);
+            for (int i = 0; i < tankTiersWhichCanDestroy.Length; i++)
+            {
+                if (tankTiersWhichCanDestroy[i] == otherPlayerTankTier)
+                {
+                    Destroy();
+                    TriggerSth triggerSth = coll.gameObject.GetComponentInParent<TankDeath>().triggerSth;
+                    triggerSth.StartCoroutine(triggerSth.ResetColliera());
+                    break;
+                }
+            }
         }
         if(coll.gameObject.tag == TagsManager.GetTag(Tag.Bot))  
         {

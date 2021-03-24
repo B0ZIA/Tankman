@@ -15,18 +15,14 @@ public class Engine : Photon.MonoBehaviour, IMove, ITurn
 
     public virtual void Move(float moveSpeed, float inputValue = 1)
     {
-        // Create a vector in the direction the tank is facing with a magnitude based on the input, speed and the time between frames.
         Vector2 movement = -transform.right * inputValue * moveSpeed * Time.deltaTime;
-        // Apply this movement to the rigidbody's position.
         myRB.MovePosition(myRB.position + movement);
     }
 
     public virtual void Turn(float turnSpeed, float inputValue = 1)
     {
-        // Determine the number of degrees to be turned based on the input, speed and time between frames.
         float turnValue = -inputValue * turnSpeed;
-        // Apply this rotation to the rigidbody's rotation.
-        myRB.MoveRotation(myRB.rotation + turnValue * Time.fixedDeltaTime);
+        transform.Rotate(new Vector3(0f, 0f, turnValue));
     }
 
     public void TurnToTarget(Vector2 targetPos, float TurnSpeed)
@@ -35,10 +31,8 @@ public class Engine : Photon.MonoBehaviour, IMove, ITurn
         point2Target.Normalize();
         float value = Vector3.Cross(point2Target, transform.right).z;
         if (value > 0.01f)
-            myRB.angularVelocity = -TurnSpeed;
+            transform.Rotate(new Vector3(0f, 0f, -TurnSpeed));
         else if (value < -0.01f)
-            myRB.angularVelocity = TurnSpeed;
-        else
-            myRB.angularVelocity = 0;
+            transform.Rotate(new Vector3(0f, 0f, TurnSpeed));
     }
 }

@@ -9,12 +9,6 @@ public class AutomaticTurret : TrackingMechanism
     [SerializeField]
     private GameObject staticTarget;
 
-    [SerializeField]
-    private float turnSpeed = 20;
-    public override float RotatingSpeed
-    {
-        get { return turnSpeed; }
-    }
 
 
     void Start ()
