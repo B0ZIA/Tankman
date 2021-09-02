@@ -8,8 +8,7 @@ public abstract class Shot : Photon.MonoBehaviour, IShot
     [Space]
     [SerializeField]
     protected PhotonView myPV;
-    [SerializeField]
-    protected Transform startFirePoint;    //Miejsce z kąd wylatuje pocisk
+    public Transform startFirePoint;    //Miejsce z kąd wylatuje pocisk
     [SerializeField]
     protected Transform maxFirePoint;  //Miejsce gdzie jest maxymalny zasięg lotu pocisku 
     [SerializeField]

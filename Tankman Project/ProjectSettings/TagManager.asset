@@ -45,6 +45,18 @@ TagManager:
   - SpawnBot1
   - SpawnBot2
   - PlayerRespawn
+  - GlebokaWoda
+  - FFA
+  - O-IRespawn
+  - LoginPanel
+  - LoginOrRegisterPanel
+  - 2 Teams
+  - AMXRespawn
+  - Woda
+  - Blitzkrieg
+  - RegisterPanel
+  - 1vs1
+  - EnternPanel
   layers:
   - Default
   - TransparentFX
@@ -58,8 +70,8 @@ TagManager:
   - 
   - LocalPlayer
   - RemotePlayer
-  - 
-  - 
+  - PostProcessing
+  - Lalala
   - 
   - 
   - 

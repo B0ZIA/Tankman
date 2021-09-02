@@ -21,8 +21,8 @@ MonoBehaviour:
   maxHp: 720
   damage: 300
   damageLotery: 4
-  headTurnSpeed: 40
-  turnSpeed: 20
+  headTurnSpeed: 1.5
+  turnSpeed: 2
   speed: 0.9
   reload: 7
   reloadBetweenMagazine: 1

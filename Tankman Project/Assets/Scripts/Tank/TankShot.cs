@@ -87,6 +87,7 @@ public class TankShot : Shot, IShot
     public override void Shoot()
     {
         muzzleFlash.Play();
+
         //~~~~
         base.Shoot();
         //~~~~

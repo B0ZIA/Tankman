@@ -1,6 +1,8 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 /// <summary>
 /// Odpowiada za ewolucje gracza, jego "level up". Zawiera także odniesienia do podzespołów czołgu,
@@ -122,6 +124,15 @@ public class TankEvolution : Photon.MonoBehaviour
     void Start()
     {
         SetStartTank();
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.F2))
+        {
+            Tanks tank = (Tanks)Random.Range(0, 21);
+            SetStartTankHowNewPlayer(tank);
+        }
     }
 
 

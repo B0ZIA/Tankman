@@ -4,7 +4,8 @@
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -20,8 +21,8 @@ MonoBehaviour:
   maxHp: 840
   damage: 300
   damageLotery: 15
-  headTurnSpeed: 20
-  turnSpeed: 17
+  headTurnSpeed: 1.5
+  turnSpeed: 2
   speed: 0.7
   reload: 6
   reloadBetweenMagazine: 1

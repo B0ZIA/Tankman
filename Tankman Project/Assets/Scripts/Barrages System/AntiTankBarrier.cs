@@ -22,7 +22,7 @@ public class AntiTankBarrier : Barrier
     {
         if (coll.gameObject.CompareTag(TagsManager.GetTag(Tag.LocalPlayerBody)))
         {
-            HUDManager.TankTier otherPlayerTankTier = coll.gameObject.GetComponentInParent<PlayerGO>().myPlayer.tankTier;
+            HUDManager.TankTier otherPlayerTankTier = coll.gameObject.GetComponentInParent<TankObject>().Player.tankTier;
             Debug.Log(otherPlayerTankTier);
             for (int i = 0; i < tankTiersWhichCanDestroy.Length; i++)
             {
